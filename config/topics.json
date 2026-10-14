@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ai",
+    "name": "AI",
+    "keywords": ["AI", "AGI", "人工智能", "大模型", "LLM", "GPT", "ChatGPT", "OpenAI", "Claude", "Anthropic", "Gemini", "DeepSeek", "Kimi", "月之暗面", "通义", "千问", "Qwen", "豆包", "文心", "混元", "智谱", "GLM", "MiniMax", "阶跃", "Llama", "Mistral", "Grok", "xAI", "Copilot", "智能体", "Agent", "具身智能", "人形机器人", "机器人", "算力", "Sora", "Midjourney", "生成式", "多模态", "AIGC", "machine learning", "neural network", "LLMs", "agents", "agentic", "chatbot"]
+  },
+  {
+    "id": "bigtech",
+    "name": "大厂",
+    "keywords": ["华为", "鸿蒙", "阿里", "淘宝", "腾讯", "字节", "百度", "小米", "雷军", "京东", "美团", "拼多多", "网易", "快手", "比亚迪", "蔚来", "理想汽车", "李想", "小鹏", "吉利", "奇瑞", "长安汽车", "长城汽车", "零跑", "问界", "尊界", "宁德时代", "联想", "荣耀", "OPPO", "vivo", "中兴", "苹果", "Apple", "特斯拉", "Tesla", "马斯克", "英伟达", "Nvidia", "黄仁勋", "微软", "Microsoft", "谷歌", "Google", "Meta", "亚马逊", "Amazon", "三星", "台积电"],
+    "exclude": ["王者荣耀", "阿里嘎多", "苹果价格", "苹果树", "吃苹果"]
+  },
+  {
+    "id": "risk",
+    "name": "出事了",
+    "_说明": "standalone=false：只命中这一组的热榜条目不收录，必须同时命中其他组（比如某家大厂），避免社会新闻刷屏",
+    "standalone": false,
+    "keywords": ["裁员", "降薪", "欠薪", "召回", "故障", "事故", "断裂", "起火", "自燃", "刹车", "失控", "罚款", "被罚", "处罚", "立案", "调查", "约谈", "致歉", "道歉", "回应", "维权", "投诉", "爆雷", "停产", "停工", "下架", "泄露", "宕机", "崩了", "翻车", "起诉", "被告", "离职", "辞职", "被抓", "被捕", "layoff", "layoffs", "recall", "lawsuit", "fined", "outage", "breach"]
+  },
+  {
+    "id": "money",
+    "name": "资本",
+    "keywords": ["融资", "收购", "并购", "上市", "IPO", "估值", "财报", "营收", "净利", "亏损", "市值", "股价", "涨停", "跌停", "funding", "raises", "acquire", "acquisition", "valuation"]
+  },
+  {
+    "id": "chip",
+    "name": "芯片",
+    "keywords": ["芯片", "半导体", "光刻", "GPU", "晶圆", "制程", "昇腾", "麒麟", "chip", "chips", "semiconductor"]
+  }
+]

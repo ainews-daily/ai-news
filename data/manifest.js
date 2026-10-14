@@ -1,0 +1,1 @@
+window.AI_DAILY_MANIFEST = ["2026-10-14"];

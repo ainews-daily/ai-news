@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 新鲜事</title>
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-2: #eef0f6;
+    --text: #161a24;
+    --muted: #5d6475;
+    --border: #e1e4ee;
+    --accent: #5b5bf0;
+    --accent-2: #b14de8;
+    --spot: rgba(91, 91, 240, 0.10);
+    --shadow: 0 1px 2px rgba(20, 24, 40, .04), 0 4px 16px rgba(20, 24, 40, .05);
+    --c-model: #2f6fea;
+    --c-industry: #d9711c;
+    --c-research: #0f9d74;
+    --c-tools: #b03fd6;
+    --c-warn: #d23c3c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0c0e14;
+      --surface: #151822;
+      --surface-2: #1d2130;
+      --text: #e8eaf2;
+      --muted: #969cb0;
+      --border: #262b3b;
+      --accent: #8b8bff;
+      --accent-2: #d58bff;
+      --spot: rgba(139, 139, 255, 0.13);
+      --shadow: none;
+      --c-model: #6f9dff;
+      --c-industry: #f0a35e;
+      --c-research: #4fd1a5;
+      --c-tools: #d58bff;
+      --c-warn: #ff7b7b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0c0e14;
+    --surface: #151822;
+    --surface-2: #1d2130;
+    --text: #e8eaf2;
+    --muted: #969cb0;
+    --border: #262b3b;
+    --accent: #8b8bff;
+    --accent-2: #d58bff;
+    --spot: rgba(139, 139, 255, 0.13);
+    --shadow: none;
+    --c-model: #6f9dff;
+    --c-industry: #f0a35e;
+    --c-research: #4fd1a5;
+    --c-tools: #d58bff;
+    --c-warn: #ff7b7b;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.65 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+
+  .layout {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  /* 日期列表 */
+  .dates { position: sticky; top: 32px; align-self: start; }
+  .dates h2 { font-size: 12px; font-weight: 600; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+  .date-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+  .date-list a {
+    display: block; padding: 7px 12px; border-radius: 8px; text-decoration: none;
+    color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+  .date-list a:hover { background: var(--surface-2); color: var(--text); }
+  .date-list a[aria-current="true"] { background: var(--surface); color: var(--text); font-weight: 600; box-shadow: var(--shadow); outline: 1px solid var(--border); }
+
+  /* 标题：逐字模糊浮现 */
+  header.top { margin-bottom: 28px; }
+  .title { font-size: 40px; line-height: 1.15; font-weight: 800; margin: 0; letter-spacing: -.01em; }
+  .title span { display: inline-block; opacity: 0; filter: blur(10px); transform: translateY(-12px); animation: blur-in .7s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: calc(var(--i) * 70ms); }
+  @keyframes blur-in { to { opacity: 1; filter: blur(0); transform: none; } }
+  .subtitle { color: var(--muted); margin: 6px 0 0; }
+
+  /* 今日看点：流光标题 */
+  .highlights {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    padding: 20px 24px; margin-bottom: 28px; box-shadow: var(--shadow);
+  }
+  .shiny {
+    font-size: 13px; font-weight: 700; letter-spacing: .1em; margin: 0 0 10px;
+    background: linear-gradient(110deg, var(--accent) 35%, var(--accent-2) 50%, var(--accent) 65%);
+    background-size: 250% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: shine 4s linear infinite;
+  }
+  @keyframes shine { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+  .highlights ol { margin: 0; padding-left: 1.3em; }
+  .highlights li { margin: 4px 0; }
+  .highlights li::marker { color: var(--accent); font-weight: 700; }
+
+  /* 筛选 */
+  .filters { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 18px; }
+  .chip-group { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font: inherit; font-size: 13px; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+    transition: background .15s, color .15s, border-color .15s;
+  }
+  .chip:hover { color: var(--text); }
+  .chip[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: var(--bg); }
+  .count { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+
+  /* 新闻卡片：鼠标跟随光斑 */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .card {
+    position: relative; overflow: hidden;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 18px 20px; box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: 8px;
+    opacity: 0; transform: translateY(14px);
+    animation: rise .5s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: calc(var(--i) * 45ms);
+    transition: border-color .2s;
+  }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  .card::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .3s;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), var(--spot), transparent 60%);
+  }
+  .card:hover::before { opacity: 1; }
+  .card:hover { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+  .tags { display: flex; gap: 6px; align-items: center; font-size: 12px; }
+  .tag { padding: 1px 8px; border-radius: 6px; font-weight: 600; }
+  .tag.cat { color: var(--c); background: color-mix(in srgb, var(--c) 13%, transparent); }
+  .tag.region { color: var(--muted); background: var(--surface-2); }
+  .card h3 { margin: 0; font-size: 16.5px; line-height: 1.45; }
+  .card h3 a { text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .source { margin-top: auto; padding-top: 4px; font-size: 12.5px; color: var(--muted); }
+  .source a { color: var(--accent); text-decoration: none; }
+  .source a:hover { text-decoration: underline; }
+
+  .notice {
+    background: var(--surface); border: 1px dashed var(--border); border-radius: 14px;
+    padding: 40px 24px; text-align: center; color: var(--muted);
+  }
+  .notice code { background: var(--surface-2); padding: 2px 6px; border-radius: 5px; color: var(--text); }
+
+  /* 顶部切换：日报 / 工具库 */
+  .tabs { display: inline-flex; gap: 4px; padding: 4px; margin-top: 16px; border-radius: 12px; background: var(--surface-2); }
+  .tabs a { padding: 6px 16px; border-radius: 9px; text-decoration: none; color: var(--muted); font-size: 14px; font-weight: 600; }
+  .tabs a:hover { color: var(--text); }
+  .tabs a[aria-current="true"] { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+
+  /* 板块标题 */
+  .section { margin-top: 44px; }
+  .section-head { display: flex; align-items: baseline; gap: 10px; margin: 0 0 6px; }
+  .section-head h2 { margin: 0; font-size: 21px; }
+  .section-head span { color: var(--muted); font-size: 13px; }
+  .section-desc { color: var(--muted); font-size: 13.5px; margin: 0 0 16px; }
+
+  .tag.kind { color: var(--c); background: color-mix(in srgb, var(--c) 13%, transparent); }
+  .meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12.5px; color: var(--muted); }
+
+  /* 企业动态：横向条目 */
+  .corp-list { display: flex; flex-direction: column; gap: 10px; }
+  .corp-list .card { padding: 16px 20px; }
+
+  /* 工具卡片 */
+  .app-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+  .app-grid .card { padding: 16px 18px; gap: 6px; }
+  .app-grid h3 { font-size: 16px; }
+  .app-grid p { font-size: 13.5px; }
+
+  /* 工具库 */
+  .hot-box { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+  .hot-list { list-style: none; margin: 0; padding: 0; }
+  .hot-row { display: grid; grid-template-columns: 2.6em minmax(0, 1fr); gap: 2px 10px; padding: 11px 16px; border-top: 1px solid var(--border); }
+  .hot-row:first-child { border-top: 0; }
+  .hot-row:hover { background: var(--surface-2); }
+  .hot-rank { grid-row: span 3; color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .hot-row a { text-decoration: none; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+  .hot-row a:hover { color: var(--accent); }
+  .hot-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12.5px; color: var(--muted); }
+  .hot-sub .tag { font-size: 11.5px; }
+  .hot-desc { color: var(--muted); font-size: 13px; margin: 2px 0 0; overflow-wrap: anywhere; }
+  .more { display: block; width: 100%; padding: 10px; border: 0; border-top: 1px solid var(--border); background: transparent; color: var(--accent); font: inherit; font-size: 13.5px; cursor: pointer; }
+  .more:hover { background: var(--surface-2); }
+  .status { margin-top: 36px; color: var(--muted); font-size: 13px; }
+  .status summary { cursor: pointer; }
+  .status ul { margin: 8px 0 0; padding-left: 1.2em; }
+  .lib-tools { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin-bottom: 18px; }
+  .search {
+    font: inherit; font-size: 14px; padding: 7px 14px; border-radius: 999px; width: 220px; max-width: 100%;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  }
+  .search:focus { outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent); outline-offset: 1px; }
+
+  @media (max-width: 760px) {
+    .layout { grid-template-columns: minmax(0, 1fr); padding: 20px 16px 48px; gap: 18px; }
+    .dates { position: static; }
+    .dates h2 { display: none; }
+    .date-list { flex-direction: row; overflow-x: auto; gap: 6px; padding-bottom: 4px; scrollbar-width: none; }
+    .date-list a { padding: 6px 12px; border: 1px solid var(--border); }
+    .title { font-size: 30px; }
+    .highlights { padding: 16px 18px; }
+    .grid { grid-template-columns: minmax(0, 1fr); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .title span, .card { animation: none; opacity: 1; filter: none; transform: none; }
+    .shiny { animation: none; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="dates" aria-label="往期">
+    <h2>往期</h2>
+    <ul class="date-list" id="dates"></ul>
+  </nav>
+  <main>
+    <header class="top">
+      <h1 class="title" id="title" aria-label="AI 新鲜事"></h1>
+      <p class="subtitle" id="subtitle">&nbsp;</p>
+      <nav class="tabs" aria-label="视图">
+        <a href="#" id="tab-daily">精选日报</a>
+        <a href="#hot" id="tab-hot">实时热点</a>
+        <a href="#tools" id="tab-tools">工具库</a>
+      </nav>
+    </header>
+    <div id="content"></div>
+  </main>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var CATEGORIES = { model: "模型产品", industry: "行业动态", research: "研究前沿", tools: "工具玩法" };
+  var REGIONS = { cn: "国内", intl: "国外" };
+  var CORP_KINDS = { layoff: "裁员", quality: "质量召回", penalty: "监管处罚", org: "组织人事", business: "经营", dispute: "争议" };
+  var CORP_COLORS = { layoff: "industry", quality: "warn", penalty: "warn", org: "model", business: "research", dispute: "tools" };
+  var APP_CATS = { office: "办公", coding: "编程", system: "系统", fun: "娱乐" };
+  var APP_COLORS = { office: "model", coding: "research", system: "industry", fun: "tools" };
+  var INSIGHT_KINDS = { industry: "行业应用", usage: "怎么用 AI", jobs: "职业变化" };
+  var INSIGHT_COLORS = { industry: "model", usage: "research", jobs: "tools" };
+  var WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"];
+
+  var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", hotTopic: "all", hotQuery: "" };
+  var $dates = document.getElementById("dates");
+  var $subtitle = document.getElementById("subtitle");
+  var $content = document.getElementById("content");
+
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    for (var k in attrs || {}) {
+      if (k === "text") node.textContent = attrs[k];
+      else if (k === "class") node.className = attrs[k];
+      else node.setAttribute(k, attrs[k]);
+    }
+    (children || []).forEach(function (c) { if (c) node.appendChild(c); });
+    return node;
+  }
+
+  function loadScript(src) {
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = src;
+      s.onload = function () { resolve(); };
+      s.onerror = function () { s.remove(); reject(new Error(src)); };
+      document.head.appendChild(s);
+    });
+  }
+
+  function formatDate(d, long) {
+    var p = d.split("-").map(Number);
+    var wd = WEEKDAYS[new Date(p[0], p[1] - 1, p[2]).getDay()];
+    return (long ? p[0] + " 年 " : "") + p[1] + " 月 " + p[2] + " 日 · 周" + wd;
+  }
+
+  function safeUrl(url) {
+    return /^https?:\/\//i.test(url || "") ? url : "#";
+  }
+
+  function renderTitle() {
+    var $t = document.getElementById("title");
+    Array.from("AI 新鲜事").forEach(function (ch, i) {
+      var s = el("span", { text: ch === " " ? " " : ch, "aria-hidden": "true" });
+      s.style.setProperty("--i", i);
+      $t.appendChild(s);
+    });
+  }
+
+  function renderDates() {
+    $dates.textContent = "";
+    state.dates.forEach(function (d) {
+      var a = el("a", { href: "#" + d, text: formatDate(d) });
+      if (d === state.date) a.setAttribute("aria-current", "true");
+      $dates.appendChild(el("li", {}, [a]));
+    });
+    var cur = $dates.querySelector('[aria-current="true"]');
+    if (cur && cur.scrollIntoView && window.innerWidth <= 760) cur.scrollIntoView({ block: "nearest", inline: "center" });
+  }
+
+  function notice(html) {
+    $content.innerHTML = "";
+    var n = el("div", { class: "notice" });
+    n.innerHTML = html;
+    $content.appendChild(n);
+  }
+
+  function chipGroup(name, options, current, onPick) {
+    var group = el("div", { class: "chip-group", role: "group", "aria-label": name });
+    Object.keys(options).forEach(function (key) {
+      var b = el("button", { class: "chip", type: "button", "aria-pressed": String(key === current), text: options[key] });
+      b.addEventListener("click", function () {
+        Array.from(group.children).forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+        onPick(key);
+      });
+      group.appendChild(b);
+    });
+    return group;
+  }
+
+  function tag(text, color, cls) {
+    var t = el("span", { class: "tag " + (cls || "kind"), text: text });
+    if (color) t.style.setProperty("--c", "var(--c-" + color + ")");
+    return t;
+  }
+
+  function extLink(url, text) {
+    return el("a", { href: safeUrl(url), target: "_blank", rel: "noopener noreferrer", text: text });
+  }
+
+  // 通用卡片：opts = { tags: [节点], title, url, body, foot: 节点 }
+  function card(opts, i, animate) {
+    var c = el("article", { class: "card" }, [
+      el("div", { class: "tags" }, opts.tags),
+      el("h3", {}, [extLink(opts.url, opts.title)]),
+      opts.body ? el("p", { text: opts.body }) : null,
+      opts.foot
+    ]);
+    c.style.setProperty("--i", i);
+    if (!animate) c.style.animation = "none", c.style.opacity = 1, c.style.transform = "none";
+    c.addEventListener("pointermove", function (e) {
+      var r = c.getBoundingClientRect();
+      c.style.setProperty("--mx", e.clientX - r.left + "px");
+      c.style.setProperty("--my", e.clientY - r.top + "px");
+    });
+    return c;
+  }
+
+  function sourceLine(prefix, source, url) {
+    return el("div", { class: "source" }, [document.createTextNode(prefix), extLink(url, source + " ↗")]);
+  }
+
+  function formatStars(n) {
+    if (typeof n !== "number") return "";
+    return "★ " + (n >= 10000 ? (n / 10000).toFixed(1).replace(/\.0$/, "") + " 万" : String(n));
+  }
+
+  function section(title, count, desc, body) {
+    return el("section", { class: "section" }, [
+      el("div", { class: "section-head" }, [el("h2", { text: title }), count ? el("span", { text: count }) : null]),
+      desc ? el("p", { class: "section-desc", text: desc }) : null,
+      body
+    ]);
+  }
+
+  function newsCard(it, i, animate) {
+    return card({
+      tags: [tag(CATEGORIES[it.category] || it.category, it.category, "cat"), tag(REGIONS[it.region] || it.region, null, "region")],
+      title: it.title, url: it.url, body: it.summary,
+      foot: sourceLine("来源：", it.source, it.url)
+    }, i, animate);
+  }
+
+  function appCard(a, i, animate, since) {
+    var meta = [a.license, formatStars(a.stars), a.size].filter(Boolean);
+    if (since) meta.push(since + " 推荐");
+    return card({
+      tags: [tag(APP_CATS[a.category] || a.category, APP_COLORS[a.category])],
+      title: a.name, url: a.url, body: a.desc,
+      foot: el("div", { class: "meta source" }, meta.map(function (m) { return el("span", { text: m }); }))
+    }, i, animate);
+  }
+
+  function renderNews(issue, $box, animate) {
+    var items = issue.items.filter(function (it) {
+      return (state.category === "all" || it.category === state.category) &&
+             (state.region === "all" || it.region === state.region);
+    });
+    $box.textContent = "";
+    $box.appendChild(el("p", { class: "count", text: "显示 " + items.length + " / " + issue.items.length + " 条" }));
+    if (!items.length) {
+      $box.appendChild(el("div", { class: "notice", text: "这个筛选组合下没有新闻，换一个试试。" }));
+      return;
+    }
+    var grid = el("div", { class: "grid" });
+    items.forEach(function (it, i) { grid.appendChild(newsCard(it, i, animate)); });
+    $box.appendChild(grid);
+  }
+
+  function renderIssue() {
+    var issue = (window.AI_DAILY || {})[state.date];
+    $content.innerHTML = "";
+    $subtitle.textContent = formatDate(state.date, true) + " · 共 " + issue.items.length + " 条新闻";
+
+    var ol = el("ol");
+    (issue.highlights || []).forEach(function (h) { ol.appendChild(el("li", { text: h })); });
+    $content.appendChild(el("section", { class: "highlights" }, [el("p", { class: "shiny", text: "今日看点" }), ol]));
+
+    var catOpts = { all: "全部" }, regOpts = { all: "全部", cn: "国内", intl: "国外" };
+    Object.keys(CATEGORIES).forEach(function (k) { catOpts[k] = CATEGORIES[k]; });
+    var $news = el("div");
+    $content.appendChild(section("AI 新闻", issue.items.length + " 条", "", el("div", {}, [
+      el("div", { class: "filters" }, [
+        chipGroup("分类", catOpts, state.category, function (k) { state.category = k; renderNews(issue, $news, false); }),
+        chipGroup("地区", regOpts, state.region, function (k) { state.region = k; renderNews(issue, $news, false); })
+      ]),
+      $news
+    ])));
+    renderNews(issue, $news, true);
+
+    if (issue.corp && issue.corp.length) {
+      var list = el("div", { class: "corp-list" });
+      issue.corp.forEach(function (c, i) {
+        list.appendChild(card({
+          tags: [tag(CORP_KINDS[c.kind] || c.kind, CORP_COLORS[c.kind]), tag(c.company, null, "region")],
+          title: c.title, url: c.url, body: c.summary,
+          foot: sourceLine("来源：", c.source, c.url)
+        }, i, true));
+      });
+      $content.appendChild(section("国内企业动态", issue.corp.length + " 条", "大企业的裁员、质量问题、处罚、人事和经营变化，不限于 AI。", list));
+    }
+
+    if (issue.apps && issue.apps.length) {
+      var grid = el("div", { class: "app-grid" });
+      issue.apps.forEach(function (a, i) { grid.appendChild(appCard(a, i, true)); });
+      $content.appendChild(section("工具推荐", issue.apps.length + " 个", "好用、免费的 Windows 软件，往期推荐的都收在“工具库”里。", grid));
+    }
+
+    if (issue.insights && issue.insights.length) {
+      var ig = el("div", { class: "grid" });
+      issue.insights.forEach(function (it, i) {
+        ig.appendChild(card({
+          tags: [tag(INSIGHT_KINDS[it.kind] || it.kind, INSIGHT_COLORS[it.kind]), tag("数据时间 " + it.asOf, null, "region")],
+          title: it.title, url: it.url, body: it.summary,
+          foot: sourceLine("来源：", it.source, it.url)
+        }, i, true));
+      });
+      $content.appendChild(section("AI 落地观察", issue.insights.length + " 条", "哪些行业在用 AI、怎么用、催生了哪些新职业。", ig));
+    }
+  }
+
+  function loadIssue(date) {
+    if ((window.AI_DAILY || {})[date]) return Promise.resolve(true);
+    return loadScript("data/" + date + ".js").then(function () { return !!(window.AI_DAILY || {})[date]; }, function () { return false; });
+  }
+
+  function renderLibrary(apps) {
+    var $list = el("div");
+    function draw(animate) {
+      var q = state.libQuery.trim().toLowerCase();
+      var shown = apps.filter(function (x) {
+        var a = x.app;
+        return (state.libCat === "all" || a.category === state.libCat) &&
+               (!q || (a.name + " " + a.desc).toLowerCase().indexOf(q) >= 0);
+      });
+      $list.textContent = "";
+      $list.appendChild(el("p", { class: "count", text: "显示 " + shown.length + " / " + apps.length + " 个" }));
+      if (!shown.length) { $list.appendChild(el("div", { class: "notice", text: "没有符合条件的工具。" })); return; }
+      var grid = el("div", { class: "app-grid" });
+      shown.forEach(function (x, i) { grid.appendChild(appCard(x.app, i, animate, formatDate(x.date).split(" · ")[0])); });
+      $list.appendChild(grid);
+    }
+    var catOpts = { all: "全部" };
+    Object.keys(APP_CATS).forEach(function (k) { catOpts[k] = APP_CATS[k]; });
+    var search = el("input", { class: "search", type: "search", placeholder: "搜索工具名或用途", "aria-label": "搜索工具" });
+    search.value = state.libQuery;
+    search.addEventListener("input", function () { state.libQuery = search.value; draw(false); });
+    $content.innerHTML = "";
+    $content.appendChild(el("div", { class: "lib-tools" }, [
+      chipGroup("工具分类", catOpts, state.libCat, function (k) { state.libCat = k; draw(false); }),
+      search
+    ]));
+    $content.appendChild($list);
+    draw(true);
+  }
+
+  function showLibrary() {
+    $subtitle.textContent = "工具库 · 往期推荐过的所有工具";
+    notice("加载中…");
+    Promise.all(state.dates.map(loadIssue)).then(function () {
+      if (location.hash !== "#tools") return;
+      var apps = [], seen = {};
+      // manifest 从新到旧，倒过来遍历，记下每个工具第一次被推荐的日期
+      state.dates.slice().reverse().forEach(function (d) {
+        var issue = (window.AI_DAILY || {})[d];
+        ((issue && issue.apps) || []).forEach(function (a) {
+          var key = a.name.trim().toLowerCase();
+          if (!seen[key]) { seen[key] = true; apps.push({ app: a, date: d }); }
+        });
+      });
+      // 新的日期在前，同一天内保持原有顺序（sort 是稳定排序）
+      apps.sort(function (x, y) { return x.date < y.date ? 1 : x.date > y.date ? -1 : 0; });
+      $subtitle.textContent = "工具库 · 共 " + apps.length + " 个";
+      if (!apps.length) notice("还没有推荐过工具。");
+      else renderLibrary(apps);
+    });
+  }
+
+  // ---------- 实时热点 ----------
+  var TOPIC_COLORS = { ai: "model", bigtech: "industry", risk: "warn", money: "research", chip: "tools" };
+  var HOT_SECTIONS = [
+    { kind: "hot", title: "国内热榜", desc: "国内热榜里命中关注词的条目，# 后面是它在原榜单的排名。" },
+    { kind: "news", title: "AI 资讯", desc: "国内外 AI 媒体和官方博客 48 小时内的文章，按时间排列。" },
+    { kind: "repo", title: "GitHub 本周新项目", desc: "最近 7 天新建、Star 最多的仓库。" }
+  ];
+  var HOT_PAGE = 20;
+
+  function timeAgo(iso) {
+    var m = Math.round((Date.now() - Date.parse(iso)) / 60000);
+    if (isNaN(m)) return "";
+    if (m < 1) return "刚刚";
+    if (m < 60) return m + " 分钟前";
+    if (m < 48 * 60) return Math.round(m / 60) + " 小时前";
+    return Math.round(m / 1440) + " 天前";
+  }
+
+  function hotRow(it, i, names, topicNames) {
+    var sub = [el("span", { text: names[it.source] || it.source })];
+    if (it.kind === "news") sub.push(el("span", { text: (it.region === "cn" ? "国内 · " : "国外 · ") + timeAgo(it.time) }));
+    if (it.kind === "repo") sub.push(el("span", { text: [formatStars(it.stars), it.lang].filter(Boolean).join(" · ") }));
+    (it.topics || []).forEach(function (t) { sub.push(tag(topicNames[t] || t, TOPIC_COLORS[t])); });
+    return el("li", { class: "hot-row" }, [
+      el("span", { class: "hot-rank", text: it.kind === "hot" ? "#" + it.rank : String(i + 1) }),
+      extLink(it.url, it.title),
+      el("div", { class: "hot-sub" }, sub),
+      it.desc ? el("p", { class: "hot-desc", text: it.desc }) : null
+    ]);
+  }
+
+  // 一个分区：列表先显示 HOT_PAGE 条，底部按钮每次再加 HOT_PAGE 条
+  function hotList(items, names, topicNames) {
+    var ul = el("ul", { class: "hot-list" });
+    var box = el("div", { class: "hot-box" }, [ul]);
+    var shown = 0;
+    var btn = el("button", { class: "more", type: "button" });
+    function more() {
+      items.slice(shown, shown + HOT_PAGE).forEach(function (it, i) { ul.appendChild(hotRow(it, shown + i, names, topicNames)); });
+      shown = Math.min(items.length, shown + HOT_PAGE);
+      if (shown >= items.length) btn.remove();
+      else btn.textContent = "再显示 " + Math.min(HOT_PAGE, items.length - shown) + " 条";
+    }
+    btn.addEventListener("click", more);
+    box.appendChild(btn);
+    more();
+    return box;
+  }
+
+  function renderHot(hot) {
+    var names = {}, topicNames = {};
+    hot.sources.forEach(function (s) { names[s.id] = s.name; });
+    hot.topics.forEach(function (t) { topicNames[t.id] = t.name; });
+    var ok = hot.sources.filter(function (s) { return s.ok; }).length;
+    $subtitle.textContent = "实时热点 · " + timeAgo(hot.generatedAt) + "更新 · " + ok + "/" + hot.sources.length + " 个数据源正常";
+
+    var $lists = el("div");
+    function draw() {
+      var q = state.hotQuery.trim().toLowerCase();
+      $lists.textContent = "";
+      HOT_SECTIONS.forEach(function (sec) {
+        var items = hot.items.filter(function (it) {
+          return it.kind === sec.kind &&
+            (state.hotTopic === "all" || (it.topics || []).indexOf(state.hotTopic) >= 0) &&
+            (!q || (it.title + " " + (it.desc || "")).toLowerCase().indexOf(q) >= 0);
+        });
+        if (sec.kind === "news") items.sort(function (a, b) { return a.time < b.time ? 1 : a.time > b.time ? -1 : 0; });
+        if (sec.kind === "repo") items.sort(function (a, b) { return b.stars - a.stars; });
+        var body = items.length ? hotList(items, names, topicNames) : el("div", { class: "notice", text: "没有符合条件的条目。" });
+        $lists.appendChild(section(sec.title, items.length + " 条", sec.desc, body));
+      });
+    }
+
+    var topicOpts = { all: "全部" };
+    hot.topics.forEach(function (t) { topicOpts[t.id] = t.name; });
+    var search = el("input", { class: "search", type: "search", placeholder: "搜索标题", "aria-label": "搜索热点" });
+    search.value = state.hotQuery;
+    search.addEventListener("input", function () { state.hotQuery = search.value; draw(); });
+
+    var failed = hot.sources.filter(function (s) { return !s.ok; });
+    var status = el("details", { class: "status" }, [
+      el("summary", { text: "数据源状态：" + ok + " 个正常" + (failed.length ? "，" + failed.length + " 个失败" : "") }),
+      el("ul", {}, hot.sources.map(function (s) {
+        return el("li", { text: s.name + "：" + (s.ok ? "收录 " + s.count + " / 共 " + s.total : "失败（" + s.error + "）") });
+      }))
+    ]);
+
+    $content.innerHTML = "";
+    $content.appendChild(el("div", { class: "lib-tools" }, [
+      chipGroup("关注分组", topicOpts, state.hotTopic, function (k) { state.hotTopic = k; draw(); }),
+      search
+    ]));
+    $content.appendChild($lists);
+    $content.appendChild(status);
+    draw();
+  }
+
+  function showHot() {
+    $subtitle.textContent = "实时热点";
+    notice("加载中…");
+    // 加时间戳，避免浏览器用缓存的旧数据
+    loadScript("data/hot.js?t=" + Date.now()).then(function () {
+      if (location.hash !== "#hot") return;
+      if (window.AI_HOT && window.AI_HOT.items) renderHot(window.AI_HOT);
+      else notice("<code>data/hot.js</code> 里没有数据。");
+    }, function () {
+      if (location.hash === "#hot") notice("还没有实时热点数据。运行 <code>node scripts/crawl.mjs</code> 抓取一次；部署到 GitHub 后会定时自动更新。");
+    });
+  }
+
+  function setTabs(view) {
+    ["daily", "hot", "tools"].forEach(function (v) {
+      document.getElementById("tab-" + v).setAttribute("aria-current", String(v === view));
+    });
+  }
+
+  function show() {
+    var wanted = decodeURIComponent(location.hash.slice(1));
+    if (wanted === "tools" || wanted === "hot") {
+      setTabs(wanted);
+      state.date = null;
+      renderDates();
+      if (wanted === "tools") showLibrary(); else showHot();
+      return;
+    }
+    setTabs("daily");
+    if (!state.dates.length) {
+      $subtitle.textContent = "";
+      notice("还没有日报。在 Claude Code 里运行 <code>/ai日报</code> 生成第一期。");
+      return;
+    }
+    state.date = state.dates.indexOf(wanted) >= 0 ? wanted : state.dates[0];
+    renderDates();
+    if ((window.AI_DAILY || {})[state.date]) { renderIssue(true); return; }
+    $subtitle.textContent = formatDate(state.date, true);
+    notice("加载中…");
+    var date = state.date;
+    loadScript("data/" + date + ".js").then(function () {
+      if (date !== state.date) return;
+      if ((window.AI_DAILY || {})[date]) renderIssue(true);
+      else notice("<code>data/" + date + ".js</code> 里没有这一天的数据。");
+    }, function () {
+      if (date === state.date) notice("这一期的数据文件 <code>data/" + date + ".js</code> 加载失败，可以切换到其他日期。");
+    });
+  }
+
+  renderTitle();
+  loadScript("data/manifest.js").catch(function () {}).then(function () {
+    var m = window.AI_DAILY_MANIFEST;
+    state.dates = Array.isArray(m) ? m.slice() : [];
+    window.addEventListener("hashchange", show);
+    show();
+  });
+})();
+</script>
+</body>
+</html>

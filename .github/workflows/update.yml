@@ -1,0 +1,67 @@
+name: 抓取热点并发布网站
+
+# 每 3 小时抓一次实时热点；推送新日报（push 到 main）时也会重新发布。
+# 第一次使用前：仓库 Settings → Pages → Source 选 “GitHub Actions”。
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 把抓到的 data/hot.js 提交回仓库
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 运行测试
+        run: node --test "scripts/**/*.test.mjs"
+
+      - name: 校验所有日报数据
+        run: for f in data/20*.js; do node scripts/validate.mjs "$f" || exit 1; done
+
+      - name: 抓取实时热点
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/crawl.mjs || echo "抓取失败，沿用上一次的数据"
+
+      - name: 提交热点数据
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/hot.js
+          if git diff --staged --quiet; then
+            echo "热点数据没有变化"
+          else
+            git commit -m "chore: 更新实时热点 [skip ci]"
+            git pull --rebase && git push || echo "提交失败，下次再试"
+          fi
+
+      - name: 准备网站文件
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -r data _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
