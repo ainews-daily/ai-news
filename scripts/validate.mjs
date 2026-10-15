@@ -164,7 +164,7 @@ function validateDesign(list) {
 function validatePricing(list) {
   const errors = [];
   if (!Array.isArray(list)) return ["pricing 应为数组"];
-  if (list.length > 5) errors.push(`价格动态最多 5 条，实际 ${list.length}`);
+  if (list.length > 8) errors.push(`价格动态最多 8 条，实际 ${list.length}`);
   list.forEach((it, i) => {
     const at = `价格 ${i + 1}`;
     checkEntry(errors, at, it, 2, 3);
@@ -177,12 +177,14 @@ function validatePricing(list) {
 function validateVoices(list) {
   const errors = [];
   if (!Array.isArray(list)) return ["voices 应为数组"];
-  if (list.length < 2 || list.length > 4) errors.push(`大佬观点数量应为 2–4，实际 ${list.length}`);
+  if (list.length < 4 || list.length > 8) errors.push(`大佬观点数量应为 4–8，实际 ${list.length}`);
+  if (list.length && !list.some((it) => it.region === "cn")) errors.push("大佬观点至少要有 1 条国内人物");
   list.forEach((it, i) => {
     const at = `观点 ${i + 1}`;
     checkEntry(errors, at, it, 2, 4);
     if (!isText(it.person)) errors.push(`${at}：缺少 person`);
     if (!isText(it.role)) errors.push(`${at}：缺少 role`);
+    if (!REGIONS.includes(it.region)) errors.push(`${at}：region 非法：${it.region}`);
     if (!DATE_RE.test(it.said || "")) errors.push(`${at}：said 应为 YYYY-MM-DD：${it.said}`);
   });
   return errors;

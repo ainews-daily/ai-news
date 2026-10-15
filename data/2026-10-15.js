@@ -328,15 +328,47 @@ window.AI_DAILY["2026-10-15"] = {
       summary: "黄仁勋在伦敦接受彭博社 Emily Chang 采访时说，如果客户开发不安全、不负责任的 AI，英伟达可能采取断供芯片这类极端措施，但他强调这还是假设性问题。他也承认英伟达是通用技术，对别人怎么用“能作出的评判其实非常有限”。他反对放缓 AI 发展，认为“AI 本身就是最好的监控工具”。",
       person: "黄仁勋",
       role: "英伟达 CEO",
+      region: "intl",
       said: "2026-10-14",
       source: "IT之家（援引彭博社专访）",
       url: "https://www.ithome.com/1/013/164.htm"
+    },
+    {
+      title: "周鸿祎：AI 失控是确定的事，只能用 AI 对抗 AI",
+      summary: "周鸿祎在钛媒体视频播客《DeepPractice 深度实践》的访谈中说，“AI 失控是一个确定性的事，不可避免”，理由是大模型已经升级成能操作现实世界的智能体。他主张用安全智能体去对抗攻击智能体，“没有攻不破的盾，敌人一定会进来”。在技术路线上，他认为“开源绝对必胜”。",
+      person: "周鸿祎",
+      role: "360 集团创始人",
+      region: "cn",
+      said: "2026-10-14",
+      source: "钛媒体（网易号转载）",
+      url: "https://www.163.com/dy/article/L97172DI05118O92.html"
+    },
+    {
+      title: "Nadella：要假设模型已被攻破，给 AI 装“紧急刹车”",
+      summary: "Satya Nadella 10 月 10 日在 X 上发长文说，“我们必须假设模型已经被攻破，从一开始就把它控制住”，并把它比作紧急刹车：有权限的人应该随时能在任务中途暂停或关停模型。他建议关键决策不要只依赖单个模型，智能体的操作要留不可篡改的记录，并接受独立审计。他还呼吁企业公开重大的 AI 故障和安全事件。",
+      person: "Satya Nadella",
+      role: "微软 CEO",
+      region: "intl",
+      said: "2026-10-10",
+      source: "ThePrint（彭博社供稿）",
+      url: "https://theprint.in/world/microsoft-ceo-satya-nadella-calls-for-emergency-brake-on-advanced-ai/3068211/"
+    },
+    {
+      title: "扎克伯格：Meta 已经追到 AI 前沿，不会放慢",
+      summary: "Muse 新模型发布当天，扎克伯格对《金融时报》说 Meta 已经到达 AI 能力的“前沿”，“走到这一步需要大量的算力和投入”。他表示会继续加大算力投入，并拒绝了放缓 AI 发展的呼声。",
+      person: "扎克伯格",
+      role: "Meta CEO",
+      region: "intl",
+      said: "2026-10-12",
+      source: "Semafor（援引《金融时报》）",
+      url: "https://www.semafor.com/article/10/12/2026/meta-has-reached-ai-frontier-zuckerberg-says"
     },
     {
       title: "Cerebras CEO：家用 AI 助理不远了",
       summary: "Andrew Feldman 在 TechCrunch Disrupt 2026 上说，人人家里有私人 AI 助理的日子“并不遥远”，它会像手机一样，一部分在设备上算、一部分交给云端。他认为这些助理会了解用户，“肯定会拿到信用卡，替你买东西”。他自己已经用多个智能体管理日程、在通话前调研对方。",
       person: "Andrew Feldman",
       role: "Cerebras 联合创始人兼 CEO",
+      region: "intl",
       said: "2026-10-13",
       source: "TechCrunch",
       url: "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/"
@@ -346,6 +378,7 @@ window.AI_DAILY["2026-10-15"] = {
       summary: "Google DeepMind 的 Haydn Belfield 引用 Gemini 4 Argon 安全报告的数据称，内部没有观察到 AI 明显加速 AI 研究本身。虽然 AI 已写出超过 75% 的生产代码，但约 88% 的改动仍需人工审核，完全交给 AI 的改动只从 7.5% 升到 11.9%。他说创造性研究、新实验设计和长期规划仍离不开人，这和 Hinton、Bengio 等人对“智能爆炸”的警告形成对比。",
       person: "Haydn Belfield",
       role: "Google DeepMind 研究员",
+      region: "intl",
       said: "2026-10-14",
       source: "The Decoder",
       url: "https://the-decoder.com/google-says-self-improving-ai-isnt-anywhere-close/"
@@ -375,6 +408,22 @@ window.AI_DAILY["2026-10-15"] = {
       change: "limit",
       source: "XenoSpectrum（援引 OpenAI 帮助中心）",
       url: "https://xenospectrum.com/en/chatgpt-pro-reopen-usage-cut/"
+    },
+    {
+      title: "Claude Max 和 Team 每月附送 API 额度",
+      summary: "Anthropic 10 月 7 日起给 Max 和 Team 订阅附送每月 Claude API 额度：Max 5x 送 100 美元，Max 20x 送 200 美元，Team 按席位最多合计 500 美元。额度可用于 Claude API、Managed Agents、Agent SDK 和 Playground，但不能用于 Claude Code，每个账期清零不累计。Free、Pro 和 Enterprise 不在范围内。",
+      product: "Claude",
+      change: "new",
+      source: "Claude 开发者文档",
+      url: "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers"
+    },
+    {
+      title: "微软 Copilot 12 月起可单独购买",
+      summary: "微软 10 月 14 日通知合作伙伴，12 月 1 日起 Microsoft 365 Copilot 和 Copilot Business 不再要求先买 Microsoft 365 基础订阅，价格和现在一样。同一天起，通过 CSP 新购的 Copilot Business 默认开启按量计费，默认上限是每人每月 4000 个 Copilot 点数，管理员可以调整。现有订阅不受影响。",
+      product: "Microsoft Copilot",
+      change: "new",
+      source: "Microsoft Learn 合作伙伴公告",
+      url: "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october"
     }
   ],
   design: [

@@ -240,19 +240,24 @@ test("价格动态 0–5 条，需要 product 和 change", () => {
   const errors = validateIssue(issue);
   assert.ok(hasError(errors, "价格 2：缺少 product"));
   assert.ok(hasError(errors, "价格 2：change"));
-  issue.pricing = [1, 2, 3, 4, 5, 6].map((i) => entry(i, { product: "Claude", change: "new" }));
-  assert.ok(hasError(validateIssue(issue), "价格动态最多 5 条"));
+  issue.pricing = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => entry(i, { product: "Claude", change: "new" }));
+  assert.ok(hasError(validateIssue(issue), "价格动态最多 8 条"));
 });
 
-test("大佬观点 2–4 条，需要人物、身份和日期", () => {
+test("大佬观点 4–8 条，需要人物、身份、地区和日期，至少 1 条国内", () => {
   const issue = makeIssue();
-  issue.voices = [1, 2].map((i) => entry(i, { person: "黄仁勋", role: "英伟达 CEO", said: "2026-10-14" }));
+  issue.voices = [1, 2, 3, 4].map((i) => entry(i, { person: "黄仁勋", role: "英伟达 CEO", region: i === 1 ? "cn" : "intl", said: "2026-10-14" }));
   assert.deepEqual(validateIssue(issue), []);
-  delete issue.voices[0].role;
-  issue.voices[1].said = "昨天";
-  const errors = validateIssue(issue);
-  assert.ok(hasError(errors, "观点 1：缺少 role"));
-  assert.ok(hasError(errors, "观点 2：said"));
-  issue.voices = issue.voices.slice(0, 1);
+  delete issue.voices[1].role;
+  issue.voices[2].said = "昨天";
+  issue.voices[3].region = "us";
+  let errors = validateIssue(issue);
+  assert.ok(hasError(errors, "观点 2：缺少 role"));
+  assert.ok(hasError(errors, "观点 3：said"));
+  assert.ok(hasError(errors, "观点 4：region"));
+  issue.voices = issue.voices.slice(0, 2);
   assert.ok(hasError(validateIssue(issue), "大佬观点数量"));
+  const noCn = makeIssue();
+  noCn.voices = [1, 2, 3, 4].map((i) => entry(i, { person: "A", role: "B", region: "intl", said: "2026-10-14" }));
+  assert.ok(hasError(validateIssue(noCn), "至少要有 1 条国内人物"));
 });

@@ -457,12 +457,12 @@
       var vg = el("div", { class: "grid" });
       issue.voices.forEach(function (v, i) {
         vg.appendChild(card({
-          tags: [tag(v.person, "model"), tag(v.role, null, "region"), tag(formatDate(v.said), null, "region")],
+          tags: [tag(v.person, "model"), tag(v.region === "cn" ? "国内" : "国外", null, "region"), tag(v.role, null, "region"), tag(formatDate(v.said), null, "region")],
           title: v.title, url: v.url, body: v.summary,
           foot: sourceLine("出处：", v.source, v.url)
         }, i, true));
       });
-      $content.appendChild(section("大佬观点", issue.voices.length + " 条", "AI 领域人物最近公开说了什么，都附原始出处。", vg));
+      $content.appendChild(section("大佬观点", issue.voices.length + " 条", "国内外 AI 领域人物最近公开说了什么，都附原始出处。", vg));
     }
 
     if (issue.pricing && issue.pricing.length) {
@@ -474,7 +474,7 @@
           foot: sourceLine("来源：", p.source, p.url)
         }, i, true));
       });
-      $content.appendChild(section("AI 价格动态", issue.pricing.length + " 条", "ChatGPT、Claude、Gemini、Grok 等的订阅和 API 价格、额度变化。", pg));
+      $content.appendChild(section("AI 价格动态", issue.pricing.length + " 条", "ChatGPT、Claude、Gemini、Grok 及国产大模型的订阅和 API 价格、额度变化（近两周）。", pg));
     }
 
     if (issue.corp && issue.corp.length) {
