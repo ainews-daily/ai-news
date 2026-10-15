@@ -511,7 +511,7 @@
 
   function loadIssue(date) {
     if ((window.AI_DAILY || {})[date]) return Promise.resolve(true);
-    return loadScript("data/" + date + ".js").then(function () { return !!(window.AI_DAILY || {})[date]; }, function () { return false; });
+    return loadScript("data/" + date + ".js?t=" + Date.now()).then(function () { return !!(window.AI_DAILY || {})[date]; }, function () { return false; });
   }
 
   function renderLibrary(apps) {
@@ -717,7 +717,7 @@
     $subtitle.textContent = formatDate(state.date, true);
     notice("加载中…");
     var date = state.date;
-    loadScript("data/" + date + ".js").then(function () {
+    loadScript("data/" + date + ".js?t=" + Date.now()).then(function () {
       if (date !== state.date) return;
       if ((window.AI_DAILY || {})[date]) renderIssue(true);
       else notice("<code>data/" + date + ".js</code> 里没有这一天的数据。");
