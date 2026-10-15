@@ -9,7 +9,7 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
 
 ## 步骤
 
-1. **确定日期并同步**：运行 `date +%F` 取本地日期，记为 `D`。如果项目是 git 仓库且配置了远程，先运行 `git pull --rebase`，拿到 GitHub Actions 最新抓取的 `data/hot.js`。
+1. **确定日期并同步**：运行 `TZ=Asia/Shanghai date +%F` 取北京时间的日期（云端是 UTC 时区，不能直接用 `date +%F`），记为 `D`。如果项目是 git 仓库且配置了远程，先运行 `git pull --rebase`，拿到 GitHub Actions 最新抓取的 `data/hot.js`。
 
 2. **读往期去重**：读取 `data/manifest.js`，再读最近 3 期的数据文件（不含 `D`），列出已经报道过的事件。同一事件只有出现重大新进展时才再次收录，而且要在标题里写明新进展。
 
@@ -83,6 +83,20 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
    ```
 
 7. **校验**：运行 `node scripts/validate.mjs data/D.js`。有报错就修改后重跑，直到通过为止。
+
+7b. **翻译 AI 资讯标题**：把 `data/hot.js` 里 `kind: "news"` 且标题不含中文的条目翻译成中文，写入 `data/title-zh.js`（整个文件覆盖）：
+
+   ```js
+   // 由 /ai日报 生成：实时热点里 AI 资讯英文标题的中文翻译，键是原文链接
+   window.AI_TITLE_ZH = {
+     "https://原文链接": "中文标题"
+   };
+   ```
+
+   - 键必须和 `hot.js` 里的 `url` 完全一致；只保留当前 `hot.js` 里还有的条目，不留旧的。
+   - 意译成通顺的中文标题，产品名、公司名、人名保留原文；HTML 实体（如 `&#8217;`）按原意处理。去掉 Google News 标题末尾的“ - Anthropic”这类来源后缀。
+   - 写完运行 `node -e "global.window={};require('./data/title-zh.js');console.log(Object.keys(window.AI_TITLE_ZH).length)"` 确认文件能正常加载。
+   - 网页显示时有中文标题就用中文，英文原文以小字附在下方；没有翻译的条目照常显示英文。
 
 8. **发布**：如果项目是 git 仓库且配置了远程：`git add data/` → `git commit -m "日报：D"` → `git pull --rebase` → `git push`。推送后 GitHub Actions 会自动更新网站。推送失败（比如网络问题）时告诉用户，文件已经保存在本地，之后再推送即可。
 
