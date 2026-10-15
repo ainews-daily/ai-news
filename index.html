@@ -673,7 +673,7 @@
   }
 
   renderTitle();
-  loadScript("data/manifest.js").catch(function () {}).then(function () {
+  loadScript("data/manifest.js?t=" + Date.now()).catch(function () {}).then(function () {
     var m = window.AI_DAILY_MANIFEST;
     state.dates = Array.isArray(m) ? m.slice() : [];
     window.addEventListener("hashchange", show);
