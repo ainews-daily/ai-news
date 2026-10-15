@@ -116,6 +116,8 @@
   /* 筛选 */
   .filters { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 18px; }
   .chip-group { display: flex; flex-wrap: wrap; gap: 6px; }
+  .jump { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 18px 0 4px; }
+  .jump-label { color: var(--muted); font-size: 13px; margin-right: 4px; }
   .chip {
     font: inherit; font-size: 13px; padding: 5px 12px; border-radius: 999px; cursor: pointer;
     border: 1px solid var(--border); background: var(--surface); color: var(--muted);
@@ -507,6 +509,16 @@
       });
       $content.appendChild(section("AI 落地观察", issue.insights.length + " 条", "哪些行业在用 AI、怎么用、催生了哪些新职业。", ig));
     }
+
+    // 版块导航：版块多，往下的内容不容易发现，点一下滚动到对应版块
+    var jump = el("nav", { class: "jump", "aria-label": "版块导航" }, [el("span", { class: "jump-label", text: "跳到" })]);
+    Array.from($content.querySelectorAll(".section")).forEach(function (sec) {
+      var name = sec.querySelector("h2").textContent;
+      var b = el("button", { class: "chip", type: "button", text: name });
+      b.addEventListener("click", function () { sec.scrollIntoView({ behavior: "smooth", block: "start" }); });
+      jump.appendChild(b);
+    });
+    $content.insertBefore(jump, $content.querySelector(".highlights").nextSibling);
   }
 
   function loadIssue(date) {
