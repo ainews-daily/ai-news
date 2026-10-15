@@ -243,6 +243,7 @@
       <nav class="tabs" aria-label="视图">
         <a href="#" id="tab-daily">精选日报</a>
         <a href="#hot" id="tab-hot">实时热点</a>
+        <a href="#design" id="tab-design">设计</a>
         <a href="#tools" id="tab-tools">工具库</a>
       </nav>
     </header>
@@ -268,7 +269,7 @@
   var PRICE_COLORS = { up: "warn", down: "research", new: "model", free: "tools", limit: "industry" };
   var WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"];
 
-  var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", hotTopic: "all", hotQuery: "" };
+  var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", designKind: "all", designQuery: "", hotTopic: "all", hotQuery: "" };
   var $dates = document.getElementById("dates");
   var $subtitle = document.getElementById("subtitle");
   var $content = document.getElementById("content");
@@ -407,6 +408,14 @@
     }, i, animate);
   }
 
+  // since：设计页里显示是哪一期收录的
+  function designCard(d, i, animate, since) {
+    var tags = [tag(DESIGN_KINDS[d.kind] || d.kind, DESIGN_COLORS[d.kind])];
+    if (d.price) tags.push(tag(d.price, null, "region"));
+    if (since) tags.push(tag(since, null, "region"));
+    return card({ tags: tags, title: d.title, url: d.url, body: d.summary, foot: sourceLine("来源：", d.source, d.url) }, i, animate);
+  }
+
   function renderNews(issue, $box, animate) {
     var items = issue.items.filter(function (it) {
       return (state.category === "all" || it.category === state.category) &&
@@ -482,13 +491,7 @@
 
     if (issue.design && issue.design.length) {
       var dg = el("div", { class: "grid" });
-      issue.design.forEach(function (d, i) {
-        dg.appendChild(card({
-          tags: [tag(DESIGN_KINDS[d.kind] || d.kind, DESIGN_COLORS[d.kind])].concat(d.price ? [tag(d.price, null, "region")] : []),
-          title: d.title, url: d.url, body: d.summary,
-          foot: sourceLine("来源：", d.source, d.url)
-        }, i, true));
-      });
+      issue.design.forEach(function (d, i) { dg.appendChild(designCard(d, i, true)); });
       $content.appendChild(section("设计专栏", issue.design.length + " 条", "给 UI / 设计同学：新设计工具、Figma 和 VS Code 插件、优惠信息、设计圈动态。", dg));
     }
 
@@ -575,6 +578,59 @@
       $subtitle.textContent = "工具库 · 共 " + apps.length + " 个";
       if (!apps.length) notice("还没有推荐过工具。");
       else renderLibrary(apps);
+    });
+  }
+
+  // ---------- 设计 ----------
+
+  function renderDesign(list) {
+    var $list = el("div");
+    function draw(animate) {
+      var q = state.designQuery.trim().toLowerCase();
+      var shown = list.filter(function (x) {
+        var d = x.item;
+        return (state.designKind === "all" || d.kind === state.designKind) &&
+               (!q || (d.title + " " + d.summary + " " + (d.price || "")).toLowerCase().indexOf(q) >= 0);
+      });
+      $list.textContent = "";
+      $list.appendChild(el("p", { class: "count", text: "显示 " + shown.length + " / " + list.length + " 条" }));
+      if (!shown.length) { $list.appendChild(el("div", { class: "notice", text: "没有符合条件的内容。" })); return; }
+      var grid = el("div", { class: "grid" });
+      shown.forEach(function (x, i) { grid.appendChild(designCard(x.item, i, animate, formatDate(x.date).split(" · ")[0])); });
+      $list.appendChild(grid);
+    }
+    var kindOpts = { all: "全部" };
+    Object.keys(DESIGN_KINDS).forEach(function (k) { kindOpts[k] = DESIGN_KINDS[k]; });
+    var search = el("input", { class: "search", type: "search", placeholder: "搜索工具、插件、优惠", "aria-label": "搜索设计内容" });
+    search.value = state.designQuery;
+    search.addEventListener("input", function () { state.designQuery = search.value; draw(false); });
+    $content.innerHTML = "";
+    $content.appendChild(el("div", { class: "lib-tools" }, [
+      chipGroup("设计分类", kindOpts, state.designKind, function (k) { state.designKind = k; draw(false); }),
+      search
+    ]));
+    $content.appendChild($list);
+    draw(true);
+  }
+
+  function showDesign() {
+    $subtitle.textContent = "设计 · 往期设计专栏汇总";
+    notice("加载中…");
+    Promise.all(state.dates.map(loadIssue)).then(function () {
+      if (location.hash !== "#design") return;
+      // manifest 从新到旧；同一链接只保留最新一期的那条
+      var list = [], seen = {};
+      state.dates.forEach(function (d) {
+        var issue = (window.AI_DAILY || {})[d];
+        ((issue && issue.design) || []).forEach(function (it) {
+          if (seen[it.url]) return;
+          seen[it.url] = true;
+          list.push({ item: it, date: d });
+        });
+      });
+      $subtitle.textContent = "设计 · 共 " + list.length + " 条";
+      if (!list.length) notice("还没有设计专栏内容。");
+      else renderDesign(list);
     });
   }
 
@@ -703,18 +759,20 @@
   }
 
   function setTabs(view) {
-    ["daily", "hot", "tools"].forEach(function (v) {
+    ["daily", "hot", "design", "tools"].forEach(function (v) {
       document.getElementById("tab-" + v).setAttribute("aria-current", String(v === view));
     });
   }
 
   function show() {
     var wanted = decodeURIComponent(location.hash.slice(1));
-    if (wanted === "tools" || wanted === "hot") {
+    if (wanted === "tools" || wanted === "hot" || wanted === "design") {
       setTabs(wanted);
       state.date = null;
       renderDates();
-      if (wanted === "tools") showLibrary(); else showHot();
+      if (wanted === "tools") showLibrary();
+      else if (wanted === "design") showDesign();
+      else showHot();
       return;
     }
     setTabs("daily");
