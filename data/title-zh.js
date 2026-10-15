@@ -1,4 +1,5 @@
-// 由 /ai日报 生成：实时热点里 AI 资讯英文标题的中文翻译，键是原文链接
+// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/amp-beyond-coding": "Amp 借助 OpenAI 模型，让 AI 智能体做编程以外的工作",
   "https://openai.com/index/sentinelone": "SentinelOne 把恶意软件分析从几周缩短到几小时",
@@ -66,4 +67,27 @@ window.AI_TITLE_ZH = {
   "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/": "AI 正在大规模反编译游戏，既厉害又可怕",
   "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/": "Anthropic 重新设计版本控制系统",
   "https://simonwillison.net/2026/Oct/13/llm-gemini/": "llm-gemini 0.35 发布"
+};
+window.AI_DESC_ZH = {
+  "https://github.com/storytold/craft-launcher": "Craft 应用启动器",
+  "https://github.com/jhaizhou-ops/d2r-mobile": "开源的《暗黑破坏神 II：狱火重生》iOS / macOS 兼容层，支持“术士之治”资料片，可以在 iPhone 等设备上原生运行你自己的 Switch 版游戏",
+  "https://github.com/onehumanbeing/esp32-iphone-agent": "用一块 7 美元的 ESP32 让 AI 模型操作真实的 iPhone：AirPlay 当眼睛、USB HID 当手，支持任何兼容 OpenAI 接口的视觉模型。不需要 Mac、开发者账号或越狱",
+  "https://github.com/shaongitbd/doory": "开源的 Canva 替代品",
+  "https://github.com/opengeos/RustGIS": "用纯 Rust 写的快速、免费、开源 GIS 软件",
+  "https://github.com/storytold/figcraft": "FigCraft：界面设计和原型工具，用纯 Rust 从零重新实现的开源协作设计工作流",
+  "https://github.com/rociiu/talorys": "部署在你自己 Cloudflare 账号里的个人 AI 智能体，支持聊天、记忆、任务、笔记和定时提醒，一条命令即可部署：npx create-talorys@latest",
+  "https://github.com/zhuyansen/new-term-radar": "AI 新名词每日雷达：在关键词工具收录之前，从 X、Hugging Face、GitHub 和网站地图里抓出新模型、新产品和新仓库的名字",
+  "https://github.com/marclou/mailcheap": "面向智能体时代的低价邮件通讯工具，开源，可以自己部署，也可以用 mailcheap.ai",
+  "https://github.com/HeyPuter/everything": "我们正在从零重写并开源全世界的软件",
+  "https://github.com/YeonwooSung/my-claude-code-mods": "作者自用的 Claude Code 自定义扩展",
+  "https://github.com/CoolkHz/gptibo": "可自部署的 GPTibo 店铺、后台和 Go 后端，脱敏后以 MIT 协议开源",
+  "https://github.com/deeplethe/solid-glass": "面向 AI 应用的设计系统，强调材质感、物理感、触感和技术感",
+  "https://github.com/n1tr00-10/tiktok-web-signature": "逆向 TikTok 网页版签名算法，为 API 请求生成有效签名",
+  "https://github.com/outcrawlai/scout": "Scout：Outcrawl 出品的开源浏览器智能体，从 Outcrawl 自己的仓库自动同步",
+  "https://github.com/chenwei810/Semiconductor_Manufacturing_Introduction": "半导体制造入门",
+  "https://github.com/SubmitGame/awesome-decomp-games": "已反编译、重编译和逆向的游戏清单，带评分并自动更新，包括反编译项目、静态重编译、源码移植、引擎重制和浏览器移植",
+  "https://github.com/zeusinsight/FinderSearch": "原生 macOS 文件浏览器，基于 fsearch，文件名模糊搜索很快",
+  "https://github.com/c22dev/muguet": "《GTA V》的 iOS / macOS 原生 Mach-O 移植版，支持多人联机",
+  "https://github.com/nateherkai/roast-room": "七位 AI 顾问（贝索斯、Paul Graham、Hormozi、Gary Vee、Dan Martell、Gino Wickman、巴菲特）在 Claude Code 里围坐一桌，现场辩论你的商业决策",
+  "https://github.com/npwitk/Macintosh-Skeletal-Filled": "一款像素字体，原来它叫 Macintosh Skeleton"
 };

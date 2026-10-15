@@ -112,19 +112,21 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
 
 7. **校验**：运行 `node scripts/validate.mjs data/D.js`。有报错就修改后重跑，直到通过为止。
 
-7b. **翻译 AI 资讯标题**：把 `data/hot.js` 里 `kind: "news"` 且标题不含中文的条目翻译成中文，写入 `data/title-zh.js`（整个文件覆盖）：
+7b. **翻译实时热点里的英文**：实时热点页的卡片要全部显示中文，大家主要看卡片。把 `data/hot.js` 里的英文翻译好，写入 `data/title-zh.js`（整个文件覆盖）：
+   - `kind: "news"` 且标题不含中文的条目：翻译 `title`，写进 `AI_TITLE_ZH`；
+   - `kind: "repo"` 且 `desc` 不含中文的条目：翻译 `desc`，写进 `AI_DESC_ZH`（仓库名 `title` 不翻）。
 
    ```js
-   // 由 /ai日报 生成：实时热点里 AI 资讯英文标题的中文翻译，键是原文链接
-   window.AI_TITLE_ZH = {
-     "https://原文链接": "中文标题"
-   };
+   // 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+   // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
+   window.AI_TITLE_ZH = { "https://原文链接": "中文标题" };
+   window.AI_DESC_ZH = { "https://github.com/owner/repo": "中文简介" };
    ```
 
    - 键必须和 `hot.js` 里的 `url` 完全一致；只保留当前 `hot.js` 里还有的条目，不留旧的。
-   - 意译成通顺的中文标题，产品名、公司名、人名保留原文；HTML 实体（如 `&#8217;`）按原意处理。去掉 Google News 标题末尾的“ - Anthropic”这类来源后缀。
-   - 写完运行 `node -e "global.window={};require('./data/title-zh.js');console.log(Object.keys(window.AI_TITLE_ZH).length)"` 确认文件能正常加载。
-   - 网页显示时有中文标题就用中文，英文原文以小字附在下方；没有翻译的条目照常显示英文。
+   - 意译成通顺的中文，产品名、公司名、人名、命令保留原文；HTML 实体（如 `&#8217;`）按原意处理；去掉 Google News 标题末尾“ - Anthropic”这类来源后缀；简介被截断的按已有内容翻译，不要补编。
+   - 写完运行 `node -e "global.window={};require('./data/title-zh.js');console.log(Object.keys(window.AI_TITLE_ZH).length, Object.keys(window.AI_DESC_ZH).length)"` 确认能正常加载。
+   - 网页有翻译就只显示中文，英文原标题放在鼠标悬停提示里；没有翻译的照常显示英文。
 
 8. **发布**：如果项目是 git 仓库且配置了远程：`git add data/` → `git commit -m "日报：D"` → `git pull --rebase` → `git push`。推送后 GitHub Actions 会自动更新网站。推送失败（比如网络问题）时告诉用户，文件已经保存在本地，之后再推送即可。
 
