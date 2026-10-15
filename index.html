@@ -637,7 +637,7 @@
   // ---------- 实时热点 ----------
   var TOPIC_COLORS = { ai: "model", bigtech: "industry", risk: "warn", money: "research", chip: "tools" };
   var HOT_SECTIONS = [
-    { kind: "hot", title: "国内热榜", desc: "国内热榜里命中关注词的条目，# 后面是它在原榜单的排名。" },
+    { kind: "hot", title: "国内热榜", desc: "各大热榜里命中关注词的条目，按热度从高到低混排；来源后面是它在原榜单的名次。" },
     { kind: "news", title: "AI 资讯", desc: "国内外 AI 媒体和官方博客 48 小时内的文章，按时间排列。" },
     { kind: "repo", title: "GitHub 本周新项目", desc: "最近 7 天新建、Star 最多的仓库。" }
   ];
@@ -661,15 +661,16 @@
   }
 
   function hotRow(it, i, names, topicNames) {
+    var srcName = names[it.source] || it.source;
     var zh = zhTitle(it), desc = zhDesc(it) || it.desc;
     var link = extLink(it.url, zh || it.title);
     if (zh) link.title = "原文：" + it.title;
-    var sub = [el("span", { text: names[it.source] || it.source })];
+    var sub = [el("span", { text: it.kind === "hot" ? srcName + " 第 " + it.rank + " 位" : srcName })];
     if (it.kind === "news") sub.push(el("span", { text: (it.region === "cn" ? "国内 · " : "国外 · ") + timeAgo(it.time) }));
     if (it.kind === "repo") sub.push(el("span", { text: [formatStars(it.stars), it.lang].filter(Boolean).join(" · ") }));
     (it.topics || []).forEach(function (t) { sub.push(tag(topicNames[t] || t, TOPIC_COLORS[t])); });
     return el("li", { class: "hot-row" }, [
-      el("span", { class: "hot-rank", text: it.kind === "hot" ? "#" + it.rank : String(i + 1) }),
+      el("span", { class: "hot-rank", text: String(i + 1) }),
       link,
       el("div", { class: "hot-sub" }, sub),
       desc ? el("p", { class: "hot-desc", text: desc }) : null
@@ -696,7 +697,8 @@
 
   function renderHot(hot) {
     var names = {}, topicNames = {};
-    hot.sources.forEach(function (s) { names[s.id] = s.name; });
+    var totals = {};
+    hot.sources.forEach(function (s) { names[s.id] = s.name; totals[s.id] = s.total; });
     hot.topics.forEach(function (t) { topicNames[t.id] = t.name; });
     var ok = hot.sources.filter(function (s) { return s.ok; }).length;
     $subtitle.textContent = "实时热点 · " + timeAgo(hot.generatedAt) + "更新 · " + ok + "/" + hot.sources.length + " 个数据源正常";
@@ -711,6 +713,8 @@
             (state.hotTopic === "all" || (it.topics || []).indexOf(state.hotTopic) >= 0) &&
             (!q || (it.title + " " + zhTitle(it) + " " + (it.desc || "") + " " + zhDesc(it)).toLowerCase().indexOf(q) >= 0);
         });
+        // 各榜单长度不同，用“名次 ÷ 榜单总条数”比较热度，名次相对越靠前越热
+        if (sec.kind === "hot") items.sort(function (a, b) { return a.rank / (totals[a.source] || 50) - b.rank / (totals[b.source] || 50); });
         if (sec.kind === "news") items.sort(function (a, b) { return a.time < b.time ? 1 : a.time > b.time ? -1 : 0; });
         if (sec.kind === "repo") items.sort(function (a, b) { return b.stars - a.stars; });
         var body = items.length ? hotList(items, names, topicNames) : el("div", { class: "notice", text: "没有符合条件的条目。" });
