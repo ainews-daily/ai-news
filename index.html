@@ -261,6 +261,10 @@
   var APP_COLORS = { office: "model", coding: "research", system: "industry", fun: "tools" };
   var INSIGHT_KINDS = { industry: "行业应用", usage: "怎么用 AI", jobs: "职业变化" };
   var INSIGHT_COLORS = { industry: "model", usage: "research", jobs: "tools" };
+  var DESIGN_KINDS = { tool: "设计工具", plugin: "插件", deal: "优惠", trend: "设计动态" };
+  var DESIGN_COLORS = { tool: "model", plugin: "research", deal: "warn", trend: "tools" };
+  var PRICE_CHANGES = { up: "涨价", down: "降价", new: "新套餐", free: "免费开放", limit: "额度调整" };
+  var PRICE_COLORS = { up: "warn", down: "research", new: "model", free: "tools", limit: "industry" };
   var WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"];
 
   var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", hotTopic: "all", hotQuery: "" };
@@ -439,16 +443,52 @@
     ])));
     renderNews(issue, $news, true);
 
+    if (issue.voices && issue.voices.length) {
+      var vg = el("div", { class: "grid" });
+      issue.voices.forEach(function (v, i) {
+        vg.appendChild(card({
+          tags: [tag(v.person, "model"), tag(v.role, null, "region"), tag(formatDate(v.said), null, "region")],
+          title: v.title, url: v.url, body: v.summary,
+          foot: sourceLine("出处：", v.source, v.url)
+        }, i, true));
+      });
+      $content.appendChild(section("大佬观点", issue.voices.length + " 条", "AI 领域人物最近公开说了什么，都附原始出处。", vg));
+    }
+
+    if (issue.pricing && issue.pricing.length) {
+      var pg = el("div", { class: "grid" });
+      issue.pricing.forEach(function (p, i) {
+        pg.appendChild(card({
+          tags: [tag(PRICE_CHANGES[p.change] || p.change, PRICE_COLORS[p.change]), tag(p.product, null, "region")],
+          title: p.title, url: p.url, body: p.summary,
+          foot: sourceLine("来源：", p.source, p.url)
+        }, i, true));
+      });
+      $content.appendChild(section("AI 价格动态", issue.pricing.length + " 条", "ChatGPT、Claude、Gemini、Grok 等的订阅和 API 价格、额度变化。", pg));
+    }
+
     if (issue.corp && issue.corp.length) {
       var list = el("div", { class: "corp-list" });
       issue.corp.forEach(function (c, i) {
         list.appendChild(card({
-          tags: [tag(CORP_KINDS[c.kind] || c.kind, CORP_COLORS[c.kind]), tag(c.company, null, "region")],
+          tags: [tag(CORP_KINDS[c.kind] || c.kind, CORP_COLORS[c.kind]), tag(c.region === "intl" ? "国外" : "国内", null, "region"), tag(c.company, null, "region")],
           title: c.title, url: c.url, body: c.summary,
           foot: sourceLine("来源：", c.source, c.url)
         }, i, true));
       });
-      $content.appendChild(section("国内企业动态", issue.corp.length + " 条", "大企业的裁员、质量问题、处罚、人事和经营变化，不限于 AI。", list));
+      $content.appendChild(section("大厂动态", issue.corp.length + " 条", "国内外大企业的裁员、质量问题、处罚、人事和经营变化，不限于 AI。", list));
+    }
+
+    if (issue.design && issue.design.length) {
+      var dg = el("div", { class: "grid" });
+      issue.design.forEach(function (d, i) {
+        dg.appendChild(card({
+          tags: [tag(DESIGN_KINDS[d.kind] || d.kind, DESIGN_COLORS[d.kind])].concat(d.price ? [tag(d.price, null, "region")] : []),
+          title: d.title, url: d.url, body: d.summary,
+          foot: sourceLine("来源：", d.source, d.url)
+        }, i, true));
+      });
+      $content.appendChild(section("设计专栏", issue.design.length + " 条", "给 UI / 设计同学：新设计工具、Figma 和 VS Code 插件、优惠信息、设计圈动态。", dg));
     }
 
     if (issue.apps && issue.apps.length) {

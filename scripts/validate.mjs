@@ -10,6 +10,8 @@ const REGIONS = ["cn", "intl"];
 const APP_CATEGORIES = ["office", "coding", "system", "fun"];
 const INSIGHT_KINDS = ["industry", "usage", "jobs"];
 const CORP_KINDS = ["layoff", "quality", "penalty", "org", "business", "dispute"];
+const DESIGN_KINDS = ["tool", "plugin", "deal", "trend"];
+const PRICING_CHANGES = ["up", "down", "new", "free", "limit"];
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const URL_RE = /^https?:\/\/\S+$/;
 
@@ -59,6 +61,10 @@ export function validateIssue(issue) {
   }
 
   errors.push(...validateApps(issue.apps), ...validateInsights(issue.insights), ...validateCorp(issue.corp));
+  // 设计专栏、价格动态、大佬观点是 2026-10-15 起新增的版块，往期没有这些字段
+  if (issue.design !== undefined) errors.push(...validateDesign(issue.design));
+  if (issue.pricing !== undefined) errors.push(...validatePricing(issue.pricing));
+  if (issue.voices !== undefined) errors.push(...validateVoices(issue.voices));
   return errors;
 }
 
@@ -113,7 +119,11 @@ function validateInsights(list) {
 function validateCorp(list) {
   const errors = [];
   list = Array.isArray(list) ? list : [];
-  if (list.length < 5 || list.length > 8) errors.push(`企业动态数量应为 5–8，实际 ${list.length}`);
+  // region 省略时算国内；国内 5–8 条，国外大厂最多 3 条
+  const cn = list.filter((it) => (it.region || "cn") === "cn").length;
+  const intl = list.length - cn;
+  if (cn < 5 || cn > 8) errors.push(`国内企业动态应为 5–8 条，实际 ${cn}`);
+  if (intl > 3) errors.push(`国外大厂动态最多 3 条，实际 ${intl}`);
   list.forEach((it, i) => {
     const at = `企业 ${i + 1}`;
     if (!isText(it.title)) errors.push(`${at}：缺少标题`);
@@ -121,8 +131,59 @@ function validateCorp(list) {
     sentenceRange(errors, at, it.summary, 2, 3);
     if (!CORP_KINDS.includes(it.kind)) errors.push(`${at}：kind 非法：${it.kind}`);
     if (!isText(it.company)) errors.push(`${at}：缺少 company`);
+    if (it.region !== undefined && !REGIONS.includes(it.region)) errors.push(`${at}：region 非法：${it.region}`);
     if (!isText(it.source)) errors.push(`${at}：缺少 source`);
     if (!URL_RE.test(it.url || "")) errors.push(`${at}：url 无效：${it.url}`);
+  });
+  return errors;
+}
+
+// 通用：标题、摘要句数、来源、链接
+function checkEntry(errors, at, it, minSentences, maxSentences) {
+  if (!isText(it.title)) errors.push(`${at}：缺少标题`);
+  else if ([...it.title].length > 30) errors.push(`${at}：标题超过 30 字`);
+  sentenceRange(errors, at, it.summary, minSentences, maxSentences);
+  if (!isText(it.source)) errors.push(`${at}：缺少 source`);
+  if (!URL_RE.test(it.url || "")) errors.push(`${at}：url 无效：${it.url}`);
+}
+
+function validateDesign(list) {
+  const errors = [];
+  if (!Array.isArray(list)) return ["design 应为数组"];
+  if (list.length < 4 || list.length > 8) errors.push(`设计专栏数量应为 4–8，实际 ${list.length}`);
+  list.forEach((it, i) => {
+    const at = `设计 ${i + 1}`;
+    checkEntry(errors, at, it, 2, 3);
+    if (!DESIGN_KINDS.includes(it.kind)) errors.push(`${at}：kind 非法：${it.kind}`);
+    if (it.price !== undefined && !isText(it.price)) errors.push(`${at}：price 应为文字`);
+  });
+  return errors;
+}
+
+// 价格动态可以为空数组：当天没有变化就不收
+function validatePricing(list) {
+  const errors = [];
+  if (!Array.isArray(list)) return ["pricing 应为数组"];
+  if (list.length > 5) errors.push(`价格动态最多 5 条，实际 ${list.length}`);
+  list.forEach((it, i) => {
+    const at = `价格 ${i + 1}`;
+    checkEntry(errors, at, it, 2, 3);
+    if (!isText(it.product)) errors.push(`${at}：缺少 product`);
+    if (!PRICING_CHANGES.includes(it.change)) errors.push(`${at}：change 非法：${it.change}`);
+  });
+  return errors;
+}
+
+function validateVoices(list) {
+  const errors = [];
+  if (!Array.isArray(list)) return ["voices 应为数组"];
+  if (list.length < 2 || list.length > 4) errors.push(`大佬观点数量应为 2–4，实际 ${list.length}`);
+  list.forEach((it, i) => {
+    const at = `观点 ${i + 1}`;
+    checkEntry(errors, at, it, 2, 4);
+    if (!isText(it.person)) errors.push(`${at}：缺少 person`);
+    if (!isText(it.role)) errors.push(`${at}：缺少 role`);
+    if (!DATE_RE.test(it.said || "")) errors.push(`${at}：said 应为 YYYY-MM-DD：${it.said}`);
   });
   return errors;
 }

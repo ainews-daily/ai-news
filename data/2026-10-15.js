@@ -184,6 +184,24 @@ window.AI_DAILY["2026-10-15"] = {
       company: "小鹏汽车",
       source: "新浪财经",
       url: "https://finance.sina.cn/2026-10-14/detail-inivekps4477402.d.html"
+    },
+    {
+      title: "葛兰素史克拟在比利时裁员最多 1217 人",
+      summary: "据比利时《回声报》报道，葛兰素史克（GSK）10 月 14 日计划在比利时工厂裁减最多 1217 个职位，并已提前通知当地工会。报道没有说明裁员原因，公司暂未公开更多说明。",
+      kind: "layoff",
+      region: "intl",
+      company: "葛兰素史克（GSK）",
+      source: "英为财情（援引《回声报》）",
+      url: "https://cn.investing.com/news/stock-market-news/article-93CH-3607897"
+    },
+    {
+      title: "苹果盘中市值突破 5 万亿美元",
+      summary: "苹果 10 月 13 日（美东时间）盘中市值突破 5 万亿美元，是继英伟达之后第二家达到这一规模的美国公司。当天 AI 板块承压，资金把科技巨头当作避风港。",
+      kind: "business",
+      region: "intl",
+      company: "苹果",
+      source: "华尔街见闻",
+      url: "https://wallstreetcn.com/articles/3783492"
     }
   ],
   apps: [
@@ -302,6 +320,108 @@ window.AI_DAILY["2026-10-15"] = {
       source: "东方财富网（转载红星资本局）",
       asOf: "2025-12",
       url: "https://finance.eastmoney.com/a/202610063888776096.html"
+    }
+  ],
+  voices: [
+    {
+      title: "黄仁勋：客户若做不安全的 AI，可能断供芯片",
+      summary: "黄仁勋在伦敦接受彭博社 Emily Chang 采访时说，如果客户开发不安全、不负责任的 AI，英伟达可能采取断供芯片这类极端措施，但他强调这还是假设性问题。他也承认英伟达是通用技术，对别人怎么用“能作出的评判其实非常有限”。他反对放缓 AI 发展，认为“AI 本身就是最好的监控工具”。",
+      person: "黄仁勋",
+      role: "英伟达 CEO",
+      said: "2026-10-14",
+      source: "IT之家（援引彭博社专访）",
+      url: "https://www.ithome.com/1/013/164.htm"
+    },
+    {
+      title: "Cerebras CEO：家用 AI 助理不远了",
+      summary: "Andrew Feldman 在 TechCrunch Disrupt 2026 上说，人人家里有私人 AI 助理的日子“并不遥远”，它会像手机一样，一部分在设备上算、一部分交给云端。他认为这些助理会了解用户，“肯定会拿到信用卡，替你买东西”。他自己已经用多个智能体管理日程、在通话前调研对方。",
+      person: "Andrew Feldman",
+      role: "Cerebras 联合创始人兼 CEO",
+      said: "2026-10-13",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/"
+    },
+    {
+      title: "DeepMind 研究员：AI 自我加速研究还远没到来",
+      summary: "Google DeepMind 的 Haydn Belfield 引用 Gemini 4 Argon 安全报告的数据称，内部没有观察到 AI 明显加速 AI 研究本身。虽然 AI 已写出超过 75% 的生产代码，但约 88% 的改动仍需人工审核，完全交给 AI 的改动只从 7.5% 升到 11.9%。他说创造性研究、新实验设计和长期规划仍离不开人，这和 Hinton、Bengio 等人对“智能爆炸”的警告形成对比。",
+      person: "Haydn Belfield",
+      role: "Google DeepMind 研究员",
+      said: "2026-10-14",
+      source: "The Decoder",
+      url: "https://the-decoder.com/google-says-self-improving-ai-isnt-anywhere-close/"
+    }
+  ],
+  pricing: [
+    {
+      title: "xAI 新订阅捆绑 Grok 和 Cursor",
+      summary: "xAI 10 月 12 日推出 The X Subscription，把 Grok、Cursor 和 X Premium 打包成一个订阅，付费档为 Plus 8 美元、Premium 30 美元、Super 100 美元、Ultra 200 美元（月付），各档在 Grok 和 Cursor 之间共用一份 AI 额度。新用户不能再单独购买 SuperGrok，老用户可以保留原套餐，也可以切换并按比例退款。正在几天内向全球推送。",
+      product: "Grok",
+      change: "new",
+      source: "xAI",
+      url: "https://x.ai/news/x-subscription"
+    },
+    {
+      title: "Gemini 4 Argon 仅限付费用户",
+      summary: "随 Gemini 4 Argon 上线，Google 调整了档位：Gemini 应用里只有 Pro 和 Ultra 订阅用户能用 Argon，免费用户和 Plus 用户只能用 Flash 系列。API 首发价为每百万输入 2 美元、输出 10 美元，缓存输入便宜约 95%，11 月 30 日后涨到 4 美元和 20 美元。",
+      product: "Gemini",
+      change: "limit",
+      source: "Google 官方博客",
+      url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    {
+      title: "ChatGPT Pro 200 额度将减半",
+      summary: "OpenAI 9 月底把 Pro 拆成 100、200、500 美元三档，200 美元档重新开放订阅，但额度变小，老用户的原额度保留到 10 月 29 日。OpenAI 的 Thibault Sottiaux 表示，按 API 价格折算，新额度大约是原来的一半，价格不变。只有 500 美元档包含 Astra Ultrafast。",
+      product: "ChatGPT",
+      change: "limit",
+      source: "XenoSpectrum（援引 OpenAI 帮助中心）",
+      url: "https://xenospectrum.com/en/chatgpt-pro-reopen-usage-cut/"
+    }
+  ],
+  design: [
+    {
+      title: "Figma 推出 Specs，代码图层开放公测",
+      summary: "Figma 在印度首场 Config 上发布 Figma Specs，用 Markdown 记录团队的设计语言，可以引用画布元素、FigJam 图和设计稿，供团队和 AI 智能体共同参考。同时推出设计上下文管理，把设计库、代码库和规范集中起来，让智能体按品牌规则出图；代码图层（Code layers）进入公测，可以让智能体把设计转成代码做交互原型。Figma MCP 也新增了 20 多个工具的支持。",
+      kind: "trend",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+    },
+    {
+      title: "Google Stitch：一句话生成 UI",
+      summary: "Google Labs 出品的 AI 设计工具，可以用文字、语音、草图或现有代码生成网页和 App 界面，设计智能体会实时把过程画在画布上，你可以随时调整方向。做好的设计可以分享链接、导入 Google Antigravity 接后端，或直接发布到 Netlify。适合快速出方案和做原型。",
+      kind: "tool",
+      source: "Google 官方博客",
+      url: "https://stitch.withgoogle.com/"
+    },
+    {
+      title: "Penpot：开源的 Figma 替代品",
+      summary: "Penpot 是基于网页的开源设计和原型工具，支持组件、设计令牌和 Flex/Grid 布局，导出的是标准 SVG 和 CSS，设计师和前端沟通更顺。可以免费使用云端版，也能自己部署，GitHub 上约 6.1 万 Star。",
+      kind: "tool",
+      price: "免费 · MPL-2.0",
+      source: "GitHub",
+      url: "https://github.com/penpot/penpot"
+    },
+    {
+      title: "Figma for VS Code：在编辑器里看设计稿",
+      summary: "Figma 官方的 VS Code 插件，可以在编辑器里直接打开设计文件、查看标注和变量，收到评论通知，并在写代码时获得对应组件的代码提示。前端不用在 Figma 和编辑器之间来回切，适合设计师和开发对稿。",
+      kind: "plugin",
+      source: "VS Code 插件市场",
+      url: "https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension"
+    },
+    {
+      title: "Tailwind 插件：类名补全和预览",
+      summary: "Tailwind 官方的 VS Code 插件，输入类名时自动补全，鼠标悬停能看到对应的 CSS，还会标出写错或冲突的类名。用 Tailwind 还原设计稿时几乎是必装插件。",
+      kind: "plugin",
+      price: "免费",
+      source: "VS Code 插件市场",
+      url: "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+    },
+    {
+      title: "Figma 教育版：学生和教师免费用专业版",
+      summary: "年满 13 岁的学生和教师，用学校邮箱在 figma.com/education/apply 认证后，就能免费使用 Figma 和 FigJam 的 Professional 档。官方写明对学生、教师和学校“100% 免费”，没有隐藏的付费升级。",
+      kind: "deal",
+      price: "学生、教师免费",
+      source: "Figma 官网",
+      url: "https://www.figma.com/education/"
     }
   ]
 };

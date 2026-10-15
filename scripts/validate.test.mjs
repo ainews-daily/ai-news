@@ -173,10 +173,19 @@ test("落地观察 2–3 条且字段完整", () => {
   assert.ok(hasError(errors, "观察 2：asOf"));
 });
 
-test("企业动态 5–8 条且字段完整", () => {
+test("企业动态：国内 5–8 条、国外最多 3 条，字段完整", () => {
   const issue = makeIssue();
   issue.corp = issue.corp.slice(0, 3);
-  assert.ok(hasError(validateIssue(issue), "企业动态数量"));
+  assert.ok(hasError(validateIssue(issue), "国内企业动态应为 5–8 条"));
+  const withIntl = makeIssue();
+  const intl = (i) => ({ ...withIntl.corp[0], region: "intl", url: `https://example.com/intl${i}` });
+  withIntl.corp.push(intl(1), intl(2), intl(3));
+  assert.deepEqual(validateIssue(withIntl), []);
+  withIntl.corp.push(intl(4));
+  assert.ok(hasError(validateIssue(withIntl), "国外大厂动态最多 3 条"));
+  const badRegion = makeIssue();
+  badRegion.corp[0].region = "eu";
+  assert.ok(hasError(validateIssue(badRegion), "企业 1：region"));
   const issue2 = makeIssue();
   issue2.corp[0].kind = "gossip";
   delete issue2.corp[1].company;
@@ -199,4 +208,51 @@ test("manifest 校验", () => {
   assert.ok(hasError(validateManifest(["2026-10-13", "2026-10-14"], "2026-10-14"), "排序"));
   assert.ok(hasError(validateManifest(["2026-10-14", "2026-10-14"], "2026-10-14"), "重复"));
   assert.ok(hasError(validateManifest(["2026-10-13"], "2026-10-14"), "不包含"));
+});
+
+const entry = (i, extra) => ({ title: `条目${i}`, summary: "第一句。第二句。", source: "示例来源", url: `https://example.com/e${i}`, ...extra });
+
+test("新版块可以省略（兼容往期）", () => {
+  const issue = makeIssue();
+  assert.equal(issue.design, undefined);
+  assert.deepEqual(validateIssue(issue), []);
+});
+
+test("设计专栏 4–8 条，kind 合法", () => {
+  const issue = makeIssue();
+  issue.design = [0, 1, 2, 3].map((i) => entry(i, { kind: ["tool", "plugin", "deal", "trend"][i] }));
+  issue.design[2].price = "首年 5 折";
+  assert.deepEqual(validateIssue(issue), []);
+  issue.design[0].kind = "poster";
+  issue.design[1].price = 5;
+  let errors = validateIssue(issue);
+  assert.ok(hasError(errors, "设计 1：kind"));
+  assert.ok(hasError(errors, "设计 2：price"));
+  issue.design = issue.design.slice(0, 2);
+  assert.ok(hasError(validateIssue(issue), "设计专栏数量"));
+});
+
+test("价格动态 0–5 条，需要 product 和 change", () => {
+  const issue = makeIssue();
+  issue.pricing = [];
+  assert.deepEqual(validateIssue(issue), []);
+  issue.pricing = [entry(1, { product: "ChatGPT", change: "up" }), entry(2, { change: "cheaper" })];
+  const errors = validateIssue(issue);
+  assert.ok(hasError(errors, "价格 2：缺少 product"));
+  assert.ok(hasError(errors, "价格 2：change"));
+  issue.pricing = [1, 2, 3, 4, 5, 6].map((i) => entry(i, { product: "Claude", change: "new" }));
+  assert.ok(hasError(validateIssue(issue), "价格动态最多 5 条"));
+});
+
+test("大佬观点 2–4 条，需要人物、身份和日期", () => {
+  const issue = makeIssue();
+  issue.voices = [1, 2].map((i) => entry(i, { person: "黄仁勋", role: "英伟达 CEO", said: "2026-10-14" }));
+  assert.deepEqual(validateIssue(issue), []);
+  delete issue.voices[0].role;
+  issue.voices[1].said = "昨天";
+  const errors = validateIssue(issue);
+  assert.ok(hasError(errors, "观点 1：缺少 role"));
+  assert.ok(hasError(errors, "观点 2：said"));
+  issue.voices = issue.voices.slice(0, 1);
+  assert.ok(hasError(validateIssue(issue), "大佬观点数量"));
 });

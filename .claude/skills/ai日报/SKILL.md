@@ -31,11 +31,12 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
    - **厂商要分散**：同一家公司作为主角的条目最多 2 条（Anthropic 和 Claude 相关的内容同样受这个限制，不能因为你是 Claude 就多收）。国外头部厂商（OpenAI、Google、Meta、Microsoft、xAI）里，当天有可靠新闻的都至少收 1 条。确实没有新闻的，在汇报时说明“某某当天无重要动态”。
    - 如果可靠新闻不到 8 条（比如联网失败），**到此为止，不写任何文件**，告诉用户原因。
 
-4b. **国内企业动态**（`corp`，5–8 条）：国内大企业过去 48 小时发生的事，**不限于 AI**。
+4b. **大厂动态**（`corp`，国内 5–8 条 + 国外 0–3 条）：大企业过去 48 小时发生的事，**不限于 AI**。国外条目加 `region: "intl"`（苹果、Google、Meta、微软、亚马逊、英伟达、特斯拉、OpenAI 等的裁员、人事、财报、处罚），国内的 `region` 可省略。
    - 搜索：`<日期> 裁员`、`召回 <日期>`、`<日期> 罚款 OR 处罚 公司`、`<日期> 致歉 回应`、`新浪汽车热点小时报 <日期>`、`新浪科技热点小时报 <日期>`、`投资界24h <日期>`，以及点名搜大厂（华为、阿里、腾讯、字节、百度、美团、京东、拼多多、小米、比亚迪、蔚小理、宁德时代等）。
    - `kind`：`layoff` 裁员、`quality` 质量召回、`penalty` 监管处罚、`org` 组织人事、`business` 经营（财报、融资、销量）、`dispute` 争议（营销翻车、消费纠纷）。尽量多收前四类，经营类不超过 2 条。
    - 涉及事故、纠纷、指控的：**必须写企业或官方的回应**；说法有分歧的要把双方都写上，不下结论；只有网传、没有可靠出处的不收。
    - 可以和 AI 新闻部分重复的事件（比如大厂的 AI 投入），放在其中一边就行，不要两边都写。
+   - 国外大厂搜：`<公司> layoffs <日期>`、`<公司> executive departs`、`<公司> fined OR lawsuit <日期>`。
 
 4c. **工具推荐**（`apps`，8–12 个）：好用、免费（或有免费版）的 **Windows 软件**，不要求是新出的。
    - 来源：优先 GitHub 上活跃的开源项目（最近半年有提交），也可以是口碑好的免费闭源软件。可以搜 `awesome windows`、`best free windows apps <年份> github`、`GitHub trending`，以及 `<用途> 开源 windows`（数据库客户端、截图、PDF、组网、剪贴板、启动器、播放器等）。
@@ -50,6 +51,23 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
    - 不要求是 48 小时内的消息，但要有数据或可靠出处（麦肯锡、斯坦福 AI Index、微软 Work Trend Index、人社部、招聘平台报告、媒体对具体公司的报道等）。`asOf` 填数据本身的时间（YYYY-MM），不是搜索的时间。
    - 和往期不要重复同一个话题；二手汇总要在 `source` 里注明原始数据来自哪里。
 
+4e. **大佬观点**（`voices`，2–4 条）：AI 领域人物最近 7 天公开说的新观点、新判断。
+   - 重点人物：黄仁勋、Sam Altman、Dario Amodei、Demis Hassabis、Satya Nadella、Sundar Pichai、扎克伯格、马斯克、李飞飞、Yann LeCun、Hinton，以及梁文锋、杨植麟、王小川、李彦宏、马化腾、雷军等国内人物。不限于名单，有分量的研究者、投资人也可以。
+   - 搜索：`<人名> interview <日期>`、`<人名> says <月份 年份>`、`<人名> 专访 OR 演讲 <日期>`，也看播客、发布会、财报电话会、X 上的长帖。
+   - **必须有原始出处**：采访、演讲、本人帖子，或可靠媒体对原话的报道；只有二手转述、找不到原始场合的不收。写清楚在什么场合说的，关键句尽量引原话；`said` 填说话的日期，不是报道日期。
+   - 只写他说了什么，不替他引申；同一个人的同一观点往期写过就不再收。
+
+4f. **AI 价格动态**（`pricing`，0–5 条）：ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、豆包、通义等的订阅价、API 价、免费额度、套餐档位的变化。
+   - 收录：最近 7 天公布的变化，或 7 天内即将生效、之前没报道过的变化。**没有就写空数组 `[]`，不要硬凑**，网页会自动隐藏这一栏。
+   - `change`：`up` 涨价、`down` 降价、`new` 新套餐、`free` 免费开放、`limit` 额度或权限调整。`product` 填产品名（如 `ChatGPT`、`Claude`）。
+   - 价格数字以官方定价页、官方博客或帮助中心为准；第三方价格汇总站只当线索，不能当来源。写清楚生效日期和是否影响老用户。
+
+4g. **设计专栏**（`design`，4–8 条）：给 UI / 设计同学看。
+   - `kind`：`tool` 设计工具（AI 设计、原型、图标、配色、字体等，可以是口碑好的老工具）、`plugin` 插件（Figma 插件、VS Code 里和前端还原相关的插件）、`deal` 优惠（Figma、Adobe、Canva 等的官方优惠、教育版、限时折扣）、`trend` 设计动态（Figma、Adobe、Google、Apple 等的设计产品发布、设计规范更新）。每期 `trend` 至少 1 条，四类尽量都有。
+   - `trend` 和 `deal` 要求是近期的（`deal` 必须当前仍有效，只认官方页面，不收优惠码聚合站）；`tool` 和 `plugin` 不要求是新的，但不能和往期 `design` 重复。
+   - 可选字段 `price`：价格或优惠信息的简短文字，如 `"免费"`、`"学生、教师免费"`、`"首年 5 折"`。
+   - 搜索：`Figma new features <日期>`、`Adobe Firefly OR Photoshop update <日期>`、`AI design tool launch <月份 年份>`、`Product Hunt design tools`、`Figma plugin trending`、`VS Code extension frontend`、`Figma OR Adobe OR Canva discount official`。
+
 5. **写数据文件** `data/D.js`（同一天再次运行时直接覆盖）：
 
    ```js
@@ -61,7 +79,17 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
        { title: "...", summary: "...", category: "model", region: "intl", source: "...", url: "https://..." }
      ],
      corp: [
-       { title: "...", summary: "...", kind: "quality", company: "...", source: "...", url: "https://..." }
+       { title: "...", summary: "...", kind: "quality", company: "...", source: "...", url: "https://..." },
+       { title: "...", summary: "...", kind: "layoff", region: "intl", company: "...", source: "...", url: "https://..." }
+     ],
+     voices: [
+       { title: "...", summary: "...", person: "黄仁勋", role: "英伟达 CEO", said: "2026-10-14", source: "...", url: "https://..." }
+     ],
+     pricing: [   // 当天没有变化就写 []
+       { title: "...", summary: "...", product: "ChatGPT", change: "limit", source: "...", url: "https://..." }
+     ],
+     design: [
+       { title: "...", summary: "...", kind: "tool", price: "免费", source: "...", url: "https://..." }
      ],
      apps: [
        { name: "...", category: "system", desc: "...", license: "MIT", stars: 12345, size: "10 MB", url: "https://..." }
@@ -72,7 +100,7 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
    };
    ```
 
-   - 标题不超过 30 字；新闻和企业动态的摘要 2–3 句，落地观察 2–4 句，工具说明 1–2 句，每句以“。”结尾。说清楚发生了什么、为什么值得关注，不写空话和营销腔。
+   - 标题不超过 30 字（空格也算字）；新闻、企业动态、价格动态、设计专栏的摘要 2–3 句，落地观察和大佬观点 2–4 句，工具说明 1–2 句，每句以“。”结尾。说清楚发生了什么、为什么值得关注，不写空话和营销腔。
    - 全部用简体中文；产品名、公司名保留原文。
    - 条目顺序：按重要性从高到低。
 
@@ -102,6 +130,7 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
 
 9. **汇报**：告诉用户：
    - 新闻共几条、国内外各几条，三条“今日看点”，各厂商分别收了几条（以及哪些头部厂商当天没有动态）；
-   - 企业动态几条、各是哪几家；推荐了哪些工具；落地观察的标题；
+   - 大厂动态几条（国内、国外各几条）、各是哪几家；推荐了哪些工具；落地观察的标题；
+   - 大佬观点收了谁；价格动态有哪些（没有就说“当天无价格变化”）；设计专栏各条标题；
    - 哪些内容只有单一来源或未经官方确认；
    - 是否已推送到 GitHub；提示可以打开网站，或双击本地 `index.html` 查看，往期工具在“工具库”里。
