@@ -19,7 +19,7 @@ function makeIssue(n = 12) {
     });
   }
   const apps = [];
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 12; i++) {
     apps.push({
       name: `工具${i + 1}`,
       category: APP_CATS[i % 4],
@@ -49,7 +49,7 @@ function makeIssue(n = 12) {
       url: `https://example.com/corp${i}`,
     });
   }
-  return { date: "2026-10-14", highlights: ["看点一", "看点二", "看点三"], items, apps, insights, corp };
+  return { date: "2026-10-17", highlights: ["看点一", "看点二", "看点三"], items, apps, insights, corp };
 }
 
 function hasError(errors, keyword) {
@@ -127,9 +127,9 @@ test("缺少 source", () => {
   assert.ok(hasError(validateIssue(issue), "source"));
 });
 
-test("工具数量 8–12", () => {
+test("工具数量 12–16", () => {
   const issue = makeIssue();
-  issue.apps = issue.apps.slice(0, 6);
+  issue.apps = issue.apps.slice(0, 8);
   assert.ok(hasError(validateIssue(issue), "工具数量"));
 });
 
@@ -148,9 +148,17 @@ test("工具字段：分类、许可证、Star、链接、同期重名", () => {
   assert.ok(hasError(errors, "重复"));
 });
 
-test("工具至少覆盖 3 个分类", () => {
+test("往期（10-17 之前）工具仍按 8–12 个、至少 3 类校验", () => {
   const issue = makeIssue();
-  issue.apps.forEach((a, i) => (a.category = i % 2 ? "office" : "coding"));
+  issue.date = "2026-10-16";
+  issue.apps = issue.apps.slice(0, 9);
+  issue.apps.forEach((a, i) => (a.category = ["office", "coding", "system"][i % 3]));
+  assert.ok(!hasError(validateIssue(issue), "工具"));
+});
+
+test("工具要覆盖全部 4 个分类", () => {
+  const issue = makeIssue();
+  issue.apps.forEach((a, i) => (a.category = ["office", "coding", "system"][i % 3]));
   assert.ok(hasError(validateIssue(issue), "工具分类"));
 });
 

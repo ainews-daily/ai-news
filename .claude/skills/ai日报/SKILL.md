@@ -38,9 +38,9 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
    - 可以和 AI 新闻部分重复的事件（比如大厂的 AI 投入），放在其中一边就行，不要两边都写。
    - 国外大厂搜：`<公司> layoffs <日期>`、`<公司> executive departs`、`<公司> fined OR lawsuit <日期>`。
 
-4c. **工具推荐**（`apps`，8–12 个）：好用、免费（或有免费版）的 **Windows 软件**，不要求是新出的。
+4c. **工具推荐**（`apps`，12–16 个）：好用、免费（或有免费版）的 **Windows 软件**，不要求是新出的。
    - 来源：优先 GitHub 上活跃的开源项目（最近半年有提交），也可以是口碑好的免费闭源软件。可以搜 `awesome windows`、`best free windows apps <年份> github`、`GitHub trending`，以及 `<用途> 开源 windows`（数据库客户端、截图、PDF、组网、剪贴板、启动器、播放器等）。
-   - 分类 `category`：`office` 办公、`coding` 编程、`system` 系统、`fun` 娱乐，每期至少覆盖 3 类，**每类都尽量有**。
+   - 分类 `category`：`office` 办公、`coding` 编程、`system` 系统、`fun` 娱乐，**四类每期都要有**（校验脚本会检查）。
    - **不能和往期重复**：先列出所有往期的 `apps[].name`，已推荐过的不再收（校验脚本也会检查）。
    - Star 数和安装包大小必须查实：用 `curl -s https://api.github.com/repos/<owner>/<repo>` 取 `stargazers_count`、`license.spdx_id`；用 `.../releases/latest` 取 Windows 安装包的 `size`。查不到大小就不写 `size`，不要估。
    - `url` 填 GitHub 仓库或官方下载页。`desc` 1–2 句，写清楚它解决什么问题、比同类好在哪。

@@ -60,7 +60,7 @@ export function validateIssue(issue) {
     if (!items.some((it) => it.category === c)) errors.push(`缺少分类：${c}`);
   }
 
-  errors.push(...validateApps(issue.apps), ...validateInsights(issue.insights), ...validateCorp(issue.corp));
+  errors.push(...validateApps(issue.apps, issue.date), ...validateInsights(issue.insights), ...validateCorp(issue.corp));
   // 设计专栏、价格动态、大佬观点是 2026-10-15 起新增的版块，往期没有这些字段
   if (issue.design !== undefined) errors.push(...validateDesign(issue.design));
   if (issue.pricing !== undefined) errors.push(...validatePricing(issue.pricing));
@@ -74,10 +74,13 @@ function sentenceRange(errors, at, text, min, max) {
   if (n < min || n > max) errors.push(`${at}：应为 ${min}–${max} 句，实际 ${n} 句`);
 }
 
-function validateApps(apps) {
+function validateApps(apps, date = "") {
   const errors = [];
   apps = Array.isArray(apps) ? apps : [];
-  if (apps.length < 8 || apps.length > 12) errors.push(`工具数量应为 8–12，实际 ${apps.length}`);
+  // 2026-10-17 起工具推荐从 8–12 个、至少 3 类，改为 12–16 个、四类都要有
+  const isNew = !(date < "2026-10-17");
+  const [min, max] = isNew ? [12, 16] : [8, 12];
+  if (apps.length < min || apps.length > max) errors.push(`工具数量应为 ${min}–${max}，实际 ${apps.length}`);
   const seen = new Set();
   apps.forEach((a, i) => {
     const at = `工具 ${i + 1}`;
@@ -95,7 +98,8 @@ function validateApps(apps) {
     if (!URL_RE.test(a.url || "")) errors.push(`${at}：url 无效：${a.url}`);
   });
   const cats = new Set(apps.map((a) => a.category));
-  if (apps.length && cats.size < 3) errors.push(`工具分类至少覆盖 3 种，实际 ${cats.size} 种`);
+  const minCats = isNew ? APP_CATEGORIES.length : 3;
+  if (apps.length && cats.size < minCats) errors.push(`工具分类至少覆盖 ${minCats} 种，实际 ${cats.size} 种`);
   return errors;
 }
 
