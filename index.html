@@ -87,7 +87,11 @@
     color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap;
   }
   .date-list a:hover { background: var(--surface-2); color: var(--text); }
-  .date-list a[aria-current="true"] { background: var(--surface); color: var(--text); font-weight: 600; box-shadow: var(--shadow); outline: 1px solid var(--border); }
+  /* 选中项用主题色标出，避免和悬停的灰底混淆 */
+  .date-list a[aria-current="true"] {
+    background: color-mix(in srgb, var(--accent) 12%, var(--surface)); color: var(--accent); font-weight: 600;
+    box-shadow: inset 3px 0 0 var(--accent);
+  }
 
   /* 标题：逐字模糊浮现 */
   header.top { margin-bottom: 28px; }
