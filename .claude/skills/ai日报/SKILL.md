@@ -64,10 +64,15 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
    - `change`：`up` 涨价、`down` 降价、`new` 新套餐、`free` 免费开放、`limit` 额度或权限调整。`product` 填产品名（如 `ChatGPT`、`Claude`）。
    - 价格数字以官方定价页、官方博客或帮助中心为准；第三方价格汇总站只当线索，不能当来源。写清楚生效日期和是否影响老用户。
 
-4g. **设计专栏**（`design`，4–8 条）：给 UI / 设计同学看。
+4g. **设计专栏**（`design`，8–12 条，其中 `tool` 至少 3 条）：给 UI / 设计同学看。
    - `kind`：`tool` 设计工具（AI 设计、原型、图标、配色、字体等，可以是口碑好的老工具）、`plugin` 插件（Figma 插件、VS Code 里和前端还原相关的插件）、`deal` 优惠（Figma、Adobe、Canva 等的官方优惠、教育版、限时折扣）、`trend` 设计动态（Figma、Adobe、Google、Apple 等的设计产品发布、设计规范更新）。每期 `trend` 至少 1 条，四类尽量都有。
    - `trend` 和 `deal` 要求是近期的（`deal` 必须当前仍有效，只认官方页面，不收优惠码聚合站）；`tool` 和 `plugin` 不要求是新的，但不能和往期 `design` 重复。
    - 可选字段 `price`：价格或优惠信息的简短文字，如 `"免费"`、`"学生、教师免费"`、`"首年 5 折"`。
+   - **`tool` 和 `plugin` 推荐前先评估，确实好用才收**：
+     - 开源项目用 `curl -s https://api.github.com/repos/<owner>/<repo>` 查 `stargazers_count`、`pushed_at`、`open_issues_count`，把 Star 数填进可选字段 `stars`（整数）。门槛：Star ≥ 1000、最近 3 个月内有提交、有 Windows 安装包或网页版可以直接用。达不到的不收。
+     - 闭源工具要有口碑依据：Product Hunt 当日或当周前列、知名设计媒体或设计师的正面评测、官方有免费版或试用，不收只有营销稿的新产品。
+     - 摘要里如实写清楚成熟度和限制：早期版本（alpha、beta、0.x）写明"还在早期，适合尝鲜，别直接用在正式项目"；核心功能免费但 AI 功能收费的也要写出来。
+     - 热门的"替代 Photoshop / Figma / Illustrator"一类开源项目优先评估，例如 PhotoCraft、Penpot、Krita、Graphite。
    - 搜索：`Figma new features <日期>`、`Adobe Firefly OR Photoshop update <日期>`、`AI design tool launch <月份 年份>`、`Product Hunt design tools`、`Figma plugin trending`、`VS Code extension frontend`、`Figma OR Adobe OR Canva discount official`。
 
 5. **写数据文件** `data/D.js`（同一天再次运行时直接覆盖）：

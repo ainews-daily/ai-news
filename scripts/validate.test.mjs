@@ -226,18 +226,31 @@ test("新版块可以省略（兼容往期）", () => {
   assert.deepEqual(validateIssue(issue), []);
 });
 
-test("设计专栏 4–8 条，kind 合法", () => {
+test("设计专栏 8–12 条，kind 合法，工具至少 3 条", () => {
   const issue = makeIssue();
-  issue.design = [0, 1, 2, 3].map((i) => entry(i, { kind: ["tool", "plugin", "deal", "trend"][i] }));
-  issue.design[2].price = "首年 5 折";
+  const kinds = ["tool", "tool", "tool", "plugin", "plugin", "deal", "trend", "trend"];
+  issue.design = kinds.map((kind, i) => entry(i, { kind }));
+  issue.design[5].price = "首年 5 折";
+  issue.design[0].stars = 63432;
   assert.deepEqual(validateIssue(issue), []);
   issue.design[0].kind = "poster";
   issue.design[1].price = 5;
+  issue.design[2].stars = "很多";
   let errors = validateIssue(issue);
   assert.ok(hasError(errors, "设计 1：kind"));
   assert.ok(hasError(errors, "设计 2：price"));
-  issue.design = issue.design.slice(0, 2);
+  assert.ok(hasError(errors, "设计 3：stars"));
+  assert.ok(hasError(errors, "设计工具"));
+  issue.design = issue.design.slice(0, 6);
   assert.ok(hasError(validateIssue(issue), "设计专栏数量"));
+});
+
+test("往期（10-17 之前）设计专栏仍按 4–8 条校验", () => {
+  const issue = makeIssue();
+  issue.date = "2026-10-16";
+  issue.apps = issue.apps.slice(0, 10);
+  issue.design = ["tool", "plugin", "deal", "trend"].map((kind, i) => entry(i, { kind }));
+  assert.deepEqual(validateIssue(issue), []);
 });
 
 test("价格动态 0–5 条，需要 product 和 change", () => {

@@ -412,6 +412,7 @@
   function designCard(d, i, animate, since) {
     var tags = [tag(DESIGN_KINDS[d.kind] || d.kind, DESIGN_COLORS[d.kind])];
     if (d.price) tags.push(tag(d.price, null, "region"));
+    if (d.stars !== undefined) tags.push(tag(formatStars(d.stars), null, "region"));
     if (since) tags.push(tag(since, null, "region"));
     return card({ tags: tags, title: d.title, url: d.url, body: d.summary, foot: sourceLine("来源：", d.source, d.url) }, i, animate);
   }

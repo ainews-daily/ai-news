@@ -62,7 +62,7 @@ export function validateIssue(issue) {
 
   errors.push(...validateApps(issue.apps, issue.date), ...validateInsights(issue.insights), ...validateCorp(issue.corp));
   // 设计专栏、价格动态、大佬观点是 2026-10-15 起新增的版块，往期没有这些字段
-  if (issue.design !== undefined) errors.push(...validateDesign(issue.design));
+  if (issue.design !== undefined) errors.push(...validateDesign(issue.design, issue.date));
   if (issue.pricing !== undefined) errors.push(...validatePricing(issue.pricing));
   if (issue.voices !== undefined) errors.push(...validateVoices(issue.voices));
   return errors;
@@ -151,16 +151,22 @@ function checkEntry(errors, at, it, minSentences, maxSentences) {
   if (!URL_RE.test(it.url || "")) errors.push(`${at}：url 无效：${it.url}`);
 }
 
-function validateDesign(list) {
+function validateDesign(list, date = "") {
   const errors = [];
   if (!Array.isArray(list)) return ["design 应为数组"];
-  if (list.length < 4 || list.length > 8) errors.push(`设计专栏数量应为 4–8，实际 ${list.length}`);
+  // 2026-10-17 起设计专栏从 4–8 条改为 8–12 条，其中设计工具至少 3 条
+  const isNew = !(date < "2026-10-17");
+  const [min, max] = isNew ? [8, 12] : [4, 8];
+  if (list.length < min || list.length > max) errors.push(`设计专栏数量应为 ${min}–${max}，实际 ${list.length}`);
   list.forEach((it, i) => {
     const at = `设计 ${i + 1}`;
     checkEntry(errors, at, it, 2, 3);
     if (!DESIGN_KINDS.includes(it.kind)) errors.push(`${at}：kind 非法：${it.kind}`);
     if (it.price !== undefined && !isText(it.price)) errors.push(`${at}：price 应为文字`);
+    if (it.stars !== undefined && !(Number.isInteger(it.stars) && it.stars >= 0)) errors.push(`${at}：stars 应为非负整数`);
   });
+  const tools = list.filter((it) => it.kind === "tool").length;
+  if (isNew && tools < 3) errors.push(`设计工具（kind: tool）至少 3 条，实际 ${tools} 条`);
   return errors;
 }
 
