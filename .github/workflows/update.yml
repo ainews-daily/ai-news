@@ -59,7 +59,7 @@ jobs:
           cp index.html _site/
           cp -r data _site/
 
-      # 同时发布到 Cloudflare Workers（静态资源，免费 *.workers.dev 地址）。
+      # 同时发布到 Cloudflare Pages（https://aifresh.pages.dev）。
       # 需要在仓库 Settings → Secrets 里配好 CLOUDFLARE_API_TOKEN 和 CLOUDFLARE_ACCOUNT_ID，没配就跳过。
       - name: 发布到 Cloudflare
         env:
@@ -70,7 +70,7 @@ jobs:
             echo "没配 Cloudflare 密钥，跳过"
             exit 0
           fi
-          npx --yes wrangler@4 deploy --assets=_site --name=ai-news-daily --compatibility-date=2026-10-01 || echo "Cloudflare 发布失败，GitHub Pages 不受影响"
+          npx --yes wrangler@4 pages deploy _site --project-name=aifresh --branch=main || echo "Cloudflare 发布失败，GitHub Pages 不受影响"
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

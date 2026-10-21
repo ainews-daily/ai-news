@@ -6,7 +6,7 @@
 - **实时热点**：GitHub Actions 每 3 小时自动抓取一次，来源是国内热榜、国内外 AI 资讯和 GitHub 新项目，再按关注词分组。不经过 AI 处理。
 - **工具库**：往期推荐过的所有工具。
 
-纯静态页面，没有框架，也不用打包。双击 `index.html` 可以在本地打开，部署后会同时发布到 GitHub Pages 和 Cloudflare Workers（`ai-news-daily.gaopanfeigoo.workers.dev`，需在仓库 Secrets 里配置 `CLOUDFLARE_API_TOKEN` 和 `CLOUDFLARE_ACCOUNT_ID`）。
+纯静态页面，没有框架，也不用打包。双击 `index.html` 可以在本地打开，部署后会同时发布到 GitHub Pages 和 Cloudflare Pages（`aifresh.pages.dev`，需在仓库 Secrets 里配置 `CLOUDFLARE_API_TOKEN` 和 `CLOUDFLARE_ACCOUNT_ID`）。
 
 ## 日常使用
 
