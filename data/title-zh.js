@@ -83,12 +83,5 @@ window.AI_DESC_ZH = {
   "https://github.com/assetnote/php2shell-scanner": "高准确度的 php2shell 漏洞扫描器（CVE-2026-109618 和 CVE-2026-109619）",
   "https://github.com/mizorewww/gdirect": "用 Rust 写的 Google Drive 直链下载器，内置固定版本的 libaria2",
   "https://github.com/surendrapandar/minilytics": "开源的营收优先分析工具，面向独立开发者和单人创业者",
-  "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包",
-  "https://github.com/DLSS-5-Swaper-New/.github": "[object Object]",
-  "https://github.com/interplains/Zero-Breach-Toolkit": "[object Object]",
-  "https://github.com/ZiChuanLan/agent-purge": "[object Object]",
-  "https://github.com/yaojingang/GEOInflow": "[object Object]",
-  "https://github.com/rossark0/rossark-motion-skill": "[object Object]",
-  "https://github.com/Motionsites-AI/claude-skill": "[object Object]",
-  "https://github.com/stormydayy/halo-overlay": "[object Object]"
+  "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包"
 };

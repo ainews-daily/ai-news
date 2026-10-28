@@ -38,13 +38,17 @@ test("parseTranslations 去掉思考过程和多余文字，取出数组", () =>
   assert.deepEqual(parseTranslations(["甲"], 1), ["甲"]);
 });
 
+test("parseTranslations 处理模型把每条包成对象的情况", () => {
+  assert.deepEqual(parseTranslations('[{"zh": "甲"}, {"n": 1}, null]', 3), ["甲", "", ""]);
+});
+
 test("parseTranslations 条数不对或不是数组时报错", () => {
   assert.throws(() => parseTranslations('["甲"]', 2), /条数不对/);
   assert.throws(() => parseTranslations("翻译失败", 1), /没有 JSON 数组/);
 });
 
-test("pruneToCurrent 丢掉已经不在热点里的条目", () => {
-  const { titleZh, descZh } = pruneToCurrent(HOT, { "https://a.com/1": "甲", "https://old.com": "旧" }, { "https://github.com/o/r": "" });
+test("pruneToCurrent 丢掉不在热点里的条目和不是中文的坏译文", () => {
+  const { titleZh, descZh } = pruneToCurrent(HOT, { "https://a.com/1": "甲", "https://old.com": "旧" }, { "https://github.com/o/r": "[object Object]" });
   assert.deepEqual(titleZh, { "https://a.com/1": "甲" });
   assert.deepEqual(descZh, {});
 });
