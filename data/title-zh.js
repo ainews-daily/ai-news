@@ -69,7 +69,8 @@ window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IaTRIX2lBc1kwcDRXenZsRXRxcy1vZWVQVlBGdlJsS1p1bkpOQzBpblRRU0l6elhUa0Z3a0RmOVlaV1NmUlgxU3pQWjE2UTVNcEdMdDBBQ0VobFBMS2k5MS1yQ3dQMzQ?oc=5": "AI代理如何影响专家的判断",
   "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBnZUdLN3hwaXFFbndLU0FTMC1INVZzenp4cl92WXJqM3VDWTZUSXN2S1NTdzBjeTBDaUZmRHFud1M1azhBX3pmcFAxR3Nzdw?oc=5": "Anthropic向SEC提交S-1文件，为拟议的首次公开募股做准备",
   "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁与谁一致？AI代理如何影响专家的研究判断",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SbEpLOHhyMm54RUg2d19Mb1pXNkpFZnlGeGFZa1psREEwUTBuT1FONGlaWnN4VWRVNlpTYUhpMlBrZTYzSFNMZ1FEelFJVFBxdnhyZGl4OGppb01ScXFrRjEwRUVtSW1hLXRYRXp4bmVfNm1SLUlYLU9jekk0LU0?oc=5": "针对LAMA2相关先天性肌营养不良的双特异性桥接抗体的临床前特征分析"
+  "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SbEpLOHhyMm54RUg2d19Mb1pXNkpFZnlGeGFZa1psREEwUTBuT1FONGlaWnN4VWRVNlpTYUhpMlBrZTYzSFNMZ1FEelFJVFBxdnhyZGl4OGppb01ScXFrRjEwRUVtSW1hLXRYRXp4bmVfNm1SLUlYLU9jekk0LU0?oc=5": "针对LAMA2相关先天性肌营养不良的双特异性桥接抗体的临床前特征分析",
+  "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Pb21tVGIxdFZsRHZzZS1xSS1UcjBQemF5RDBiRWtxTlowMVI5NDhHcFhyS3hseVY0MjJGeVI1WEZtSjYxWjVEbnNoUUc1Tlpkazl1RldRcXJ4b3NteXc?oc=5": "通过 Meta 商务代理平台拓展您的业务"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "解锁 RTX 4090 张量算力的源码，另有实验性支持 RTX 4070 Ti SUPER，固件在本地生成",
