@@ -70,7 +70,8 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/": "Anthropic 向华尔街公开账本：营收创纪录，负债也在攀升",
   "https://simonwillison.net/2026/Oct/26/gpt-61-terra/": "GPT-6.1 Terra 上手体验",
   "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/": "Import AI 第 478 期：用数学做对齐、ProgramBench，以及 Mirendil 展示的递归自我改进",
-  "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB6eElQLWM1MS1uTFhWdTZZNV9LQk43dTJmWE16M3AxbjAxUlZtMGkxY0tXVzM1dFBHOGdOVlFEYzMyUE8wUEo0T3p2VWt4VFppbEwxaDBlR3lpT2pLYWlZ?oc=5": "请求试用 Meta Business Agent 并保持更新"
+  "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Pb21tVGIxdFZsRHZzZS1xSS1UcjBQemF5RDBiRWtxTlowMVI5NDhHcFhyS3hseVY0MjJGeVI1WEZtSjYxWjVEbnNoUUc1Tlpkazl1RldRcXJ4b3NteXc?oc=5": "通过 Meta Business Agent 平台拓展您的业务",
+  "https://news.google.com/rss/articles/CBMixgRBVV95cUxON0pfVFFJZEpjZG1YQXB2QjZqSTllaXBQdDZBcGJQbENSNkY0SkhfSlJaaVNybHhsVDRLRURGMXlEN2tma2JXblkzNnNiMU1nTzV1dnJOS3FhY3JwWWR0QTg1Ynl3d2xjbHdrOE4xMm1kd3Q3WWhrc1dPOEo2SUxlVDFITWtRZDBlZnl5SmRFandTNnpuSVJfZ1dJcmoyUU9LYXVFTVpIeWsxcVNuSUFfeHh5dTZLWGFjS2lXR3RMS0RvQUJRV3hXM2JBSmlXbzhUSnNnMkY0QlVydDBYckNkNko0T3lsblUzNlFyYkFTMk10WDltV200T2FpMnhNQ1JNckVJNnhzaUxFRGJQNEIyamhlRUJLTzg1UldYV2xBQjh1WXE4ZmE0c3g5T29YRzNMZW04VHltby1MeFFYRmdkQlFDZFNXX0E5RkZLYnNDSDBWV0JBRjNHOTZSdXFpQ0RlQmJhZUwyQU9IaHpQXzdjY01rMERBbWpVSUVlZDhvNXNTb2Z3cUliUVo1WWJxdW1kYnY2YVpVZWg0S1RFY3o5QW5jZE5OdDdLV0llNkhMNVpkWUFGUllRaU9scTdOVXNiYWFLZHIybC13SWcyU1Jyc01TMzkxMzFIM1EtcjRVQUlkMTIydnVtbkVsZTBzUW1zWU56UWJPUW5oWEcyMXczWVNfY3hIeUNxempnMDdLVHJVa3Z5YVFSUUg3RWJoYzBTY2tPNVZBU1ZvSUxFUU9FaGVJdmVfZHltSTc0cXpfS19tOVRrQ1E?oc=5": "请求 Meta Business Agent 的演示并保持更新"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "解锁 RTX 4090 张量算力的源码，另有实验性支持 RTX 4070 Ti SUPER，固件在本地生成",
@@ -90,6 +91,5 @@ window.AI_DESC_ZH = {
   "https://github.com/ZiChuanLan/agent-purge": "一个身份，多个编码代理。可在 codex、claude、opencode、grok、omp、hermes、pi、zcode 等平台替换或注入系统提示 - 通过本地网络控制台",
   "https://github.com/yaojingang/GEOInflow": "自托管的网页和 AI 爬虫分析工具，用于生成式引擎优化（GEO）。跟踪访问者、AI 搜索推荐、爬虫日志、内容覆盖情况和转化率",
   "https://github.com/rossark0/rossark-motion-skill": "将任何 SVG 转换为专业的 60 帧动画。这是一个 Claude Code 技能，可以将任何绘制的内容生动呈现：实时面部、全身表演和整个场景，在 Real 中实现",
-  "https://github.com/Motionsites-AI/claude-skill": "免费的 Claude 技能：让 Claude 构建获奖级别的电影级着陆页。由 MotionSites 提供",
-  "https://github.com/stormydayy/halo-overlay": "轻量级开源 AI 叠加层，用于实时对话。能听、能看、能建议"
+  "https://github.com/Motionsites-AI/claude-skill": "免费的 Claude 技能：让 Claude 构建获奖级别的电影级着陆页。由 MotionSites 提供"
 };
