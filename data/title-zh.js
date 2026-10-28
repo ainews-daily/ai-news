@@ -69,7 +69,8 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/": "GPT-6.1 Terra 让 OpenAI API 价格减半，表现还追近更大的模型",
   "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/": "Anthropic 向华尔街公开账本：营收创纪录，负债也在攀升",
   "https://simonwillison.net/2026/Oct/26/gpt-61-terra/": "GPT-6.1 Terra 上手体验",
-  "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/": "Import AI 第 478 期：用数学做对齐、ProgramBench，以及 Mirendil 展示的递归自我改进"
+  "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/": "Import AI 第 478 期：用数学做对齐、ProgramBench，以及 Mirendil 展示的递归自我改进",
+  "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB6eElQLWM1MS1uTFhWdTZZNV9LQk43dTJmWE16M3AxbjAxUlZtMGkxY0tXVzM1dFBHOGdOVlFEYzMyUE8wUEo0T3p2VWt4VFppbEwxaDBlR3lpT2pLYWlZ?oc=5": "请求试用 Meta Business Agent 并保持更新"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "解锁 RTX 4090 张量算力的源码，另有实验性支持 RTX 4070 Ti SUPER，固件在本地生成",
