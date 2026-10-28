@@ -187,7 +187,7 @@ function validatePricing(list) {
 function validateVoices(list) {
   const errors = [];
   if (!Array.isArray(list)) return ["voices 应为数组"];
-  if (list.length < 4 || list.length > 8) errors.push(`大佬观点数量应为 4–8，实际 ${list.length}`);
+  if (list.length < 4 || list.length > 12) errors.push(`大佬观点数量应为 4–12，实际 ${list.length}`);
   if (list.length && !list.some((it) => it.region === "cn")) errors.push("大佬观点至少要有 1 条国内人物");
   list.forEach((it, i) => {
     const at = `观点 ${i + 1}`;

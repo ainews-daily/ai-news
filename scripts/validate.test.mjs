@@ -265,7 +265,7 @@ test("价格动态 0–5 条，需要 product 和 change", () => {
   assert.ok(hasError(validateIssue(issue), "价格动态最多 8 条"));
 });
 
-test("大佬观点 4–8 条，需要人物、身份、地区和日期，至少 1 条国内", () => {
+test("大佬观点 4–12 条，需要人物、身份、地区和日期，至少 1 条国内", () => {
   const issue = makeIssue();
   issue.voices = [1, 2, 3, 4].map((i) => entry(i, { person: "黄仁勋", role: "英伟达 CEO", region: i === 1 ? "cn" : "intl", said: "2026-10-14" }));
   assert.deepEqual(validateIssue(issue), []);
@@ -277,6 +277,8 @@ test("大佬观点 4–8 条，需要人物、身份、地区和日期，至少 
   assert.ok(hasError(errors, "观点 3：said"));
   assert.ok(hasError(errors, "观点 4：region"));
   issue.voices = issue.voices.slice(0, 2);
+  assert.ok(hasError(validateIssue(issue), "大佬观点数量"));
+  issue.voices = Array.from({ length: 13 }, (_, i) => entry(i, { person: "A", role: "B", region: "cn", said: "2026-10-14" }));
   assert.ok(hasError(validateIssue(issue), "大佬观点数量"));
   const noCn = makeIssue();
   noCn.voices = [1, 2, 3, 4].map((i) => entry(i, { person: "A", role: "B", region: "intl", said: "2026-10-14" }));

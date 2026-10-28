@@ -192,11 +192,11 @@
   .card:hover { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; }
   .tag { padding: 1px 8px; border-radius: 6px; font-weight: 600; white-space: nowrap; }
-  /* 大佬观点：第一行人名、日期靠右；第二行身份，再长也只在自己那行折 */
-  .who { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 1px 12px; font-size: 12.5px; color: var(--muted); }
+  /* 大佬观点：人名一行，身份一行（再长也只在自己那行折）；日期在分组标题上 */
+  .who { display: flex; flex-direction: column; gap: 1px; font-size: 12.5px; color: var(--muted); }
   .who-name { color: var(--accent); font-weight: 700; font-size: 14px; }
-  .who time { white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .who-role { grid-column: 1 / -1; line-height: 1.5; }
+  .who-role { line-height: 1.5; }
+  .voices > .group-head:first-child { margin-top: 4px; }
   .tag.cat { color: var(--c); background: color-mix(in srgb, var(--c) 13%, transparent); }
   .tag.region { color: var(--muted); background: var(--surface-2); }
   .card h3 { margin: 0; font-size: 16.5px; line-height: 1.45; }
@@ -692,19 +692,30 @@
     renderNews(issue, $news, true);
 
     if (issue.voices && issue.voices.length) {
-      var vg = el("div", { class: "grid" });
-      issue.voices.forEach(function (v, i) {
+      // 按说话日期从新到旧，同一天的放一组
+      var voices = issue.voices.slice().sort(function (a, b) { return a.said < b.said ? 1 : a.said > b.said ? -1 : 0; });
+      var perDay = {};
+      voices.forEach(function (v) { perDay[v.said] = (perDay[v.said] || 0) + 1; });
+      var vbox = el("div", { class: "voices" }), vg = null, lastDay = null;
+      voices.forEach(function (v, i) {
+        if (v.said !== lastDay) {
+          lastDay = v.said;
+          vbox.appendChild(el("h3", { class: "group-head" }, [
+            el("span", { text: formatDate(v.said) }),
+            el("span", { class: "group-count", text: perDay[v.said] + " 条" })
+          ]));
+          vg = vbox.appendChild(el("div", { class: "grid" }));
+        }
         vg.appendChild(card({
           head: el("div", { class: "who" }, [
             el("span", { class: "who-name", text: v.person }),
-            el("time", { datetime: v.said, text: formatDate(v.said).split(" · ")[0] }),
             el("span", { class: "who-role", text: [v.region === "cn" ? "国内" : "国外", v.role].filter(Boolean).join(" · ") })
           ]),
           title: v.title, url: v.url, body: v.summary,
           foot: sourceLine("出处：", v.source, v.url)
         }, i, true));
       });
-      $content.appendChild(section("大佬观点", issue.voices.length + " 条", "国内外 AI 领域人物最近公开说了什么，都附原始出处。", vg));
+      $content.appendChild(section("大佬观点", issue.voices.length + " 条", "国内外 AI 领域人物最近公开说了什么，都附原始出处，按说话日期从新到旧。", vbox));
     }
 
     if (issue.pricing && issue.pricing.length) {
