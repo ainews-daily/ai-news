@@ -192,11 +192,11 @@
   .card:hover { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; }
   .tag { padding: 1px 8px; border-radius: 6px; font-weight: 600; white-space: nowrap; }
-  /* 大佬观点：人名 + 身份一行，日期靠右 */
-  .who { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; font-size: 13px; color: var(--muted); }
-  .who-name { color: var(--accent); font-weight: 700; font-size: 14px; white-space: nowrap; }
-  .who-role { min-width: 0; }
-  .who time { margin-left: auto; white-space: nowrap; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+  /* 大佬观点：第一行人名、日期靠右；第二行身份，再长也只在自己那行折 */
+  .who { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 1px 12px; font-size: 12.5px; color: var(--muted); }
+  .who-name { color: var(--accent); font-weight: 700; font-size: 14px; }
+  .who time { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .who-role { grid-column: 1 / -1; line-height: 1.5; }
   .tag.cat { color: var(--c); background: color-mix(in srgb, var(--c) 13%, transparent); }
   .tag.region { color: var(--muted); background: var(--surface-2); }
   .card h3 { margin: 0; font-size: 16.5px; line-height: 1.45; }
@@ -697,8 +697,8 @@
         vg.appendChild(card({
           head: el("div", { class: "who" }, [
             el("span", { class: "who-name", text: v.person }),
-            el("span", { class: "who-role", text: [v.region === "cn" ? "国内" : "国外", v.role].filter(Boolean).join(" · ") }),
-            el("time", { datetime: v.said, text: formatDate(v.said).split(" · ")[0] })
+            el("time", { datetime: v.said, text: formatDate(v.said).split(" · ")[0] }),
+            el("span", { class: "who-role", text: [v.region === "cn" ? "国内" : "国外", v.role].filter(Boolean).join(" · ") })
           ]),
           title: v.title, url: v.url, body: v.summary,
           foot: sourceLine("出处：", v.source, v.url)
