@@ -81,6 +81,28 @@
   /* 日期列表 */
   .dates { position: sticky; top: 32px; align-self: start; }
   .dates h2 { font-size: 12px; font-weight: 600; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+  /* 设计、工具库的日期分组 */
+  .group-head { display: flex; align-items: center; gap: 8px; margin: 28px 0 12px; font-size: 15px; font-variant-numeric: tabular-nums; }
+  .count + .group-head { margin-top: 4px; }
+  .group-count { color: var(--muted); font-size: 13px; font-weight: 500; }
+  .group-new { padding: 1px 8px; border-radius: 6px; font-size: 12px; color: var(--accent); background: color-mix(in srgb, var(--accent) 13%, transparent); }
+  .load-more {
+    display: block; width: 100%; max-width: 360px; margin: 24px auto 0; padding: 11px 16px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--accent);
+    font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: var(--shadow);
+  }
+  .load-more:hover { border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
+
+  /* 回到顶部 */
+  .to-top {
+    position: fixed; right: 20px; bottom: 24px; z-index: 25; width: 44px; height: 44px; display: grid; place-items: center;
+    border: 1px solid var(--border); border-radius: 50%; background: var(--surface); color: var(--text); cursor: pointer;
+    box-shadow: 0 4px 16px rgba(20, 24, 40, .14);
+    opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s;
+  }
+  .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+  .to-top svg { width: 20px; height: 20px; }
+
   /* 手机端才用的顶栏、底部导航图标、遮罩，桌面隐藏 */
   .appbar, .tab-ico, .backdrop { display: none; }
 
@@ -325,6 +347,8 @@
     .card p { font-size: 13.5px; line-height: 1.65; }
     .count { margin-bottom: 10px; }
     .hot-row { padding: 12px 14px; }
+    .to-top { right: 16px; bottom: calc(78px + env(safe-area-inset-bottom)); }
+    .group-head { margin: 22px 0 10px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -342,6 +366,9 @@
   </button>
 </div>
 <div class="backdrop" id="backdrop"></div>
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 <div class="layout">
   <nav class="dates" id="dates-nav" aria-label="往期">
     <h2>往期</h2>
@@ -380,7 +407,7 @@
   var PRICE_COLORS = { up: "warn", down: "research", new: "model", free: "tools", limit: "industry" };
   var WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"];
 
-  var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", designKind: "all", designQuery: "", hotTopic: "all", hotQuery: "", calMonth: null };
+  var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", designKind: "all", designQuery: "", hotTopic: "all", hotQuery: "", calMonth: null, listLimit: 20 };
   var $dateBtn = document.getElementById("date-btn");
   var $subtitle = document.getElementById("subtitle");
   var $content = document.getElementById("content");
@@ -449,9 +476,22 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") setSheet(false); });
     // 大标题滑出屏幕后，顶栏显示小标题和分隔线
     var $bar = document.getElementById("appbar"), $title = document.getElementById("title");
-    function onScroll() { $bar.classList.toggle("scrolled", window.scrollY > $title.offsetTop + $title.offsetHeight - 50); }
+    var $top = document.getElementById("to-top");
+    function onScroll() {
+      $bar.classList.toggle("scrolled", window.scrollY > $title.offsetTop + $title.offsetHeight - 50);
+      $top.classList.toggle("show", window.scrollY > window.innerHeight * 1.5);
+    }
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
+    $top.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+    // 再点一下当前所在的导航，回到顶部（和手机 App 的习惯一致）
+    Array.from(document.querySelectorAll(".tabs a")).forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        if (a.getAttribute("href") !== (location.hash || "#")) return;
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
   }
 
   function renderCalendar() {
@@ -578,9 +618,8 @@
     }, i, animate);
   }
 
-  function appCard(a, i, animate, since) {
+  function appCard(a, i, animate) {
     var meta = [a.license, formatStars(a.stars), a.size].filter(Boolean);
-    if (since) meta.push(since + " 推荐");
     return card({
       tags: [tag(APP_CATS[a.category] || a.category, APP_COLORS[a.category])],
       title: a.name, url: a.url, body: a.desc,
@@ -588,12 +627,10 @@
     }, i, animate);
   }
 
-  // since：设计页里显示是哪一期收录的
-  function designCard(d, i, animate, since) {
+  function designCard(d, i, animate) {
     var tags = [tag(DESIGN_KINDS[d.kind] || d.kind, DESIGN_COLORS[d.kind])];
     if (d.price) tags.push(tag(d.price, null, "region"));
     if (d.stars !== undefined) tags.push(tag(formatStars(d.stars), null, "region"));
-    if (since) tags.push(tag(since, null, "region"));
     return card({ tags: tags, title: d.title, url: d.url, body: d.summary, foot: sourceLine("来源：", d.source, d.url) }, i, animate);
   }
 
@@ -715,8 +752,43 @@
     return loadScript(issueSrc(date)).then(function () { return !!(window.AI_DAILY || {})[date]; }, function () { return false; });
   }
 
+  // 设计、工具库：按推荐日期分组，一次显示 PAGE 条，底部按钮再加载
+  var PAGE = 20;
+
+  function renderGroups($list, shown, gridClass, unit, makeCard, redraw) {
+    var total = {};
+    shown.forEach(function (x) { total[x.date] = (total[x.date] || 0) + 1; });
+    var grid = null, last = null;
+    shown.slice(0, state.listLimit).forEach(function (x, i) {
+      if (x.date !== last) {
+        last = x.date;
+        var head = el("h3", { class: "group-head" }, [
+          el("span", { text: formatDate(x.date) }),
+          el("span", { class: "group-count", text: total[x.date] + " " + unit })
+        ]);
+        if (x.date === state.dates[0]) head.insertBefore(el("span", { class: "group-new", text: "最新" }), head.firstChild);
+        grid = el("div", { class: gridClass });
+        $list.appendChild(head);
+        $list.appendChild(grid);
+      }
+      grid.appendChild(makeCard(x, i % PAGE));
+    });
+    var rest = shown.length - state.listLimit;
+    if (rest <= 0) return;
+    var more = el("button", { class: "load-more", type: "button", text: "再看 " + Math.min(rest, PAGE) + " " + unit + "（还有 " + rest + " " + unit + "）" });
+    more.addEventListener("click", function () {
+      state.listLimit += PAGE;
+      // 重画后保持滚动位置，新加载的卡片接在原来的位置后面
+      var y = window.scrollY;
+      redraw();
+      window.scrollTo(0, y);
+    });
+    $list.appendChild(more);
+  }
+
   function renderLibrary(apps) {
     var $list = el("div");
+    state.listLimit = PAGE;
     function draw(animate) {
       var q = state.libQuery.trim().toLowerCase();
       var shown = apps.filter(function (x) {
@@ -727,18 +799,16 @@
       $list.textContent = "";
       $list.appendChild(el("p", { class: "count", text: "显示 " + shown.length + " / " + apps.length + " 个" }));
       if (!shown.length) { $list.appendChild(el("div", { class: "notice", text: "没有符合条件的工具。" })); return; }
-      var grid = el("div", { class: "app-grid" });
-      shown.forEach(function (x, i) { grid.appendChild(appCard(x.app, i, animate, formatDate(x.date).split(" · ")[0])); });
-      $list.appendChild(grid);
+      renderGroups($list, shown, "app-grid", "个", function (x, i) { return appCard(x.app, i, animate); }, function () { draw(false); });
     }
     var catOpts = { all: "全部" };
     Object.keys(APP_CATS).forEach(function (k) { catOpts[k] = APP_CATS[k]; });
     var search = el("input", { class: "search", type: "search", placeholder: "搜索工具名或用途", "aria-label": "搜索工具" });
     search.value = state.libQuery;
-    search.addEventListener("input", function () { state.libQuery = search.value; draw(false); });
+    search.addEventListener("input", function () { state.libQuery = search.value; state.listLimit = PAGE; draw(false); });
     $content.innerHTML = "";
     $content.appendChild(el("div", { class: "lib-tools" }, [
-      chipGroup("工具分类", catOpts, state.libCat, function (k) { state.libCat = k; draw(false); }),
+      chipGroup("工具分类", catOpts, state.libCat, function (k) { state.libCat = k; state.listLimit = PAGE; draw(false); }),
       search
     ]));
     $content.appendChild($list);
@@ -771,6 +841,7 @@
 
   function renderDesign(list) {
     var $list = el("div");
+    state.listLimit = PAGE;
     function draw(animate) {
       var q = state.designQuery.trim().toLowerCase();
       var shown = list.filter(function (x) {
@@ -781,18 +852,16 @@
       $list.textContent = "";
       $list.appendChild(el("p", { class: "count", text: "显示 " + shown.length + " / " + list.length + " 条" }));
       if (!shown.length) { $list.appendChild(el("div", { class: "notice", text: "没有符合条件的内容。" })); return; }
-      var grid = el("div", { class: "grid" });
-      shown.forEach(function (x, i) { grid.appendChild(designCard(x.item, i, animate, formatDate(x.date).split(" · ")[0])); });
-      $list.appendChild(grid);
+      renderGroups($list, shown, "grid", "条", function (x, i) { return designCard(x.item, i, animate); }, function () { draw(false); });
     }
     var kindOpts = { all: "全部" };
     Object.keys(DESIGN_KINDS).forEach(function (k) { kindOpts[k] = DESIGN_KINDS[k]; });
     var search = el("input", { class: "search", type: "search", placeholder: "搜索工具、插件、优惠", "aria-label": "搜索设计内容" });
     search.value = state.designQuery;
-    search.addEventListener("input", function () { state.designQuery = search.value; draw(false); });
+    search.addEventListener("input", function () { state.designQuery = search.value; state.listLimit = PAGE; draw(false); });
     $content.innerHTML = "";
     $content.appendChild(el("div", { class: "lib-tools" }, [
-      chipGroup("设计分类", kindOpts, state.designKind, function (k) { state.designKind = k; draw(false); }),
+      chipGroup("设计分类", kindOpts, state.designKind, function (k) { state.designKind = k; state.listLimit = PAGE; draw(false); }),
       search
     ]));
     $content.appendChild($list);
