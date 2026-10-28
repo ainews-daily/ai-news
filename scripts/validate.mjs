@@ -64,7 +64,7 @@ export function validateIssue(issue) {
   // 设计专栏、价格动态、大佬观点是 2026-10-15 起新增的版块，往期没有这些字段
   if (issue.design !== undefined) errors.push(...validateDesign(issue.design, issue.date));
   if (issue.pricing !== undefined) errors.push(...validatePricing(issue.pricing));
-  if (issue.voices !== undefined) errors.push(...validateVoices(issue.voices));
+  if (issue.voices !== undefined) errors.push(...validateVoices(issue.voices, issue.date));
   return errors;
 }
 
@@ -184,11 +184,16 @@ function validatePricing(list) {
   return errors;
 }
 
-function validateVoices(list) {
+// 10-29 起大佬观点至少 8 条、国内至少 3 条；之前的往期按旧标准（4 条、国内 1 条）
+const VOICES_STRICT_FROM = "2026-10-29";
+
+function validateVoices(list, date) {
   const errors = [];
   if (!Array.isArray(list)) return ["voices 应为数组"];
-  if (list.length < 4 || list.length > 12) errors.push(`大佬观点数量应为 4–12，实际 ${list.length}`);
-  if (list.length && !list.some((it) => it.region === "cn")) errors.push("大佬观点至少要有 1 条国内人物");
+  const strict = String(date || "") >= VOICES_STRICT_FROM;
+  const min = strict ? 8 : 4, minCn = strict ? 3 : 1;
+  if (list.length < min || list.length > 12) errors.push(`大佬观点数量应为 ${min}–12，实际 ${list.length}`);
+  if (list.length && list.filter((it) => it.region === "cn").length < minCn) errors.push(`大佬观点至少要有 ${minCn} 条国内人物`);
   list.forEach((it, i) => {
     const at = `观点 ${i + 1}`;
     checkEntry(errors, at, it, 2, 4);

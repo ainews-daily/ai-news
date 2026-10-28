@@ -284,3 +284,15 @@ test("大佬观点 4–12 条，需要人物、身份、地区和日期，至少
   noCn.voices = [1, 2, 3, 4].map((i) => entry(i, { person: "A", role: "B", region: "intl", said: "2026-10-14" }));
   assert.ok(hasError(validateIssue(noCn), "至少要有 1 条国内人物"));
 });
+
+test("10-29 起大佬观点至少 8 条、国内至少 3 条", () => {
+  const issue = makeIssue();
+  issue.date = "2026-10-29";
+  const voice = (i, region) => entry(i, { person: "A", role: "B", region, said: "2026-10-28" });
+  issue.voices = [1, 2, 3, 4, 5, 6].map((i) => voice(i, "cn"));
+  assert.ok(hasError(validateIssue(issue), "大佬观点数量应为 8–12"));
+  issue.voices = [1, 2, 3, 4, 5, 6, 7, 8].map((i) => voice(i, i <= 2 ? "cn" : "intl"));
+  assert.ok(hasError(validateIssue(issue), "至少要有 3 条国内人物"));
+  issue.voices[2].region = "cn";
+  assert.deepEqual(validateIssue(issue), []);
+});
