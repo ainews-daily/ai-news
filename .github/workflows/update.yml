@@ -1,7 +1,7 @@
 name: 抓取热点并发布网站
 
 # 每 3 小时抓一次实时热点；推送新日报（push 到 main）时也会重新发布。
-# 第一次使用前：仓库 Settings → Pages → Source 选 “GitHub Actions”。
+# 网站只发布到 Cloudflare Pages（https://aifresh.pages.dev）。
 on:
   push:
     branches: [main]
@@ -10,7 +10,7 @@ on:
   workflow_dispatch: {}
 
 concurrency:
-  group: pages
+  group: deploy
   cancel-in-progress: false
 
 jobs:
@@ -18,11 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # 把抓到的 data/hot.js 提交回仓库
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -59,22 +54,15 @@ jobs:
           cp index.html _site/
           cp -r data _site/
 
-      # 同时发布到 Cloudflare Pages（https://aifresh.pages.dev）。
-      # 需要在仓库 Settings → Secrets 里配好 CLOUDFLARE_API_TOKEN 和 CLOUDFLARE_ACCOUNT_ID，没配就跳过。
+      # 需要在仓库 Settings → Secrets 里配好 CLOUDFLARE_API_TOKEN 和 CLOUDFLARE_ACCOUNT_ID。
+      # 这是唯一的发布渠道，没配密钥或发布失败都让任务报错，免得网站悄悄停更。
       - name: 发布到 Cloudflare
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "没配 Cloudflare 密钥，跳过"
-            exit 0
+            echo "没配 Cloudflare 密钥，无法发布"
+            exit 1
           fi
-          npx --yes wrangler@4 pages deploy _site --project-name=aifresh --branch=main || echo "Cloudflare 发布失败，GitHub Pages 不受影响"
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-      - id: deploy
-        uses: actions/deploy-pages@v4
+          npx --yes wrangler@4 pages deploy _site --project-name=aifresh --branch=main
