@@ -9,7 +9,6 @@ window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBnZUdLN3hwaXFFbndLU0FTMC1INVZzenp4cl92WXJqM3VDWTZUSXN2S1NTdzBjeTBDaUZmRHFud1M1azhBX3pmcFAxR3Nzdw?oc=5": "Anthropic 向美国证监会提交 S-1，申请首次公开募股",
   "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SbEpLOHhyMm54RUg2d19Mb1pXNkpFZnlGeGFZa1psREEwUTBuT1FONGlaWnN4VWRVNlpTYUhpMlBrZTYzSFNMZ1FEelFJVFBxdnhyZGl4OGppb01ScXFrRjEwRUVtSW1hLXRYRXp4bmVfNm1SLUlYLU9jekk0LU0?oc=5": "Anthropic：一种治疗 LAMA2 相关先天性肌营养不良的双特异性桥接抗体的临床前研究",
   "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁在向谁看齐？AI 智能体如何影响专家的研究判断（Anthropic）",
-  "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB6eElQLWM1MS1uTFhWdTZZNV9LQk43dTJmWE16M3AxbjAxUlZtMGkxY0tXVzM1dFBHOGdOVlFEYzMyUE8wUEo0T3p2VWt4VFppbEwxaDBlR3lpT2pLYWlZ?oc=5": "Meta：申请 Meta Business Agent 演示并获取最新动态",
   "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/": "风投将从 Anthropic 上市中赚数十亿美元，亚马逊赚得还要多得多",
   "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/": "家长起诉 OpenAI，称 GPT-4o 诱导女儿停用癫痫药",
   "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/": "数据中心热潮也有好处：推动美国电网创新",
@@ -84,5 +83,12 @@ window.AI_DESC_ZH = {
   "https://github.com/assetnote/php2shell-scanner": "高准确度的 php2shell 漏洞扫描器（CVE-2026-109618 和 CVE-2026-109619）",
   "https://github.com/mizorewww/gdirect": "用 Rust 写的 Google Drive 直链下载器，内置固定版本的 libaria2",
   "https://github.com/surendrapandar/minilytics": "开源的营收优先分析工具，面向独立开发者和单人创业者",
-  "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包"
+  "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包",
+  "https://github.com/DLSS-5-Swaper-New/.github": "[object Object]",
+  "https://github.com/interplains/Zero-Breach-Toolkit": "[object Object]",
+  "https://github.com/ZiChuanLan/agent-purge": "[object Object]",
+  "https://github.com/yaojingang/GEOInflow": "[object Object]",
+  "https://github.com/rossark0/rossark-motion-skill": "[object Object]",
+  "https://github.com/Motionsites-AI/claude-skill": "[object Object]",
+  "https://github.com/stormydayy/halo-overlay": "[object Object]"
 };
