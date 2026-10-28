@@ -93,18 +93,19 @@
   }
   .load-more:hover { border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 
-  /* 回到顶部 */
-  .to-top {
-    position: fixed; right: 20px; bottom: 24px; z-index: 25; width: 44px; height: 44px; display: grid; place-items: center;
+  /* 右下角浮动按钮：版块目录（手机）、回到顶部 */
+  .fab { position: fixed; right: 20px; bottom: 24px; z-index: 25; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .fab-btn {
+    width: 44px; height: 44px; display: grid; place-items: center; padding: 0;
     border: 1px solid var(--border); border-radius: 50%; background: var(--surface); color: var(--text); cursor: pointer;
-    box-shadow: 0 4px 16px rgba(20, 24, 40, .14);
-    opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s;
+    box-shadow: 0 4px 16px rgba(20, 24, 40, .14); -webkit-tap-highlight-color: transparent;
   }
+  .fab-btn svg { width: 20px; height: 20px; }
+  .to-top { opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s; }
   .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
-  .to-top svg { width: 20px; height: 20px; }
 
   /* 手机端才用的顶栏、底部导航图标、遮罩，桌面隐藏 */
-  .appbar, .tab-ico, .backdrop { display: none; }
+  .date-btn, .tab-ico, .backdrop, .toc-btn, .toc-panel { display: none; }
 
   /* 月历：有日报的日子可点，带小圆点 */
   .cal { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px; box-shadow: var(--shadow); }
@@ -260,20 +261,11 @@
   @media (max-width: 760px) {
     .layout {
       grid-template-columns: minmax(0, 1fr); gap: 0;
-      padding: 8px 16px calc(84px + env(safe-area-inset-bottom));
+      padding: 20px 16px calc(84px + env(safe-area-inset-bottom));
     }
 
-    /* 顶栏：大标题滑出屏幕后，显示小标题 */
-    .appbar {
-      position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 12px;
-      height: calc(50px + env(safe-area-inset-top)); padding: env(safe-area-inset-top) 16px 0;
-      background: color-mix(in srgb, var(--bg) 82%, transparent);
-      -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5);
-      border-bottom: 1px solid transparent; transition: border-color .2s;
-    }
-    .appbar-title { font-weight: 800; font-size: 17px; opacity: 0; transform: translateY(4px); transition: opacity .2s, transform .2s; }
-    .appbar.scrolled { border-bottom-color: var(--border); }
-    .appbar.scrolled .appbar-title { opacity: 1; transform: none; }
+    /* 标题行：右边是日期按钮 */
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
     .date-btn {
       display: inline-flex; align-items: center; gap: 4px; margin-left: auto; padding: 6px 10px 6px 12px;
       border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text);
@@ -322,14 +314,13 @@
     .subtitle { font-size: 13.5px; margin-top: 4px; }
 
     /* 筛选条：单行横向滑动，左右贴边 */
-    .filters, .jump, .lib-tools .chip-group {
+    .filters, .lib-tools .chip-group {
       flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
       margin-left: -16px; margin-right: -16px; padding: 0 16px;
     }
-    .filters::-webkit-scrollbar, .jump::-webkit-scrollbar, .chip-group::-webkit-scrollbar { display: none; }
+    .filters::-webkit-scrollbar, .chip-group::-webkit-scrollbar { display: none; }
     .filters { gap: 12px; margin-bottom: 14px; }
     .filters .chip-group { flex-wrap: nowrap; flex: none; }
-    .jump { margin-top: 14px; margin-bottom: 0; }
     .chip, .jump-label { flex: none; white-space: nowrap; }
     .lib-tools { flex-direction: column; align-items: stretch; gap: 10px; margin-bottom: 14px; }
     .lib-tools .chip-group { order: 2; }
@@ -338,7 +329,7 @@
     /* 卡片收紧 */
     .highlights { padding: 14px 16px; margin-bottom: 4px; border-radius: 14px; }
     .highlights li { margin: 6px 0; line-height: 1.6; }
-    .section { margin-top: 32px; scroll-margin-top: 64px; }
+    .section { margin-top: 32px; scroll-margin-top: 12px; }
     .section-head h2 { font-size: 19px; }
     .section-desc { font-size: 13px; margin-bottom: 12px; }
     .grid, .app-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }
@@ -347,7 +338,24 @@
     .card p { font-size: 13.5px; line-height: 1.65; }
     .count { margin-bottom: 10px; }
     .hot-row { padding: 12px 14px; }
-    .to-top { right: 16px; bottom: calc(78px + env(safe-area-inset-bottom)); }
+    .fab { right: 16px; bottom: calc(78px + env(safe-area-inset-bottom)); }
+    /* 版块导航收进目录按钮 */
+    .jump { display: none; }
+    .has-toc .toc-btn { display: grid; }
+    .toc-open .toc-btn { background: var(--text); border-color: var(--text); color: var(--bg); }
+    .toc-panel {
+      display: block; min-width: 168px; padding: 6px; border-radius: 14px;
+      background: var(--surface); border: 1px solid var(--border); box-shadow: 0 8px 28px rgba(20, 24, 40, .18);
+      opacity: 0; transform: translateY(8px) scale(.97); transform-origin: bottom right; pointer-events: none;
+      transition: opacity .18s, transform .18s; visibility: hidden;
+    }
+    .toc-open .toc-panel { opacity: 1; transform: none; pointer-events: auto; visibility: visible; }
+    .toc-panel button {
+      display: flex; justify-content: space-between; gap: 16px; width: 100%; padding: 10px 12px; border: 0; border-radius: 9px;
+      background: none; color: var(--text); font: inherit; font-size: 14.5px; text-align: left; cursor: pointer;
+    }
+    .toc-panel button:active { background: var(--surface-2); }
+    .toc-panel .toc-n { color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; }
     .group-head { margin: 22px 0 10px; }
   }
 
@@ -358,17 +366,16 @@
 </style>
 </head>
 <body>
-<div class="appbar" id="appbar">
-  <span class="appbar-title" aria-hidden="true">AI 新鲜事</span>
-  <button class="date-btn" id="date-btn" type="button" aria-haspopup="dialog" hidden>
-    <span id="date-btn-text"></span>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+<div class="backdrop" id="backdrop"></div>
+<div class="fab">
+  <div class="toc-panel" id="toc-panel" role="menu" aria-label="版块目录"></div>
+  <button class="fab-btn toc-btn" id="toc-btn" type="button" aria-label="版块目录" aria-expanded="false" aria-controls="toc-panel">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg>
+  </button>
+  <button class="fab-btn to-top" id="to-top" type="button" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
 </div>
-<div class="backdrop" id="backdrop"></div>
-<button class="to-top" id="to-top" type="button" aria-label="回到顶部">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-</button>
 <div class="layout">
   <nav class="dates" id="dates-nav" aria-label="往期">
     <h2>往期</h2>
@@ -376,7 +383,13 @@
   </nav>
   <main>
     <header class="top">
-      <h1 class="title" id="title" aria-label="AI 新鲜事"></h1>
+      <div class="title-row">
+        <h1 class="title" id="title" aria-label="AI 新鲜事"></h1>
+        <button class="date-btn" id="date-btn" type="button" aria-haspopup="dialog" hidden>
+          <span id="date-btn-text"></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
       <p class="subtitle" id="subtitle">&nbsp;</p>
       <nav class="tabs" aria-label="视图">
         <a href="#" id="tab-daily"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h10A1.5 1.5 0 0 1 17 5.5V19a1 1 0 0 0 1 1H6a2 2 0 0 1-2-2z"/><path d="M17 9h2a1 1 0 0 1 1 1v8a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>精选日报</span></a>
@@ -409,6 +422,7 @@
 
   var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", designKind: "all", designQuery: "", hotTopic: "all", hotQuery: "", calMonth: null, listLimit: 20 };
   var $dateBtn = document.getElementById("date-btn");
+  var $tocBtn = document.getElementById("toc-btn");
   var $subtitle = document.getElementById("subtitle");
   var $content = document.getElementById("content");
 
@@ -470,20 +484,23 @@
     $dateBtn.setAttribute("aria-expanded", String(open));
   }
 
+  function setToc(open) {
+    document.body.classList.toggle("toc-open", open);
+    $tocBtn.setAttribute("aria-expanded", String(open));
+  }
+
   function initMobile() {
     $dateBtn.addEventListener("click", function () { setSheet(true); });
     document.getElementById("backdrop").addEventListener("click", function () { setSheet(false); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") setSheet(false); });
-    // 大标题滑出屏幕后，顶栏显示小标题和分隔线
-    var $bar = document.getElementById("appbar"), $title = document.getElementById("title");
     var $top = document.getElementById("to-top");
-    function onScroll() {
-      $bar.classList.toggle("scrolled", window.scrollY > $title.offsetTop + $title.offsetHeight - 50);
-      $top.classList.toggle("show", window.scrollY > window.innerHeight * 1.5);
-    }
+    function onScroll() { $top.classList.toggle("show", window.scrollY > window.innerHeight * 1.5); }
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     $top.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+    // 版块目录：点按钮展开 / 收起，点别处收起
+    $tocBtn.addEventListener("click", function (e) { e.stopPropagation(); setToc(!document.body.classList.contains("toc-open")); });
+    document.addEventListener("click", function (e) { if (!e.target.closest("#toc-panel")) setToc(false); });
     // 再点一下当前所在的导航，回到顶部（和手机 App 的习惯一致）
     Array.from(document.querySelectorAll(".tabs a")).forEach(function (a) {
       a.addEventListener("click", function (e) {
@@ -732,14 +749,23 @@
     }
 
     // 版块导航：版块多，往下的内容不容易发现，点一下滚动到对应版块
+    // 桌面是标题下的一排按钮；手机收进右下角的目录按钮
     var jump = el("nav", { class: "jump", "aria-label": "版块导航" }, [el("span", { class: "jump-label", text: "跳到" })]);
+    var $toc = document.getElementById("toc-panel");
+    $toc.textContent = "";
     Array.from($content.querySelectorAll(".section")).forEach(function (sec) {
       var name = sec.querySelector("h2").textContent;
+      var go = function () { setToc(false); sec.scrollIntoView({ behavior: "smooth", block: "start" }); };
       var b = el("button", { class: "chip", type: "button", text: name });
-      b.addEventListener("click", function () { sec.scrollIntoView({ behavior: "smooth", block: "start" }); });
+      b.addEventListener("click", go);
       jump.appendChild(b);
+      var count = sec.querySelector(".section-head span");
+      var t = el("button", { type: "button", role: "menuitem" }, [el("span", { text: name }), count && el("span", { class: "toc-n", text: count.textContent })]);
+      t.addEventListener("click", go);
+      $toc.appendChild(t);
     });
     $content.insertBefore(jump, $content.querySelector(".highlights").nextSibling);
+    document.body.classList.add("has-toc");
   }
 
   // 往期文件写好就不再改，让浏览器缓存；只有最新一期可能当天重写，加时间戳
@@ -1025,6 +1051,9 @@
 
   function show() {
     var wanted = decodeURIComponent(location.hash.slice(1));
+    // 目录只在日报页有，换页先收起
+    setToc(false);
+    document.body.classList.remove("has-toc");
     if (wanted === "tools" || wanted === "hot" || wanted === "design") {
       setTabs(wanted);
       state.date = null;
