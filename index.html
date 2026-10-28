@@ -190,8 +190,13 @@
   }
   .card:hover::before { opacity: 1; }
   .card:hover { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
-  .tags { display: flex; gap: 6px; align-items: center; font-size: 12px; }
-  .tag { padding: 1px 8px; border-radius: 6px; font-weight: 600; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; }
+  .tag { padding: 1px 8px; border-radius: 6px; font-weight: 600; white-space: nowrap; }
+  /* 大佬观点：人名 + 身份一行，日期靠右 */
+  .who { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; font-size: 13px; color: var(--muted); }
+  .who-name { color: var(--accent); font-weight: 700; font-size: 14px; white-space: nowrap; }
+  .who-role { min-width: 0; }
+  .who time { margin-left: auto; white-space: nowrap; font-size: 12.5px; font-variant-numeric: tabular-nums; }
   .tag.cat { color: var(--c); background: color-mix(in srgb, var(--c) 13%, transparent); }
   .tag.region { color: var(--muted); background: var(--surface-2); }
   .card h3 { margin: 0; font-size: 16.5px; line-height: 1.45; }
@@ -237,11 +242,13 @@
   /* 工具库 */
   .hot-box { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
   .hot-list { list-style: none; margin: 0; padding: 0; }
-  .hot-row { display: grid; grid-template-columns: 2.6em minmax(0, 1fr); gap: 2px 10px; padding: 11px 16px; border-top: 1px solid var(--border); }
+  .hot-row { display: grid; grid-template-columns: 1.6em minmax(0, 1fr); gap: 2px 8px; padding: 11px 16px; border-top: 1px solid var(--border); }
   .hot-row:first-child { border-top: 0; }
   .hot-row:hover { background: var(--surface-2); }
-  .hot-rank { grid-row: span 3; color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; padding-top: 2px; }
-  .hot-row a { text-decoration: none; font-weight: 600; line-height: 1.5; overflow-wrap: anywhere; }
+  /* 序号和标题第一行对齐，靠右贴近标题 */
+  .hot-rank { grid-row: span 3; text-align: right; color: var(--muted); font-size: 13px; line-height: 22.5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .hot-row:nth-child(-n+3) .hot-rank { color: var(--accent); }
+  .hot-row a { text-decoration: none; font-weight: 600; font-size: 15px; line-height: 22.5px; overflow-wrap: anywhere; }
   .hot-row a:hover { color: var(--accent); }
   .hot-sub { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12.5px; color: var(--muted); }
   .hot-sub .tag { font-size: 11.5px; }
@@ -588,10 +595,10 @@
     return el("a", { href: safeUrl(url), target: "_blank", rel: "noopener noreferrer", text: text });
   }
 
-  // 通用卡片：opts = { tags: [节点], title, url, body, foot: 节点 }
+  // 通用卡片：opts = { tags: [节点] 或 head: 节点, title, url, body, foot: 节点 }
   function card(opts, i, animate) {
     var c = el("article", { class: "card" }, [
-      el("div", { class: "tags" }, opts.tags),
+      opts.head || el("div", { class: "tags" }, opts.tags),
       el("h3", {}, [extLink(opts.url, opts.title)]),
       opts.body ? el("p", { text: opts.body }) : null,
       opts.foot
@@ -688,7 +695,11 @@
       var vg = el("div", { class: "grid" });
       issue.voices.forEach(function (v, i) {
         vg.appendChild(card({
-          tags: [tag(v.person, "model"), tag(v.region === "cn" ? "国内" : "国外", null, "region"), tag(v.role, null, "region"), tag(formatDate(v.said), null, "region")],
+          head: el("div", { class: "who" }, [
+            el("span", { class: "who-name", text: v.person }),
+            el("span", { class: "who-role", text: [v.region === "cn" ? "国内" : "国外", v.role].filter(Boolean).join(" · ") }),
+            el("time", { datetime: v.said, text: formatDate(v.said).split(" · ")[0] })
+          ]),
           title: v.title, url: v.url, body: v.summary,
           foot: sourceLine("出处：", v.source, v.url)
         }, i, true));
