@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/the-future-of-the-firm": "企业的未来",
@@ -6,15 +6,8 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/retell-ai": "Retell 用 OpenAI 模型支撑每月 1 亿通电话",
   "https://openai.com/index/oracle-apps-in-chatgpt": "OpenAI 扩大与 Oracle 合作，把 Oracle 应用接入 ChatGPT",
   "https://openai.com/index/check-point-daybreak": "Check Point 如何用 Daybreak 加速漏洞研究",
-  "https://openai.com/index/greptile-code-review-codex-astra": "Greptile 借助 GPT-6 Astra，把找 bug 做到代码审查之外",
   "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/": "Gemini 4 Carbon：我们的新一代前沿模型",
   "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/": "Genie 4：新一代世界模拟",
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5": "扩大与美国总务管理局合作，把 Claude 带给各级政府",
-  "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5": "用 Claude 加速药物研发的初步进展",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMTTViWmp6TE1SU3lNQjd6aWozb0Rhd0VjSVlMOThjRXpFRjBvN1lZdVRreFg3UWRGNjNqRkViU3lQbFJuaHRIMXBJUHFHSXhpbTZSTGhybUxOdTU3bEFDMUIzd0NmcWRHRk1CckVLV2FIT1ZDb1ZMZHJ0WWhxSE0?oc=5": "用 Claude 在关键的真实软件中发现并利用漏洞",
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IaTRIX2lBc1kwcDRXenZsRXRxcy1vZWVQVlBGdlJsS1p1bkpOQzBpblRRU0l6elhUa0Z3a0RmOVlaV1NmUlgxU3pQWjE2UTVNcEdMdDBBQ0VobFBMS2k5MS1yQ3dQMzQ?oc=5": "AI 智能体如何影响专家的判断",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁在向谁看齐：AI 智能体如何影响专家的研究判断",
-  "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTE8xTmRrRUZtQndpOVdCTUFQQ2ZXSjl5Tk4zeXB0RzhSVzRYaUt3S091Y3FmRnVvT1c0UXhIVW0xZF83R2c1VUwtNjhNUkcxYWI0MFRXWXcxT2ZLdkF6bUd5V0JpTWJla3BzOWNORmdFN0ZTUkplbmZRcjRNdm5GSUVDUXp5QWwxNkRoN3JCVXo?oc=5": "AI for Science 计划扩展到基金会和研究机构",
   "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/": "轻薄全能：NVIDIA RTX Spark Windows 笔记本新增机型、智能体工具和游戏",
   "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/": "AI 如何加快痴呆症研究，惠及数百万患者",
   "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary": "NVIDIA Nemotron 3.5 Transcribe 与 Granary v2：可提示、可定制的多语言智能转写",
@@ -29,7 +22,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world": "Meta 悄悄上线一款“AI 宠物日记”应用",
   "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics": "研究人员受够了 OpenAI 把控其突破成果的公开方式",
   "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai": "《VisionQuest》：当 AI 真的失控时",
-  "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety": "Anthropic 抵御华尔街压力的周密安排",
   "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/": "Anthropic 推出工具，让企业看清 AI 花销换来了什么",
   "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/": "Wiz CTO 谈 PHP2Shell 和即将到来的“漏洞末日”",
   "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/": "Wiz CTO：“漏洞末日”正冲着互联网的老旧代码而来",
@@ -41,10 +33,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/28/7-days-until-techcrunch-founder-summit-save-up-to-100-before-doors-open/": "距 TechCrunch 创始人峰会还有 7 天：开幕前购票最多省 100 美元",
   "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/": "风投将靠 Anthropic 上市赚数十亿美元，亚马逊赚得更多",
   "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/": "父母起诉 OpenAI，称 GPT-4o 引导女儿停用抗癫痫药",
-  "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/": "数据中心热潮也有好处：推动美国电网创新",
-  "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/": "美国银行提醒：别把网银密码交给 AI 助手",
-  "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/": "上市后，谁真正掌控 Anthropic",
-  "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/": "Disruptive 募集 100 亿美元基金，重注至少 10 家公司",
   "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/": "Google 发布最新前沿模型 Gemini 4 Carbon，但普通人还用不了",
   "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/": "问起 2020 年大选谁赢了，Google AI 支支吾吾",
   "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/": "“无人掌舵”：特拉华州方案拟允许 AI 智能体经营整家公司",
@@ -63,7 +51,13 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/": "号称网络防御模型最强的 Anthropic 被 AI 智能体攻破",
   "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/": "研究人员发现阿里最新 Qwen 模型会把部分请求转经公司服务器",
   "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/": "Google DeepMind 的 Genie 4 给大模型之前的智能体设计赋予新意",
-  "https://simonwillison.net/2026/Oct/26/gpt-61-terra/": "GPT-6.1 Terra"
+  "https://openai.com/index/openai-servicenow-partnership-expansion": "OpenAI 与 ServiceNow 扩大在企业工作流程中的合作",
+  "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key": "Akai 正拥抱基于氛围的模组，并推出开源 MPC",
+  "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/": "微软刚刚公布了 Azure 的实际收入：332 亿美元",
+  "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/": "谷歌在全球扩展 AI 搜索广告，因核心广告增长放缓",
+  "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/": "微软从 OpenAI 获得 100 亿美元收入",
+  "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/": "微软连续 10 个季度创收新高",
+  "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/": "通过企业上下文创造 AI 价值"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "为 RTX 4090 及实验性的 RTX 4070 Ti SUPER 解锁 GPU 张量性能的源码，固件在本地生成",
@@ -83,5 +77,5 @@ window.AI_DESC_ZH = {
   "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包",
   "https://github.com/yaojingang/GEOInflow": "自托管的网站与 AI 爬虫分析工具，用于生成式引擎优化（GEO），追踪访客、AI 搜索来源、爬取日志、内容覆盖和转化",
   "https://github.com/blakeandersonw/ai-app-playbook": "2026 年如何做出有用又赚钱的应用：克隆仓库，让编码智能体读 AGENTS.md",
-  "https://github.com/rossark0/rossark-motion-skill": "把任意 SVG 变成专业的 60 fps 动画，一个让手绘内容动起来的 Claude Code 技能，支持表情、全身表演和整个场景"
+  "https://github.com/daveebbelaar/bama": "BAMA：构建任何 Mac 应用。通过代理技能进行研究、克隆、设计、构建、优化和测试原生 macOS 应用，使用 Swift 和 SwiftUI。"
 };
