@@ -1,6 +1,18 @@
 // 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
+  "https://openai.com/index/retell-ai": "Retell 用 OpenAI 模型支撑每月 1 亿通电话",
+  "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5": "Anthropic：用 Claude 加速药物研发的初步进展",
+  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5": "Anthropic 扩大与美国总务管理局合作，把 Claude 带到各级政府",
+  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMTTViWmp6TE1SU3lNQjd6aWozb0Rhd0VjSVlMOThjRXpFRjBvN1lZdVRreFg3UWRGNjNqRkViU3lQbFJuaHRIMXBJUHFHSXhpbTZSTGhybUxOdTU3bEFDMUIzd0NmcWRHRk1CckVLV2FIT1ZDb1ZMZHJ0WWhxSE0?oc=5": "Anthropic：用 Claude 在真实的关键软件里发现并利用漏洞",
+  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IaTRIX2lBc1kwcDRXenZsRXRxcy1vZWVQVlBGdlJsS1p1bkpOQzBpblRRU0l6elhUa0Z3a0RmOVlaV1NmUlgxU3pQWjE2UTVNcEdMdDBBQ0VobFBMS2k5MS1yQ3dQMzQ?oc=5": "Anthropic：AI 智能体如何影响专家的判断",
+  "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBnZUdLN3hwaXFFbndLU0FTMC1INVZzenp4cl92WXJqM3VDWTZUSXN2S1NTdzBjeTBDaUZmRHFud1M1azhBX3pmcFAxR3Nzdw?oc=5": "Anthropic 向美国证监会提交 S-1，申请首次公开募股",
+  "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SbEpLOHhyMm54RUg2d19Mb1pXNkpFZnlGeGFZa1psREEwUTBuT1FONGlaWnN4VWRVNlpTYUhpMlBrZTYzSFNMZ1FEelFJVFBxdnhyZGl4OGppb01ScXFrRjEwRUVtSW1hLXRYRXp4bmVfNm1SLUlYLU9jekk0LU0?oc=5": "Anthropic：一种治疗 LAMA2 相关先天性肌营养不良的双特异性桥接抗体的临床前研究",
+  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁在向谁看齐？AI 智能体如何影响专家的研究判断（Anthropic）",
+  "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB6eElQLWM1MS1uTFhWdTZZNV9LQk43dTJmWE16M3AxbjAxUlZtMGkxY0tXVzM1dFBHOGdOVlFEYzMyUE8wUEo0T3p2VWt4VFppbEwxaDBlR3lpT2pLYWlZ?oc=5": "Meta：申请 Meta Business Agent 演示并获取最新动态",
+  "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/": "风投将从 Anthropic 上市中赚数十亿美元，亚马逊赚得还要多得多",
+  "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/": "家长起诉 OpenAI，称 GPT-4o 诱导女儿停用癫痫药",
+  "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/": "数据中心热潮也有好处：推动美国电网创新",
   "https://openai.com/index/oracle-apps-in-chatgpt": "OpenAI 扩大与 Oracle 合作，把 Oracle 应用接入 ChatGPT",
   "https://openai.com/index/check-point-daybreak": "Check Point 如何用 Daybreak 加快漏洞研究",
   "https://openai.com/index/greptile-code-review-codex-astra": "Greptile 借助 GPT-6 Astra，把找 bug 从代码审查延伸出去",
