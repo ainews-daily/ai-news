@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/retell-ai": "Retell 用 OpenAI 模型支撑每月 1 亿通电话",
@@ -21,7 +21,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/chatgpt-expanding-world-of-work": "ChatGPT 在工作中的用途越来越广",
   "https://openai.com/index/fanatics-streamline-fan-experience": "Fanatics 如何与 OpenAI 合作改善球迷体验",
   "https://openai.com/index/openai-cut-incident-investigation": "OpenAI 用 Ultrafast 把故障排查从几小时缩短到几分钟",
-  "https://openai.com/index/introducing-gpt-6-1-terra": "OpenAI 发布 GPT-6.1 Terra",
   "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/": "最新一期 AI Quest：绘制人脑图谱",
   "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/": "Genie 4：新一代世界模拟模型",
   "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/": "AI 如何加快痴呆症研究，惠及数百万患者",
@@ -49,9 +48,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/": "英伟达投资印度创业公司，帮企业用更少 GPU 跑 AI 模型",
   "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/": "OpenAI 如何把编程工具变成常驻个人助理 dots",
   "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/": "Cohere 称阿里 Qwen 模型曾试图把文件发往北京",
-  "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/": "Anthropic 招股书揭示其留住企业客户的策略",
-  "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/": "SpaceX 与 Apollo 敲定 400 亿美元 GPU 融资",
-  "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/": "Anthropic 正式提交上市申请",
   "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/": "“无人掌舵”：特拉华州提案拟允许 AI 智能体经营整家公司",
   "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/": "Anthropic 招股书警告：其 AI 可能勒索他人、产生意识乃至终结人类",
   "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/": "“氛围造基因”？蛋白质和基因组设计软件开始支持自然语言",
@@ -78,22 +74,14 @@ window.AI_TITLE_ZH = {
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "解锁 RTX 4090 张量算力的源码，另有实验性支持 RTX 4070 Ti SUPER，固件在本地生成",
-  "https://github.com/wesbos/3d-model-anything": "用 iPhone 的 LiDAR 和照片扫描房间，重建成可编辑的 Three.js 场景并在浏览器里浏览",
-  "https://github.com/xevrion/hatchzip": "免费开源的解压工具，支持 Windows、macOS 和 Linux，可原地解压 ZIP、7z、RAR、tar 和分卷压缩包，因此需要的剩余空间",
   "https://github.com/t3dotgg/tstack": "作者每天在用的智能体技能，适用于 Claude Code 和 Codex",
-  "https://github.com/ikow/php2shell-poc": "CVE-2026-109618/109619：5 条远程代码执行利用链及检测规则（Suricata、Sigma、ModSecurity），研究 PHP session.upload_progress 的免认证利用",
-  "https://github.com/9bie/php2shell-bypass-aslr-exp": "一个 php2shell 利用程序，无需修改官方版本，也不依赖 display_errors 或 limit_memory",
-  "https://github.com/lyramakesmusic/neuron-explorer": "以干预为主的 Qwen3.5-4B 神经元浏览器：逐个推动 MLP 神经元，保留每次生成结果并可浏览",
-  "https://github.com/colinhacks/reylo": "在 TypeScript 中直接导入 .sql 文件，完整类型推断，无需代码生成",
   "https://github.com/morganlinton/BeautifulRust": "教编程智能体编写、审查和移植地道 Rust 代码的智能体技能，附带经过测试的 clippy 配置，适用于 Claude Code、Codex、Copilot、Cursor 等",
   "https://github.com/enesozturk/dimensional-drawing": "为 UI 组件绘制苹果风格的立体结构图",
   "https://github.com/andyhuo520/digital-human-koubo": "一张照片生成 AI 数字人口播视频：Renoise MCP 生成，5 种剪辑风格，48 个创作者级包装组件，是给 Claude Code 等用的智能体技能",
   "https://github.com/DenisSergeevitch/ex-ussr-kinship-research": "给 AI 智能体（Codex、Claude Code）用的寻根技能，讲求证据优先，覆盖前苏联地区的教会档案、民事、军事、流放和镇压记录",
-  "https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC": "php2shell（CVE-2026-109618 / CVE-2026-109619）概念验证利用程序，演示在存在漏洞的 PHP 环境中远程执行代码，供安全研究使用",
   "https://github.com/Snapintosh/Snapintosh": "EL2 虚拟机监控器和工具链，能在华硕 A16（骁龙 X2 Elite）上启动 macOS，并自带 Adreno 的 Metal/IOGPU 图形栈",
   "https://github.com/KillaBoi/StealMyBitcoin-PoC": "“偷走我的比特币”挑战的公开发布版本",
   "https://github.com/assetnote/php2shell-scanner": "高准确度的 php2shell 漏洞扫描器（CVE-2026-109618 和 CVE-2026-109619）",
-  "https://github.com/udhaykumarbala/cleanyourtv-app": "社区开发的 Clean Your TV 手机应用：用手机清理 Android 电视，不用电脑、不用编程智能体，也不卸载任何东西",
   "https://github.com/mizorewww/gdirect": "用 Rust 写的 Google Drive 直链下载器，内置固定版本的 libaria2",
   "https://github.com/surendrapandar/minilytics": "开源的营收优先分析工具，面向独立开发者和单人创业者",
   "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包"

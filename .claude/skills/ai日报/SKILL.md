@@ -134,6 +134,7 @@ description: 生成当天的“AI 新鲜事”中文日报，写入本项目的 
    - 意译成通顺的中文，产品名、公司名、人名、命令保留原文；HTML 实体（如 `&#8217;`）按原意处理；去掉 Google News 标题末尾“ - Anthropic”这类来源后缀；简介被截断的按已有内容翻译，不要补编。
    - 写完运行 `node -e "global.window={};require('./data/title-zh.js');console.log(Object.keys(window.AI_TITLE_ZH).length, Object.keys(window.AI_DESC_ZH).length)"` 确认能正常加载。
    - 网页有翻译就只显示中文，英文原标题放在鼠标悬停提示里；没有翻译的照常显示英文。
+   - GitHub Actions 每次抓取热点后，会用 `scripts/translate.mjs`（Cloudflare Workers AI）补翻新出现的英文，已有的翻译不动。这里人工翻的质量更好，照常整个覆盖即可。
 
 8. **发布**：如果项目是 git 仓库且配置了远程：`git add data/` → `git commit -m "日报：D"` → `git pull --rebase` → `git push`。推送后 GitHub Actions 会自动更新网站。推送失败（比如网络问题）时告诉用户，文件已经保存在本地，之后再推送即可。
 
