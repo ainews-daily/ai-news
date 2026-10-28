@@ -2,13 +2,6 @@
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/retell-ai": "Retell 用 OpenAI 模型支撑每月 1 亿通电话",
-  "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5": "Anthropic：用 Claude 加速药物研发的初步进展",
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5": "Anthropic 扩大与美国总务管理局合作，把 Claude 带到各级政府",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMTTViWmp6TE1SU3lNQjd6aWozb0Rhd0VjSVlMOThjRXpFRjBvN1lZdVRreFg3UWRGNjNqRkViU3lQbFJuaHRIMXBJUHFHSXhpbTZSTGhybUxOdTU3bEFDMUIzd0NmcWRHRk1CckVLV2FIT1ZDb1ZMZHJ0WWhxSE0?oc=5": "Anthropic：用 Claude 在真实的关键软件里发现并利用漏洞",
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IaTRIX2lBc1kwcDRXenZsRXRxcy1vZWVQVlBGdlJsS1p1bkpOQzBpblRRU0l6elhUa0Z3a0RmOVlaV1NmUlgxU3pQWjE2UTVNcEdMdDBBQ0VobFBMS2k5MS1yQ3dQMzQ?oc=5": "Anthropic：AI 智能体如何影响专家的判断",
-  "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBnZUdLN3hwaXFFbndLU0FTMC1INVZzenp4cl92WXJqM3VDWTZUSXN2S1NTdzBjeTBDaUZmRHFud1M1azhBX3pmcFAxR3Nzdw?oc=5": "Anthropic 向美国证监会提交 S-1，申请首次公开募股",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SbEpLOHhyMm54RUg2d19Mb1pXNkpFZnlGeGFZa1psREEwUTBuT1FONGlaWnN4VWRVNlpTYUhpMlBrZTYzSFNMZ1FEelFJVFBxdnhyZGl4OGppb01ScXFrRjEwRUVtSW1hLXRYRXp4bmVfNm1SLUlYLU9jekk0LU0?oc=5": "Anthropic：一种治疗 LAMA2 相关先天性肌营养不良的双特异性桥接抗体的临床前研究",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁在向谁看齐？AI 智能体如何影响专家的研究判断（Anthropic）",
   "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/": "风投将从 Anthropic 上市中赚数十亿美元，亚马逊赚得还要多得多",
   "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/": "家长起诉 OpenAI，称 GPT-4o 诱导女儿停用癫痫药",
   "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/": "数据中心热潮也有好处：推动美国电网创新",
@@ -69,9 +62,7 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/": "GPT-6.1 Terra 让 OpenAI API 价格减半，表现还追近更大的模型",
   "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/": "Anthropic 向华尔街公开账本：营收创纪录，负债也在攀升",
   "https://simonwillison.net/2026/Oct/26/gpt-61-terra/": "GPT-6.1 Terra 上手体验",
-  "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/": "Import AI 第 478 期：用数学做对齐、ProgramBench，以及 Mirendil 展示的递归自我改进",
-  "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Pb21tVGIxdFZsRHZzZS1xSS1UcjBQemF5RDBiRWtxTlowMVI5NDhHcFhyS3hseVY0MjJGeVI1WEZtSjYxWjVEbnNoUUc1Tlpkazl1RldRcXJ4b3NteXc?oc=5": "通过 Meta Business Agent 平台拓展您的业务",
-  "https://news.google.com/rss/articles/CBMixgRBVV95cUxON0pfVFFJZEpjZG1YQXB2QjZqSTllaXBQdDZBcGJQbENSNkY0SkhfSlJaaVNybHhsVDRLRURGMXlEN2tma2JXblkzNnNiMU1nTzV1dnJOS3FhY3JwWWR0QTg1Ynl3d2xjbHdrOE4xMm1kd3Q3WWhrc1dPOEo2SUxlVDFITWtRZDBlZnl5SmRFandTNnpuSVJfZ1dJcmoyUU9LYXVFTVpIeWsxcVNuSUFfeHh5dTZLWGFjS2lXR3RMS0RvQUJRV3hXM2JBSmlXbzhUSnNnMkY0QlVydDBYckNkNko0T3lsblUzNlFyYkFTMk10WDltV200T2FpMnhNQ1JNckVJNnhzaUxFRGJQNEIyamhlRUJLTzg1UldYV2xBQjh1WXE4ZmE0c3g5T29YRzNMZW04VHltby1MeFFYRmdkQlFDZFNXX0E5RkZLYnNDSDBWV0JBRjNHOTZSdXFpQ0RlQmJhZUwyQU9IaHpQXzdjY01rMERBbWpVSUVlZDhvNXNTb2Z3cUliUVo1WWJxdW1kYnY2YVpVZWg0S1RFY3o5QW5jZE5OdDdLV0llNkhMNVpkWUFGUllRaU9scTdOVXNiYWFLZHIybC13SWcyU1Jyc01TMzkxMzFIM1EtcjRVQUlkMTIydnVtbkVsZTBzUW1zWU56UWJPUW5oWEcyMXczWVNfY3hIeUNxempnMDdLVHJVa3Z5YVFSUUg3RWJoYzBTY2tPNVZBU1ZvSUxFUU9FaGVJdmVfZHltSTc0cXpfS19tOVRrQ1E?oc=5": "请求 Meta Business Agent 的演示并保持更新"
+  "https://jack-clark.net/2026/10/26/import-ai-478-math-for-alignment-programbench-and-mirendil-shows-what-rsi-means/": "Import AI 第 478 期：用数学做对齐、ProgramBench，以及 Mirendil 展示的递归自我改进"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "解锁 RTX 4090 张量算力的源码，另有实验性支持 RTX 4070 Ti SUPER，固件在本地生成",
