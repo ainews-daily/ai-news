@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI 新鲜事</title>
 <style>
   :root {
@@ -74,24 +74,42 @@
     margin: 0 auto;
     padding: 32px 24px 64px;
     display: grid;
-    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-columns: 216px minmax(0, 1fr);
     gap: 40px;
   }
 
   /* 日期列表 */
   .dates { position: sticky; top: 32px; align-self: start; }
   .dates h2 { font-size: 12px; font-weight: 600; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
-  .date-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
-  .date-list a {
-    display: block; padding: 7px 12px; border-radius: 8px; text-decoration: none;
-    color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap;
+  /* 手机端才用的顶栏、底部导航图标、遮罩，桌面隐藏 */
+  .appbar, .tab-ico, .backdrop { display: none; }
+
+  /* 月历：有日报的日子可点，带小圆点 */
+  .cal { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px; box-shadow: var(--shadow); }
+  .cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .cal-title { font-size: 13.5px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .cal-nav {
+    width: 26px; height: 26px; border: 0; border-radius: 7px; background: none; color: var(--muted);
+    font: inherit; font-size: 16px; line-height: 1; cursor: pointer;
   }
-  .date-list a:hover { background: var(--surface-2); color: var(--text); }
-  /* 选中项用主题色标出，避免和悬停的灰底混淆 */
-  .date-list a[aria-current="true"] {
-    background: color-mix(in srgb, var(--accent) 12%, var(--surface)); color: var(--accent); font-weight: 600;
-    box-shadow: inset 3px 0 0 var(--accent);
+  .cal-nav:hover:not(:disabled) { background: var(--surface-2); color: var(--text); }
+  .cal-nav:disabled { opacity: .3; cursor: default; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center; font-variant-numeric: tabular-nums; }
+  .cal-wd { font-size: 11px; color: var(--muted); padding-bottom: 4px; }
+  .cal-day {
+    position: relative; display: grid; place-items: center; aspect-ratio: 1; border-radius: 7px;
+    font-size: 12.5px; color: var(--muted); opacity: .45; text-decoration: none;
   }
+  a.cal-day { opacity: 1; color: var(--text); font-weight: 600; }
+  a.cal-day::after {
+    content: ""; position: absolute; left: 50%; bottom: 3px; width: 4px; height: 4px; margin-left: -2px;
+    border-radius: 50%; background: var(--accent);
+  }
+  a.cal-day:hover { background: var(--surface-2); }
+  .cal-day.today { box-shadow: inset 0 0 0 1px var(--border); }
+  a.cal-day[aria-current="true"] { background: var(--accent); color: #fff; }
+  a.cal-day[aria-current="true"]::after { background: #fff; }
+  .cal-foot { margin-top: 8px; font-size: 12px; color: var(--muted); text-align: center; }
 
   /* 标题：逐字模糊浮现 */
   header.top { margin-bottom: 28px; }
@@ -218,14 +236,95 @@
   .search:focus { outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent); outline-offset: 1px; }
 
   @media (max-width: 760px) {
-    .layout { grid-template-columns: minmax(0, 1fr); padding: 20px 16px 48px; gap: 18px; }
-    .dates { position: static; }
-    .dates h2 { display: none; }
-    .date-list { flex-direction: row; overflow-x: auto; gap: 6px; padding-bottom: 4px; scrollbar-width: none; }
-    .date-list a { padding: 6px 12px; border: 1px solid var(--border); }
+    .layout {
+      grid-template-columns: minmax(0, 1fr); gap: 0;
+      padding: 8px 16px calc(84px + env(safe-area-inset-bottom));
+    }
+
+    /* 顶栏：大标题滑出屏幕后，显示小标题 */
+    .appbar {
+      position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      height: calc(50px + env(safe-area-inset-top)); padding: env(safe-area-inset-top) 16px 0;
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5);
+      border-bottom: 1px solid transparent; transition: border-color .2s;
+    }
+    .appbar-title { font-weight: 800; font-size: 17px; opacity: 0; transform: translateY(4px); transition: opacity .2s, transform .2s; }
+    .appbar.scrolled { border-bottom-color: var(--border); }
+    .appbar.scrolled .appbar-title { opacity: 1; transform: none; }
+    .date-btn {
+      display: inline-flex; align-items: center; gap: 4px; margin-left: auto; padding: 6px 10px 6px 12px;
+      border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--text);
+      font: inherit; font-size: 13.5px; font-weight: 600; font-variant-numeric: tabular-nums; cursor: pointer;
+    }
+    .date-btn svg { width: 16px; height: 16px; color: var(--muted); }
+    .date-btn[hidden] { display: none; }
+
+    /* 日期：底部抽屉 */
+    .dates {
+      position: fixed; left: 0; right: 0; bottom: 0; top: auto; z-index: 40;
+      padding: 10px 16px calc(20px + env(safe-area-inset-bottom));
+      background: var(--surface); border-radius: 20px 20px 0 0; box-shadow: 0 -8px 32px rgba(0, 0, 0, .18);
+      transform: translateY(105%); transition: transform .3s cubic-bezier(.2,.8,.2,1); visibility: hidden;
+    }
+    .dates::before { content: ""; display: block; width: 36px; height: 4px; margin: 0 auto 10px; border-radius: 2px; background: var(--border); }
+    .dates h2 { text-align: center; font-size: 13px; }
+    .sheet-open .dates { transform: none; visibility: visible; }
+    .cal { max-width: 380px; margin: 0 auto; padding: 0; border: 0; box-shadow: none; background: none; }
+    .cal-day { font-size: 14px; border-radius: 10px; }
+    .cal-nav { width: 36px; height: 36px; font-size: 20px; }
+    .backdrop {
+      display: block; position: fixed; inset: 0; z-index: 35; background: rgba(0, 0, 0, .35);
+      opacity: 0; pointer-events: none; transition: opacity .3s;
+    }
+    .sheet-open .backdrop { opacity: 1; pointer-events: auto; }
+    .sheet-open { overflow: hidden; }
+
+    /* 视图切换：固定在底部 */
+    .tabs {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; gap: 0; margin: 0;
+      padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); border-radius: 0;
+      background: color-mix(in srgb, var(--surface) 86%, transparent);
+      -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5);
+      border-top: 1px solid var(--border);
+    }
+    .tabs a {
+      flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+      padding: 4px 0; font-size: 11px; -webkit-tap-highlight-color: transparent;
+    }
+    .tabs a[aria-current="true"] { background: none; box-shadow: none; color: var(--accent); }
+    .tab-ico { display: block; width: 23px; height: 23px; }
+
+    header.top { margin-bottom: 18px; }
     .title { font-size: 30px; }
-    .highlights { padding: 16px 18px; }
-    .grid { grid-template-columns: minmax(0, 1fr); }
+    .subtitle { font-size: 13.5px; margin-top: 4px; }
+
+    /* 筛选条：单行横向滑动，左右贴边 */
+    .filters, .jump, .lib-tools .chip-group {
+      flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+      margin-left: -16px; margin-right: -16px; padding: 0 16px;
+    }
+    .filters::-webkit-scrollbar, .jump::-webkit-scrollbar, .chip-group::-webkit-scrollbar { display: none; }
+    .filters { gap: 12px; margin-bottom: 14px; }
+    .filters .chip-group { flex-wrap: nowrap; flex: none; }
+    .jump { margin-top: 14px; margin-bottom: 0; }
+    .chip, .jump-label { flex: none; white-space: nowrap; }
+    .lib-tools { flex-direction: column; align-items: stretch; gap: 10px; margin-bottom: 14px; }
+    .lib-tools .chip-group { order: 2; }
+    .search { width: 100%; padding: 9px 14px; }
+
+    /* 卡片收紧 */
+    .highlights { padding: 14px 16px; margin-bottom: 4px; border-radius: 14px; }
+    .highlights li { margin: 6px 0; line-height: 1.6; }
+    .section { margin-top: 32px; }
+    .section-head h2 { font-size: 19px; }
+    .section-desc { font-size: 13px; margin-bottom: 12px; }
+    .grid, .app-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+    .card, .corp-list .card, .app-grid .card { padding: 14px 16px; gap: 6px; border-radius: 12px; }
+    .card h3 { font-size: 16px; line-height: 1.45; }
+    .card p { font-size: 13.5px; line-height: 1.65; }
+    .count { margin-bottom: 10px; }
+    .hot-row { padding: 12px 14px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -235,20 +334,28 @@
 </style>
 </head>
 <body>
+<div class="appbar" id="appbar">
+  <span class="appbar-title" aria-hidden="true">AI 新鲜事</span>
+  <button class="date-btn" id="date-btn" type="button" aria-haspopup="dialog" hidden>
+    <span id="date-btn-text"></span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+  </button>
+</div>
+<div class="backdrop" id="backdrop"></div>
 <div class="layout">
-  <nav class="dates" aria-label="往期">
+  <nav class="dates" id="dates-nav" aria-label="往期">
     <h2>往期</h2>
-    <ul class="date-list" id="dates"></ul>
+    <div class="cal" id="cal"></div>
   </nav>
   <main>
     <header class="top">
       <h1 class="title" id="title" aria-label="AI 新鲜事"></h1>
       <p class="subtitle" id="subtitle">&nbsp;</p>
       <nav class="tabs" aria-label="视图">
-        <a href="#" id="tab-daily">精选日报</a>
-        <a href="#hot" id="tab-hot">实时热点</a>
-        <a href="#design" id="tab-design">设计</a>
-        <a href="#tools" id="tab-tools">工具库</a>
+        <a href="#" id="tab-daily"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h10A1.5 1.5 0 0 1 17 5.5V19a1 1 0 0 0 1 1H6a2 2 0 0 1-2-2z"/><path d="M17 9h2a1 1 0 0 1 1 1v8a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>精选日报</span></a>
+        <a href="#hot" id="tab-hot"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.5 3.5 5 5.5 5 10.5a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.6 1.2 2.6 2.2 3C10.6 9.5 11 6 12 3z"/></svg><span>实时热点</span></a>
+        <a href="#design" id="tab-design"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.7 1.7-1.7H16a5 5 0 0 0 5-5c0-3.9-4-7.2-9-7.2z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="15" cy="8" r="1"/></svg><span>设计</span></a>
+        <a href="#tools" id="tab-tools"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>工具库</span></a>
       </nav>
     </header>
     <div id="content"></div>
@@ -273,8 +380,8 @@
   var PRICE_COLORS = { up: "warn", down: "research", new: "model", free: "tools", limit: "industry" };
   var WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"];
 
-  var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", designKind: "all", designQuery: "", hotTopic: "all", hotQuery: "" };
-  var $dates = document.getElementById("dates");
+  var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", designKind: "all", designQuery: "", hotTopic: "all", hotQuery: "", calMonth: null };
+  var $dateBtn = document.getElementById("date-btn");
   var $subtitle = document.getElementById("subtitle");
   var $content = document.getElementById("content");
 
@@ -318,15 +425,84 @@
     });
   }
 
+  function pad2(n) { return (n < 10 ? "0" : "") + n; }
+
   function renderDates() {
-    $dates.textContent = "";
-    state.dates.forEach(function (d) {
-      var a = el("a", { href: "#" + d, text: formatDate(d) });
-      if (d === state.date) a.setAttribute("aria-current", "true");
-      $dates.appendChild(el("li", {}, [a]));
+    // 翻到选中日期所在的月份；没有选中（热点、工具库页）就停在最新一期的月份
+    var focus = state.date || state.dates[0];
+    if (focus) state.calMonth = focus.slice(0, 7);
+    renderCalendar();
+    // 手机顶栏的日期按钮，只在日报页出现
+    $dateBtn.hidden = !state.date;
+    if (state.date) document.getElementById("date-btn-text").textContent = formatDate(state.date).split(" · ")[0];
+  }
+
+  // 手机上日期选择是底部抽屉
+  function setSheet(open) {
+    document.body.classList.toggle("sheet-open", open);
+    $dateBtn.setAttribute("aria-expanded", String(open));
+  }
+
+  function initMobile() {
+    $dateBtn.addEventListener("click", function () { setSheet(true); });
+    document.getElementById("backdrop").addEventListener("click", function () { setSheet(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setSheet(false); });
+    // 大标题滑出屏幕后，顶栏显示小标题和分隔线
+    var $bar = document.getElementById("appbar"), $title = document.getElementById("title");
+    function onScroll() { $bar.classList.toggle("scrolled", window.scrollY > $title.offsetTop + $title.offsetHeight - 50); }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  function renderCalendar() {
+    var $cal = document.getElementById("cal");
+    $cal.textContent = "";
+    if (!state.calMonth) return;
+    var has = {};
+    state.dates.forEach(function (d) { has[d] = true; });
+    var months = state.dates.map(function (d) { return d.slice(0, 7); });
+    var first = months[months.length - 1], last = months[0];
+    var p = state.calMonth.split("-").map(Number);
+
+    function shift(step) {
+      var m = new Date(p[0], p[1] - 1 + step, 1);
+      state.calMonth = m.getFullYear() + "-" + pad2(m.getMonth() + 1);
+      renderCalendar();
+    }
+    var prev = el("button", { class: "cal-nav", type: "button", "aria-label": "上个月", text: "‹" });
+    var next = el("button", { class: "cal-nav", type: "button", "aria-label": "下个月", text: "›" });
+    prev.disabled = state.calMonth <= first;
+    next.disabled = state.calMonth >= last;
+    prev.addEventListener("click", function () { shift(-1); });
+    next.addEventListener("click", function () { shift(1); });
+    $cal.appendChild(el("div", { class: "cal-head" }, [
+      prev, el("span", { class: "cal-title", text: p[0] + " 年 " + p[1] + " 月" }), next
+    ]));
+
+    var grid = el("div", { class: "cal-grid" });
+    // 周一开头
+    ["一", "二", "三", "四", "五", "六", "日"].forEach(function (w) { grid.appendChild(el("span", { class: "cal-wd", text: w })); });
+    var lead = (new Date(p[0], p[1] - 1, 1).getDay() + 6) % 7;
+    for (var i = 0; i < lead; i++) grid.appendChild(el("span"));
+    var now = new Date();
+    var today = now.getFullYear() + "-" + pad2(now.getMonth() + 1) + "-" + pad2(now.getDate());
+    var days = new Date(p[0], p[1], 0).getDate();
+    for (var day = 1; day <= days; day++) {
+      var d = state.calMonth + "-" + pad2(day);
+      var cell = has[d]
+        ? el("a", { class: "cal-day", href: "#" + d, title: formatDate(d), text: String(day) })
+        : el("span", { class: "cal-day", text: String(day) });
+      if (d === today) cell.classList.add("today");
+      if (d === state.date) cell.setAttribute("aria-current", "true");
+      grid.appendChild(cell);
+    }
+    // 手机上选完日期就收起抽屉
+    grid.addEventListener("click", function (e) {
+      if (e.target.closest("a")) setSheet(false);
     });
-    var cur = $dates.querySelector('[aria-current="true"]');
-    if (cur && cur.scrollIntoView && window.innerWidth <= 760) cur.scrollIntoView({ block: "nearest", inline: "center" });
+    $cal.appendChild(grid);
+    var count = months.filter(function (m) { return m === state.calMonth; }).length;
+    $cal.appendChild(el("p", { class: "cal-foot", text: "本月 " + count + " 期 · 共 " + state.dates.length + " 期" }));
   }
 
   function notice(html) {
@@ -529,9 +705,14 @@
     $content.insertBefore(jump, $content.querySelector(".highlights").nextSibling);
   }
 
+  // 往期文件写好就不再改，让浏览器缓存；只有最新一期可能当天重写，加时间戳
+  function issueSrc(date) {
+    return "data/" + date + ".js" + (date === state.dates[0] ? "?t=" + Date.now() : "");
+  }
+
   function loadIssue(date) {
     if ((window.AI_DAILY || {})[date]) return Promise.resolve(true);
-    return loadScript("data/" + date + ".js?t=" + Date.now()).then(function () { return !!(window.AI_DAILY || {})[date]; }, function () { return false; });
+    return loadScript(issueSrc(date)).then(function () { return !!(window.AI_DAILY || {})[date]; }, function () { return false; });
   }
 
   function renderLibrary(apps) {
@@ -796,7 +977,7 @@
     $subtitle.textContent = formatDate(state.date, true);
     notice("加载中…");
     var date = state.date;
-    loadScript("data/" + date + ".js?t=" + Date.now()).then(function () {
+    loadScript(issueSrc(date)).then(function () {
       if (date !== state.date) return;
       if ((window.AI_DAILY || {})[date]) renderIssue(true);
       else notice("<code>data/" + date + ".js</code> 里没有这一天的数据。");
@@ -806,6 +987,7 @@
   }
 
   renderTitle();
+  initMobile();
   loadScript("data/manifest.js?t=" + Date.now()).catch(function () {}).then(function () {
     var m = window.AI_DAILY_MANIFEST;
     state.dates = Array.isArray(m) ? m.slice() : [];
