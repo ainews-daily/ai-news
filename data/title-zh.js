@@ -83,5 +83,12 @@ window.AI_DESC_ZH = {
   "https://github.com/assetnote/php2shell-scanner": "高准确度的 php2shell 漏洞扫描器（CVE-2026-109618 和 CVE-2026-109619）",
   "https://github.com/mizorewww/gdirect": "用 Rust 写的 Google Drive 直链下载器，内置固定版本的 libaria2",
   "https://github.com/surendrapandar/minilytics": "开源的营收优先分析工具，面向独立开发者和单人创业者",
-  "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包"
+  "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包",
+  "https://github.com/DLSS-5-Swaper-New/.github": "DLSS 5 Swapper 是一款针对 PC 游戏爱好者的专用 Windows 工具，可用于管理兼容的图形组件并探索渲染配置",
+  "https://github.com/interplains/Zero-Breach-Toolkit": "免费、开源、离线检查已知雇佣兵间谍软件的痕迹。支持 Windows、macOS 和 Linux，以及安卓手机和 iPhone 备份",
+  "https://github.com/ZiChuanLan/agent-purge": "一个身份，多个编码代理。可在 codex、claude、opencode、grok、omp、hermes、pi、zcode 等平台替换或注入系统提示 - 通过本地网络控制台",
+  "https://github.com/yaojingang/GEOInflow": "自托管的网页和 AI 爬虫分析工具，用于生成式引擎优化（GEO）。跟踪访问者、AI 搜索推荐、爬虫日志、内容覆盖情况和转化率",
+  "https://github.com/rossark0/rossark-motion-skill": "将任何 SVG 转换为专业的 60 帧动画。这是一个 Claude Code 技能，可以将任何绘制的内容生动呈现：实时面部、全身表演和整个场景，在 Real 中实现",
+  "https://github.com/Motionsites-AI/claude-skill": "免费的 Claude 技能：让 Claude 构建获奖级别的电影级着陆页。由 MotionSites 提供",
+  "https://github.com/stormydayy/halo-overlay": "轻量级开源 AI 叠加层，用于实时对话。能听、能看、能建议"
 };
