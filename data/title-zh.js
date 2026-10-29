@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/updated-model-spec": "OpenAI 更新模型规范，让 AI 更能干也更有益",
@@ -10,9 +10,6 @@ window.AI_TITLE_ZH = {
   "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/": "Gemini 4 Carbon：Google 新一代前沿模型",
   "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTE8xTmRrRUZtQndpOVdCTUFQQ2ZXSjl5Tk4zeXB0RzhSVzRYaUt3S091Y3FmRnVvT1c0UXhIVW0xZF83R2c1VUwtNjhNUkcxYWI0MFRXWXcxT2ZLdkF6bUd5V0JpTWJla3BzOWNORmdFN0ZTUkplbmZRcjRNdm5GSUVDUXp5QWwxNkRoN3JCVXo?oc=5": "Anthropic 的 AI for Science 计划扩大到基金会和研究机构",
   "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5": "Anthropic 扩大与美国总务管理局合作，把 Claude 推向各级政府",
-  "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5": "Anthropic：用 Claude 加速药物研发的初步进展",
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IaTRIX2lBc1kwcDRXenZsRXRxcy1vZWVQVlBGdlJsS1p1bkpOQzBpblRRU0l6elhUa0Z3a0RmOVlaV1NmUlgxU3pQWjE2UTVNcEdMdDBBQ0VobFBMS2k5MS1yQ3dQMzQ?oc=5": "Anthropic 研究：AI 智能体如何左右专家的判断",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁在迎合谁？AI 智能体如何影响专家的研究判断",
   "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "英伟达 Omniverse：开发者如何用前沿 AI 智能体把想法变成仿真",
   "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/": "英伟达 RTX Spark Windows 笔记本新增机型、智能体工具和游戏",
   "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1": "IBM Granite Switch 4.1.1：像升级软件一样升级模型",
@@ -30,7 +27,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key": "Akai 推出开源 MPC，欢迎用户靠 AI 写代码改机",
   "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier": "Google 发布 Gemini 4 Carbon，称网络安全能力大幅跃升",
   "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending": "微软将停止在智能电视上支持 Copilot",
-  "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence": "Chrome 增强版自动填充可从 Gmail 取信息帮你填表",
   "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/": "Granola 上线听写功能，和 Wispr 抢用户",
   "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/": "Mistral 开放万亿参数模型权重，主打网络安全",
   "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/": "美国曾调查针对英伟达 CEO 的间谍活动",
@@ -41,18 +37,9 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/": "微软首次公布 Azure 具体收入：332 亿美元",
   "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/": "核心广告增长放缓，Google 把 AI 搜索广告推向全球",
   "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/": "微软从 OpenAI 那里确认了 100 亿美元收入",
-  "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/": "微软营收连续 10 个季度创新高",
-  "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/": "Anthropic 推出工具，让企业看清 AI 花销换来了什么",
-  "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/": "Wiz CTO 谈 PHP2Shell 漏洞和即将到来的“漏洞末日”",
-  "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/": "Wiz CTO：“漏洞末日”正冲着互联网的老旧代码而来",
-  "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/": "Chrome 的 AI 自动填充可以翻你的 Gmail 来填表",
-  "https://arstechnica.com/tech-policy/2026/10/report-trump-did-nothing-with-intel-that-china-planted-spy-close-to-nvidia-ceo/": "报道称特朗普收到黄仁勋身边有间谍的情报后未采取行动",
   "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/": "Google 承认 AI 搜索更难赚钱，打算靠加广告补上",
   "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/": "Google 发布前沿模型 Gemini 4 Carbon，但普通人还用不上",
   "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/": "问起 2020 年大选谁赢了，Google AI 支支吾吾",
-  "https://arstechnica.com/tech-policy/2026/10/no-human-at-the-helm-delaware-plan-would-let-ai-agents-run-entire-businesses/": "“无人掌舵”：特拉华州提案拟允许 AI 智能体经营整家公司",
-  "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/": "Anthropic 招股书风险提示：其 AI 可能勒索他人、产生意识乃至终结人类",
-  "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/": "蛋白质和基因组设计软件开始能用自然语言操作",
   "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/": "我们急需实时监控 AI 智能体的操作",
   "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/": "用企业自身的上下文让 AI 产生价值",
   "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/": "工业 AI：自主运行和人工控制怎么搭配",
@@ -64,8 +51,16 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/": "Argon 发布仅两周，Google DeepMind 推出全面提升的 Gemini 4 Carbon",
   "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/": "Google 向第三方 AI 智能体开放 Android 开发，并推出新 Gemini API",
   "https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/": "OpenAI 预告 Dots 进欧洲，柏林 DevDay 重点其实是做平台",
-  "https://the-decoder.com/claude-for-legal-now-verifies-sources-automatically-then-hands-the-file-to-a-lawyer/": "Claude for Legal 能自动核对出处，再把文件交给律师",
-  "https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition/": "英伟达开放 Nemotron 3.5 Transcribe：转写、翻译、说话人识别三合一"
+  "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs": "你现在可以在Gemini聊天中直接生成和编辑Google Docs文件",
+  "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/": "Jassy表示，AWS将成为10000亿美元的业务。但首先，它将进行大量投资",
+  "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/": "随着搜索流量减少，Reddit宣布将转向登录体验",
+  "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/": "Rivian扩大与大众汽车的合资企业，包括AI助手",
+  "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/": "由OpenAI支持的Thrive Holdings收购ADT",
+  "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/": "Meta悄然推出名为Style Sketch的AI时尚应用",
+  "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/": "特朗普称机器人进口是国家安全威胁",
+  "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/": "随着与Anthropic的竞争加剧，OpenAI将Pro计划的使用限制翻倍",
+  "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/": "一项Anthropic研究发现，专家们采纳了AI代理的随机观点，并认为是自己的观点",
+  "https://simonwillison.net/2026/Oct/29/api-credits/": "符合条件的ChatGPT订阅享有API积分优惠"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "为 RTX 4090（及实验性支持的 RTX 4070 Ti SUPER）解锁张量性能的源码，固件在本地生成",
