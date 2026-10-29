@@ -4,7 +4,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/the-future-of-the-firm": "企业的未来",
   "https://openai.com/index/legora": "Legora 正在打造法律工作的智能体操作系统",
   "https://openai.com/index/retell-ai": "Retell 用 OpenAI 模型支撑每月 1 亿通电话",
-  "https://openai.com/index/oracle-apps-in-chatgpt": "OpenAI 扩大与 Oracle 合作，把 Oracle 应用接入 ChatGPT",
   "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/": "Gemini 4 Carbon：我们的新一代前沿模型",
   "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/": "Genie 4：新一代世界模拟",
   "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/": "轻薄全能：NVIDIA RTX Spark Windows 笔记本新增机型、智能体工具和游戏",
@@ -19,7 +18,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit": "xAI 收购承诺不就数据中心噪音起诉的居民房屋",
   "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas": "得州选民的共识：讨厌数据中心",
   "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world": "Meta 悄悄上线一款“AI 宠物日记”应用",
-  "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics": "研究人员受够了 OpenAI 把控其突破成果的公开方式",
   "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/": "Anthropic 推出工具，让企业看清 AI 花销换来了什么",
   "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/": "Wiz CTO 谈 PHP2Shell 和即将到来的“漏洞末日”",
   "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/": "Wiz CTO：“漏洞末日”正冲着互联网的老旧代码而来",
@@ -62,7 +60,8 @@ window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMTTViWmp6TE1SU3lNQjd6aWozb0Rhd0VjSVlMOThjRXpFRjBvN1lZdVRreFg3UWRGNjNqRkViU3lQbFJuaHRIMXBJUHFHSXhpbTZSTGhybUxOdTU3bEFDMUIzd0NmcWRHRk1CckVLV2FIT1ZDb1ZMZHJ0WWhxSE0?oc=5": "利用 Claude 发现并利用关键现实软件中的漏洞",
   "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IaTRIX2lBc1kwcDRXenZsRXRxcy1vZWVQVlBGdlJsS1p1bkpOQzBpblRRU0l6elhUa0Z3a0RmOVlaV1NmUlgxU3pQWjE2UTVNcEdMdDBBQ0VobFBMS2k5MS1yQ3dQMzQ?oc=5": "AI 代理如何影响专家的判断",
   "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁与谁对齐？AI 代理如何影响专家的研究判断",
-  "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity": "Adam Mosseri 表示对 AI 的负面看法‘将会变得更糟’"
+  "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity": "Adam Mosseri 表示对 AI 的负面看法‘将会变得更糟’",
+  "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc": "人工智能已触及亚利桑那州的水资源"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "为 RTX 4090 及实验性的 RTX 4070 Ti SUPER 解锁 GPU 张量性能的源码，固件在本地生成",
@@ -82,6 +81,5 @@ window.AI_DESC_ZH = {
   "https://github.com/blakeandersonw/ai-app-playbook": "2026 年如何做出有用又赚钱的应用：克隆仓库，让编码智能体读 AGENTS.md",
   "https://github.com/daveebbelaar/bama": "BAMA：构建任何 Mac 应用。通过代理技能进行研究、克隆、设计、构建、优化和测试原生 macOS 应用，使用 Swift 和 SwiftUI。",
   "https://github.com/anonnerdfrenzy/survival-llm": "一款可在你自己的电脑上运行的免费 AI 助手和生存库，无需互联网。展示每个答案的来源",
-  "https://github.com/mirkobrombin/raven": "一款你的应用能识别的 Windows 系统",
-  "https://github.com/songjianyang/xss-audit": "针对 React、TypeScript 和 JavaScript 项目的 14 层静态 XSS 审计技能"
+  "https://github.com/mirkobrombin/raven": "一款你的应用能识别的 Windows 系统"
 };
