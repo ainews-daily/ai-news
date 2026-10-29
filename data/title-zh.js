@@ -5,7 +5,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/legora": "Legora 正在打造法律工作的智能体操作系统",
   "https://openai.com/index/retell-ai": "Retell 用 OpenAI 模型支撑每月 1 亿通电话",
   "https://openai.com/index/oracle-apps-in-chatgpt": "OpenAI 扩大与 Oracle 合作，把 Oracle 应用接入 ChatGPT",
-  "https://openai.com/index/check-point-daybreak": "Check Point 如何用 Daybreak 加速漏洞研究",
   "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/": "Gemini 4 Carbon：我们的新一代前沿模型",
   "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/": "Genie 4：新一代世界模拟",
   "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/": "轻薄全能：NVIDIA RTX Spark Windows 笔记本新增机型、智能体工具和游戏",
@@ -21,7 +20,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas": "得州选民的共识：讨厌数据中心",
   "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world": "Meta 悄悄上线一款“AI 宠物日记”应用",
   "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics": "研究人员受够了 OpenAI 把控其突破成果的公开方式",
-  "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai": "《VisionQuest》：当 AI 真的失控时",
   "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/": "Anthropic 推出工具，让企业看清 AI 花销换来了什么",
   "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/": "Wiz CTO 谈 PHP2Shell 和即将到来的“漏洞末日”",
   "https://techcrunch.com/podcast/the-vulnpocalypse-is-coming-for-the-internets-aging-code-says-wizs-cto/": "Wiz CTO：“漏洞末日”正冲着互联网的老旧代码而来",
@@ -57,7 +55,14 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/": "谷歌在全球扩展 AI 搜索广告，因核心广告增长放缓",
   "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/": "微软从 OpenAI 获得 100 亿美元收入",
   "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/": "微软连续 10 个季度创收新高",
-  "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/": "通过企业上下文创造 AI 价值"
+  "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/": "通过企业上下文创造 AI 价值",
+  "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTE8xTmRrRUZtQndpOVdCTUFQQ2ZXSjl5Tk4zeXB0RzhSVzRYaUt3S091Y3FmRnVvT1c0UXhIVW0xZF83R2c1VUwtNjhNUkcxYWI0MFRXWXcxT2ZLdkF6bUd5V0JpTWJla3BzOWNORmdFN0ZTUkplbmZRcjRNdm5GSUVDUXp5QWwxNkRoN3JCVXo?oc=5": "AI for Science 扩展至基础研究机构",
+  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5": "与 GSA 合作扩大，将 Claude 带入各级政府",
+  "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IbmplZ01nQUt5R0hldklCR3FRMlVWZy1RcFZlc1VpRDhVNk00Vzd0Mm5QdlNXb1NncmxTX1ZFZTl4Xzl5bkpqUU56OGVxWjlZWmN6SjM4cVFLX3dkU0RUNWJVQ1JZTUswTk1iSzJ1MGwyUldn?oc=5": "使用 Claude 加速药物研发取得早期进展",
+  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBMTTViWmp6TE1SU3lNQjd6aWozb0Rhd0VjSVlMOThjRXpFRjBvN1lZdVRreFg3UWRGNjNqRkViU3lQbFJuaHRIMXBJUHFHSXhpbTZSTGhybUxOdTU3bEFDMUIzd0NmcWRHRk1CckVLV2FIT1ZDb1ZMZHJ0WWhxSE0?oc=5": "利用 Claude 发现并利用关键现实软件中的漏洞",
+  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1IaTRIX2lBc1kwcDRXenZsRXRxcy1vZWVQVlBGdlJsS1p1bkpOQzBpblRRU0l6elhUa0Z3a0RmOVlaV1NmUlgxU3pQWjE2UTVNcEdMdDBBQ0VobFBMS2k5MS1yQ3dQMzQ?oc=5": "AI 代理如何影响专家的判断",
+  "https://news.google.com/rss/articles/CBMif0FVX3lxTFBfcG1yTHNVOEV0LVFGSkN4VW9UZ3BwNmdvUHJrMU5OMk5ybU8xRGNJUXRuRlZmRmxYNlpUTEFPYVNydDlPbVNfcUdtNWFrYVpHbDItandSdlR6Q3Z6YTB4NTFUNkZ3REo0Zk5ydXZfS2E3enNadExoaTJFSm9PVTg?oc=5": "谁与谁对齐？AI 代理如何影响专家的研究判断",
+  "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity": "Adam Mosseri 表示对 AI 的负面看法‘将会变得更糟’"
 };
 window.AI_DESC_ZH = {
   "https://github.com/JustAResearcher/gpu-unlock-ada": "为 RTX 4090 及实验性的 RTX 4070 Ti SUPER 解锁 GPU 张量性能的源码，固件在本地生成",
@@ -67,9 +72,7 @@ window.AI_DESC_ZH = {
   "https://github.com/morganlinton/BeautifulRust": "教编码智能体编写、审查和移植地道 Rust 代码的技能包，附带经过测试的 clippy 配置，适用于 Claude Code、Codex、Copilot、Cursor 等",
   "https://github.com/andyhuo520/digital-human-koubo": "一张照片生成 AI 数字人口播视频：Renoise MCP 生成，5 种剪辑风格和 48 个创作者级包装组件，是给 Claude Code 等用的智能体技能",
   "https://github.com/DenisSergeevitch/ex-ussr-kinship-research": "面向 AI 智能体（Codex、Claude Code）的循证家谱研究技能，覆盖前苏联地区的教会登记、民事、军事、驱逐和镇压档案",
-  "https://github.com/Snapintosh/Snapintosh": "在华硕 A16（骁龙 X2 Elite）上启动 macOS 的 EL2 虚拟机监控程序和工具链，带 Adreno Metal/IOGPU 图形栈",
   "https://github.com/KillaBoi/StealMyBitcoin-PoC": "“Steal My Bitcoin”挑战的公开发布版本",
-  "https://github.com/assetnote/php2shell-scanner": "高准确度的 php2shell 漏洞扫描器（CVE-2026-109618 和 CVE-2026-109619）",
   "https://github.com/Motionsites-AI/claude-skill": "免费的 Claude 技能：让 Claude 做出获奖级、电影感的落地页，出自 MotionSites",
   "https://github.com/ZiChuanLan/agent-purge": "一个人设，多个编码智能体：在 codex、claude、opencode、grok、omp、hermes、pi、zcode 之间替换或注入系统提示词，带本地网页控制台",
   "https://github.com/surendrapandar/minilytics": "开源、以收入为先的数据分析工具，面向独立开发者和单人创业者",
@@ -77,5 +80,8 @@ window.AI_DESC_ZH = {
   "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包",
   "https://github.com/yaojingang/GEOInflow": "自托管的网站与 AI 爬虫分析工具，用于生成式引擎优化（GEO），追踪访客、AI 搜索来源、爬取日志、内容覆盖和转化",
   "https://github.com/blakeandersonw/ai-app-playbook": "2026 年如何做出有用又赚钱的应用：克隆仓库，让编码智能体读 AGENTS.md",
-  "https://github.com/daveebbelaar/bama": "BAMA：构建任何 Mac 应用。通过代理技能进行研究、克隆、设计、构建、优化和测试原生 macOS 应用，使用 Swift 和 SwiftUI。"
+  "https://github.com/daveebbelaar/bama": "BAMA：构建任何 Mac 应用。通过代理技能进行研究、克隆、设计、构建、优化和测试原生 macOS 应用，使用 Swift 和 SwiftUI。",
+  "https://github.com/anonnerdfrenzy/survival-llm": "一款可在你自己的电脑上运行的免费 AI 助手和生存库，无需互联网。展示每个答案的来源",
+  "https://github.com/mirkobrombin/raven": "一款你的应用能识别的 Windows 系统",
+  "https://github.com/songjianyang/xss-audit": "针对 React、TypeScript 和 JavaScript 项目的 14 层静态 XSS 审计技能"
 };
