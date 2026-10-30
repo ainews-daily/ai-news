@@ -5,11 +5,8 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/how-we-detect-frontier-model-misalignment": "OpenAI 讲解如何发现前沿模型的“不对齐”行为",
   "https://openai.com/index/ropes-gray-ai-diligence": "律所 Ropes & Gray 如何用 AI 做交易尽调",
   "https://openai.com/index/openai-servicenow-partnership-expansion": "OpenAI 与 ServiceNow 扩大合作，覆盖更多企业工作流",
-  "https://openai.com/index/the-future-of-the-firm": "OpenAI 谈 AI 时代的公司形态",
-  "https://openai.com/index/legora": "Legora 在给法律工作打造智能体操作系统",
   "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/": "Gemini 4 Carbon：Google 新一代前沿模型",
   "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTE8xTmRrRUZtQndpOVdCTUFQQ2ZXSjl5Tk4zeXB0RzhSVzRYaUt3S091Y3FmRnVvT1c0UXhIVW0xZF83R2c1VUwtNjhNUkcxYWI0MFRXWXcxT2ZLdkF6bUd5V0JpTWJla3BzOWNORmdFN0ZTUkplbmZRcjRNdm5GSUVDUXp5QWwxNkRoN3JCVXo?oc=5": "Anthropic 的 AI for Science 计划扩大到基金会和研究机构",
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SdnRpWjk1Nk1Fem1Ka0tLclJoVnFkQmZzVUVOU0hsQ0pwYVZLWVpCUGhkZ1Q0UmhYekhYcFdraTdtbFd5MF91MkhPVlJzYlM3ZXVlOUUwLUhDVVBMOUR4aXlVZXhRRlU?oc=5": "Anthropic 扩大与美国总务管理局合作，把 Claude 推向各级政府",
   "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "英伟达 Omniverse：开发者如何用前沿 AI 智能体把想法变成仿真",
   "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/": "英伟达 RTX Spark Windows 笔记本新增机型、智能体工具和游戏",
   "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1": "IBM Granite Switch 4.1.1：像升级软件一样升级模型",
@@ -26,7 +23,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity": "Instagram 负责人 Adam Mosseri：大众对 AI 的反感还会加剧",
   "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key": "Akai 推出开源 MPC，欢迎用户靠 AI 写代码改机",
   "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier": "Google 发布 Gemini 4 Carbon，称网络安全能力大幅跃升",
-  "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending": "微软将停止在智能电视上支持 Copilot",
   "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/": "Granola 上线听写功能，和 Wispr 抢用户",
   "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/": "Mistral 开放万亿参数模型权重，主打网络安全",
   "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/": "美国曾调查针对英伟达 CEO 的间谍活动",
@@ -36,7 +32,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-and-subscriptions-and-update-delivery-instructions/": "亚马逊更新 Alexa：能管购物清单、订阅和送货要求",
   "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/": "微软首次公布 Azure 具体收入：332 亿美元",
   "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/": "核心广告增长放缓，Google 把 AI 搜索广告推向全球",
-  "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/": "微软从 OpenAI 那里确认了 100 亿美元收入",
   "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/": "我们急需实时监控 AI 智能体的操作",
   "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/": "用企业自身的上下文让 AI 产生价值",
   "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/": "工业 AI：自主运行和人工控制怎么搭配",
@@ -56,7 +51,13 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/": "Meta悄然推出名为Style Sketch的AI时尚应用",
   "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/": "随着与Anthropic的竞争加剧，OpenAI将Pro计划的使用限制翻倍",
   "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/": "一项Anthropic研究发现，专家们采纳了AI代理的随机观点，并认为是自己的观点",
-  "https://simonwillison.net/2026/Oct/29/api-credits/": "符合条件的ChatGPT订阅享有API积分优惠"
+  "https://simonwillison.net/2026/Oct/29/api-credits/": "符合条件的ChatGPT订阅享有API积分优惠",
+  "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright": "维基百科的运营方表示，不利的AI版权裁决可能威胁开放网络",
+  "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/": "你不需要相信上帝，就可以在工作中使用AI获得宗教豁免",
+  "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/": "特朗普宣布机器人进口是国家安全威胁",
+  "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/": "谷歌承认AI搜索赚的钱更少，但它正通过增加广告来解决这个问题",
+  "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/": "谷歌宣布Gemini 4 Carbon，其最新前沿AI模型，但你无法使用",
+  "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/": "当被问及2020年大选谁赢了时，谷歌AI变得含糊其辞"
 };
 window.AI_DESC_ZH = {
   "https://github.com/interplains/Zero-Breach-Toolkit": "免费开源的离线工具，检查设备上有没有已知商业间谍软件的痕迹，支持 Windows、macOS、Linux、Android 手机和 iPhone 备份。",
@@ -73,9 +74,7 @@ window.AI_DESC_ZH = {
   "https://github.com/yaojingang/GEOInflow": "自托管的网站和 AI 爬虫分析工具，用于生成式引擎优化（GEO），可追踪访客、AI 搜索引流、爬取日志、内容覆盖和转化",
   "https://github.com/aschmelyun/print-my-profile-pic": "给这个仓库点个 Star，你的头像就会被小票打印机打出来。",
   "https://github.com/qybaihe/bla": "🛡️ BLA（Blind LLM Agents）：对抗式防护工具，保护二进制文件、Electron 应用、JS 包、Python 和 WebAssembly 不被 AI 逆向工……",
-  "https://github.com/blakeandersonw/ai-app-playbook": "2026年如何打造有用且盈利的应用程序。克隆它并将你的代码代理指向AGENTS.md。",
   "https://github.com/deepopen-com/deepopen-3d-webs": "基于图像的3D场景生成系统。用户提供参考图像和提示词，系统生成可预览、可重放和可追踪的场景",
-  "https://github.com/mirkobrombin/raven": "Windows你的应用能识别的",
-  "https://github.com/songjianyang/xss-audit": "针对React、TypeScript和JavaScript项目的14层静态XSS审计技能",
-  "https://github.com/misshexa66/OunceCake": "用于转储Switch 2游戏未加密romFS和exeFS的工具"
+  "https://github.com/valentderah/totk-pc-recomp": "将《塞尔达传说：王国之泪》静态重新编译为原生Windows x86-64，带有Vulkan渲染器。游戏文件不包括在内",
+  "https://github.com/OpenBMB/MiniCPM-OCR": "快速准确的OCR，带有正确性评估"
 };
