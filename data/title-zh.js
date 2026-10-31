@@ -1,17 +1,8 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://openai.com/index/updated-model-spec": "OpenAI 更新模型规范，让 AI 更能干也更有益",
-  "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "英伟达 Omniverse：开发者如何用前沿 AI 智能体把想法变成仿真",
-  "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1": "IBM Granite Switch 4.1.1：像升级软件一样升级模型",
-  "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/": "Jassy表示，AWS将成为10000亿美元的业务。但首先，它将进行大量投资",
-  "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/": "随着与Anthropic的竞争加剧，OpenAI将Pro计划的使用限制翻倍",
-  "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/": "一项Anthropic研究发现，专家们采纳了AI代理的随机观点，并认为是自己的观点",
   "https://simonwillison.net/2026/Oct/29/api-credits/": "符合条件的ChatGPT订阅享有API积分优惠",
-  "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright": "维基百科的运营方表示，不利的AI版权裁决可能威胁开放网络",
   "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/": "你不需要相信上帝，就可以在工作中使用AI获得宗教豁免",
-  "https://arstechnica.com/gadgets/2026/10/trump-declares-robot-imports-a-national-security-threat/": "特朗普宣布机器人进口是国家安全威胁",
-  "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/": "谷歌承认AI搜索赚的钱更少，但它正通过增加广告来解决这个问题",
   "https://openai.com/index/community-safety-report-and-new-protections-for-teens": "社区安全报告及针对青少年的新保护措施",
   "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/": "黑夜中的嗡嗡声：自主 AI 加入寻找外星信号的行列",
   "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru": "星巴克希望利用 AI 在快车道上向你展示‘个性化数字菜单’",
@@ -54,7 +45,11 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/": "注重隐私的AI助手Ollie即将关闭",
   "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/": "微软为四分之一员工提供自愿离职补偿，同时保护AI关键团队",
   "https://the-decoder.com/google-deepmind-creates-a-global-map-of-forests-with-satellite-data-and-ai/": "谷歌Deepmind利用卫星数据和人工智能创建全球森林地图",
-  "https://the-decoder.com/openai-raises-just-11-billion-of-its-30-billion-target-as-big-investors-lose-their-ai-appetite/": "OpenAI仅筹集到300亿美元目标中的110亿美元，大型投资者对AI的热情减退"
+  "https://the-decoder.com/openai-raises-just-11-billion-of-its-30-billion-target-as-big-investors-lose-their-ai-appetite/": "OpenAI仅筹集到300亿美元目标中的110亿美元，大型投资者对AI的热情减退",
+  "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code": "我在 Meta 之前打造了一个 AI 泰迪熊",
+  "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/": "据称 OpenAI 降低了新轮融资目标",
+  "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/": "OpenAI 计划使用之前未开放的 Daybreak Blue 网络安全会议数据训练模型",
+  "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/": "养蜂技巧和摔跤建议可以训练 AI 模型来破坏监督"
 };
 window.AI_DESC_ZH = {
   "https://github.com/interplains/Zero-Breach-Toolkit": "免费开源的离线工具，检查设备上有没有已知商业间谍软件的痕迹，支持 Windows、macOS、Linux、Android 手机和 iPhone 备份。",
@@ -63,7 +58,6 @@ window.AI_DESC_ZH = {
   "https://github.com/Motionsites-AI/claude-skill": "免费 Claude 技能：让 Claude 做出电影感、拿得了奖的落地页，出自 MotionSites。",
   "https://github.com/KillaBoi/StealMyBitcoin-PoC": "“Steal My Bitcoin”挑战的公开版本",
   "https://github.com/ZiChuanLan/agent-purge": "一套人设，多个编码智能体：通过本地网页控制台，替换或注入 codex、claude、opencode、grok、omp、hermes、pi、zcode 的系统提示词。",
-  "https://github.com/DrWhax/unfairplay": "在 macOS 上解密 IPA 安装包",
   "https://github.com/aschmelyun/print-my-profile-pic": "给这个仓库点个 Star，你的头像就会被小票打印机打出来。",
   "https://github.com/qybaihe/bla": "🛡️ BLA（Blind LLM Agents）：对抗式防护工具，保护二进制文件、Electron 应用、JS 包、Python 和 WebAssembly 不被 AI 逆向工……",
   "https://github.com/deepopen-com/deepopen-3d-webs": "基于图像的3D场景生成系统。用户提供参考图像和提示词，系统生成可预览、可重放和可追踪的场景",
@@ -71,5 +65,7 @@ window.AI_DESC_ZH = {
   "https://github.com/heydamir/unslop": "一个Claude技能可以将带有氛围编码、看起来像AI的用户界面转换为设计好的界面",
   "https://github.com/lexifina/global-law": "全球法律的Git：每个国家的法律作为一个git历史，每个国家的记录作为一个子模块，每次提交代表一项生效的法律",
   "https://github.com/kevinraymond/florilegium": "为LuaLaTeX生成的程序化德夫特蓝花边页边距，用Lua绘制",
-  "https://github.com/Djihads80/Eglantine": "非常实验性的Nintendo Switch 2模拟器"
+  "https://github.com/Djihads80/Eglantine": "非常实验性的Nintendo Switch 2模拟器",
+  "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的代理系统",
+  "https://github.com/patch-gg/pixelfx": "232 像素艺术效果，每个都是一个小代码。再加上一个 Claude Code 技能，让你自己制作。"
 };
