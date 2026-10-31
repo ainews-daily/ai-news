@@ -2,15 +2,8 @@
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/updated-model-spec": "OpenAI 更新模型规范，让 AI 更能干也更有益",
-  "https://openai.com/index/how-we-detect-frontier-model-misalignment": "OpenAI 讲解如何发现前沿模型的“不对齐”行为",
-  "https://openai.com/index/ropes-gray-ai-diligence": "律所 Ropes & Gray 如何用 AI 做交易尽调",
   "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "英伟达 Omniverse：开发者如何用前沿 AI 智能体把想法变成仿真",
   "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1": "IBM Granite Switch 4.1.1：像升级软件一样升级模型",
-  "https://mistral.ai/news/mistral-large-4-oss/": "Mistral 开放 Le Chonk：面向程序员，也给安全防御方用",
-  "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/": "我们急需实时监控 AI 智能体的操作",
-  "https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/": "Mistral 发布编程能力强的 Le Chonk，整体仍落后中国模型",
-  "https://the-decoder.com/us-antitrust-regulators-are-scrutinizing-nvidias-hugging-face-deal-and-sales-practices/": "美国反垄断机构审查英伟达收购 Hugging Face 及其销售做法",
-  "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/": "《纽约时报》：中国间谍曾瞄准黄仁勋",
   "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/": "Jassy表示，AWS将成为10000亿美元的业务。但首先，它将进行大量投资",
   "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/": "随着与Anthropic的竞争加剧，OpenAI将Pro计划的使用限制翻倍",
   "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/": "一项Anthropic研究发现，专家们采纳了AI代理的随机观点，并认为是自己的观点",
@@ -58,7 +51,10 @@ window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XNUJtenZlYUlZcldQVVBmY2x5YmJORkxTWm92NTVobk5jOTMzbmRkY0w1WGVuVEtMN292M0NISWJYMDEycEtxM05heHVsbGYtc1lJRkhHWUI0X3FxWUxVcFJCSVVGS1Rt?oc=5": "自动化细微意外错位研究",
   "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3": "苹果智能终于随iOS 27.3登陆中国",
   "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/": "Nvidia考虑作为担保人为Nscale在西弗吉尼亚州的AI数据中心提供担保",
-  "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/": "注重隐私的AI助手Ollie即将关闭"
+  "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/": "注重隐私的AI助手Ollie即将关闭",
+  "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/": "微软为四分之一员工提供自愿离职补偿，同时保护AI关键团队",
+  "https://the-decoder.com/google-deepmind-creates-a-global-map-of-forests-with-satellite-data-and-ai/": "谷歌Deepmind利用卫星数据和人工智能创建全球森林地图",
+  "https://the-decoder.com/openai-raises-just-11-billion-of-its-30-billion-target-as-big-investors-lose-their-ai-appetite/": "OpenAI仅筹集到300亿美元目标中的110亿美元，大型投资者对AI的热情减退"
 };
 window.AI_DESC_ZH = {
   "https://github.com/interplains/Zero-Breach-Toolkit": "免费开源的离线工具，检查设备上有没有已知商业间谍软件的痕迹，支持 Windows、macOS、Linux、Android 手机和 iPhone 备份。",
@@ -74,7 +70,6 @@ window.AI_DESC_ZH = {
   "https://github.com/valentderah/totk-pc-recomp": "将《塞尔达传说：王国之泪》静态重新编译为原生Windows x86-64，带有Vulkan渲染器。游戏文件不包括在内",
   "https://github.com/heydamir/unslop": "一个Claude技能可以将带有氛围编码、看起来像AI的用户界面转换为设计好的界面",
   "https://github.com/lexifina/global-law": "全球法律的Git：每个国家的法律作为一个git历史，每个国家的记录作为一个子模块，每次提交代表一项生效的法律",
-  "https://github.com/mizorewww/gdirect": "使用pinned libaria2的Rust谷歌网盘直下工具",
-  "https://github.com/yaojingang/GEOInflow": "自托管的网页和AI爬虫分析工具，用于生成式引擎优化（GEO）。追踪访客、AI搜索推荐来源、爬虫日志、内容覆盖情况和转化率",
-  "https://github.com/kevinraymond/florilegium": "为LuaLaTeX生成的程序化德夫特蓝花边页边距，用Lua绘制"
+  "https://github.com/kevinraymond/florilegium": "为LuaLaTeX生成的程序化德夫特蓝花边页边距，用Lua绘制",
+  "https://github.com/Djihads80/Eglantine": "非常实验性的Nintendo Switch 2模拟器"
 };
