@@ -67,6 +67,7 @@ window.AI_DESC_ZH = {
   "https://github.com/yaojingang/GEOInflow": "自托管的网页和AI爬虫分析工具，用于生成式引擎优化（GEO）。跟踪访客、AI搜索推荐、爬虫日志、内容覆盖范围和转化率",
   "https://github.com/OpenBMB/MiniCPM-OCR": "快速准确的OCR，带有正确性评估",
   "https://github.com/Arjun-Ingole/hop": "在不使用U盘的情况下在Windows旁边安装Linux",
-  "https://github.com/benderandrew069/deepseek-api-pricing-2026": "DeepSeek API定价指南（2026年）：模型、缓存命中和高峰时段",
-  "https://github.com/physicsdolphin/nv-uefi-unlocker": "UEFI预驱动程序NVIDIA GPU解锁器，适用于Windows Linux Hackintosh和所有EFI启动系统（Rust）：SEC2擦除 -> FWSEC/WPR2 -> 签名启动器 -> V67四重写"
+  "https://github.com/physicsdolphin/nv-uefi-unlocker": "UEFI预驱动程序NVIDIA GPU解锁器，适用于Windows Linux Hackintosh和所有EFI启动系统（Rust）：SEC2擦除 -> FWSEC/WPR2 -> 签名启动器 -> V67四重写",
+  "https://github.com/wangzan101/Mika": "适用于 Android 的设备端人工智能代理，可操作应用和网络为您完成任务。",
+  "https://github.com/jacke-pp/open-yoki": "一个运行在一台服务器上的 AI 直播主持人：语音、面部、聊天、记忆、帖子。基础 yoki 运行在。由 Jacke_pp · 联系方式：在 X 上私信 @Jacke_pp"
 };
