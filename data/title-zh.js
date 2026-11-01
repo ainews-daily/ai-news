@@ -1,13 +1,9 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://openai.com/index/community-safety-report-and-new-protections-for-teens": "社区安全报告及针对青少年的新保护措施",
   "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/": "黑夜中的嗡嗡声：自主 AI 加入寻找外星信号的行列",
   "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru": "星巴克希望利用 AI 在快车道上向你展示‘个性化数字菜单’",
   "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai": "教皇利奥呼吁解除 AI 武装：‘机器是工具，不是人’",
-  "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles": "硅谷希望你投资奇迹",
-  "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview": "Sam Altman 对数学家表示同情，但表示 OpenAI 的数学攻势不会停止",
-  "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers": "缅因州的数据中心叛乱将决定谁控制参议院",
   "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/": "Zest 的新 AI 代理可通过文字寻找餐厅并预订座位",
   "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/": "谷歌首个数据中心卫星已上线并创作诗歌",
   "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/": "Theranos 告密者 Tyler Shultz 警告称 AI 爆炸‘是欺骗人们的巨大机会’",
@@ -15,11 +11,7 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/": "DoorDash 表示它仅从 AI 代理处收到了‘几百’单订单",
   "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/": "富士胶片为应对AI带来的归档需求，将把磁带产量提升5倍",
   "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/": "美国司法部称，数以千计的“幽灵学生”利用AI骗取数百万助学贷款",
-  "https://the-decoder.com/openai-sets-new-behavioral-guidelines-for-ai-models-that-have-already-proven-hard-to-control/": "OpenAI为已证明难以控制的AI模型设定了新的行为准则",
-  "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/": "Reddit首席执行官哈姆弗里警告整个网络：谷歌的AI模式“对任何人都不会带来流量”",
-  "https://openai.com/index/helping-websites-express-ai-training-preferences": "让网站更容易表达AI训练偏好",
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RZThRbzhUdFJTZGszLUcwT29wNFdIZ29fVjJTUTB4SkJFRlZRekpOOVlpM1F6eGVSN2RENmpjWUl3QWU5YWNwRHZNaF9EdlNNMTY1TUtfaTJHOHk3S2s3SXJVc3BWSVVa?oc=5": "Anthropic 居住计划：面向资深技术领袖的申请现已开放",
-  "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/": "从合成企业数据评估到真实的微软 Copilot AI 信心",
   "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers": "萨姆·阿尔特曼表示，将RAM放在数据中心比放在你的办公桌上更好",
   "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out": "AI 领域的巨头们支持一种新的方式以避免被爬取",
   "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission": "谷歌的卫星AI服务器首次向地球发送响应",
@@ -31,8 +23,6 @@ window.AI_TITLE_ZH = {
   "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/": "Anthropic VS代码扩展在Cursor上被植入后门近12小时",
   "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/": "达特茅斯院长曾警告我们AI作弊问题——但其自身AI使用导致他失去工作",
   "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/": "基本上没人用AI代理来处理DoorDash订单",
-  "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/": "一个Claude模型自主选择了一种基因疗法，并在没有人类决策的情况下对小鼠大脑进行了手术",
-  "https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft/": "Cursor市场中的恶意Claude代码扩展试图远程访问和窃取数据",
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XNUJtenZlYUlZcldQVVBmY2x5YmJORkxTWm92NTVobk5jOTMzbmRkY0w1WGVuVEtMN292M0NISWJYMDEycEtxM05heHVsbGYtc1lJRkhHWUI0X3FxWUxVcFJCSVVGS1Rt?oc=5": "自动化细微意外错位研究",
   "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3": "苹果智能终于随iOS 27.3登陆中国",
   "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/": "Nvidia考虑作为担保人为Nscale在西弗吉尼亚州的AI数据中心提供担保",
@@ -48,7 +38,11 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/": "距离科技博客创始人峰会还有4天：它如何帮助你建立更有价值的联系以实现增长",
   "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/": "法官允许NAACP就xAI数据中心污染提起的诉讼继续进行",
   "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/": "Anthropic的水印发布在两个较旧的Claude型号上留下了一个漏洞",
-  "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/": "我们是如何接管ChatGPT账户的"
+  "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/": "我们是如何接管ChatGPT账户的",
+  "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/": "中国AI模型具有政治复杂性，而不仅仅是政府的传声筒，研究发现",
+  "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage/": "OpenAI 正引导 ChatGPT 用户更多地使用付费功能",
+  "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/": "Google 希望视频 AI 能理解人们在工作中需要什么",
+  "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/": "OpenAI 即将推出的 ChatGPT 聊天与工作合并功能预示着所有你可提示定价时代的结束"
 };
 window.AI_DESC_ZH = {
   "https://github.com/andyhuo520/digital-human-koubo": "用一张照片生成 AI 数字人口播视频：Renoise MCP 生成，5 种剪辑风格，48 个创作者级包装组件，是给 Claude C……用的智能体技能",
@@ -65,9 +59,9 @@ window.AI_DESC_ZH = {
   "https://github.com/haydenschmitty/floorplan": "看看你的应用实际是如何组合在一起的。由Claude或Codex绘制的交互式、通俗易懂的代码库地图。",
   "https://github.com/D3voz/openjutsu": "一键式角色替换视频：一个基于ComfyUI和MiniMax H3，使用FLUX.3 Klein补光的开源本地Higgsfield Genjutsu替代方案",
   "https://github.com/yaojingang/GEOInflow": "自托管的网页和AI爬虫分析工具，用于生成式引擎优化（GEO）。跟踪访客、AI搜索推荐、爬虫日志、内容覆盖范围和转化率",
-  "https://github.com/OpenBMB/MiniCPM-OCR": "快速准确的OCR，带有正确性评估",
   "https://github.com/Arjun-Ingole/hop": "在不使用U盘的情况下在Windows旁边安装Linux",
   "https://github.com/physicsdolphin/nv-uefi-unlocker": "UEFI预驱动程序NVIDIA GPU解锁器，适用于Windows Linux Hackintosh和所有EFI启动系统（Rust）：SEC2擦除 -> FWSEC/WPR2 -> 签名启动器 -> V67四重写",
   "https://github.com/wangzan101/Mika": "适用于 Android 的设备端人工智能代理，可操作应用和网络为您完成任务。",
-  "https://github.com/jacke-pp/open-yoki": "一个运行在一台服务器上的 AI 直播主持人：语音、面部、聊天、记忆、帖子。基础 yoki 运行在。由 Jacke_pp · 联系方式：在 X 上私信 @Jacke_pp"
+  "https://github.com/elvarofficial/teardown": "一种 Claude 代码技能，可将任何机器变成你可以拆解的 3D 模拟器",
+  "https://github.com/BookracyFOS/bookracy": "免费的开源书籍搜索、阅读和图书馆。"
 };
