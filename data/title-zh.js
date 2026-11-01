@@ -1,20 +1,8 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/": "黑夜中的嗡嗡声：自主 AI 加入寻找外星信号的行列",
-  "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru": "星巴克希望利用 AI 在快车道上向你展示‘个性化数字菜单’",
-  "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai": "教皇利奥呼吁解除 AI 武装：‘机器是工具，不是人’",
-  "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/": "Zest 的新 AI 代理可通过文字寻找餐厅并预订座位",
-  "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/": "谷歌首个数据中心卫星已上线并创作诗歌",
-  "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/": "Theranos 告密者 Tyler Shultz 警告称 AI 爆炸‘是欺骗人们的巨大机会’",
-  "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/": "跳过寒暄：通过 Braindate 在 TechCrunch 创始人峰会上建立改变游戏规则的联系",
-  "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/": "DoorDash 表示它仅从 AI 代理处收到了‘几百’单订单",
-  "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/": "富士胶片为应对AI带来的归档需求，将把磁带产量提升5倍",
-  "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/": "美国司法部称，数以千计的“幽灵学生”利用AI骗取数百万助学贷款",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RZThRbzhUdFJTZGszLUcwT29wNFdIZ29fVjJTUTB4SkJFRlZRekpOOVlpM1F6eGVSN2RENmpjWUl3QWU5YWNwRHZNaF9EdlNNMTY1TUtfaTJHOHk3S2s3SXJVc3BWSVVa?oc=5": "Anthropic 居住计划：面向资深技术领袖的申请现已开放",
   "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers": "萨姆·阿尔特曼表示，将RAM放在数据中心比放在你的办公桌上更好",
   "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out": "AI 领域的巨头们支持一种新的方式以避免被爬取",
-  "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission": "谷歌的卫星AI服务器首次向地球发送响应",
   "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/": "英特尔股价暴跌，使政府持股价值减少120亿美元",
   "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/": "据报道，上市后信用评级机构可能给Anthropic给予高‘垃圾’评级",
   "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/": "科技极客的最后时刻万圣节服装",
@@ -22,14 +10,11 @@ window.AI_TITLE_ZH = {
   "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/": "超音速客机面临不确定性，公司转向为AI数据中心供电",
   "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/": "Anthropic VS代码扩展在Cursor上被植入后门近12小时",
   "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/": "达特茅斯院长曾警告我们AI作弊问题——但其自身AI使用导致他失去工作",
-  "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/": "基本上没人用AI代理来处理DoorDash订单",
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XNUJtenZlYUlZcldQVVBmY2x5YmJORkxTWm92NTVobk5jOTMzbmRkY0w1WGVuVEtMN292M0NISWJYMDEycEtxM05heHVsbGYtc1lJRkhHWUI0X3FxWUxVcFJCSVVGS1Rt?oc=5": "自动化细微意外错位研究",
   "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3": "苹果智能终于随iOS 27.3登陆中国",
   "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/": "Nvidia考虑作为担保人为Nscale在西弗吉尼亚州的AI数据中心提供担保",
   "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/": "注重隐私的AI助手Ollie即将关闭",
   "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/": "微软为四分之一员工提供自愿离职补偿，同时保护AI关键团队",
-  "https://the-decoder.com/google-deepmind-creates-a-global-map-of-forests-with-satellite-data-and-ai/": "谷歌Deepmind利用卫星数据和人工智能创建全球森林地图",
-  "https://the-decoder.com/openai-raises-just-11-billion-of-its-30-billion-target-as-big-investors-lose-their-ai-appetite/": "OpenAI仅筹集到300亿美元目标中的110亿美元，大型投资者对AI的热情减退",
   "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code": "我在 Meta 之前打造了一个 AI 泰迪熊",
   "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/": "据称 OpenAI 降低了新轮融资目标",
   "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/": "OpenAI 计划使用之前未开放的 Daybreak Blue 网络安全会议数据训练模型",
@@ -42,7 +27,9 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/": "中国AI模型具有政治复杂性，而不仅仅是政府的传声筒，研究发现",
   "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage/": "OpenAI 正引导 ChatGPT 用户更多地使用付费功能",
   "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/": "Google 希望视频 AI 能理解人们在工作中需要什么",
-  "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/": "OpenAI 即将推出的 ChatGPT 聊天与工作合并功能预示着所有你可提示定价时代的结束"
+  "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/": "OpenAI 即将推出的 ChatGPT 聊天与工作合并功能预示着所有你可提示定价时代的结束",
+  "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/": "Adobe正在测试AI代理使用像Photoshop专业人员一样的编辑工具的效果",
+  "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/": "富有同理心的提示可以将AI聊天机器人变成似乎受过创伤的对话伙伴"
 };
 window.AI_DESC_ZH = {
   "https://github.com/andyhuo520/digital-human-koubo": "用一张照片生成 AI 数字人口播视频：Renoise MCP 生成，5 种剪辑风格，48 个创作者级包装组件，是给 Claude C……用的智能体技能",
