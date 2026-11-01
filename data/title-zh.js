@@ -1,8 +1,6 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://simonwillison.net/2026/Oct/29/api-credits/": "符合条件的ChatGPT订阅享有API积分优惠",
-  "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/": "你不需要相信上帝，就可以在工作中使用AI获得宗教豁免",
   "https://openai.com/index/community-safety-report-and-new-protections-for-teens": "社区安全报告及针对青少年的新保护措施",
   "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/": "黑夜中的嗡嗡声：自主 AI 加入寻找外星信号的行列",
   "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru": "星巴克希望利用 AI 在快车道上向你展示‘个性化数字菜单’",
@@ -15,15 +13,11 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/": "Theranos 告密者 Tyler Shultz 警告称 AI 爆炸‘是欺骗人们的巨大机会’",
   "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/": "跳过寒暄：通过 Braindate 在 TechCrunch 创始人峰会上建立改变游戏规则的联系",
   "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/": "DoorDash 表示它仅从 AI 代理处收到了‘几百’单订单",
-  "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/": "距离截止还有 5 天：你最后的机会在 TechCrunch 创始人峰会 2026 上建立联系、扩大规模并节省成本",
-  "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/": "AI数据中心能像汽车一样大规模生产吗？这家初创公司想找出答案",
   "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/": "富士胶片为应对AI带来的归档需求，将把磁带产量提升5倍",
   "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/": "美国司法部称，数以千计的“幽灵学生”利用AI骗取数百万助学贷款",
   "https://the-decoder.com/openai-sets-new-behavioral-guidelines-for-ai-models-that-have-already-proven-hard-to-control/": "OpenAI为已证明难以控制的AI模型设定了新的行为准则",
   "https://the-decoder.com/googles-ai-mode-doesnt-drive-traffic-for-anybody-reddit-ceo-huffman-warns-the-entire-web/": "Reddit首席执行官哈姆弗里警告整个网络：谷歌的AI模式“对任何人都不会带来流量”",
-  "https://the-decoder.com/open-weight-model-glm-5-3-built-full-firefox-exploit-chains-with-zero-human-input-in-under-48-hours/": "开放权重模型GLM 5.3在不到48小时内无需人工输入即可构建完整的Firefox漏洞利用链",
   "https://openai.com/index/helping-websites-express-ai-training-preferences": "让网站更容易表达AI训练偏好",
-  "https://openai.com/index/fair-use-benefits-everyone": "合理使用让所有人都受益",
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RZThRbzhUdFJTZGszLUcwT29wNFdIZ29fVjJTUTB4SkJFRlZRekpOOVlpM1F6eGVSN2RENmpjWUl3QWU5YWNwRHZNaF9EdlNNMTY1TUtfaTJHOHk3S2s3SXJVc3BWSVVa?oc=5": "Anthropic 居住计划：面向资深技术领袖的申请现已开放",
   "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/": "从合成企业数据评估到真实的微软 Copilot AI 信心",
   "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers": "萨姆·阿尔特曼表示，将RAM放在数据中心比放在你的办公桌上更好",
@@ -49,17 +43,17 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code": "我在 Meta 之前打造了一个 AI 泰迪熊",
   "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/": "据称 OpenAI 降低了新轮融资目标",
   "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/": "OpenAI 计划使用之前未开放的 Daybreak Blue 网络安全会议数据训练模型",
-  "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/": "养蜂技巧和摔跤建议可以训练 AI 模型来破坏监督"
+  "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/": "养蜂技巧和摔跤建议可以训练 AI 模型来破坏监督",
+  "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/": "苹果CEO表示，公司不‘为AI而AI’",
+  "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/": "距离科技博客创始人峰会还有4天：它如何帮助你建立更有价值的联系以实现增长",
+  "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/": "法官允许NAACP就xAI数据中心污染提起的诉讼继续进行",
+  "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/": "Anthropic的水印发布在两个较旧的Claude型号上留下了一个漏洞",
+  "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/": "我们是如何接管ChatGPT账户的"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/interplains/Zero-Breach-Toolkit": "免费开源的离线工具，检查设备上有没有已知商业间谍软件的痕迹，支持 Windows、macOS、Linux、Android 手机和 iPhone 备份。",
   "https://github.com/andyhuo520/digital-human-koubo": "用一张照片生成 AI 数字人口播视频：Renoise MCP 生成，5 种剪辑风格，48 个创作者级包装组件，是给 Claude C……用的智能体技能",
-  "https://github.com/DenisSergeevitch/ex-ussr-kinship-research": "给 AI 智能体（Codex、Claude Code）用的家谱研究技能，强调证据，覆盖前苏联地区的教会登记、民事、军事、流放和镇压档案",
   "https://github.com/Motionsites-AI/claude-skill": "免费 Claude 技能：让 Claude 做出电影感、拿得了奖的落地页，出自 MotionSites。",
-  "https://github.com/KillaBoi/StealMyBitcoin-PoC": "“Steal My Bitcoin”挑战的公开版本",
-  "https://github.com/ZiChuanLan/agent-purge": "一套人设，多个编码智能体：通过本地网页控制台，替换或注入 codex、claude、opencode、grok、omp、hermes、pi、zcode 的系统提示词。",
   "https://github.com/aschmelyun/print-my-profile-pic": "给这个仓库点个 Star，你的头像就会被小票打印机打出来。",
-  "https://github.com/qybaihe/bla": "🛡️ BLA（Blind LLM Agents）：对抗式防护工具，保护二进制文件、Electron 应用、JS 包、Python 和 WebAssembly 不被 AI 逆向工……",
   "https://github.com/deepopen-com/deepopen-3d-webs": "基于图像的3D场景生成系统。用户提供参考图像和提示词，系统生成可预览、可重放和可追踪的场景",
   "https://github.com/valentderah/totk-pc-recomp": "将《塞尔达传说：王国之泪》静态重新编译为原生Windows x86-64，带有Vulkan渲染器。游戏文件不包括在内",
   "https://github.com/heydamir/unslop": "一个Claude技能可以将带有氛围编码、看起来像AI的用户界面转换为设计好的界面",
@@ -67,5 +61,12 @@ window.AI_DESC_ZH = {
   "https://github.com/kevinraymond/florilegium": "为LuaLaTeX生成的程序化德夫特蓝花边页边距，用Lua绘制",
   "https://github.com/Djihads80/Eglantine": "非常实验性的Nintendo Switch 2模拟器",
   "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的代理系统",
-  "https://github.com/patch-gg/pixelfx": "232 像素艺术效果，每个都是一个小代码。再加上一个 Claude Code 技能，让你自己制作。"
+  "https://github.com/patch-gg/pixelfx": "232 像素艺术效果，每个都是一个小代码。再加上一个 Claude Code 技能，让你自己制作。",
+  "https://github.com/haydenschmitty/floorplan": "看看你的应用实际是如何组合在一起的。由Claude或Codex绘制的交互式、通俗易懂的代码库地图。",
+  "https://github.com/D3voz/openjutsu": "一键式角色替换视频：一个基于ComfyUI和MiniMax H3，使用FLUX.3 Klein补光的开源本地Higgsfield Genjutsu替代方案",
+  "https://github.com/yaojingang/GEOInflow": "自托管的网页和AI爬虫分析工具，用于生成式引擎优化（GEO）。跟踪访客、AI搜索推荐、爬虫日志、内容覆盖范围和转化率",
+  "https://github.com/OpenBMB/MiniCPM-OCR": "快速准确的OCR，带有正确性评估",
+  "https://github.com/Arjun-Ingole/hop": "在不使用U盘的情况下在Windows旁边安装Linux",
+  "https://github.com/benderandrew069/deepseek-api-pricing-2026": "DeepSeek API定价指南（2026年）：模型、缓存命中和高峰时段",
+  "https://github.com/physicsdolphin/nv-uefi-unlocker": "UEFI预驱动程序NVIDIA GPU解锁器，适用于Windows Linux Hackintosh和所有EFI启动系统（Rust）：SEC2擦除 -> FWSEC/WPR2 -> 签名启动器 -> V67四重写"
 };
