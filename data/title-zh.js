@@ -1,8 +1,6 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/": "Nvidia考虑作为担保人为Nscale在西弗吉尼亚州的AI数据中心提供担保",
-  "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/": "微软为四分之一员工提供自愿离职补偿，同时保护AI关键团队",
   "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code": "我在 Meta 之前打造了一个 AI 泰迪熊",
   "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/": "据称 OpenAI 降低了新轮融资目标",
   "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/": "OpenAI 计划使用之前未开放的 Daybreak Blue 网络安全会议数据训练模型",
@@ -20,7 +18,9 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/": "富有同理心的提示可以将AI聊天机器人变成似乎受过创伤的对话伙伴",
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RZThRbzhUdFJTZGszLUcwT29wNFdIZ29fVjJTUTB4SkJFRlZRekpOOVlpM1F6eGVSN2RENmpjWUl3QWU5YWNwRHZNaF9EdlNNMTY1TUtfaTJHOHk3S2s3SXJVc3BWSVVa?oc=5": "Anthropic Residency：面向资深技术领袖的申请开放",
   "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/": "OpenAI 或将其数据中心重新命名为‘AI 计算校园’",
-  "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/": "AI 可以让科技 CEO 的生活更轻松。其他人呢？"
+  "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/": "AI 可以让科技 CEO 的生活更轻松。其他人呢？",
+  "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/": "代理网络已到来",
+  "https://the-decoder.com/openai-prepares-lobbying-blitz-for-a-post-midterm-washington/": "OpenAI为中期选举后的华盛顿准备游说风暴"
 };
 window.AI_DESC_ZH = {
   "https://github.com/aschmelyun/print-my-profile-pic": "给这个仓库点个 Star，你的头像就会被小票打印机打出来。",
@@ -39,7 +39,6 @@ window.AI_DESC_ZH = {
   "https://github.com/OpenBMB/MiniCPM-OCR": "快速准确的 OCR 识别并评估正确性",
   "https://github.com/NiazMorshed2007/reanimate": "一个 Claude Code 技能，可逐帧逆向工程任何动画，然后证明复制的动画移动方式相同",
   "https://github.com/jacke-pp/open-yoki": "一个可在单台服务器上运行的 AI 直播主持人：语音、面部、聊天、记忆、发布。基础版 yoki 运行于此。由 Jacke_pp · 联系方式：在 X 上私信 @Jacke_pp",
-  "https://github.com/benderandrew069/deepseek-api-pricing-2026": "DeepSeek API 2026 年模型、缓存命中和高峰时段定价指南",
-  "https://github.com/ramenvr/autopilot": "畅玩任何游戏",
-  "https://github.com/hyz317/HairDeck": "HairDeck：从单张图片生成动画就绪的风格化头发卡片"
+  "https://github.com/modelflare-ai/AnyModelBot": "🤖 开源、以本地优先的Grok Bot、OpenAI点和Claude Duet替代方案。你可以在任何模型上拥有自己的AI机器人：GPT、Claude、Gemini、Grok、DeepSeek、Kimi、GLM",
+  "https://github.com/caru-ini/stack-diagram": "代理技能：用一句话描述你的技术栈，即可获得带有官方标志的架构图"
 };
