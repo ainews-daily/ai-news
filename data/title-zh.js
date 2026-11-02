@@ -1,19 +1,7 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers": "萨姆·阿尔特曼表示，将RAM放在数据中心比放在你的办公桌上更好",
-  "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out": "AI 领域的巨头们支持一种新的方式以避免被爬取",
-  "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/": "英特尔股价暴跌，使政府持股价值减少120亿美元",
-  "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/": "据报道，上市后信用评级机构可能给Anthropic给予高‘垃圾’评级",
-  "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/": "科技极客的最后时刻万圣节服装",
-  "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/": "AI支出热潮开始出现裂痕",
-  "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/": "超音速客机面临不确定性，公司转向为AI数据中心供电",
-  "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/": "Anthropic VS代码扩展在Cursor上被植入后门近12小时",
-  "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/": "达特茅斯院长曾警告我们AI作弊问题——但其自身AI使用导致他失去工作",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XNUJtenZlYUlZcldQVVBmY2x5YmJORkxTWm92NTVobk5jOTMzbmRkY0w1WGVuVEtMN292M0NISWJYMDEycEtxM05heHVsbGYtc1lJRkhHWUI0X3FxWUxVcFJCSVVGS1Rt?oc=5": "自动化细微意外错位研究",
-  "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3": "苹果智能终于随iOS 27.3登陆中国",
   "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/": "Nvidia考虑作为担保人为Nscale在西弗吉尼亚州的AI数据中心提供担保",
-  "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/": "注重隐私的AI助手Ollie即将关闭",
   "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/": "微软为四分之一员工提供自愿离职补偿，同时保护AI关键团队",
   "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code": "我在 Meta 之前打造了一个 AI 泰迪熊",
   "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/": "据称 OpenAI 降低了新轮融资目标",
@@ -29,13 +17,13 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/": "Google 希望视频 AI 能理解人们在工作中需要什么",
   "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/": "OpenAI 即将推出的 ChatGPT 聊天与工作合并功能预示着所有你可提示定价时代的结束",
   "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/": "Adobe正在测试AI代理使用像Photoshop专业人员一样的编辑工具的效果",
-  "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/": "富有同理心的提示可以将AI聊天机器人变成似乎受过创伤的对话伙伴"
+  "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/": "富有同理心的提示可以将AI聊天机器人变成似乎受过创伤的对话伙伴",
+  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RZThRbzhUdFJTZGszLUcwT29wNFdIZ29fVjJTUTB4SkJFRlZRekpOOVlpM1F6eGVSN2RENmpjWUl3QWU5YWNwRHZNaF9EdlNNMTY1TUtfaTJHOHk3S2s3SXJVc3BWSVVa?oc=5": "Anthropic Residency：面向资深技术领袖的申请开放",
+  "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/": "OpenAI 或将其数据中心重新命名为‘AI 计算校园’",
+  "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/": "AI 可以让科技 CEO 的生活更轻松。其他人呢？"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/andyhuo520/digital-human-koubo": "用一张照片生成 AI 数字人口播视频：Renoise MCP 生成，5 种剪辑风格，48 个创作者级包装组件，是给 Claude C……用的智能体技能",
-  "https://github.com/Motionsites-AI/claude-skill": "免费 Claude 技能：让 Claude 做出电影感、拿得了奖的落地页，出自 MotionSites。",
   "https://github.com/aschmelyun/print-my-profile-pic": "给这个仓库点个 Star，你的头像就会被小票打印机打出来。",
-  "https://github.com/deepopen-com/deepopen-3d-webs": "基于图像的3D场景生成系统。用户提供参考图像和提示词，系统生成可预览、可重放和可追踪的场景",
   "https://github.com/valentderah/totk-pc-recomp": "将《塞尔达传说：王国之泪》静态重新编译为原生Windows x86-64，带有Vulkan渲染器。游戏文件不包括在内",
   "https://github.com/heydamir/unslop": "一个Claude技能可以将带有氛围编码、看起来像AI的用户界面转换为设计好的界面",
   "https://github.com/lexifina/global-law": "全球法律的Git：每个国家的法律作为一个git历史，每个国家的记录作为一个子模块，每次提交代表一项生效的法律",
@@ -44,11 +32,14 @@ window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的代理系统",
   "https://github.com/patch-gg/pixelfx": "232 像素艺术效果，每个都是一个小代码。再加上一个 Claude Code 技能，让你自己制作。",
   "https://github.com/haydenschmitty/floorplan": "看看你的应用实际是如何组合在一起的。由Claude或Codex绘制的交互式、通俗易懂的代码库地图。",
-  "https://github.com/D3voz/openjutsu": "一键式角色替换视频：一个基于ComfyUI和MiniMax H3，使用FLUX.3 Klein补光的开源本地Higgsfield Genjutsu替代方案",
-  "https://github.com/yaojingang/GEOInflow": "自托管的网页和AI爬虫分析工具，用于生成式引擎优化（GEO）。跟踪访客、AI搜索推荐、爬虫日志、内容覆盖范围和转化率",
   "https://github.com/Arjun-Ingole/hop": "在不使用U盘的情况下在Windows旁边安装Linux",
-  "https://github.com/physicsdolphin/nv-uefi-unlocker": "UEFI预驱动程序NVIDIA GPU解锁器，适用于Windows Linux Hackintosh和所有EFI启动系统（Rust）：SEC2擦除 -> FWSEC/WPR2 -> 签名启动器 -> V67四重写",
   "https://github.com/wangzan101/Mika": "适用于 Android 的设备端人工智能代理，可操作应用和网络为您完成任务。",
   "https://github.com/elvarofficial/teardown": "一种 Claude 代码技能，可将任何机器变成你可以拆解的 3D 模拟器",
-  "https://github.com/BookracyFOS/bookracy": "免费的开源书籍搜索、阅读和图书馆。"
+  "https://github.com/storytold/craft-anything": "Craft Anything：了解任何软件的工作原理，并打造属于你自己的",
+  "https://github.com/OpenBMB/MiniCPM-OCR": "快速准确的 OCR 识别并评估正确性",
+  "https://github.com/NiazMorshed2007/reanimate": "一个 Claude Code 技能，可逐帧逆向工程任何动画，然后证明复制的动画移动方式相同",
+  "https://github.com/jacke-pp/open-yoki": "一个可在单台服务器上运行的 AI 直播主持人：语音、面部、聊天、记忆、发布。基础版 yoki 运行于此。由 Jacke_pp · 联系方式：在 X 上私信 @Jacke_pp",
+  "https://github.com/benderandrew069/deepseek-api-pricing-2026": "DeepSeek API 2026 年模型、缓存命中和高峰时段定价指南",
+  "https://github.com/ramenvr/autopilot": "畅玩任何游戏",
+  "https://github.com/hyz317/HairDeck": "HairDeck：从单张图片生成动画就绪的风格化头发卡片"
 };
