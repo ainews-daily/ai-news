@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/grid-protectors-program": "OpenAI 推出“电网守护者”计划",
@@ -34,9 +34,9 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/": "Adobe 测试 AI 智能体能否像 Photoshop 高手一样用编辑工具",
   "https://the-decoder.com/empathetic-prompts-can-turn-ai-chatbots-into-seemingly-traumatized-conversational-partners/": "共情式提示词会让聊天机器人表现得像受过创伤",
   "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/": "研究：中国 AI 模型的政治表现复杂，不只是官方传声筒",
-  "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/": "我们是如何接管 ChatGPT 账号的",
-  "https://simonwillison.net/2026/Oct/31/datasette-llm/": "datasette-llm 0.1a9 发布",
-  "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/": "Import AI 第 479 期：Spacewar、低延迟任务难倒大模型、Genie 4"
+  "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/": "Import AI 第 479 期：Spacewar、低延迟任务难倒大模型、Genie 4",
+  "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/": "Trajectory 获得 4500 万美元融资，旨在让非技术专家也能使用 AI 模型训练",
+  "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/": "Anthropic 警告称其非常接近 RSI 能力，即自我构建的 AI"
 };
 window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的智能体系统",
