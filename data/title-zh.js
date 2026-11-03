@@ -18,7 +18,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/": "OpenAI 终于要合并 ChatGPT 的 Chat 和 Work 标签页",
   "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/": "OpenAI 或把数据中心改称“AI 算力园区”",
   "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/": "AI 让科技公司 CEO 更轻松，其他人呢？",
-  "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/": "数据中心成了中期选举议题，连布鲁克林也不例外",
   "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/": "2027 年见：苹果千元家用机器人，能 FaceTime、开关灯",
   "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/": "Claude 禁止克隆游戏的新规，挡不住 AI 抄袭潮",
   "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/": "提升智能体数据分析的洞察质量",
@@ -36,7 +35,16 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/": "研究：中国 AI 模型的政治表现复杂，不只是官方传声筒",
   "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/": "Import AI 第 479 期：Spacewar、低延迟任务难倒大模型、Genie 4",
   "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/": "Trajectory 获得 4500 万美元融资，旨在让非技术专家也能使用 AI 模型训练",
-  "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/": "Anthropic 警告称其非常接近 RSI 能力，即自我构建的 AI"
+  "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/": "Anthropic 警告称其非常接近 RSI 能力，即自我构建的 AI",
+  "https://openai.com/index/scaling-git-at-openai": "在OpenAI扩展Git",
+  "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties": "以更大的漏洞赏金奖励防御者",
+  "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai": "为下一次安全冲刺做准备，以加强OpenAI的安全性",
+  "https://openai.com/index/dan-driscoll-joins-openai": "OpenAI任命Dan Driscoll为国家安全现代化高级顾问",
+  "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qTzctMkJVc25sdVRiNlRUcGhHNjF1d2dJU2s0alBCZmFBVlZHS1VJNXlad0VHQnpDYnZLaEpJTklaUUdCVE1GRnNuN1REYWxBZkVwdFFyeWhDd3F1Mi0zWGlZVQ?oc=5": "大型语言模型可证明推理的进展",
+  "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/": "谷歌将Dreambeans带入印度，旨在将AI生成的个人故事带给大众",
+  "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/": "苹果可能尝试通过与第三方AI应用合作来增加收入",
+  "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/": "Y Combinator的Garry Tan大量使用AI代理，每年在token上的花费高达20万美元",
+  "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/": "谁正在排队参加特朗普的“超级智能”忠诚度测试"
 };
 window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的智能体系统",
@@ -46,15 +54,15 @@ window.AI_DESC_ZH = {
   "https://github.com/storytold/craft-anything": "Craft Anything：弄懂任何软件的原理，再做出你自己的版本",
   "https://github.com/patch-gg/pixelfx": "244 种像素画特效，每种都是一小段代码，另附一个自己做特效的 Claude Code 技能",
   "https://github.com/Djihads80/Eglantine": "非常早期的实验性 Nintendo Switch 2 模拟器",
-  "https://github.com/haydenschmitty/floorplan": "看清你的应用各部分怎么拼在一起：由 Claude 或 Codex 画出一张白话的交互式代码库地图",
-  "https://github.com/aschmelyun/print-my-profile-pic": "来拍照！给这个仓库点 Star，你的头像就会被小票打印机打出来",
   "https://github.com/lexifina/global-law": "全球法律的 Git：把各国法律放进一条 Git 历史，每个国家是一个子模块，每次提交对应一部法律生效",
   "https://github.com/Arjun-Ingole/hop": "不用 U 盘，在 Windows 旁边装上 Linux",
   "https://github.com/kevinraymond/florilegium": "用 Lua 程序化生成代尔夫特蓝花卉页边装饰，供 LuaLaTeX 使用",
-  "https://github.com/modelflare-ai/AnyModelBot": "🤖 开源、本地优先的 Grok Bot、OpenAI dots 和 Claude Duet 替代品，可用任意模型搭自己的 AI 机器人：GPT、Claude、Gemini、Grok、DeepSeek、Kimi、GLM",
   "https://github.com/elvarofficial/teardown": "一个 Claude Code 技能，把任何机器变成可以拆开看的 3D 模拟器",
   "https://github.com/caru-ini/stack-diagram": "智能体技能：用一句话描述技术栈，生成带官方 Logo 的架构图",
   "https://github.com/NiazMorshed2007/reanimate": "一个 Claude Code 技能，逐帧逆向任意动画，再验证复刻版动得一模一样",
   "https://github.com/jacke-pp/open-yoki": "单台服务器就能跑的 AI 直播主播：语音、形象、聊天、记忆、发帖，是 yoki 的底座。作者 Jacke_pp，联系方式：在 X 上私信 @Jacke_pp",
-  "https://github.com/OpenBMB/MiniCPM-OCR": "快速、准确的 OCR，还能评估识别结果是否正确"
+  "https://github.com/mromidev/claude-animated-shorts": "免费Claude技能：使用three.js + Remotion的病毒式传播动画故事短片（2D角色在3D世界中）",
+  "https://github.com/hyz317/HairDeck": "HairDeck：从单张图像生成动画就绪的风格化头发卡片",
+  "https://github.com/ramenvr/autopilot": "玩任何游戏",
+  "https://github.com/speridlabs/idol-sdk": "Idol：从单张图像生成3D高斯。推理SDK和演示。"
 };
