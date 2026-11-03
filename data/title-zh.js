@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/accelerating-engineering-for-the-physical-world": "加速物理世界的工程研发",
@@ -31,7 +31,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features": "不想用 AI 的学校，谷歌会把搜索也一并关掉",
   "https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news": "2026 年美国中期选举新闻汇总",
   "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai": "苹果全面押注 AI：自家的和别人家的都要",
-  "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses": "OpenAI 悄悄把数据中心改叫“算力园区”",
   "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/": "Anthropic 在研发证明 AI 模型身份的系统",
   "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/": "等电太久，数据中心开始用旧喷气发动机发电",
   "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/": "AI 带火网络安全，Ted Schlein 的 Ballistic Ventures 募资 4.9 亿美元",
@@ -68,7 +67,8 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/": "高盛收回交易员和银行家的 AI 编程工具",
   "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/": "笔记本上的 Qwen 3.8 27B 也能解读模型权重",
   "https://simonwillison.net/2026/Nov/2/llm/": "llm 0.37 发布",
-  "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/": "Import AI 第 479 期：Spacewar、低延迟任务对大模型的挑战、Genie 4"
+  "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/": "Import AI 第 479 期：Spacewar、低延迟任务对大模型的挑战、Genie 4",
+  "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds": "请停止询问我AI泡沫何时会破裂"
 };
 window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的智能体系统",
