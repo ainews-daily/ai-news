@@ -10,8 +10,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai": "筹备下一轮安全冲刺，加固 OpenAI",
   "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties": "提高漏洞赏金，奖励安全防御者",
   "https://openai.com/index/lifeval": "LifeVal：测试 AI 处理日常事务的评测",
-  "https://openai.com/index/dan-driscoll-joins-openai": "OpenAI 任命 Dan Driscoll 为国家安全现代化高级顾问",
-  "https://openai.com/index/qodo-codex-plugin": "Qodo 借助 Codex 为 AI 代码审查补上上下文",
   "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/": "谷歌 2026 年 10 月 AI 新闻汇总",
   "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/": "用 Google Antigravity 做智能体化学信息学",
   "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1qTzctMkJVc25sdVRiNlRUcGhHNjF1d2dJU2s0alBCZmFBVlZHS1VJNXlad0VHQnpDYnZLaEpJTklaUUdCVE1GRnNuN1REYWxBZkVwdFFyeWhDd3F1Mi0zWGlZVQ?oc=5": "大语言模型可证明推理的研究进展",
@@ -30,7 +28,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations": "Netflix 新增“AI Discover”标签页，按主题推荐内容",
   "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features": "不想用 AI 的学校，谷歌会把搜索也一并关掉",
   "https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news": "2026 年美国中期选举新闻汇总",
-  "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai": "苹果全面押注 AI：自家的和别人家的都要",
   "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/": "Anthropic 在研发证明 AI 模型身份的系统",
   "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/": "等电太久，数据中心开始用旧喷气发动机发电",
   "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/": "AI 带火网络安全，Ted Schlein 的 Ballistic Ventures 募资 4.9 亿美元",
@@ -68,7 +65,8 @@ window.AI_TITLE_ZH = {
   "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/": "笔记本上的 Qwen 3.8 27B 也能解读模型权重",
   "https://simonwillison.net/2026/Nov/2/llm/": "llm 0.37 发布",
   "https://jack-clark.net/2026/11/02/import-ai-479-spacewar-low-latency-tasks-versus-llms-genie-4/": "Import AI 第 479 期：Spacewar、低延迟任务对大模型的挑战、Genie 4",
-  "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds": "请停止询问我AI泡沫何时会破裂"
+  "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds": "请停止询问我AI泡沫何时会破裂",
+  "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures": "PC游戏最大的模组网站对AI表态"
 };
 window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的智能体系统",
@@ -78,7 +76,6 @@ window.AI_DESC_ZH = {
   "https://github.com/valentderah/totk-pc-recomp": "把《塞尔达传说：王国之泪》静态重编译为原生 Windows 和 Linux x86-64 程序，使用 Vulkan 渲染，不含游戏文件。",
   "https://github.com/patch-gg/pixelfx": "244 种像素画特效，每种都是一小段代码，另附一个 Claude Code 技能，用来自己做特效。",
   "https://github.com/Djihads80/Eglantine": "非常早期的实验性 Nintendo Switch 2 模拟器",
-  "https://github.com/lexifina/global-law": "用 git 收录全球法律：任意条款、任意国家、任意日期，以及写下每个字的那部法律。",
   "https://github.com/elvarofficial/teardown": "一个 Claude Code 技能，把任何机器变成可以拆开看的 3D 模拟器",
   "https://github.com/caru-ini/stack-diagram": "智能体技能：一句话描述你的技术栈，生成带官方 Logo 的架构图",
   "https://github.com/Arjun-Ingole/hop": "不用 U 盘，在 Windows 旁边装上 Linux",
@@ -86,8 +83,8 @@ window.AI_DESC_ZH = {
   "https://github.com/Pika-Labs/Pika-H3-Flex": "Pika H3 Flex：视频和音频生成的推理代码",
   "https://github.com/mromidev/claude-animated-shorts": "免费的 Claude 技能：用 three.js 和 Remotion 做爆款动画故事短片（3D 场景里的 2D 角色）",
   "https://github.com/NiazMorshed2007/reanimate": "一个 Claude Code 技能，逐帧逆向分析任意动画，再验证复刻版的动作和原版一致。",
-  "https://github.com/jacke-pp/open-yoki": "跑在一台服务器上的 AI 直播主播：语音、形象、聊天、记忆、发帖，是 yoki 的基础版本。作者 Jacke_pp，联系方式：在 X 上私信 @Jacke_pp",
   "https://github.com/hyz317/HairDeck": "HairDeck：从单张图片生成可直接做动画的风格化发片",
-  "https://github.com/speridlabs/idol-sdk": "Idol：单张图片生成 3D 高斯，含推理 SDK 和演示。",
-  "https://github.com/RikiyaT/lm_understand-logs": "博客文章《大模型能理解并编写神经网络权重》中实验的完整日志"
+  "https://github.com/RikiyaT/lm_understand-logs": "博客文章《大模型能理解并编写神经网络权重》中实验的完整日志",
+  "https://github.com/AssassinCreator/steam-stash-value-report-card": "在终端中查看你的Steam库存并打印为分享卡：按游戏、按市场，显示已售出和未售出的物品。一个Windows便携版，无需账户。",
+  "https://github.com/ramenvr/autopilot": "畅玩任何游戏"
 };
