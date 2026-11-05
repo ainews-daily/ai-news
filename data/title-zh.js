@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/introducing-gpt-6-cyber": "GPT-6 Cyber：推进对齐的网络安全智能体前沿",
@@ -85,5 +85,6 @@ window.AI_DESC_ZH = {
   "https://github.com/UncensoredLabs/uncensored-ai-api": "无审查 AI API 和网页聊天：提供 DeepSeek、GLM 模型和流式输出，附 Python、TypeScript 示例及价格和配置指南。",
   "https://github.com/andrew-babo/muse4ai": "Muse4AI：让你的 AI 智能体来出图、出视频。通过 REST、MCP 和 OAuth 连接 Muse 的本地 Windows 桥接工具。",
   "https://github.com/AssassinCreator/steam-stash-value-report-card": "在终端里给你的 Steam 库存估价，并生成分享卡片：按游戏、按市场列出卖掉了什么、还压着什么。提供 Windows 便携版，不用登录账号。",
-  "https://github.com/ramenvr/autopilot": "玩任何游戏"
+  "https://github.com/ramenvr/autopilot": "玩任何游戏",
+  "https://github.com/kevinraymond/florilegium": "为 LuaLaTeX 生成的代数风格代尔夫特蓝花卉页面边距，植物和访客从基因组中采样，还有一个 TikZ 库也可在"
 };
