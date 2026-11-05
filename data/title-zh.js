@@ -77,6 +77,7 @@ window.AI_DESC_ZH = {
   "https://github.com/caru-ini/stack-diagram": "智能体技能：一句话描述技术栈，生成带官方 Logo 的架构图",
   "https://github.com/mromidev/claude-animated-shorts": "免费 Claude 技能：用 three.js + Remotion 做爆款动画故事短片（3D 世界里的 2D 角色）",
   "https://github.com/Arjun-Ingole/hop": "不用 U 盘，在 Windows 旁边装上 Linux 双系统",
+  "https://github.com/kevinraymond/florilegium": "为 LuaLaTeX 程序化生成代尔夫特蓝花卉页边装饰，植物和来访的小动物从“基因组”采样生成，另附一个 TikZ 库，也能在",
   "https://github.com/N1nEmAn/sapper-v2": "自主渗透测试军团：AI 指挥官加执行者集群，配合分层的事实-意图图谱。第三届腾讯智能攻防线上赛冠军（634 支队伍，8 小时无人值",
   "https://github.com/Minireel/HGhub": "YellowFruit 第三方客户端",
   "https://github.com/s1dashu/quiet-md": "极快的 macOS 和 Windows 原生笔记应用，Rust + GPUI 开发，本地优先，兼容飞书 / Lark 的 DocxXML。",
