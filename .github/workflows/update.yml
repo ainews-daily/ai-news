@@ -52,7 +52,13 @@ jobs:
             echo "热点数据没有变化"
           else
             git commit -m "chore: 更新实时热点 [skip ci]"
-            git pull --rebase && git push || echo "提交失败，下次再试"
+            # 热点数据是整份重新生成的，冲突时以这次新抓的为准；还不行就放弃合并，
+            # 免得带着冲突标记的文件被发布出去
+            if ! git pull --rebase -X theirs; then
+              git rebase --abort
+              echo "合并失败，这次只发布不提交"
+            fi
+            git push || echo "提交失败，下次再试"
           fi
 
       - name: 准备网站文件
@@ -60,6 +66,8 @@ jobs:
           mkdir -p _site
           cp index.html _site/
           cp -r data _site/
+          # 数据文件有语法错误（比如残留的冲突标记）就不发布，线上保留上一版
+          for f in _site/data/*.js; do node --check "$f" || exit 1; done
 
       # 需要在仓库 Settings → Secrets 里配好 CLOUDFLARE_API_TOKEN 和 CLOUDFLARE_ACCOUNT_ID。
       # 这是唯一的发布渠道，没配密钥或发布失败都让任务报错，免得网站悄悄停更。
