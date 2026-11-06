@@ -43,7 +43,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/": "Agility 成首家上市的纯人形机器人公司，你会买吗？",
   "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/": "曝苹果削减内部 AI 使用预算",
   "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/": "中期选举之后，围绕数据中心的冲突可能更大",
-  "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/": "AI 政治行动委员会砸数百万美元想影响国会，结果如何",
   "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/": "Google：学校可以不用 Gemini 但保留搜索，不过 AI 搜索没得商量",
   "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/": "诉讼称：男子把 ChatGPT 介绍给妻子，她却用它策划谋杀他",
   "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/": "Agility Robotics 登陆纳斯达克，人形机器人市场受到审视",
@@ -63,7 +62,12 @@ window.AI_TITLE_ZH = {
   "https://simonwillison.net/2026/Nov/4/datasette-llm/": "datasette-llm 0.1a10 发布",
   "https://openai.com/ads/customers/flipsnack": "Flipsnack 通过转化率优化增加产品注册量",
   "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda": "OpenAI 退出数据中心项目的保密协议",
-  "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings": "Airbnb 正在开发 AI 旅行代理人"
+  "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings": "Airbnb 正在开发 AI 旅行代理人",
+  "https://openai.com/index/australian-universities-ai-native-graduates": "澳大利亚大学正在培养人工智能原生毕业生",
+  "https://openai.com/index/cultfit-builds-with-codex": "Cult.fit 通过 Codex 建立运营能力",
+  "https://openai.com/index/franklin-templeton": "富兰克林·坦普尔顿利用 OpenAI 支持投资研究",
+  "https://news.google.com/rss/articles/CBMizAFBVV95cUxORWRqWWxhZzNOWGxCTnRZMHpKckFVZENiMURyMXFEVlZRZG0tTkJWZlVnZU9CWV8xcFQ1alo5WU1kVTY0UTB1SDRla1FKaHV0VDh3T3NnUnpJaUhURVJoQVZZQlVKX21ZdnpneG9XRjZvV09BbTU0dE5EREhjWS1ZZGZ1aEpxU0ZhdHZuc2x0Zm53SzU0UEFFeHlicjZiMWl4ckF1QnE1RFRTcGdvM2JiM0dGWHdXZGQ5SlA5QkRSNGlKNHB0R2lDb3hBZFQ?oc=5": "GSLM2：多流语音表示学习与生成式口语语言建模",
+  "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/": "Palo Alto Networks 正在洽谈以 5 亿美元收购人工智能代理安全初创公司 Clutch"
 };
 window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的智能体系统",
@@ -82,5 +86,5 @@ window.AI_DESC_ZH = {
   "https://github.com/Gezine/CivSwitch": "使用《文明7》游戏卡带在 Nintendo Switch 上实现用户空间代码执行",
   "https://github.com/Balanov/uncut": "无损、无头编码代理。一个 7 MB 静态二进制文件，四个工具，纯标准输入/输出，无静默截断。",
   "https://github.com/arpanjot-coding/AVault": "AVault - 通话记录器（无需 Root）| 面向 Android 12-16+ 的隐私优先、硬件加密音频库。通过 Shizuku 实现无需 Root 的通话记录，采用 AES-256-G 加密",
-  "https://github.com/sqlpxc/airhand": "基于 QUIC 的高性能远程桌面 · Rust + Tauri + React"
+  "https://github.com/livliv-dev/player": "面向网络的轻量级 2.5D 角色玩家，支持口型同步和网络摄像头面部追踪"
 };
