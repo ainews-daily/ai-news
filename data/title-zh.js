@@ -7,9 +7,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/cultfit-builds-with-codex": "Cult.fit 用 Codex 提升运营能力",
   "https://openai.com/index/introducing-gpt-6-cyber": "GPT-6 Cyber：推进对齐的网络安全智能体前沿",
   "https://openai.com/index/merge-builds-with-openai": "Merge 用 OpenAI 技术打造产品和业务工具",
-  "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure": "为负责任的 AI 基础设施树立新标准",
-  "https://openai.com/ads/customers/flipsnack": "Flipsnack 借助转化优化提升产品注册量",
-  "https://openai.com/index/franklin-templeton": "富兰克林邓普顿用 OpenAI 辅助投资研究",
   "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/": "Gemini Omni 1.2 Flash：更快更省，视频片段更长",
   "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zQUNVYk03WEg1anJqMFdVd0hwa2E4MTNzTDdTQmM1Y2NQanplejhaRERoWGxNemgyNjNJREVwaEt6RFJiM2hfQjdBdkFRZ3ZZUFZHbm1yRWcwV0xUSmo5b29QZzd2Rmt3QUNfaUdLUXpQbEhpTFE?oc=5": "Project EVE：让 Claude 玩大型多人在线游戏",
   "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rLVltMFY0UFlmby1uSWtsdF9VZHpwWmNqUWZ3dFpTUDZKd2ZfZTVZRHl0aE5OdGxvLUt0OXc3WXZvLWdjSkNQZEpvSk9jNVJYUWlZZGpHZ0Q5Z2hQNFpDZ3JjZl9DUGROYXc0NWE4aWZfYnREX1ZMT3VGT3RaUQ?oc=5": "教 AI 构建科学模型",
@@ -24,7 +21,6 @@ window.AI_TITLE_ZH = {
   "https://huggingface.co/blog/allenai/toyblocks": "ToyBlocks：用于机器人学习和评测的可控环境",
   "https://huggingface.co/blog/open-asr-leaderboard-liva": "埃及英语和尼日利亚英语加入 Open ASR 排行榜",
   "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation": "NVIDIA 发布 Cosmos 3 开源模型，用于交互式世界模拟",
-  "https://huggingface.co/blog/phonon-tts": "细看 Phonon TTS：登顶基准的高质量端侧语音合成",
   "https://mistral.ai/news/build-with-studio/": "Le Chonk 负责思考，Studio 负责把它用起来",
   "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy": "曝中国招募一名 AI 高管监视黄仁勋",
   "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy": "AI 数据中心最新动态汇总",
@@ -35,7 +31,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders": "亚马逊将允许用户发短信把购物清单发给 Alexa",
   "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam": "抗议者闯入微软阿姆斯特丹数据中心工地",
   "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda": "OpenAI 不再为数据中心项目签保密协议",
-  "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings": "Airbnb 正在开发 AI 旅行代理",
   "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/": "曝 OpenAI 以 1.25 万亿美元估值再融资 110 亿美元",
   "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/": "数百个 Artex AI 黑客工具被发现暴露在公网上",
   "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/": "Meta 推出 Spaces，和 Muse 智能体协作的新方式",
@@ -50,7 +45,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/": "Meta 称美国用户现在可以和 Muse AI 形象视频聊天",
   "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/": "Meta 警告：选举中对数据中心的反弹可能让 AI 扩张更难",
   "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/": "OpenAI 发布了新的网络安全模型，这就够了吗？",
-  "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/": "OpenAI 总裁 Greg Brockman 称公司可能在 2027 年具备 IPO 条件",
   "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/": "“Meta 以为我们看不懂吗？”Meta 放弃有争议的商业条款更新",
   "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/": "可能出现的 GTA VI AI 仿制品，会逼官方更快推出移植版吗？",
   "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/": "Google：学校可以保留搜索、不用 Gemini，但 AI 搜索没得商量",
@@ -66,12 +60,13 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending/": "Anthropic 让 Claude 接入银行账户，帮用户追踪开销",
   "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/": "OpenAI 的 GPT-6 Cyber 既能攻入系统，也能给出修复方案",
   "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/": "Google Gemini Omni 1.2 Flash 把 AI 视频延长到 15 秒，价格降三成",
-  "https://the-decoder.com/baidu-releases-ernie-5-5-flash-base-with-280-billion-parameters-as-an-open-source-foundation-model/": "百度开源 2800 亿参数基础模型 ERNIE 5.5 Flash Base"
+  "https://the-decoder.com/baidu-releases-ernie-5-5-flash-base-with-280-billion-parameters-as-an-open-source-foundation-model/": "百度开源 2800 亿参数基础模型 ERNIE 5.5 Flash Base",
+  "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uaktEZlp1anNnLVpGTHNDMXE2d0p2cmxiRzZ3REI2QWQzYndMV01KVk1UYWExM0RlSF9YR3FrRzd6Wllhcm80NDZWanpDTV9zZkNoZWlzcWp4YWxDNkFqa1p2Z290X3BobFg1TnBn?oc=5": "智能体记忆的组成部分",
+  "https://news.google.com/rss/articles/CBMipAFBVV95cUxNS2otVjI4TnVLRGNJZmVSNzZjQUJwaWJGVmFMdHJUeW45LVI3eWxSLU9YUXM1TFpsY1lzdEJvZkF2SWYzLTRvNzNNS3R6cUJkUUx0ZE01c3VpdnFGLTlKckNQZ1M2bEZLS1lMeGJJdFFQQnJRTjRJQ0pJSUpkaDR5aTFoOU9YM0tRZjJGYkx6X2pPam0xT2hSZmZhc2h5N3B4NmczdQ?oc=5": "人工智能助力科学发现：研究人员如何使用Claude",
+  "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation": "OpenAI估值达1.25万亿美元，竞争对手Anthropic即将上市",
+  "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/": "Crusoe将陷入困境的怀俄明州数据中心项目出售给谷歌"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/deepseek-ai/dsh-superagent-prototype": "迈向更自主的智能体系统",
-  "https://github.com/storytold/craft-anything": "Craft Anything：弄懂任何软件的工作原理，再亲手做一个自己的",
-  "https://github.com/zortos293/Lichii": "非常早期的实验性 Nintendo Switch 2 模拟器",
   "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": "Google AI Pro 两年零成本自动化脚本",
   "https://github.com/govijr/terminal-mac": "在终端里运行完整的 macOS",
   "https://github.com/mromidev/claude-animated-shorts": "免费 Claude 技能：用 three.js + Remotion 制作爆款动画故事短片（3D 世界里的 2D 角色）",
@@ -83,6 +78,13 @@ window.AI_DESC_ZH = {
   "https://github.com/Sandflow-ai/sand3d": "为大模型打造的 Python 3D 建模工具",
   "https://github.com/chadyi/StudyOnTV": "StudyOnTV（Tiledaoti TV）：开源 Android TV 应用，孩子答题解锁看电视时间；完全在电视上运行，无需服务器和账号。家长",
   "https://github.com/Gezine/CivSwitch": "利用《文明 7》游戏卡带在 Nintendo Switch 上执行用户态代码",
-  "https://github.com/sqlpxc/airhand": "基于 QUIC 的高性能远程桌面，Rust + Tauri + React 开发",
-  "https://github.com/arpanjot-coding/AVault": "AVault 通话录音（无需 Root）：隐私优先、硬件加密的 Android 12–16+ 音频保险库，通过 Shizuku 免 Root 录音，采用 AES-256-G"
+  "https://github.com/libracoder/kiri": "适用于macOS、Windows和Linux的小型快速容器运行时",
+  "https://github.com/WoYun520/pixel-gif-sticker-pack": "用于从角色参考创建和验证动画GIF贴纸包的Codex技能。",
+  "https://github.com/kevintngo/looseleaf": "shadcn/ui，手绘风格：123个可访问的React组件，看起来像手绘的纸张，带有shadcn注册表。",
+  "https://github.com/sarpstar/cinecode": "用代码制作的电影。短片、长YouTube视频、广告、解释视频和音乐视频：AI编码代理编写剧本，用代码构建每一帧，设计",
+  "https://github.com/voyager-so/vork": "无头3D和视觉效果引擎，用于智能体。研究预览。",
+  "https://github.com/drakolordx7/switch2-recomp": "任天堂Switch 2游戏重新编译，可在PC上原生运行。",
+  "https://github.com/mhfed/vn-law-check": "根据越南法律（BVDLCN 91/2025、TMĐT 122/2025、ANM 116/2025、AI 134/2025）对Claude Code、Cursor、Copilot、Windsurf、Cline网站进行法律审计",
+  "https://github.com/majorminorlabs/hermes-voice": "通过Home Assistant Assist与Hermes智能体资料进行对话",
+  "https://github.com/zeekk0/OpenAmika": "OpenAmika：MekaHime的AI伙伴Amika，开源。Live2D角色，实时语音，长期记忆，OpenRouter或Ollama大脑。"
 };
