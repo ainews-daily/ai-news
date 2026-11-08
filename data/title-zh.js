@@ -1,11 +1,9 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://openai.com/index/partnering-with-hacktron": "OpenAI 与 Hacktron 合作，查找自家系统漏洞",
   "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uaktEZlp1anNnLVpGTHNDMXE2d0p2cmxiRzZ3REI2QWQzYndMV01KVk1UYWExM0RlSF9YR3FrRzd6Wllhcm80NDZWanpDTV9zZkNoZWlzcWp4YWxDNkFqa1p2Z290X3BobFg1TnBn?oc=5": "智能体记忆由哪些部分组成",
   "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rLVltMFY0UFlmby1uSWtsdF9VZHpwWmNqUWZ3dFpTUDZKd2ZfZTVZRHl0aE5OdGxvLUt0OXc3WXZvLWdjSkNQZEpvSk9jNVJYUWlZZGpHZ0Q5Z2hQNFpDZ3JjZl9DUGROYXc0NWE4aWZfYnREX1ZMT3VGT3RaUQ?oc=5": "教 AI 自己搭建科学模型",
   "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zQUNVYk03WEg1anJqMFdVd0hwa2E4MTNzTDdTQmM1Y2NQanplejhaRERoWGxNemgyNjNJREVwaEt6RFJiM2hfQjdBdkFRZ3ZZUFZHbm1yRWcwV0xUSmo5b29QZzd2Rmt3QUNfaUdLUXpQbEhpTFE?oc=5": "Project EVE：让 Claude 玩大型多人在线游戏",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9RZThRbzhUdFJTZGszLUcwT29wNFdIZ29fVjJTUTB4SkJFRlZRekpOOVlpM1F6eGVSN2RENmpjWUl3QWU5YWNwRHZNaF9EdlNNMTY1TUtfaTJHOHk3S2s3SXJVc3BWSVVa?oc=5": "Anthropic 驻留计划开放申请，面向资深技术负责人",
   "https://huggingface.co/blog/allenai/toyblocks": "ToyBlocks：用于机器人学习和评测的可控环境",
   "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review": "纽约时报烹饪 AI 助手：救了我的鸡肉晚餐，却差点毁了蛋糕",
   "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government": "美国曾放行英伟达把芯片卖给中国一间空办公室",
@@ -29,10 +27,8 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/": "封锁 Muse 之后，亚马逊让用户发短信请 Alexa 帮忙购物",
   "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/": "Underdog 演示仅 32MB 的语音模型",
   "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/": "Physicl 融资 1000 万美元，为机器人打造足够逼真的数字世界",
-  "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/": "Palo Alto Networks 洽谈以 5 亿美元收购智能体安全公司 Clutch",
   "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/": "“Meta 以为我们不识字吗？”Meta 放弃有争议的商业条款更新",
   "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/": "AI 仿制的《GTA VI》会逼官方更快推出移植版吗",
-  "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/": "我看着人形机器人打扫我的公寓，像提前尝到了未来",
   "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/": "科技股遭抛售，Anthropic 仍推进感恩节前上市并接受更低估值",
   "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/": "研究：AI 审计员能抓到多数智能体违规，但误报淹没审核者",
   "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/": "Thinking Machines 的 Inkling 2 Small 跑评测时爆了 316 次粗口",
@@ -42,7 +38,7 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/googles-ai-detects-high-blood-pressure-from-a-regular-smartwatch-without-a-cuff/": "Google 的 AI 用普通智能手表、无需袖带就能发现高血压",
   "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/": "OpenAI 拿下 110 亿美元融资，但还得向牙医们拉投资",
   "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model/": "Ripple-65B 预览版：完全 Apache 2.0 开源的美国模型，智能体编程表现强",
-  "https://the-decoder.com/perplexity-now-has-its-own-always-on-ai-agent/": "Perplexity 推出自家常驻 AI 智能体"
+  "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/": "在一项真实世界测试中，人工智能编码代理在近四分之三的任务中仍需要人类清理"
 };
 window.AI_DESC_ZH = {
   "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": "Google AI Pro 两年零成本自动化脚本",
@@ -63,6 +59,5 @@ window.AI_DESC_ZH = {
   "https://github.com/majorminorlabs/hermes-voice": "通过 Home Assistant 语音助手和 Hermes 智能体对话",
   "https://github.com/zeekk0/OpenAmika": "OpenAmika：MekaHime 的 AI 伙伴 Amika 开源版，带 Live2D 形象、实时语音和长期记忆，可接 OpenRouter 或 Ollama。",
   "https://github.com/drakolordx7/switch2-recomp": "把 Nintendo Switch 2 游戏重编译后在 PC 上原生运行。",
-  "https://github.com/riyadhHDA/wichforks": "Nintendo Switch 2 模拟器各分支的使用指南：版本、游戏、显卡、安卓和社区反馈。",
   "https://github.com/Th0rgal/satmux": "通过温暖的BBR TCP多路复用 + 1-RTT地面TLS + zlib（零依赖）加速高延迟GEO飞行中的Wi-Fi"
 };
