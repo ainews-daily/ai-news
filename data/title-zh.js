@@ -4,7 +4,6 @@ window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uaktEZlp1anNnLVpGTHNDMXE2d0p2cmxiRzZ3REI2QWQzYndMV01KVk1UYWExM0RlSF9YR3FrRzd6Wllhcm80NDZWanpDTV9zZkNoZWlzcWp4YWxDNkFqa1p2Z290X3BobFg1TnBn?oc=5": "智能体记忆由哪些部分组成",
   "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rLVltMFY0UFlmby1uSWtsdF9VZHpwWmNqUWZ3dFpTUDZKd2ZfZTVZRHl0aE5OdGxvLUt0OXc3WXZvLWdjSkNQZEpvSk9jNVJYUWlZZGpHZ0Q5Z2hQNFpDZ3JjZl9DUGROYXc0NWE4aWZfYnREX1ZMT3VGT3RaUQ?oc=5": "教 AI 自己搭建科学模型",
   "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zQUNVYk03WEg1anJqMFdVd0hwa2E4MTNzTDdTQmM1Y2NQanplejhaRERoWGxNemgyNjNJREVwaEt6RFJiM2hfQjdBdkFRZ3ZZUFZHbm1yRWcwV0xUSmo5b29QZzd2Rmt3QUNfaUdLUXpQbEhpTFE?oc=5": "Project EVE：让 Claude 玩大型多人在线游戏",
-  "https://huggingface.co/blog/allenai/toyblocks": "ToyBlocks：用于机器人学习和评测的可控环境",
   "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review": "纽约时报烹饪 AI 助手：救了我的鸡肉晚餐，却差点毁了蛋糕",
   "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government": "美国曾放行英伟达把芯片卖给中国一间空办公室",
   "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos": "AI 打乱了网络安全行业，接下来会怎样",
@@ -13,8 +12,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy": "报道称中国招募一名 AI 公司高管监视黄仁勋",
   "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy": "AI 数据中心最新动态汇总",
   "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces": "Meta 的 Muse AI 能按你当下的需要生成定制“空间”",
-  "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity": "AI 成了约会中新的“一票否决项”",
-  "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast": "科技巨头在 2026 年中期选举中大败",
   "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/": "中期选举后，马斯克和数据中心前景不妙",
   "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/": "美国情报备忘录：Megaspeed 高管曾被招募监视英伟达 CEO",
   "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/": "Crusoe 把陷入困境的怀俄明数据中心项目卖给 Google",
@@ -22,23 +19,17 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/": "数百个 Artex AI 黑客工具被发现暴露在公网",
   "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/": "Meta 推出 Spaces，和 Muse 智能体协作的新方式",
   "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/": "民主党中期选举大胜可能如何重塑 AI 行业",
-  "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/": "中期选举后，AI 行业要迎来艰难的两年吗",
-  "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/": "Ramp 数据：企业 AI 支出停滞，正值 Anthropic 临近上市",
-  "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/": "封锁 Muse 之后，亚马逊让用户发短信请 Alexa 帮忙购物",
-  "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/": "Underdog 演示仅 32MB 的语音模型",
-  "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/": "Physicl 融资 1000 万美元，为机器人打造足够逼真的数字世界",
-  "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/": "“Meta 以为我们不识字吗？”Meta 放弃有争议的商业条款更新",
-  "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/": "AI 仿制的《GTA VI》会逼官方更快推出移植版吗",
   "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/": "科技股遭抛售，Anthropic 仍推进感恩节前上市并接受更低估值",
   "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/": "研究：AI 审计员能抓到多数智能体违规，但误报淹没审核者",
   "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/": "Thinking Machines 的 Inkling 2 Small 跑评测时爆了 316 次粗口",
   "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/": "开源与闭源模型的网络攻防能力差距持续缩小",
   "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/": "研究：部分中国模型里的官方宣传只是“薄薄一层”，微调即可去掉",
   "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/": "九个 AI 智能体自主研究美国国家实验室的开放问题，无一达到专家标准",
-  "https://the-decoder.com/googles-ai-detects-high-blood-pressure-from-a-regular-smartwatch-without-a-cuff/": "Google 的 AI 用普通智能手表、无需袖带就能发现高血压",
-  "https://the-decoder.com/openai-lands-an-11-billion-funding-round-but-has-to-court-dentists-for-more-capital/": "OpenAI 拿下 110 亿美元融资，但还得向牙医们拉投资",
-  "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model/": "Ripple-65B 预览版：完全 Apache 2.0 开源的美国模型，智能体编程表现强",
-  "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/": "在一项真实世界测试中，人工智能编码代理在近四分之三的任务中仍需要人类清理"
+  "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/": "在一项真实世界测试中，人工智能编码代理在近四分之三的任务中仍需要人类清理",
+  "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit": "埃尔维斯和埃米纳姆版权方起诉Suno",
+  "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/": "安德烈·卡帕蒂建造了一个精选视频平台，仅用周末时间，使用了Claude和20年的Hacker News经验",
+  "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/": "大脑作为计算机的隐喻塑造了现代AI，但可能误导了意识讨论",
+  "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/": "苦教训的发明者对LLM扩展爱好者提出了苦教训"
 };
 window.AI_DESC_ZH = {
   "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": "Google AI Pro 两年零成本自动化脚本",
@@ -58,6 +49,6 @@ window.AI_DESC_ZH = {
   "https://github.com/JosssphZhou/poki": "让 AI 智能体操作真实 iPhone：本地 MCP 服务和智能体，无需越狱或额外硬件。",
   "https://github.com/majorminorlabs/hermes-voice": "通过 Home Assistant 语音助手和 Hermes 智能体对话",
   "https://github.com/zeekk0/OpenAmika": "OpenAmika：MekaHime 的 AI 伙伴 Amika 开源版，带 Live2D 形象、实时语音和长期记忆，可接 OpenRouter 或 Ollama。",
-  "https://github.com/drakolordx7/switch2-recomp": "把 Nintendo Switch 2 游戏重编译后在 PC 上原生运行。",
-  "https://github.com/Th0rgal/satmux": "通过温暖的BBR TCP多路复用 + 1-RTT地面TLS + zlib（零依赖）加速高延迟GEO飞行中的Wi-Fi"
+  "https://github.com/Th0rgal/satmux": "通过温暖的BBR TCP多路复用 + 1-RTT地面TLS + zlib（零依赖）加速高延迟GEO飞行中的Wi-Fi",
+  "https://github.com/DIYgod/pinky": "让AI代理使用你的手机，你全程参与"
 };
