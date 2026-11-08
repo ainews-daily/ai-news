@@ -1,24 +1,16 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uaktEZlp1anNnLVpGTHNDMXE2d0p2cmxiRzZ3REI2QWQzYndMV01KVk1UYWExM0RlSF9YR3FrRzd6Wllhcm80NDZWanpDTV9zZkNoZWlzcWp4YWxDNkFqa1p2Z290X3BobFg1TnBn?oc=5": "智能体记忆由哪些部分组成",
-  "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rLVltMFY0UFlmby1uSWtsdF9VZHpwWmNqUWZ3dFpTUDZKd2ZfZTVZRHl0aE5OdGxvLUt0OXc3WXZvLWdjSkNQZEpvSk9jNVJYUWlZZGpHZ0Q5Z2hQNFpDZ3JjZl9DUGROYXc0NWE4aWZfYnREX1ZMT3VGT3RaUQ?oc=5": "教 AI 自己搭建科学模型",
-  "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zQUNVYk03WEg1anJqMFdVd0hwa2E4MTNzTDdTQmM1Y2NQanplejhaRERoWGxNemgyNjNJREVwaEt6RFJiM2hfQjdBdkFRZ3ZZUFZHbm1yRWcwV0xUSmo5b29QZzd2Rmt3QUNfaUdLUXpQbEhpTFE?oc=5": "Project EVE：让 Claude 玩大型多人在线游戏",
   "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review": "纽约时报烹饪 AI 助手：救了我的鸡肉晚餐，却差点毁了蛋糕",
   "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government": "美国曾放行英伟达把芯片卖给中国一间空办公室",
   "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos": "AI 打乱了网络安全行业，接下来会怎样",
   "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development": "Anthropic 用 AI 自动化研发的新报告，为何让研究者警觉",
   "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation": "OpenAI 估值 1.25 万亿美元，对手 Anthropic 临近上市",
   "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy": "报道称中国招募一名 AI 公司高管监视黄仁勋",
-  "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy": "AI 数据中心最新动态汇总",
-  "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces": "Meta 的 Muse AI 能按你当下的需要生成定制“空间”",
   "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/": "中期选举后，马斯克和数据中心前景不妙",
   "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/": "美国情报备忘录：Megaspeed 高管曾被招募监视英伟达 CEO",
   "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/": "Crusoe 把陷入困境的怀俄明数据中心项目卖给 Google",
   "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/": "报道称 OpenAI 以 1.25 万亿美元估值再融 110 亿美元",
-  "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/": "数百个 Artex AI 黑客工具被发现暴露在公网",
-  "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/": "Meta 推出 Spaces，和 Muse 智能体协作的新方式",
-  "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/": "民主党中期选举大胜可能如何重塑 AI 行业",
   "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/": "科技股遭抛售，Anthropic 仍推进感恩节前上市并接受更低估值",
   "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/": "研究：AI 审计员能抓到多数智能体违规，但误报淹没审核者",
   "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/": "Thinking Machines 的 Inkling 2 Small 跑评测时爆了 316 次粗口",
@@ -29,7 +21,10 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit": "埃尔维斯和埃米纳姆版权方起诉Suno",
   "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/": "安德烈·卡帕蒂建造了一个精选视频平台，仅用周末时间，使用了Claude和20年的Hacker News经验",
   "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/": "大脑作为计算机的隐喻塑造了现代AI，但可能误导了意识讨论",
-  "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/": "苦教训的发明者对LLM扩展爱好者提出了苦教训"
+  "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/": "苦教训的发明者对LLM扩展爱好者提出了苦教训",
+  "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy": "Nvidia 正在调查黄仁勋与一名中国间谍的关系",
+  "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic": "Apple 正在加快让 Siri 更具主动性",
+  "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/": "Nvidia 将调查 CEO 黄仁勋与可能的中国间谍之间的关系"
 };
 window.AI_DESC_ZH = {
   "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": "Google AI Pro 两年零成本自动化脚本",
@@ -47,8 +42,8 @@ window.AI_DESC_ZH = {
   "https://github.com/egoist/mygo-music": "可用插件扩展的原生音乐播放器",
   "https://github.com/shanselman/gputaskman": "适用于 Windows、Linux 和 WSL 的 GPU 任务管理器：按进程显示显存、GPU 占用，以及大模型和 KV 缓存信息（Windows 支持 AMD 和 NVIDIA）。",
   "https://github.com/JosssphZhou/poki": "让 AI 智能体操作真实 iPhone：本地 MCP 服务和智能体，无需越狱或额外硬件。",
-  "https://github.com/majorminorlabs/hermes-voice": "通过 Home Assistant 语音助手和 Hermes 智能体对话",
-  "https://github.com/zeekk0/OpenAmika": "OpenAmika：MekaHime 的 AI 伙伴 Amika 开源版，带 Live2D 形象、实时语音和长期记忆，可接 OpenRouter 或 Ollama。",
   "https://github.com/Th0rgal/satmux": "通过温暖的BBR TCP多路复用 + 1-RTT地面TLS + zlib（零依赖）加速高延迟GEO飞行中的Wi-Fi",
-  "https://github.com/DIYgod/pinky": "让AI代理使用你的手机，你全程参与"
+  "https://github.com/DIYgod/pinky": "让AI代理使用你的手机，你全程参与",
+  "https://github.com/IainKay/ram-altman": "监控你的 RAM 并直接向 OpenAI 首席执行官报告任何“非常糟糕”的未使用容量。",
+  "https://github.com/sassiestrhihno/boxshelf-beta": "Boxshelf Windows、Android（AYN Thor）和 Linux / Steam Deck 公测版：适用于模拟器、Steam 游戏和媒体应用的电视风格 3D 盒装艺术架。"
 };
