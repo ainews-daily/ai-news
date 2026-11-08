@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy": "英伟达调查黄仁勋与一名中国间谍嫌疑人的关系",
@@ -9,12 +9,10 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos": "AI 打乱了网络安全界，接下来会怎样？",
   "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development": "为什么一份关于 Anthropic 自动化 AI 研发的报告让研究者担忧",
   "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation": "OpenAI 估值 1.25 万亿美元，对手 Anthropic 临近 IPO",
-  "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy": "报道称中国招募一名 AI 公司高管监视黄仁勋",
   "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/": "英伟达将调查 CEO 黄仁勋与疑似中国间谍的关系",
   "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/": "中期选举后，马斯克和数据中心的日子不好过了",
   "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/": "美国情报备忘录称：Megaspeed 高管曾被招募监视英伟达 CEO",
   "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/": "Crusoe 把陷入困境的怀俄明数据中心项目卖给 Google",
-  "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/": "据报道 OpenAI 以 1.25 万亿美元估值再融 110 亿美元",
   "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/": "Karpathy 用 Claude 和 20 年 Hacker News 数据，一个周末搭出精选视频平台",
   "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/": "“大脑即计算机”的比喻塑造了现代 AI，却可能误导意识之争",
   "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/": "“苦涩的教训”提出者给大模型扩展派上了一课",
@@ -24,7 +22,8 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/": "Thinking Machines 的 Inkling 2 Small 在基准测试中爆了 316 次粗口",
   "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/": "开源与闭源模型在网络攻防能力上的差距持续缩小",
   "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/": "研究称部分中国模型里的官方宣传只是“薄薄一层”，微调就能去掉",
-  "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/": "九个 AI 智能体自主研究美国国家实验室的开放课题，没有一个达到专家标准"
+  "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/": "九个 AI 智能体自主研究美国国家实验室的开放课题，没有一个达到专家标准",
+  "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia": "黄仁勋给Nvidia的备忘录全文"
 };
 window.AI_DESC_ZH = {
   "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": "Google AI Pro 两年零成本自动化脚本",
@@ -45,5 +44,5 @@ window.AI_DESC_ZH = {
   "https://github.com/DIYgod/pinky": "让 AI 智能体操作你的手机，关键步骤由你把关。",
   "https://github.com/IainKay/ram-altman": "监控你的内存，把“相当糟糕”的闲置容量直接报告给 OpenAI CEO。",
   "https://github.com/JosssphZhou/poki": "让 AI 智能体操作真实 iPhone：本地 MCP 服务器加智能体，无需越狱，无需额外硬件。",
-  "https://github.com/sassiestrhihno/boxshelf-beta": "Boxshelf 公测版（Windows、Android AYN Thor、Linux / Steam Deck）：电视风格的 3D 游戏盒架，收纳模拟器、Steam 游戏和影音应用。"
+  "https://github.com/jamesondh/chimera-vocal-synth": "终极语音合成器 - 唱歌、说话、打拍子等"
 };
