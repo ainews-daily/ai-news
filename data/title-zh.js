@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/partnering-with-hacktron": "OpenAI 与 Hacktron 合作，查找自家系统漏洞",
@@ -63,5 +63,6 @@ window.AI_DESC_ZH = {
   "https://github.com/majorminorlabs/hermes-voice": "通过 Home Assistant 语音助手和 Hermes 智能体对话",
   "https://github.com/zeekk0/OpenAmika": "OpenAmika：MekaHime 的 AI 伙伴 Amika 开源版，带 Live2D 形象、实时语音和长期记忆，可接 OpenRouter 或 Ollama。",
   "https://github.com/drakolordx7/switch2-recomp": "把 Nintendo Switch 2 游戏重编译后在 PC 上原生运行。",
-  "https://github.com/riyadhHDA/wichforks": "Nintendo Switch 2 模拟器各分支的使用指南：版本、游戏、显卡、安卓和社区反馈。"
+  "https://github.com/riyadhHDA/wichforks": "Nintendo Switch 2 模拟器各分支的使用指南：版本、游戏、显卡、安卓和社区反馈。",
+  "https://github.com/Th0rgal/satmux": "通过温暖的BBR TCP多路复用 + 1-RTT地面TLS + zlib（零依赖）加速高延迟GEO飞行中的Wi-Fi"
 };
