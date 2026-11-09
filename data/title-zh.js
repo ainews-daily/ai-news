@@ -8,11 +8,9 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government": "美国曾放行英伟达把芯片卖给中国一间空办公室",
   "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos": "AI 打乱了网络安全界，接下来会怎样？",
   "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development": "为什么一份关于 Anthropic 自动化 AI 研发的报告让研究者担忧",
-  "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation": "OpenAI 估值 1.25 万亿美元，对手 Anthropic 临近 IPO",
   "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/": "英伟达将调查 CEO 黄仁勋与疑似中国间谍的关系",
   "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/": "中期选举后，马斯克和数据中心的日子不好过了",
   "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/": "美国情报备忘录称：Megaspeed 高管曾被招募监视英伟达 CEO",
-  "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/": "Crusoe 把陷入困境的怀俄明数据中心项目卖给 Google",
   "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/": "Karpathy 用 Claude 和 20 年 Hacker News 数据，一个周末搭出精选视频平台",
   "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/": "“大脑即计算机”的比喻塑造了现代 AI，却可能误导意识之争",
   "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/": "“苦涩的教训”提出者给大模型扩展派上了一课",
@@ -23,7 +21,11 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/": "开源与闭源模型在网络攻防能力上的差距持续缩小",
   "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/": "研究称部分中国模型里的官方宣传只是“薄薄一层”，微调就能去掉",
   "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/": "九个 AI 智能体自主研究美国国家实验室的开放课题，没有一个达到专家标准",
-  "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia": "黄仁勋给Nvidia的备忘录全文"
+  "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia": "黄仁勋给Nvidia的备忘录全文",
+  "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/": "韩国借助NVIDIA在各行业推进物理AI",
+  "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/": "韩国AI生态系统借助NVIDIA推进并保障代理AI",
+  "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/": "从芯片到技能，NVIDIA与韩国扩展主权AI合作",
+  "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/": "Jensen Huang的工作是否面临风险？耶鲁大学Jeffrey Sonnenfeld估计可能性是“各占一半”"
 };
 window.AI_DESC_ZH = {
   "https://github.com/worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto": "Google AI Pro 两年零成本自动化脚本",
@@ -33,16 +35,16 @@ window.AI_DESC_ZH = {
   "https://github.com/sarpstar/cinecode": "用代码拍电影：短片、YouTube 长视频、广告、讲解视频和 MV，由 AI 编程智能体写剧本、用代码生成每一帧……",
   "https://github.com/Sandflow-ai/sand3d": "为大模型设计的 Python 3D 建模库。",
   "https://github.com/livliv-dev/player": "轻量的网页 2.5D 角色播放器，支持口型同步和摄像头面部追踪。",
-  "https://github.com/libracoder/kiri": "小巧快速的容器运行时，支持 macOS、Windows 和 Linux。",
   "https://github.com/voyager-so/vork": "给智能体用的无界面 3D 与视效引擎，研究预览版。",
-  "https://github.com/Leviidev/Henge": "在 iOS 和 iPadOS 上模拟运行 macOS。",
   "https://github.com/egoist/mygo-music": "可用插件扩展的原生音乐播放器。",
   "https://github.com/sostenesfreitas/ocarina-recomp": "无需模拟器，在 Windows 上原生运行《时之笛》；用你自己的游戏副本在本机构建，不含游戏文件。",
   "https://github.com/shanselman/gputaskman": "适用于 Windows、Linux 和 WSL 的 GPU 任务管理器：按进程显示显存、GPU 活动，以及大模型和 KV 缓存信息（Windows 支持 AMD 和 NVIDIA）。",
   "https://github.com/Th0rgal/satmux": "用预热 BBR TCP 多路复用、单往返地面 TLS 和 zlib 压缩，加速高延迟的同步轨道机上 Wi-Fi（零依赖）。",
-  "https://github.com/AssassinCreator/steam-stash-value-report-card": "在终端里给你的 Steam 库存估值并打印成分享卡片：按游戏、按市场列出卖掉了什么、还剩什么。提供 Windows 便携版，无需账号。",
   "https://github.com/DIYgod/pinky": "让 AI 智能体操作你的手机，关键步骤由你把关。",
   "https://github.com/IainKay/ram-altman": "监控你的内存，把“相当糟糕”的闲置容量直接报告给 OpenAI CEO。",
   "https://github.com/JosssphZhou/poki": "让 AI 智能体操作真实 iPhone：本地 MCP 服务器加智能体，无需越狱，无需额外硬件。",
-  "https://github.com/jamesondh/chimera-vocal-synth": "终极语音合成器 - 唱歌、说话、打拍子等"
+  "https://github.com/jamesondh/chimera-vocal-synth": "终极语音合成器 - 唱歌、说话、打拍子等",
+  "https://github.com/jhaizhou-ops/S2Arm": "在iPhone、iPad和Mac上原生运行Switch游戏：游戏代码重写为ARM64，图形直接输出到Metal，一个应用即可管理整个游戏库。带上你自己的",
+  "https://github.com/janestreet/agent_skills": "代理技能",
+  "https://github.com/sassiestrhihno/boxshelf-beta": "Boxshelf针对Windows、Android（AYN Thor）和Linux/Steam Deck的公开测试版：一个电视风格的3D盒装艺术书架，用于你的模拟器、Steam游戏和媒体应用。"
 };
