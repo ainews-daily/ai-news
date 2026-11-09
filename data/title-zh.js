@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/chatgpt-enterprise-aws-marketplace": "ChatGPT Enterprise 上架 AWS Marketplace",
@@ -29,8 +29,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/": "Automattic 推出部署 vibe coding 应用的平台，应对互联网变化",
   "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/": "黄仁勋的位子保得住吗？耶鲁教授 Jeffrey Sonnenfeld 估计“大概五五开”",
   "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/": "英伟达将调查 CEO 黄仁勋与疑似中国间谍的关系",
-  "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/": "中期选举过后，马斯克和数据中心的处境不太妙",
-  "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/": "美国情报备忘录称，Megaspeed 一名高管曾被招募监视英伟达 CEO",
   "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/": "Claude Code 意外让大量密钥在 GitHub 上泄露",
   "https://arstechnica.com/tech-policy/2026/11/ceo-jensen-huang-admits-affair-as-nvidia-probes-possible-chinese-espionage/": "英伟达 CEO 的婚外情成了国家安全问题",
   "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/": "反对数据中心的声浪，可能其实是在反对电价",
@@ -45,8 +43,14 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/": "Andrej Karpathy 用 Claude 和 20 年 Hacker News 数据，一个周末做出精选视频平台",
   "https://the-decoder.com/the-brain-as-computer-metaphor-shaped-modern-ai-but-may-be-misleading-the-consciousness-debate/": "“大脑即计算机”的比喻塑造了现代 AI，却可能误导意识之争",
   "https://the-decoder.com/the-inventor-of-the-bitter-lesson-has-a-bitter-lesson-for-llm-scaling-enthusiasts/": "“苦涩的教训”提出者给大模型规模派上了一课",
-  "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/": "真实测试中，近四分之三的任务仍要人来收拾 AI 编程智能体的结果",
-  "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/": "Import AI 480：自给自足的太空经济、AI 科研进展，以及 Meta 为超级智能造出完美的手"
+  "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/": "Import AI 480：自给自足的太空经济、AI 科研进展，以及 Meta 为超级智能造出完美的手",
+  "https://openai.com/index/control-room": "控制室：一个用于跟踪和阻止我们研究基础设施中模型工作负载的中央系统",
+  "https://openai.com/index/coderabbit-codex-daybreak": "CodeRabbit 扩展代理软件开发并实现了 20 倍的交付量",
+  "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/": "据称 Jensen Huang 一年前聘请了一家曾处理过高调性丑闻的公关公司",
+  "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/": "一名做空者在丑闻爆发前六个月就指出英伟达 CEO 与一名疑似中国间谍的关联",
+  "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/": "对英伟达的诉讼竞赛已经开始",
+  "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/": "Jensen Huang 因英伟达争议而退出 ElevenLabs 峰会",
+  "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/": "Anthropic 的 Claude Fable 5.2 和 Mythos 5.2 在其上市前巩固了其在人工智能领域的领先地位"
 };
 window.AI_DESC_ZH = {
   "https://github.com/Minireel/HGhub": "YellowFruit 第三方客户端",
