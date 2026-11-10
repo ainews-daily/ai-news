@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life": "帮助照护者在日常生活中用好 AI",
@@ -77,7 +77,10 @@ window.AI_TITLE_ZH = {
   "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/": "摘录：《Claude Fable 5.2 提示词指南》",
   "https://simonwillison.net/2026/Nov/9/llm-anthropic/": "llm-anthropic 0.31 发布",
   "https://simonwillison.net/2026/Nov/9/mysterious-beeps/": "借助 Claude 找出神秘哔哔声的来源",
-  "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/": "Import AI 480：自给自足的太空经济、AI 科研进展，以及 Meta 为超级智能造出完美的手"
+  "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/": "Import AI 480：自给自足的太空经济、AI 科研进展，以及 Meta 为超级智能造出完美的手",
+  "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pT3BQSS05MGNNbk1LLTc3SXExY3paYnBObEs1S2d3MDk3UEE2N29VenZFWlRtZm5RNXlKdE8xRlowXzY4NHN0TnRJQUhkYk9ZS191dnR6S3A1N1RKMWdGa0JYY0pubWJiRHc?oc=5": "稀释有毒微调数据可以增强其效果",
+  "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/": "Lazare，veni foras：重新编程休眠神经元以劫持AI代理",
+  "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/": "环形摄像头移动化，亚马逊推出人工智能驱动的安全无人机和机器人"
 };
 window.AI_DESC_ZH = {
   "https://github.com/NotRexed/Hookshot": "《塞尔达传说：时之笛》Nintendo Switch 2 重制版的原生重编译移植",
@@ -99,5 +102,5 @@ window.AI_DESC_ZH = {
   "https://github.com/woo20080623-cell/cinebench-desktop": "Cinebench 2026 独立桌面安装版，功能已预先激活",
   "https://github.com/SK-Dev666/rust-external-trainer-tool": "Rust External 2026：完整独立的修改器安装包，工具和依赖已备好，可直接运行",
   "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor": "Adobe Acrobat Pro 2026：安全的独立桌面 PDF 文档处理工具",
-  "https://github.com/shayannazar84-hero/honkai-star-rail-companion-suite": "《崩坏：星穹铁道》2026 修改器：完整独立安装包，可直接运行"
+  "https://github.com/bipro45/actual-multi-display-configurator": "多显示器桌面配置安装程序，支持增强的显示选项"
 };
