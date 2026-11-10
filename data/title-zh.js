@@ -17,10 +17,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me": "AI 的未来竟取决于黄仁勋的私生活？",
   "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai": "特朗普接受《60 分钟》采访谈到 AI 安全，并扬言逮捕一名 AI 高管",
   "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership": "迪士尼与 Adobe 联手开发生成式 AI 工具",
-  "https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music": "等等，我和 RIAA 那位负责人聊得挺开心",
-  "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech": "Jonathan Kanter 正在用 AI 对抗科技巨头",
-  "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia": "黄仁勋致英伟达员工备忘录全文",
-  "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy": "英伟达调查黄仁勋与一名疑似中国间谍的关系",
   "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/": "Anthropic 在 RSI 担忧声中发布新的 Mythos 和 Fable 模型",
   "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/": "黄仁勋与疑似中国间谍的婚外情，让英伟达的中国布局受到审视",
   "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/": "Meta 发布用于执行智能体任务的轻量模型 Muse Ember",
@@ -50,17 +46,17 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/": "一名做空者在丑闻爆发前六个月就指出英伟达 CEO 与一名疑似中国间谍的关联",
   "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/": "对英伟达的诉讼竞赛已经开始",
   "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/": "Jensen Huang 因英伟达争议而退出 ElevenLabs 峰会",
-  "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/": "Anthropic 的 Claude Fable 5.2 和 Mythos 5.2 在其上市前巩固了其在人工智能领域的领先地位"
+  "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/": "Anthropic 的 Claude Fable 5.2 和 Mythos 5.2 在其上市前巩固了其在人工智能领域的领先地位",
+  "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai": "大卫·埃利森称AI可能是‘现代历史上最大的创意突破’",
+  "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang": "中国能从黄仁勋那里获得什么？",
+  "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference": "特朗普表示他了解黄仁勋的哪些情况",
+  "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang": "关于针对黄仁勋CEO的Nvidia间谍丑闻的已知信息",
+  "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/": "据称Anthropic计划推进IPO计划",
+  "https://simonwillison.net/2026/Nov/9/mysterious-beeps/": "通过Claude定位神秘哔声的来源"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/Minireel/HGhub": "YellowFruit 第三方客户端",
   "https://github.com/NotRexed/Hookshot": "《塞尔达传说：时之笛》Nintendo Switch 2 重制版的原生重编译",
-  "https://github.com/govijr/terminal-mac": "在终端里运行完整的 macOS",
-  "https://github.com/sarpstar/cinecode": "用代码拍电影：短片、长 YouTube 视频、广告、讲解片和 MV，由 AI 编程智能体写剧本、用代码生成每一帧",
-  "https://github.com/janestreet/agent_skills": "智能体技能合集",
   "https://github.com/jhaizhou-ops/S2Arm": "在 iPhone、iPad 和 Mac 上原生运行你自己的 Switch 游戏：游戏代码改写为 ARM64，画面直接走 Metal，一个应用管理整个游戏库",
-  "https://github.com/Sandflow-ai/sand3d": "用 Python 做 3D 建模，专为大模型设计",
-  "https://github.com/shanselman/gputaskman": "适用于 Windows、Linux 和 WSL 的 GPU 任务管理器：显示每个进程的显存、GPU 活动，以及大模型和 KV 缓存信息（Windows 支持 AMD 和 NVIDIA）",
   "https://github.com/DIYgod/pinky": "让 AI 智能体操作你的手机，关键步骤由你把关",
   "https://github.com/livliv-dev/player": "轻量的网页 2.5D 角色播放器，支持口型同步和摄像头面部追踪",
   "https://github.com/IainKay/ram-altman": "监控你的内存，把“相当糟糕”的闲置容量直接报告给 OpenAI CEO",
@@ -71,5 +67,13 @@ window.AI_DESC_ZH = {
   "https://github.com/sostenesfreitas/ocarina-recomp": "不用模拟器，在 Windows 上原生运行《时之笛》：用你自己的游戏副本在本机构建，不含游戏文件",
   "https://github.com/Th0rgal/satmux": "用预热的 BBR TCP 多路复用、1-RTT 地面 TLS 和 zlib 压缩，给高延迟的同步轨道卫星机上 Wi-Fi 提速（零依赖）",
   "https://github.com/JosssphZhou/poki": "让 AI 智能体操作真实 iPhone：本地 MCP 服务器加智能体，不用越狱，不用额外硬件",
-  "https://github.com/sassiestrhihno/boxshelf-beta": "Boxshelf 公测版，支持 Windows、Android（AYN Thor）和 Linux / Steam Deck：用电视风格的 3D 游戏盒封面书架展示模拟器、Steam 游戏和媒体应用"
+  "https://github.com/sassiestrhihno/boxshelf-beta": "Boxshelf 公测版，支持 Windows、Android（AYN Thor）和 Linux / Steam Deck：用电视风格的 3D 游戏盒封面书架展示模拟器、Steam 游戏和媒体应用",
+  "https://github.com/yappologistic/CUI": "C语言的原生UI组件：约150个，带有弹簧动画和完整键盘支持。支持Windows、macOS和Linux，无依赖项。",
+  "https://github.com/AtomIllusionistDwell/watson-username-footprint-finder": "免费的人名搜索桌面应用：在3100多个公共页面上搜索昵称、电子邮件、电话或网站，获取一份可读报告。",
+  "https://github.com/majorminorlabs/hermes-voice": "通过Home Assistant Assist与Hermes代理资料进行对话",
+  "https://github.com/riyadhHDA/wichforks": "任天堂Switch 2模拟器分支的使用案例指南：构建、游戏、显卡、Android和社区报告",
+  "https://github.com/CityPulso/PulsoIcon": "动画React图标——每个Lucide图标以及额外图标和品牌标志，每个都有手写动画。可直接替换lucide-react，基于React构建",
+  "https://github.com/lxe/phoneuse": "从Linux电脑查看和操作未修改的iPhone：支持AirPlay镜像输入，蓝牙HID鼠标/键盘输出，以及CLI和代理技能",
+  "https://github.com/devvmhq/devvm": "每个项目一个虚拟机。一个隔离的沙盒，包含你的项目工具链，随时可供你或编码代理开始编码",
+  "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor": "Adobe Acrobat Pro 2026：适用于桌面的安全独立PDF文档处理器"
 };
