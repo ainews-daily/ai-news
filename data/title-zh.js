@@ -22,9 +22,6 @@ window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMiakFVX3lxTE00ZjlITWVJSmRHY0Yxdzl1eDhIWGF2dGlJZE9rellIRVJhVWVVZHN2dGpfMHIySy1IMHRFZmhMZ1NPcG5UVTJ2WFgyZEg2NzZvZjZxZklnYmI1aEFQNnp0UjVRQ0otR2E4cmc?oc=5": "创始人公开信",
   "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/": "NVIDIA 捐赠 OpenShell 并推出新 AI 基础设施，加大开源投入",
   "https://blogs.nvidia.com/blog/korean-startup-investments-msit/": "NVIDIA 在韩国科技部与 NVIDIA AI 创业合作论坛上宣布新一批韩国创业公司投资计划",
-  "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/": "韩国借助 NVIDIA 在各行业推进物理 AI",
-  "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/": "韩国 AI 生态借助 NVIDIA 发展并保障智能体 AI 安全",
-  "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/": "从芯片到技能培养，NVIDIA 与韩国扩大主权 AI 合作",
   "https://huggingface.co/blog/hub-gcp-marketplace": "可以用 Google Cloud 账号支付 Hugging Face Hub 费用了",
   "https://huggingface.co/blog/decision": "Hugging Face 上的决策模型",
   "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan": "Nemotron-Personas-Finance-Japan：反映日本人口结构与金融状况的合成数据集",
@@ -80,7 +77,11 @@ window.AI_TITLE_ZH = {
   "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/": "Import AI 480：自给自足的太空经济、AI 科研进展，以及 Meta 为超级智能造出完美的手",
   "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pT3BQSS05MGNNbk1LLTc3SXExY3paYnBObEs1S2d3MDk3UEE2N29VenZFWlRtZm5RNXlKdE8xRlowXzY4NHN0TnRJQUhkYk9ZS191dnR6S3A1N1RKMWdGa0JYY0pubWJiRHc?oc=5": "稀释有毒微调数据可以增强其效果",
   "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/": "Lazare，veni foras：重新编程休眠神经元以劫持AI代理",
-  "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/": "环形摄像头移动化，亚马逊推出人工智能驱动的安全无人机和机器人"
+  "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/": "环形摄像头移动化，亚马逊推出人工智能驱动的安全无人机和机器人",
+  "https://openai.com/index/cogent-security": "Cogent 和 OpenAI 为企业打造网络安全工厂",
+  "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zTjI0cnBrNGZXT2ZpNmpnakRlbjQzUFNKaHh0ZjJsMWRtd211WC1QMVZLRTNoVEp5Rk9MSGdVU1FsUHQ4elNjTFNJc2k3VWhSeUl5OV9WNHRkTkxhd2FnQnh4OA?oc=5": "Class A 普通股 825,000,000 股 Anthropic, PBC",
+  "https://blogs.nvidia.com/blog/ai-recycling-startups/": "人工智能如何帮助回收商将混合废弃物转化为可再利用材料",
+  "https://huggingface.co/blog/qvac/botpsy": "BotPsy：具备十亿以下参数代理语言模型的设备端个人助手"
 };
 window.AI_DESC_ZH = {
   "https://github.com/NotRexed/Hookshot": "《塞尔达传说：时之笛》Nintendo Switch 2 重制版的原生重编译移植",
@@ -89,9 +90,7 @@ window.AI_DESC_ZH = {
   "https://github.com/IainKay/ram-altman": "监控你的内存，一旦发现“相当糟糕”的闲置容量，就直接报告给 OpenAI 的 CEO。",
   "https://github.com/DIYgod/pinky": "让 AI 智能体操作你的手机，全程由你把关。",
   "https://github.com/jamesondh/chimera-vocal-synth": "终极人声合成器：能唱、能说、能 beatbox，还有更多玩法",
-  "https://github.com/livliv-dev/player": "轻量的网页 2.5D 角色播放器，支持口型同步和摄像头面部追踪。",
   "https://github.com/voyager-so/vork": "给智能体用的无界面 3D 与视效引擎，研究预览版。",
-  "https://github.com/egoist/mygo-music": "可以用插件扩展的原生音乐播放器",
   "https://github.com/sostenesfreitas/ocarina-recomp": "《时之笛》不用模拟器、原生运行在 Windows 上，用你自己的游戏副本在本机构建，不附带任何游戏文件。",
   "https://github.com/Th0rgal/satmux": "用预热的 BBR TCP 多路复用、1-RTT 地面 TLS 和 zlib 压缩，给高延迟的 GEO 卫星机上 Wi-Fi 提速（零依赖）",
   "https://github.com/JosssphZhou/poki": "让 AI 智能体操作真实的 iPhone：本地 MCP 服务器加智能体，不用越狱，不用额外硬件。",
@@ -102,5 +101,7 @@ window.AI_DESC_ZH = {
   "https://github.com/woo20080623-cell/cinebench-desktop": "Cinebench 2026 独立桌面安装版，功能已预先激活",
   "https://github.com/SK-Dev666/rust-external-trainer-tool": "Rust External 2026：完整独立的修改器安装包，工具和依赖已备好，可直接运行",
   "https://github.com/mahmoudtawfik1998/secure-pdf-document-processor": "Adobe Acrobat Pro 2026：安全的独立桌面 PDF 文档处理工具",
-  "https://github.com/bipro45/actual-multi-display-configurator": "多显示器桌面配置安装程序，支持增强的显示选项"
+  "https://github.com/leanislizarzado/ibm-spss-desktop-suite": "IBM SPSS Statistics 2026 独立安装版，配备完整功能配置",
+  "https://github.com/RolandoV3/metatrader-5-bot": "由社区驱动的 MetaTrader 5 机器人，功能齐全，适用于桌面使用",
+  "https://github.com/ayanprob/coreldraw-desktop-installer": "CorelDraw 2026 专业桌面安装程序，配备即用型实用配置"
 };
