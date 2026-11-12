@@ -5,10 +5,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/chatgpt-plus-for-veterans": "ChatGPT Plus 面向退伍军人和现役军人的优惠",
   "https://openai.com/index/jiostar-vijay-seshadri": "JioStar 首席架构师：在 5 亿用户规模上做 AI 内容发现",
   "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life": "帮助家庭照护者在日常生活中用好 AI",
-  "https://openai.com/index/introducing-businesses-chatgpt": "ChatGPT 推出商家主页",
-  "https://openai.com/index/closing-ai-guidance-gap-education": "弥补教育领域的 AI 使用指导缺口",
-  "https://openai.com/index/singapore-airlines-travel-work": "新加坡航空用 OpenAI 技术升级出行与办公",
-  "https://openai.com/index/ai-effect-on-freelance-work": "前沿工作观察：AI 对自由职业的影响",
   "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/": "Gemini Decisions API：快速、带置信度的多模态判断",
   "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/": "试试 Tabletop：可自定义的协作空间，供小组一起计划、游戏和做事",
   "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/": "感受 Esther Mahlangu 博士的艺术与遗产",
@@ -19,13 +15,9 @@ window.AI_TITLE_ZH = {
   "https://deepmind.google/blog/gemini-4-carbon-is-now-available/": "Gemini 4 Carbon 正式开放",
   "https://deepmind.google/blog/introducing-alphaproof-code/": "AlphaProof Code 发布：深度验证复杂软件的突破",
   "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51YVF6eThycm5nblZRV2ZpeDRhWUtVRi03bmxZMGNuX0pJMzUzRDFWSHh5clR6VVN1R3ZzaTNFWHNvYjRwUTNCUERQbFQ3WmFyMkxVcGpFTUpjQQ?oc=5": "Anthropic 启动拟议 IPO 的路演",
-  "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCTmk0c0tyNmVjUlFGNGlCZUtLSkxDQS13Unc1LUVXanhOVmt2a2xTLUQ2Vm5LZ2RLQnMzVUhUQXFLTVBfd1VQZi01V0ppVkZLU0VIcXNJT3V3Ul9ZSEFUS3l6S2ZLY0tHOVgxNw?oc=5": "Claude 能从头到尾设计电子原型",
-  "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBvemRsWlN1U1g0NDQ5VUdhajBhZVVfd3J1eGRGV1lubnZQc3J6UVA1STMwdmlUM0k3a2c0SkN3VmdxYkplTnp4TWlheWV0NHlUUzFTYTU1b3Vmbmh1ZjVBakVlcw?oc=5": "Claude Fable 5.2 和 Claude Mythos 5.2 发布",
   "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zTjI0cnBrNGZXT2ZpNmpnakRlbjQzUFNKaHh0ZjJsMWRtd211WC1QMVZLRTNoVEp5Rk9MSGdVU1FsUHQ4elNjTFNJc2k3VWhSeUl5OV9WNHRkTkxhd2FnQnh4OA?oc=5": "Anthropic, PBC 发行 8.25 亿股 A 类普通股",
   "https://news.google.com/rss/articles/CBMiakFVX3lxTE00ZjlITWVJSmRHY0Yxdzl1eDhIWGF2dGlJZE9rellIRVJhVWVVZHN2dGpfMHIySy1IMHRFZmhMZ1NPcG5UVTJ2WFgyZEg2NzZvZjZxZklnYmI1aEFQNnp0UjVRQ0otR2E4cmc?oc=5": "创始人信",
   "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5mZm01S0Via2g3cWczVVB5YlNSMlI1a2FKekVZY0liWmMzQndHSnIyNVd2RnlLUWFWb3ItWG1KZVZQY2Q3aUlGeGM2UzRDb0Qxc3dtWEFQZkN3TDdmMDJoam1R?oc=5": "越合作越差：多用户多智能体团队的表现为何会崩",
-  "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pT3BQSS05MGNNbk1LLTc3SXExY3paYnBObEs1S2d3MDk3UEE2N29VenZFWlRtZm5RNXlKdE8xRlowXzY4NHN0TnRJQUhkYk9ZS191dnR6S3A1N1RKMWdGa0JYY0pubWJiRHc?oc=5": "稀释投毒的微调数据，反而可能加强投毒效果",
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wckVPMUVUQjdDRkhpVGd2MTdsN0NCY3BxYVJMRlpPemx4eWJRR0E1Uk9uaDE3NlptT3FJQVR4akphY2I5Rl85T3ZCM0lSU1BtM1NuV2hJVktIbVZILUZ4SWpwbU44cUQxejVZR1lvMjVuQUdkVjBLTFhRWkZiTkU?oc=5": "让 Claude 盲测未发表的全合成路线：概述及三个章节",
   "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/": "拉撒路，出来吧：改写休眠神经元给 AI 智能体植入后门",
   "https://blogs.nvidia.com/blog/ai-recycling-startups/": "AI 如何帮回收商把混合垃圾变成可再利用的材料",
   "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/": "英伟达捐赠 OpenShell 并推出新 AI 基础设施，扩大开源投入",
@@ -55,7 +47,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/": "Databricks 的新 AI 智能体会对 CEO Ali Ghodsi 直言不讳",
   "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/": "Plurai 想用让自动驾驶上路的那套方法，让 AI 智能体更好用",
   "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/": "英伟达危机让公司治理专家们坐等看戏",
-  "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/": "OpenAI 收购 Sonder 创始人创办的旅行初创公司 Odessia",
   "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/": "台积电将向 Anthropic 和 OpenAI 投资 10 亿美元",
   "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/": "Big Walk 用 AI 修了一个 bug，独立游戏圈开始清算",
   "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/": "Google DeepMind 用数学方法验证了 Signal 的关键部分",
@@ -73,11 +64,13 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/with-its-new-voice-model-deepl-voice-now-translates-intonation-and-speaking-speed-into-other-languages-as-well/": "DeepL 想让实时翻译也能传达讽刺和情绪变化",
   "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/": "用 Grok 搭的应用泄露了患者数据、明文密码和 SpaceXSI 自己的销售线索",
   "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/": "企业销售推动 OpenAI 季度营收达 100 亿美元，但仍落后于 Anthropic",
-  "https://the-decoder.com/uk-regulator-threatens-universities-with-sanctions-unless-they-adopt-ai-proof-exam-formats/": "英国监管机构警告大学：不改用防 AI 的考试形式就要处罚",
   "https://simonwillison.net/2026/Nov/11/llm/": "llm 0.37.2 发布",
   "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/": "Anthropic 的 IPO 路演视频",
   "https://simonwillison.net/2026/Nov/10/llm-gemini/": "llm-gemini 0.36 发布",
-  "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/": "摘录：如何给 Claude Fable 5.2 写提示词"
+  "https://openai.com/business/customer-stories/holidays-extras-codex": "Holiday Extras 正在重新思考其可以使用 Codex 构建的内容",
+  "https://openai.com/index/children-first-declaration": "支持人工智能与儿童安全的研究",
+  "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/": "谁可能接替黄仁勋？一份非常不科学的潜在继任者名单",
+  "https://the-decoder.com/australias-proposed-ai-safety-bill-would-force-frontier-model-makers-to-open-up-to-independent-testing/": "澳大利亚拟议的 AI 安全法案将要求前沿模型开发者接受独立测试"
 };
 window.AI_DESC_ZH = {
   "https://github.com/huamidev/GestaltX": "一款适用于 iOS 27.x 的 MobileGestalt 编辑器，支持修改地区码、设备预设、备份，提供 7 种语言。",
@@ -87,7 +80,6 @@ window.AI_DESC_ZH = {
   "https://github.com/hembramneeraj3-create/aida-64-extreme": "AIDA64 Extreme 2026：完整独立桌面安装包，全部功能已配置",
   "https://github.com/abdulmannanmalik13-wq/adobe-substance-3d-studio": "Adobe Substance 3D Creative Studio 2026：安全素材管线桌面安装包",
   "https://github.com/AleRibeiro44/archicad-desktop-setup": "Archicad 2026 完整独立桌面安装包，预配置、开箱即用",
-  "https://github.com/Somenicehispanic/ashampoo-winoptimizer-desktop": "Ashampoo WinOptimizer 2026 独立安装包，全部功能已启用",
   "https://github.com/PHISHER420/autodesk-inventor-desktop-config": "Autodesk Inventor 2026 专业版桌面安装包，预配置全部功能",
   "https://github.com/CodeSouvik/clion-standalone-enhancement": "CLion 完整安装包：独立安装，全部功能已激活",
   "https://github.com/sajawal-12/cubase-studio-desktop": "Cubase Studio 2026 桌面安装包，含全套插件和完整功能",
@@ -101,5 +93,6 @@ window.AI_DESC_ZH = {
   "https://github.com/Vesuvio1/display-fusion": "DisplayFusion 2026 独立桌面安装包，功能配置齐全",
   "https://github.com/Sanidhya0510/dvd-creator-game-enhancement": "DVD-Creator 2026：完整桌面版，全部功能已启用",
   "https://github.com/RyoTheOne/dxo-photolab-10-config": "dxo-photolab-10：完整独立配置，开箱即用，功能无保留",
-  "https://github.com/flgomes/dxo-photolab-10-desktop": "DxO PhotoLab 10 桌面版，用于专业照片处理流程"
+  "https://github.com/HybridRobotics/supermimic": "使用一个可微分世界模型实现人形机器人全身运动追踪",
+  "https://github.com/sostenesfreitas/ocarina-recomp": "《塞尔达传说：时之笛》原生运行于 Windows，无需模拟器。基于你自己的拷贝在你的电脑上构建。不包含游戏文件"
 };
