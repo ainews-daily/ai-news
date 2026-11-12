@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/gilbert-tobin-sam-nickless": "Gilbert + Tobin 用 AI 重新思考律所的生意",
@@ -74,7 +74,6 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/grok-built-apps-exposed-patient-data-plaintext-passwords-and-spacexsis-own-sales-pipeline/": "用 Grok 搭的应用泄露了患者数据、明文密码和 SpaceXSI 自己的销售线索",
   "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/": "企业销售推动 OpenAI 季度营收达 100 亿美元，但仍落后于 Anthropic",
   "https://the-decoder.com/uk-regulator-threatens-universities-with-sanctions-unless-they-adopt-ai-proof-exam-formats/": "英国监管机构警告大学：不改用防 AI 的考试形式就要处罚",
-  "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/": "Gemini Decisions API",
   "https://simonwillison.net/2026/Nov/11/llm/": "llm 0.37.2 发布",
   "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/": "Anthropic 的 IPO 路演视频",
   "https://simonwillison.net/2026/Nov/10/llm-gemini/": "llm-gemini 0.36 发布",
