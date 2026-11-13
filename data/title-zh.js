@@ -2,14 +2,10 @@
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/gilbert-tobin-sam-nickless": "Gilbert + Tobin 用 AI 重新思考律所的生意",
-  "https://openai.com/index/chatgpt-plus-for-veterans": "ChatGPT Plus 面向退伍军人和现役军人的优惠",
   "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/": "Gemini Decisions API：快速、带置信度的多模态判断",
   "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/": "试试 Tabletop：可自定义的协作空间，供小组一起计划、游戏和做事",
-  "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/": "感受 Esther Mahlangu 博士的艺术与遗产",
   "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/": "AlphaGenome 2：解读细胞如何读取 DNA，更好地理解疾病",
   "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5mZm01S0Via2g3cWczVVB5YlNSMlI1a2FKekVZY0liWmMzQndHSnIyNVd2RnlLUWFWb3ItWG1KZVZQY2Q3aUlGeGM2UzRDb0Qxc3dtWEFQZkN3TDdmMDJoam1R?oc=5": "越合作越差：多用户多智能体团队的表现为何会崩",
-  "https://blogs.nvidia.com/blog/ai-recycling-startups/": "AI 如何帮回收商把混合垃圾变成可再利用的材料",
-  "https://huggingface.co/blog/qvac/botpsy": "BotPsy：用不到 10 亿参数的智能体语言模型做端侧个人助手",
   "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/": "台积电将向 Anthropic 和 OpenAI 投资 10 亿美元",
   "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/": "Big Walk 用 AI 修了一个 bug，独立游戏圈开始清算",
   "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/": "Google DeepMind 用数学方法验证了 Signal 的关键部分",
@@ -63,7 +59,8 @@ window.AI_TITLE_ZH = {
   "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/": "FAA 扩展人工智能建议，以管理整个美国空域的空中交通拥堵",
   "https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/": "Ars Live：无人机攻击数据中心对云计算时代现代生活的影响",
   "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/": "Nvidia 私下确认其可以追踪芯片以打击走私，尽管行业公开质疑可行性",
-  "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/": "Claude Meetings 让 Anthropic 的 AI 可以加入你的视频会议"
+  "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/": "Claude Meetings 让 Anthropic 的 AI 可以加入你的视频会议",
+  "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/": "Gemini 决策 API"
 };
 window.AI_DESC_ZH = {
   "https://github.com/huamidev/GestaltX": "一款适用于 iOS 27.x 的 MobileGestalt 编辑器，支持修改地区码、设备预设、备份，提供 7 种语言。",
@@ -86,5 +83,5 @@ window.AI_DESC_ZH = {
   "https://github.com/luobinger/PerkRadar": "PerkRadar — 一个自托管的优惠聚合器，每两小时从多个来源获取免费品、限时优惠和折扣，并显示来源状态",
   "https://github.com/21stware/bowel": "Bowel 是一个适用于 macOS、Windows、Linux 和 Android 的 mihomo 客户端。",
   "https://github.com/Dodaios/ste80-humanizer": "STE80 Humanizer：移除 AI 痕迹并重写文本 80% 以达到 ASD-STE100（简化技术英语）的代理技能，这是 Andrej Karpathy 推广的方法",
-  "https://github.com/imxieyi/Kernarium": "在 iOS 上原生运行真正的 Linux 内核"
+  "https://github.com/Robbyant/lingbot-touch": "学习异构触觉表示以实现通用灵巧操作"
 };
