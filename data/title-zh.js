@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/introducing-chatgpt-wallet": "推出 ChatGPT Wallet",
@@ -55,8 +55,7 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/": "Anthropic IPO 超购约六倍，有望成史上最大公开发行",
   "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/": "Meta Muse 能代打电话，但很多公司可能直接挂断",
   "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/": "OpenAI 用两款 Daybreak 产品进入网络安全市场",
-  "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/": "Claude Meetings：让 Anthropic 的 AI 加入你的视频会",
-  "https://simonwillison.net/2026/Nov/12/llm-gemini/": "llm-gemini 0.37"
+  "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/": "Claude Meetings：让 Anthropic 的 AI 加入你的视频会"
 };
 window.AI_DESC_ZH = {
   "https://github.com/huamidev/GestaltX": "面向 iOS 27.x 的 MobileGestalt 编辑器，可改区域码、套设备预设并备份。",
@@ -78,7 +77,6 @@ window.AI_DESC_ZH = {
   "https://github.com/luobinger/PerkRadar": "自托管优惠聚合器，每两小时抓免费福利和限时折扣，并显示来源状态。",
   "https://github.com/Robbyant/lingbot-touch": "学习异构触觉表征，服务通用灵巧操作。",
   "https://github.com/Dodaios/ste80-humanizer": "STE80 Humanizer：去掉 AI 痕迹，并把文本往 ASD-STE100 简化技术英语靠拢约八成。",
-  "https://github.com/makepad/relax": "Relax：Rust JIT。",
   "https://github.com/paulirish/chrome-capture": "从 Chrome 捕获标签页音视频，最高约 60–120fps / 2160p。",
   "https://github.com/rivet-dev/open-orange": "把 Cloudflare Workers 和 Durable Objects 原样跑到 AWS、GCP、Azure 或自有服务器。",
   "https://github.com/yetone/rewind-for-x": "Chrome 扩展：回看你在 X 首页时间线上滑过去的帖子。",
