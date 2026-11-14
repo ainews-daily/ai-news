@@ -5,7 +5,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/business/customer-stories/shield": "Shield 借助 OpenAI 让技师交接老旧门户工作",
   "https://openai.com/business/customer-stories/amplitude": "Amplitude 如何用 OpenAI 在 1–2 天内交付产品改进",
   "https://openai.com/business/customer-stories/gondola": "Gondola 团队用 Codex 多做产品，收入翻倍",
-  "https://openai.com/business/customer-stories/holidays-extras-codex": "Holiday Extras 在用 Codex 重新想能做什么",
   "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/": "Google 搜索接入 Gemini 4 Hydrogen，迎来大升级",
   "https://deepmind.google/blog/introducing-gemini-4-hydrogen/": "介绍 Gemini 4 Hydrogen",
   "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WQ1RoMWFsN1VyVjdlam5YZkZ4M1I1SUNjeWExWm1OcHR5MlRpRmtwU2NIT0dSQUhXSjlfb2hrZGhHYlVRUjUtUzBtRzRZUUZhcE9PNERJekdzNW1PUWhOd0s5MjBRXzVFdnFWZlJ5c0VSak5RZ3lUaA?oc=5": "构建更强的安全评估",
@@ -55,7 +54,8 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/": "Anthropic IPO 超购约六倍，有望成史上最大公开发行",
   "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai/": "Meta Muse 能代打电话，但很多公司可能直接挂断",
   "https://the-decoder.com/openai-enters-the-cybersecurity-market-with-two-daybreak-products/": "OpenAI 用两款 Daybreak 产品进入网络安全市场",
-  "https://the-decoder.com/claude-meetings-lets-anthropics-ai-join-your-video-calls/": "Claude Meetings：让 Anthropic 的 AI 加入你的视频会"
+  "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB6VkJLRkJpUk5KQUJDZGhELWxZRGctaEpzcmdzdXNyam12MGswck56TUM1aGVFWFZQRmtNMUFsRWlsaG1JSmVNNDZoSklTZXdkbno1TWJjUVoyOHpKZVE?oc=5": "支持的区域策略",
+  "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/": "Runway 的开源 Praxis-1 将视频 AI 转变为机器人控制器"
 };
 window.AI_DESC_ZH = {
   "https://github.com/huamidev/GestaltX": "面向 iOS 27.x 的 MobileGestalt 编辑器，可改区域码、套设备预设并备份。",
@@ -79,6 +79,7 @@ window.AI_DESC_ZH = {
   "https://github.com/Dodaios/ste80-humanizer": "STE80 Humanizer：去掉 AI 痕迹，并把文本往 ASD-STE100 简化技术英语靠拢约八成。",
   "https://github.com/paulirish/chrome-capture": "从 Chrome 捕获标签页音视频，最高约 60–120fps / 2160p。",
   "https://github.com/rivet-dev/open-orange": "把 Cloudflare Workers 和 Durable Objects 原样跑到 AWS、GCP、Azure 或自有服务器。",
-  "https://github.com/yetone/rewind-for-x": "Chrome 扩展：回看你在 X 首页时间线上滑过去的帖子。",
-  "https://github.com/TomyJan/SnowLuma": "下一代远程协议框架。"
+  "https://github.com/opencoredev/islandcn": "适用于 React 的开源 Dynamic Island，通过 shadcn 安装",
+  "https://github.com/makepad/relax": "放松 Rust JIT",
+  "https://github.com/linknimiball1974/ai-texture-forge": "用于 Blender 的人工智能纹理锻造工具——通过本地或云扩散模型，将文本提示转换为无缝 PBR 材质、概念艺术和场景级投影"
 };
