@@ -2,15 +2,7 @@
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WQ1RoMWFsN1VyVjdlam5YZkZ4M1I1SUNjeWExWm1OcHR5MlRpRmtwU2NIT0dSQUhXSjlfb2hrZGhHYlVRUjUtUzBtRzRZUUZhcE9PNERJekdzNW1PUWhOd0s5MjBRXzVFdnFWZlJ5c0VSak5RZ3lUaA?oc=5": "构建更强的安全评估",
-  "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place": "用 SimReady 资产搭建机器人抓取仿真",
-  "https://huggingface.co/blog/allenai/xybench": "XYBench：先搞清问题背后的问题",
   "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search": "亚马逊计划索引全球网购商品数据",
-  "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet": "ChatGPT Wallet 让 Dots 智能体替你下单付款",
-  "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/": "投资人：黄仁勋离职在 AI 创业融资上撕开大洞",
-  "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/": "智能体创业公司 LangChain 估值达 30 亿美元",
-  "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/": "出口禁令芯片仍在支撑中国最强模型——糟糕，老黄",
-  "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/": "FAA 扩大 AI 建议，疏导全美空域拥堵",
-  "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/": "OpenAI 董事警告：AI“接管”社会或许只剩数月",
   "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/": "Runway 的开源 Praxis-1 将视频 AI 转变为机器人控制器",
   "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview": "OpenAI 董事会成员称我们仍无法信任 AI 首席执行官",
   "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo": "黄仁勋与愿景型企业家 CEO 的衰落",
@@ -27,7 +19,13 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/": "Anthropic 的 Claude Fable 5.2 不生成图像，它绘制图像",
   "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/": "与黄仁勋前女友有关的公司据称为 NVIDIA 芯片在中国的订单撮合了近 120 亿美元",
   "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/": "澳大利亚央行发现人工智能首先影响年轻工人，尤其是在软件和客户服务领域",
-  "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/": "美团发布了一个 1.6 万亿参数的代理模型，从未使用过 NVIDIA GPU"
+  "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/": "美团发布了一个 1.6 万亿参数的代理模型，从未使用过 NVIDIA GPU",
+  "https://openai.com/index/step-toward-defining-the-standard-model": "迈向在晶格上定义标准模型的一步",
+  "https://openai.com/index/our-new-blog-for-science": "我们新的科学博客",
+  "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed": "黄仁勋可能正在策划回归，以及最新的Nvidia纷争",
+  "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china": "Nvidia间谍丑闻后，国会希望收紧AI芯片出口规定",
+  "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/": "对黄仁勋的坏消息是否也是对AI行业的坏消息？",
+  "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/": "SNL召集所有科技巨头上一堂关于约会和间谍技巧的课"
 };
 window.AI_DESC_ZH = {
   "https://github.com/huamidev/GestaltX": "面向 iOS 27.x 的 MobileGestalt 编辑器，可改区域码、套设备预设并备份。",
@@ -43,12 +41,12 @@ window.AI_DESC_ZH = {
   "https://github.com/adriadam10/mkw-recomp": "把《马力欧卡丁车 世界》（Switch 2）静态重编译成原生 PC 程序。",
   "https://github.com/JDhruv14/line-art-animation": "Claude skill 与 TypeScript 库：做会走动、会反应的线稿 SVG，以及带昼夜循环的场景。",
   "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows": "轻量便携的 Windows FFmpeg 图形界面与无损剪辑（现成 exe），支持中英俄德法意。",
-  "https://github.com/Topkiflare74/ai--manus2.0": "AI Manus 是一个通用的 AI 代理系统，支持在沙盒环境中运行各种工具和操作。",
-  "https://github.com/trackboatwrightplan/GitHub-Copilot-app": "GitHub Copilot 应用是一款原生代理的桌面体验，可在您的 GitHub 仓库中查找、运行、引导和完成软件工作。",
-  "https://github.com/WarriorRemember/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
-  "https://github.com/TrapAccountant/GitHub-Copilot-app": "GitHub Copilot 应用是一款原生代理的桌面体验，可在您的 GitHub 仓库中查找、运行、引导和完成软件工作。",
   "https://github.com/opencoredev/islandcn": "适用于 React 的开源 Dynamic Island，通过 shadcn 安装。",
   "https://github.com/Noniv/abyssal-garden": "一个你可以通过浏览器游泳的梦幻水下世界：摇曳的海藻森林、阳光、沉船和蝠鲼。一切都是由代码生成的",
   "https://github.com/failsafe-security/artex": "基于源代码、本地绑定的 FailSafe 版本的 ARTEX（v0.3.15）",
-  "https://github.com/Dodaios/ste80-humanizer": "STE80 Humanizer：一种代理技能，可去除 AI 痕迹并将文本重写 80% 以符合 ASD-STE100（简化技术英语），安德烈·卡帕蒂克曾推崇的方法"
+  "https://github.com/Dodaios/ste80-humanizer": "STE80 Humanizer：一种代理技能，可去除 AI 痕迹并将文本重写 80% 以符合 ASD-STE100（简化技术英语），安德烈·卡帕蒂克曾推崇的方法",
+  "https://github.com/hitkeeen/blender-ai-mcp-addon": "为Blender打造的AI助手和MCP服务器：可视化聊天、场景工具、多智能体工作流。支持ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode。Blender AI",
+  "https://github.com/linknimiball1974/ai-texture-forge": "为Blender打造的AI驱动纹理锻造工具——通过本地或云扩散模型，将文本提示转换为无缝PBR材质、概念艺术和场景级投影",
+  "https://github.com/AIRzZ90/study-materials-fork": "跨平台Tauri 2界面和交互实践项目",
+  "https://github.com/Robbyant/lingbot-touch": "学习异构触觉表示以实现通用灵巧操作"
 };
