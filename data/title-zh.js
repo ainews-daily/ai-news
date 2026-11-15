@@ -21,7 +21,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/": "ElevenLabs 新应用把会议纪要和听写合到一起",
   "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/": "以色列风投：英伟达动荡里看到挑战者机会",
   "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/": "报道称黄仁勋未对继任者表达信心",
-  "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/": "民主党对英伟达展开调查，痛批黄仁勋与特朗普的“交易”",
   "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/": "FAA 扩大 AI 建议，疏导全美空域拥堵",
   "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/": "OpenAI 董事警告：AI“接管”社会或许只剩数月",
   "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/": "黄仁勋下台：或许更多是英伟达冒险生意，而非私生活",
@@ -38,11 +37,11 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/": "OpenAI 将机器人研究人员重新分配到其他团队，因为通用模型可能使专业机器人 AI 变得不必要",
   "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/": "前研究员 Coxon 表示，Anthropic 已经可以用“最初所需计算资源的一小部分”重新训练 Mythos",
   "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/": "埃隆·马斯克等科技高管签署请愿书，呼吁英伟达恢复黄仁勋的职位",
-  "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/": "Anthropic 首席执行官阿莫迪承认，在创纪录的 IPO 前几天，\"明年会发生什么存在巨大的不确定性\""
+  "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/": "Anthropic 首席执行官阿莫迪承认，在创纪录的 IPO 前几天，\"明年会发生什么存在巨大的不确定性\"",
+  "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/": "Nvidia 的安全团队在哪里？"
 };
 window.AI_DESC_ZH = {
   "https://github.com/huamidev/GestaltX": "面向 iOS 27.x 的 MobileGestalt 编辑器，可改区域码、套设备预设并备份。",
-  "https://github.com/jhaizhou-ops/S2Arm": "在 iPhone、iPad 和 Mac 上原生跑自有 Switch 游戏：代码重写到 ARM64，画面直出 Metal，一个 App 管整个库。",
   "https://github.com/apex-compute/ANR": "Apex Compute 的神经渲染方案 Apex Neural Rendering（ANR）。",
   "https://github.com/HybridRobotics/supermimic": "用一个可微世界模型做人形全身动作跟踪。",
   "https://github.com/agentes-chat/agentes-chat": "开源自托管的 Slack 替代，人和 AI 智能体可在频道与私信里协作，可接 Claude、ChatGPT/Codex、Gemini 或 Grok。",
@@ -64,5 +63,5 @@ window.AI_DESC_ZH = {
   "https://github.com/WattBeetleLearn/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
   "https://github.com/topapothecarycanal/ai--manus2.0": "AI Manus 是一个通用的 AI 代理系统，支持在沙盒环境中运行各种工具和操作。",
   "https://github.com/Trapbraneedle/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
-  "https://github.com/trackersnailgrip/GitHub-Copilot-app": "GitHub Copilot 应用是一款原生代理的桌面体验，可在您的 GitHub 仓库中查找、运行、引导和完成软件工作。"
+  "https://github.com/opencoredev/islandcn": "适用于 React 的开源 Dynamic Island，通过 shadcn 安装。"
 };
