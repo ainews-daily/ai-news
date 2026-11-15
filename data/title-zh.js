@@ -1,32 +1,16 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://openai.com/index/introducing-chatgpt-wallet": "推出 ChatGPT Wallet",
-  "https://openai.com/business/customer-stories/shield": "Shield 借助 OpenAI 让技师交接老旧门户工作",
   "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WQ1RoMWFsN1VyVjdlam5YZkZ4M1I1SUNjeWExWm1OcHR5MlRpRmtwU2NIT0dSQUhXSjlfb2hrZGhHYlVRUjUtUzBtRzRZUUZhcE9PNERJekdzNW1PUWhOd0s5MjBRXzVFdnFWZlJ5c0VSak5RZ3lUaA?oc=5": "构建更强的安全评估",
-  "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/": "AI 如何帮医护团队更快给对治疗",
   "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place": "用 SimReady 资产搭建机器人抓取仿真",
   "https://huggingface.co/blog/allenai/xybench": "XYBench：先搞清问题背后的问题",
-  "https://huggingface.co/blog/ggml-org/llama-cpp-v1": "llama.cpp v1.0.0：给本地 AI 生态打更稳的地基",
   "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search": "亚马逊计划索引全球网购商品数据",
   "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet": "ChatGPT Wallet 让 Dots 智能体替你下单付款",
-  "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast": "黄仁勋风波里真正攸关的是什么",
-  "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on": "Claude 的 Duet 智能体有点神经质，但意外好用",
-  "https://www.theverge.com/ai-artificial-intelligence/1032339/lets-talk-about-the-nvidia-shitshow": "来聊聊黄仁勋的多段婚外情风波",
   "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/": "投资人：黄仁勋离职在 AI 创业融资上撕开大洞",
   "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/": "智能体创业公司 LangChain 估值达 30 亿美元",
   "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/": "出口禁令芯片仍在支撑中国最强模型——糟糕，老黄",
-  "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/": "ChatGPT 新 Wallet 让智能体替你逛街结账",
-  "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/": "黄仁勋丑闻时间线",
-  "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/": "ElevenLabs 新应用把会议纪要和听写合到一起",
-  "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/": "以色列风投：英伟达动荡里看到挑战者机会",
-  "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/": "报道称黄仁勋未对继任者表达信心",
   "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/": "FAA 扩大 AI 建议，疏导全美空域拥堵",
   "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/": "OpenAI 董事警告：AI“接管”社会或许只剩数月",
-  "https://the-decoder.com/jensen-huangs-ouster-likely-traces-back-to-nvidias-risky-business-practices-more-than-his-personal-life/": "黄仁勋下台：或许更多是英伟达冒险生意，而非私生活",
-  "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet/": "OpenAI 用 ChatGPT Wallet 重做 AI 购物",
-  "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls/": "因出口管制，投行禁止中港投资者认购 Anthropic IPO",
-  "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/": "Anthropic 的 Claude for Manufacturing：AI 直接接入工厂软件",
   "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/": "Runway 的开源 Praxis-1 将视频 AI 转变为机器人控制器",
   "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview": "OpenAI 董事会成员称我们仍无法信任 AI 首席执行官",
   "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo": "黄仁勋与愿景型企业家 CEO 的衰落",
@@ -38,7 +22,12 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/": "前研究员 Coxon 表示，Anthropic 已经可以用“最初所需计算资源的一小部分”重新训练 Mythos",
   "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/": "埃隆·马斯克等科技高管签署请愿书，呼吁英伟达恢复黄仁勋的职位",
   "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/": "Anthropic 首席执行官阿莫迪承认，在创纪录的 IPO 前几天，\"明年会发生什么存在巨大的不确定性\"",
-  "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/": "Nvidia 的安全团队在哪里？"
+  "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/": "Nvidia 的安全团队在哪里？",
+  "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation": "黄仁勋混乱的日子概览",
+  "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/": "Anthropic 的 Claude Fable 5.2 不生成图像，它绘制图像",
+  "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/": "与黄仁勋前女友有关的公司据称为 NVIDIA 芯片在中国的订单撮合了近 120 亿美元",
+  "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/": "澳大利亚央行发现人工智能首先影响年轻工人，尤其是在软件和客户服务领域",
+  "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/": "美团发布了一个 1.6 万亿参数的代理模型，从未使用过 NVIDIA GPU"
 };
 window.AI_DESC_ZH = {
   "https://github.com/huamidev/GestaltX": "面向 iOS 27.x 的 MobileGestalt 编辑器，可改区域码、套设备预设并备份。",
@@ -58,10 +47,8 @@ window.AI_DESC_ZH = {
   "https://github.com/trackboatwrightplan/GitHub-Copilot-app": "GitHub Copilot 应用是一款原生代理的桌面体验，可在您的 GitHub 仓库中查找、运行、引导和完成软件工作。",
   "https://github.com/WarriorRemember/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
   "https://github.com/TrapAccountant/GitHub-Copilot-app": "GitHub Copilot 应用是一款原生代理的桌面体验，可在您的 GitHub 仓库中查找、运行、引导和完成软件工作。",
-  "https://github.com/TurquoiseDetective/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
-  "https://github.com/tornadonovicewhirl40/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
-  "https://github.com/WattBeetleLearn/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
-  "https://github.com/topapothecarycanal/ai--manus2.0": "AI Manus 是一个通用的 AI 代理系统，支持在沙盒环境中运行各种工具和操作。",
-  "https://github.com/Trapbraneedle/IPTV_Player_2.0": "🎬 一款功能强大、直观的 IPTV 流媒体应用，支持 M3U 播放列表、EPG 和社区列表。适用于 Windows、macOS、Linux、Android 和电视盒子。",
-  "https://github.com/opencoredev/islandcn": "适用于 React 的开源 Dynamic Island，通过 shadcn 安装。"
+  "https://github.com/opencoredev/islandcn": "适用于 React 的开源 Dynamic Island，通过 shadcn 安装。",
+  "https://github.com/Noniv/abyssal-garden": "一个你可以通过浏览器游泳的梦幻水下世界：摇曳的海藻森林、阳光、沉船和蝠鲼。一切都是由代码生成的",
+  "https://github.com/failsafe-security/artex": "基于源代码、本地绑定的 FailSafe 版本的 ARTEX（v0.3.15）",
+  "https://github.com/Dodaios/ste80-humanizer": "STE80 Humanizer：一种代理技能，可去除 AI 痕迹并将文本重写 80% 以符合 ASD-STE100（简化技术英语），安德烈·卡帕蒂克曾推崇的方法"
 };
