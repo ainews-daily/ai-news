@@ -1,15 +1,13 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/step-toward-defining-the-standard-model": "朝标准模型的格点定义迈进一步",
   "https://openai.com/index/our-new-blog-for-science": "我们新开的科学博客",
-  "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WQ1RoMWFsN1VyVjdlam5YZkZ4M1I1SUNjeWExWm1OcHR5MlRpRmtwU2NIT0dSQUhXSjlfb2hrZGhHYlVRUjUtUzBtRzRZUUZhcE9PNERJekdzNW1PUWhOd0s5MjBRXzVFdnFWZlJ5c0VSak5RZ3lUaA?oc=5": "把安全评测做扎实",
   "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed": "黄仁勋可能在谋划回归，以及英伟达最新的一连串风波",
   "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china": "英伟达间谍争议之后，国会想收紧 AI 芯片出口规则",
   "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation": "黄仁勋这几天乱局综述",
   "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview": "开除过 Sam Altman 的 OpenAI 董事说，我们仍然不能信任 AI 公司的 CEO",
   "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo": "黄仁勋，以及最后一位会演戏的创始人 CEO",
-  "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search": "亚马逊打算给全世界的网购数据做索引",
   "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/": "黄仁勋的坏消息，会不会也是 AI 行业的坏消息",
   "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/": "《周六夜现场》把科技大佬聚到一起，上了一课约会和间谍术",
   "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/": "英伟达的安全团队当时在哪",
@@ -26,28 +24,32 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/": "OpenAI 把机器人研究员调去其他团队，因为通用模型可能让专用机器人 AI 变得多余",
   "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/": "前研究员 Coxon 说，Anthropic 已经能用当初算力的一个零头重训 Mythos",
   "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/": "Runway 开源 Praxis-1，把视频 AI 变成机器人控制器",
-  "https://simonwillison.net/2026/Nov/14/datasette-llm/": "datasette-llm 0.1a11"
+  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1hdVl0bEhfUzE5ZTdOR3Q0dXdsQ2c2bDZUWll4cF9FS2NrZWpUbUg3bVZBalg4eHpBLXp6YzlOMml2T1ZFQzNPSExjV0Z0Vnps?oc=5": "登录 | 验证门户",
+  "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/": "AI 首尔活动汇聚韩国产业领袖、初创企业和开发者社区",
+  "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools": "苹果新研究旨在提高 AI 健康工具的效果",
+  "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/": "苹果推出新应用研究人们如何使用 AI 进行健康研究",
+  "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/": "印度芯片初创公司 Bharat Semi 完成 2400 万美元种子轮融资，瞄准全球 AI 传感器市场"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/huamidev/GestaltX": "给 iOS 27.x 用的 MobileGestalt 编辑器，可以改地区码、套用设备预设和做备份。",
   "https://github.com/deepseek-ai/chat-demo": "聊天演示",
   "https://github.com/apex-compute/ANR": "Apex Compute 的 Apex Neural Rendering（ANR）",
   "https://github.com/FrigadeHQ/yogurt": "会议记录留在你自己电脑上的私人 AI 笔记，免费开源，用来替代 Granola，支持 Mac、Windows 和 Linux。",
   "https://github.com/HybridRobotics/supermimic": "用一个可微分的世界模型，做人形机器人的全身动作跟踪。",
-  "https://github.com/agentes-chat/agentes-chat": "可自建的开源 Slack 替代品，团队和 AI 智能体在频道和私信里一起工作。智能体可以跑在 Claude、ChatGPT/Codex、Gemini 或 Grok 上，",
-  "https://github.com/HolyArrs/HolyArrs": "一个自建应用，集中看你的剧、电影和音乐。",
   "https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows": "轻量、免安装的 Windows 版 FFmpeg 图形界面和无损视频裁剪工具（可直接用的 .exe）。支持英、俄、中、德、法、意大利语。",
-  "https://github.com/adriadam10/mkw-recomp": "把《马力欧卡丁车世界》（Nintendo Switch 2）静态重编译成原生 PC 程序",
   "https://github.com/Noniv/abyssal-garden": "可以在浏览器里游过的梦幻水下世界：摇曳的海藻林、光柱、沉船和蝠鲼。全部由代码生成，wi",
-  "https://github.com/kolbicz/WQFiles": "给 iOS 26 和 27 用的文件浏览器、应用数据管理和缓存清理（worse_query，不越狱）",
   "https://github.com/hitkeeen/blender-ai-mcp-addon": "给 Blender 用的 AI 助手和 MCP 服务器：可视化聊天、场景工具、多智能体流程。可接 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode。Blender AI a",
-  "https://github.com/alexeyw/lot-map": "聊天旁边的一张实时地图，显示 Claude Code 正在做什么：工具调用、模型步骤、钩子、技能和子智能体发生时会亮起来。只在本地，用 7 ",
-  "https://github.com/serveroshq/panel": "开源的 ServerOS 面板：一个地方管理你已经有的 Linux 服务器。",
   "https://github.com/JDhruv14/line-art-animation": "一个 Claude 技能和 TypeScript 库，用来做会动的线条 SVG 组件：会走路、会反应的墨水小人，以及有昼夜变化的场景。",
   "https://github.com/opencoredev/islandcn": "用 shadcn 安装的开源灵动岛组件，给 React 用。",
   "https://github.com/failsafe-security/artex": "FailSafe 发行的 ARTEX（v0.3.15），从源码构建，绑定在本机",
-  "https://github.com/Dodaios/ste80-humanizer": "STE80 Humanizer：一个智能体技能，去掉 AI 痕迹，并把文本改到大约八成接近 ASD-STE100（简化技术英语），也就是 Andrej Karpathy 分享过的那套方法，sha",
   "https://github.com/linknimiball1974/ai-texture-forge": "给 Blender 用的 AI 贴图工坊——把文字提示变成无缝 PBR 材质、概念图和铺到整个场景的投影，可用本地或云端扩散模型",
   "https://github.com/AIRzZ90/study-materials-fork": "一个跨平台的 Tauri 2 界面和交互练习项目",
-  "https://github.com/Robbyant/lingbot-touch": "为通用灵巧操作学习异构触觉表示"
+  "https://github.com/rivet-dev/open-orange": "在 AWS、GCP、Azure 或您自己的服务器上无变化地运行 Cloudflare Workers 和 Durable Objects。",
+  "https://github.com/makepad/relax": "放松 Rust JIT",
+  "https://github.com/faizfahmi77/ScanDot": "实验性 Android 3D 扫描和点云查看器",
+  "https://github.com/credoksopho1984/blender-ai-copilot-studio": "为 Blender 提供的 AI 协作工具和 MCP 服务器，可将普通语言简报转换为场景操作——在一个带有多代理团队的可视化聊天工作室中，任你选择",
+  "https://github.com/racdeufindurch198812/Blender-AI-MCP-Studio": "Blender AI MCP Studio 是一个 AI 协助工具和内置 Model Context Protocol MCP 服务器，可将普通语言简报转换为经过检查和批准的场景操作",
+  "https://github.com/tiobeharxi1987/blender-ai-copilot-flow": "用于 Blender 的受控 AI 工作流：每个协作者的编辑都是一次受监督的工具调用——依次提出、批准、执行，当前步骤后可取消",
+  "https://github.com/zovulrira1974/blender-ai-copilot-assets": "为 Blender 设计的资产敏感型 AI 协作工具——在对话中搜索 Poly Haven、Sketchfab 和 Poly Pizza，查看哪些适合，确认后导入，包含 27 种场景",
+  "https://github.com/Doug-218/blender-ai-copilot-forge": "为 Blender 设计的场景构建型 AI 协作工具——描述布局并观看原始对象、相机、灯光、材质和父级关系按顺序组装，带有审批流程",
+  "https://github.com/precygtrucqui1981/blender-ai-copilot-lab": "为 Blender 设立的 AI 实验室，其中管理器-工作者-审查者代理团队作为受监督的实验运行多步骤场景简报——一个实时任务板，审查发现，一次协作"
 };
