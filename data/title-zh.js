@@ -24,7 +24,6 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/": "OpenAI 把机器人研究员调去其他团队，因为通用模型可能让专用机器人 AI 变得多余",
   "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/": "前研究员 Coxon 说，Anthropic 已经能用当初算力的一个零头重训 Mythos",
   "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/": "Runway 开源 Praxis-1，把视频 AI 变成机器人控制器",
-  "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1hdVl0bEhfUzE5ZTdOR3Q0dXdsQ2c2bDZUWll4cF9FS2NrZWpUbUg3bVZBalg4eHpBLXp6YzlOMml2T1ZFQzNPSExjV0Z0Vnps?oc=5": "登录 | 验证门户",
   "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/": "AI 首尔活动汇聚韩国产业领袖、初创企业和开发者社区",
   "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools": "苹果新研究旨在提高 AI 健康工具的效果",
   "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/": "苹果推出新应用研究人们如何使用 AI 进行健康研究",
