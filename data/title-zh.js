@@ -83,6 +83,7 @@ window.AI_DESC_ZH = {
   "https://github.com/tiobeharxi1987/blender-ai-copilot-flow": "受控的 Blender AI 工作流：每一步副驾编辑都是可提议、批准、顺序执行、可在当前步后取消的监督工具调用",
   "https://github.com/zovulrira1974/blender-ai-copilot-assets": "懂素材的 Blender AI 副驾：对话中搜索 Poly Haven、Sketchfab 等，确认后再导入，含多种场景工具",
   "https://github.com/Doug-218/blender-ai-copilot-forge": "场景锻造向 Blender AI 副驾：描述布局后按序组装图元、相机、灯光、材质与父子关系，带审批",
-  "https://github.com/berkantay/gpucanvas": "把成千上万实时 DOM 节点铺到无限画布：GPU 绘制，编辑器可选中移动缩放，着色器与过渡可直接作用其上",
-  "https://github.com/mit-han-lab/pear": "在模拟中训练推理模型以原生使用真实机器人"
+  "https://github.com/mit-han-lab/pear": "在模拟中训练推理模型以原生使用真实机器人",
+  "https://github.com/Immortal-Protocols/lastbook": "生存与重建的离线知识库",
+  "https://github.com/makepad/relax": "放松 Rust JIT"
 };
