@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/expanding-chatgpt-for-academic-researchers": "扩大科研人员使用 AI 的途径",
@@ -39,7 +39,30 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/": "与黄仁勋前伴侣有关的公司据报经手近 120 亿美元对华英伟达芯片订单",
   "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/": "澳洲央行：AI 最先冲击年轻劳动者，软件与客服尤甚",
   "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/": "美团发布 1.6 万亿参数智能体模型，训练未用英伟达 GPU",
-  "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development/": "Import AI 481：AI 分包商、AI 湿实验室，以及研发中的隐瞒"
+  "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development/": "Import AI 481：AI 分包商、AI 湿实验室，以及研发中的隐瞒",
+  "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/": "新功能助你轻松应对节日出行和准备",
+  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVmdyVmc1MjVDcWtuV0NsWG44R3ZzQU5rX1BkVHNkR1NlN2w4cFRselR2dTVLOS1EcjlRbU1idlVSMW11bGFWaFZjN2tydks4VkJUR1dlcXY3b2dZX1k5aE5NMUxFck5kQWZtcXlKNHF3bC1ZZXJTa0xjMDNIN1l3TlF6ZzlwMF8z?oc=5": "更新协调漏洞披露政策时间线",
+  "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/": "全球最先进的AI基础设施供应链如何创造未来",
+  "https://blogs.nvidia.com/blog/lambda-photonics/": "Lambda利用NVIDIA光子学提升AI工厂的弹性和效率",
+  "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/": "NVIDIA CUDA-X库为智能体提供加速科学发现的工具",
+  "https://blogs.nvidia.com/blog/rubin-hpc/": "NVIDIA宣布推出Rubin HPC——一款用于科学、工程和分析的新型GPU",
+  "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/": "AI Day Seoul汇聚韩国产业领袖、初创企业和开发者社区",
+  "https://huggingface.co/blog/openrouter": "Hugging Face与OpenRouter联手让开源权重模型运行更简单",
+  "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/": "网络安全AI初创公司Corma在短短三个月内估值达到10亿美元",
+  "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/": "Nvidia应该在周二回答的所有问题——但可能不会",
+  "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/": "加州总检察长起诉OpenAI，因“失控代理”事件",
+  "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/": "特朗普称前NVIDIA首席执行官黄仁勋与所谓中国间谍的婚外情未威胁国家安全",
+  "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/": "Sam Altman表示，没有Jensen Huang的NVIDIA，行业将‘没事’",
+  "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/": "FBI称Artex AI开源黑客工具在‘三小时内’入侵了网络",
+  "https://techcrunch.com/2026/11/16/jordan-belforts-new-ai-voice-startup-tone-wants-to-sell-like-the-wolf-of-wall-street/": "‘华尔街之狼’Jordan Belfort的新AI语音初创公司Tone希望像《华尔街之狼》一样畅销",
+  "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/": "OpenAI 将嵌入安全研究人员以调查 AI 欺骗",
+  "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/": "OpenAI 发布新的图像分类器和 ChatGPT 警告以打击 CSAM",
+  "https://techcrunch.com/2026/11/16/audible-turns-to-ai-to-help-users-discover-audiobooks/": "Audible 借助 AI 帮助用户发现有声读物",
+  "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/": "美国加紧 AI芯片出口管制以阻止中国公司远程访问计算资源",
+  "https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/": "Google Maps 现在可以构建包含每个停靠点实时详细信息的行程安排",
+  "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/": "Freshworks 校友以 AI 原生 CRM 进军 Salesforce 和 HubSpot，融资 5300 万美元",
+  "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/": "Apple 发布新应用以研究人们如何使用 AI 进行健康研究",
+  "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/": "印度芯片初创公司 Bharat Semi 获 2400 万美元种子轮融资，瞄准全球 AI 传感器市场"
 };
 window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/chat-demo": "聊天演示",
@@ -53,7 +76,6 @@ window.AI_DESC_ZH = {
   "https://github.com/rivet-dev/open-orange": "让 Cloudflare Workers 与 Durable Objects 原样跑在 AWS、GCP、Azure 或自有服务器上",
   "https://github.com/n4ze3m/tiny-voca": "从零训练的 450 万参数双音色英语语音合成模型",
   "https://github.com/yetanotherbrowser/yab": "Yab：又一个浏览器，原生 macOS 客户端，带 iPhone 与 Android 配套",
-  "https://github.com/makepad/relax": "Relax：Rust JIT",
   "https://github.com/faizfahmi77/ScanDot": "实验性 Android 三维扫描与点云查看器",
   "https://github.com/higurashi-ai/Haru": "Haru：低延迟、多语种、全双工口语对话模型",
   "https://github.com/credoksopho1984/blender-ai-copilot-studio": "Blender 的 AI 副驾与 MCP 服务：用自然语言把简报变成场景操作，可视化聊天工作室支持多智能体",
@@ -62,5 +84,5 @@ window.AI_DESC_ZH = {
   "https://github.com/zovulrira1974/blender-ai-copilot-assets": "懂素材的 Blender AI 副驾：对话中搜索 Poly Haven、Sketchfab 等，确认后再导入，含多种场景工具",
   "https://github.com/Doug-218/blender-ai-copilot-forge": "场景锻造向 Blender AI 副驾：描述布局后按序组装图元、相机、灯光、材质与父子关系，带审批",
   "https://github.com/berkantay/gpucanvas": "把成千上万实时 DOM 节点铺到无限画布：GPU 绘制，编辑器可选中移动缩放，着色器与过渡可直接作用其上",
-  "https://github.com/precygtrucqui1981/blender-ai-copilot-lab": "Blender AI 实验室：经理—工人—评审智能体团队把多步场景简报当受监督实验来跑，含任务板与评审结论"
+  "https://github.com/mit-han-lab/pear": "在模拟中训练推理模型以原生使用真实机器人"
 };
