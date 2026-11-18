@@ -4,15 +4,10 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/expanding-chatgpt-for-academic-researchers": "扩大科研人员使用 AI 的途径",
   "https://openai.com/index/strengthening-online-child-safety": "用新工具和支持加强打击网络儿童性虐待",
   "https://openai.com/index/science-at-the-frontier": "前沿科学：科学家如何使用 ChatGPT",
-  "https://openai.com/index/lvmh-media-division-partnership": "LVMH 传媒事业部宣布与 OpenAI 战略合作",
-  "https://openai.com/index/our-first-phase-of-embedded-assessments": "嵌入式评估的第一阶段",
-  "https://openai.com/index/advancing-computer-use-for-healthcare-teams": "推进面向医疗团队的电脑操作智能体",
-  "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare": "用 ChatGPT for Healthcare 推进诊疗协作的更多方式",
   "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/": "TokenEconomizer：从经验学习，让编程智能体更省 Token",
   "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories": "科技圈相信黄仁勋离职背后另有密谋",
   "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit": "加州就失控 AI 黑客事件起诉 OpenAI",
   "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor": "奥特曼说希望人人都有充足内存",
-  "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats": "大型核电并不担心民主党会拦住数据中心",
   "https://arstechnica.com/ai/2026/11/robo-soldier-startup-backed-by-eric-trump-misses-payroll-may-collapse/": "小埃里克·特朗普支持的机器人士兵初创发不出工资，或将倒闭",
   "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/": "美国着手切断中国对 AI 芯片的远程算力访问",
   "https://arstechnica.com/ai/2026/11/jensen-huang-allies-build-a-war-room-to-get-him-back-at-nvidia/": "黄仁勋盟友建“作战室”力推他重返英伟达",
@@ -21,7 +16,6 @@ window.AI_TITLE_ZH = {
   "https://www.technologyreview.com/2026/11/16/1146070/building-ai-that-can-work-across-the-enterprise/": "打造能在全企业协作的 AI",
   "https://the-decoder.com/google-warns-that-fully-automated-cyberattacks-have-arrived-and-will-get-worse-fast/": "Google 警告：全自动网络攻击已经出现，而且会很快恶化",
   "https://the-decoder.com/openais-gpt-6-astra-tackles-the-standard-models-toughest-math-problem-on-a-lattice/": "OpenAI 的 GPT-6 Astra 攻标准模型格点上最难的数学题",
-  "https://the-decoder.com/moonshot-ai-pivots-kimi-models-from-coding-to-science-as-benchmark-gains-flatten/": "月之暗面把 Kimi 从编程转向科学，榜单涨幅趋缓",
   "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development/": "Import AI 481：AI 分包商、AI 湿实验室，以及研发中的隐瞒",
   "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/": "新功能助你轻松应对节日出行和准备",
   "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVmdyVmc1MjVDcWtuV0NsWG44R3ZzQU5rX1BkVHNkR1NlN2w4cFRselR2dTVLOS1EcjlRbU1idlVSMW11bGFWaFZjN2tydks4VkJUR1dlcXY3b2dZX1k5aE5NMUxFck5kQWZtcXlKNHF3bC1ZZXJTa0xjMDNIN1l3TlF6ZzlwMF8z?oc=5": "更新协调漏洞披露政策时间线",
@@ -31,7 +25,6 @@ window.AI_TITLE_ZH = {
   "https://blogs.nvidia.com/blog/rubin-hpc/": "NVIDIA宣布推出Rubin HPC——一款用于科学、工程和分析的新型GPU",
   "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai": "用人工智能加强北约和盟国的网络防御",
   "https://openai.com/index/introducing-openai-for-chile": "面向智利推出OpenAI",
-  "https://openai.com/business/customer-stories/revolut": "Revolut在不降低标准的情况下提升雄心",
   "https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/": "Ars Live：对数据中心的无人机袭击对未来发展意味着什么？今日美国东部时间下午1点举行讲座",
   "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/": "Grok Bot采取了未经批准的行动，无视停止命令，然后予以否认",
   "https://www.technologyreview.com/2026/11/17/1148203/research-reports/": "研究报告",
@@ -64,8 +57,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/": "随着决策模型使用量激增，定制化是否将成为下一个前沿？",
   "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/": "Pedestal AI筹集470万美元，以实现供应链的代理化",
   "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/": "Proton的Lumo，一款注重隐私的ChatGPT和Claude替代品，现已登陆桌面",
-  "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/": "通过告诉AI这是一款游戏，AI模型可能被欺骗，将平民识别为军事目标",
-  "https://techcrunch.com/2026/11/17/jensen-huang-says-he-would-be-honored-if-allowed-to-return-as-nvidia-ceo/": "黄仁勋表示，如果被允许重返Nvidia担任CEO，他将感到‘荣幸’",
   "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/": "Copilot是‘工作的全新操作系统’，现在Office可在其中运行",
   "https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/": "‘特朗普曾与黄仁勋有联系’：批评者对黄仁勋希望重返Nvidia表示不满",
   "https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/": "Google让使用Gemini更简单，无需在你的数据上训练AI",
@@ -73,7 +64,13 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/ai-agents-are-starting-to-fill-out-medical-forms-and-file-insurance-requests-in-place-of-human-staff/": "AI 代理开始代替人工员工填写医疗表格并提交保险申请",
   "https://the-decoder.com/the-us-wants-to-block-china-from-renting-ai-power-abroad-but-china-already-built-a-parallel-supply-chain-from-us-ai-output/": "美国希望阻止中国在国外租赁 AI 算力，但中国已从美国 AI 输出构建了平行供应链",
   "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/": "用于代码代理的外部沙盒",
-  "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/": "GPT‑6.2 Astra 和 GPT‑6.2 Sol"
+  "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/": "GPT‑6.2 Astra 和 GPT‑6.2 Sol",
+  "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership": "《费加罗报》集团与OpenAI合作，将《费加罗报》的新闻带入ChatGPT",
+  "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature": "Suno现在允许你为你的AI音乐制作AI视频",
+  "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/": "印度Humyn Labs融资4700万美元，为美国机器人公司提供所需数据",
+  "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/": "Nvidia的初创公司投资飙升至650亿美元，但黄仁勋的离职使未来交易充满疑问",
+  "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/": "这家气味初创公司称其AI鼻子和人类一样灵敏",
+  "https://the-decoder.com/sunos-new-visuals-feature-pairs-ai-generated-music-with-ai-generated-video/": "Suno的新Visuals功能将AI生成的音乐与AI生成的视频结合"
 };
 window.AI_DESC_ZH = {
   "https://github.com/deepseek-ai/chat-demo": "聊天演示",
@@ -94,6 +91,5 @@ window.AI_DESC_ZH = {
   "https://github.com/huggingface/pybot": "PyBot：由一群代理编写的纯 Python 聊天机器人。无需权重，无需训练，只有规则。",
   "https://github.com/erkamyaman/rust-anything": "逐步用 Rust 重写你的整个应用，每一步都与原始应用的记录行为进行核对。CLIs、HTTP 服务器和 TypeScr 库",
   "https://github.com/chuanqisun/spaceship": "实时引导你的想法",
-  "https://github.com/boringmarketer/boring-marketing-skills": "32 个免费的 AI 代理营销技能：研究、定位、文案、页面、SEO、AI 搜索、广告、邮件和内容，以及一个深度本地业务包。MIT",
-  "https://github.com/credoksopho1984/blender-ai-copilot-studio": "为 Blender 提供的 AI 协作助手和 MCP 服务器，可将自然语言简报转换为场景操作——在一个带有多代理团队的可视化聊天工作室中，由你选择"
+  "https://github.com/boringmarketer/boring-marketing-skills": "32 个免费的 AI 代理营销技能：研究、定位、文案、页面、SEO、AI 搜索、广告、邮件和内容，以及一个深度本地业务包。MIT"
 };
