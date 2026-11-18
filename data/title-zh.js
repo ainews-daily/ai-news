@@ -1,4 +1,4 @@
-// 由 /ai日报 生成：实时热点里英文内容的中文翻译，键是原文链接
+// 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership": "费加罗报业集团与 OpenAI 合作，把《费加罗报》内容接入 ChatGPT",
@@ -9,7 +9,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/introducing-openai-for-chile": "推出面向智利的 OpenAI 计划",
   "https://openai.com/index/expanding-chatgpt-for-academic-researchers": "扩大科研人员使用 AI 的途径",
   "https://openai.com/index/strengthening-online-child-safety": "用新工具和支持加强打击网络儿童性虐待",
-  "https://openai.com/index/science-at-the-frontier": "前沿科学：科学家如何使用 ChatGPT",
   "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/": "让 Gemini 替你干活",
   "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/": "Ask Maps 新功能：帮你准备假日出行",
   "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVmdyVmc1MjVDcWtuV0NsWG44R3ZzQU5rX1BkVHNkR1NlN2w4cFRselR2dTVLOS1EcjlRbU1idlVSMW11bGFWaFZjN2tydks4VkJUR1dlcXY3b2dZX1k5aE5NMUxFck5kQWZtcXlKNHF3bC1ZZXJTa0xjMDNIN1l3TlF6ZzlwMF8z?oc=5": "更新协调漏洞披露政策时间表",
@@ -70,7 +69,6 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/openais-gpt-6-astra-tackles-the-standard-models-toughest-math-problem-on-a-lattice/": "OpenAI 的 GPT-6 Astra 攻克标准模型格点上的最难数学题",
   "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/": "给编程智能体用的外部沙箱",
   "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/": "GPT-6.2 Astra 与 GPT-6.2 Sol",
-  "https://simonwillison.net/2026/Nov/16/llm/": "llm 0.37.3",
   "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development/": "Import AI 481：AI 分包商、AI 湿实验室，以及开发中的欺瞒"
 };
 window.AI_DESC_ZH = {
