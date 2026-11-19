@@ -3,7 +3,6 @@
 window.AI_TITLE_ZH = {
   "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership": "费加罗报业集团与 OpenAI 合作，把《费加罗报》内容接入 ChatGPT",
   "https://openai.com/index/introducing-gpt-6-2-astra-sol": "推出 GPT-6.2 Astra 与 Sol",
-  "https://openai.com/index/introducing-chatgpt-for-sales": "推出面向销售的 ChatGPT",
   "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/": "让 Gemini 替你干活",
   "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/": "AI 能否助力更健康的未来？",
   "https://blogs.nvidia.com/blog/ian-buck-sc26/": "Ian Buck 在 SC26 开场：科学进入智能体时代",
@@ -51,13 +50,10 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropic-openai-and-google-models-readily-marked-medics-journalists-and-surrendering-soldiers-as-kamikaze-drone-targets/": "Anthropic、OpenAI 和 Google 模型轻易将医护人员、记者和投降士兵标记为神风无人机目标",
   "https://the-decoder.com/mistral-plays-catch-up-with-vibe-desktop-as-rivals-already-command-full-operating-systems/": "Mistral 在 Vibe Desktop 上追赶，而竞争对手已全面掌控操作系统",
   "https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time/": "OpenAI 首次向四位独立现场审计员开放其 AI 系统",
-  "https://the-decoder.com/hugging-face-now-routes-model-requests-through-openrouter-for-the-best-price-or-speed/": "Hugging Face 现在通过 OpenRouter 路由模型请求以获得最佳价格或速度",
-  "https://the-decoder.com/more-than-half-the-electricity-feeding-americas-largest-data-centers-comes-from-gas-and-coal/": "超过一半为美国最大数据中心供电的电力来自天然气和煤炭",
   "https://openai.com/index/research-acceleration-jagged-frontier": "研究加速：锯齿状的前沿",
   "https://openai.com/business/customer-stories/sumitomo-life": "住友生命保险的领导者如何帮助团队采用ChatGPT企业版",
   "https://deepmind.google/blog/introducing-gemini-4-neon/": "推出Gemini 4 Neon",
   "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wb1JNWEpudjJCR014ZnpEdkQ1MUFXOTZsRV9sU2wxclptYmRMVjY3d2R3bWJ2U2ZXdlktS1lNVE45b2NrVkY4aERJOXRJVkpRdy1kd2tRek52UG8wcXUwUEQwaUlEM0p1aE9YRlRvbnkyZVJUSmFLcWhFOA?oc=5": "Anthropic为首次公开募股定价",
-  "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZUGhIZlEzczZ3OTFxcjBiRFJLUDhrZjhGM1hKRHdQWnYzV05NQUh0Y19Nb2d6WHlQNWR6UkZmWEp0YlE4endwZXJTdVNwUmN3LXQxUU5MaTFaQldqZkZNZjFHZWNiZFN6LV9UdQ?oc=5": "Claude解决了黑洞物理领域的两个开放问题",
   "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google": "该国最大的学区考虑放弃Google搜索",
   "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/": "微软CEO萨提亚·纳德拉解释为何要求6万名员工辞职",
   "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/": "在担忧AI网络攻击的背景下，萨提亚·纳德拉表示大量关键基础设施‘无法打补丁’",
@@ -69,7 +65,9 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/": "帕默·拉奇警告称AI驱动的网络攻击正在超越防御：‘是时候开始跑了’",
   "https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/": "帕默·拉奇认为中国‘对黄仁勋被罢免感到高兴’，所以他希望被罢免的Nvidia CEO复职",
   "https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie/": "Sam Altman称他的生活如此奇怪，以至于对安德鲁·加菲尔德在即将上映的电影中扮演他并不感到惊讶",
-  "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/": "Google发布Gemini 4 Neon，这是其本月发布的第四款新Gemini模型"
+  "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/": "Google发布Gemini 4 Neon，这是其本月发布的第四款新Gemini模型",
+  "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/": "谷歌最新AI模型比几周前的旗舰产品更快、更便宜、更智能",
+  "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/": "OCR模型现在以不到130美元的价格数字化一百万页，18个月内成本下降五倍"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
@@ -84,12 +82,11 @@ window.AI_DESC_ZH = {
   "https://github.com/mit-han-lab/pear": "在仿真中训练推理模型，使其能原生驱动真实机器人",
   "https://github.com/boringmarketer/boring-marketing-skills": "32 个免费营销技能包：调研、定位、文案、落地页、SEO、AI 搜索、广告、邮件与内容，另含本地商家深包。MIT。",
   "https://github.com/siliconjungle/shapeshift-labs-ink-studio": "用于像素艺术高斯斑点的建模、动画和模拟工具包",
-  "https://github.com/faizfahmi77/ScanDot": "实验性Android 3D扫描和点云查看器",
   "https://github.com/quer3q/kraken-mount": "支持PKG、文件夹转储、zstd和lz4的极简PS5游戏支架",
   "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-": "Chain区域扫描器：找到可让你进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，Windows/macOS/Linux/Android）",
   "https://github.com/weightcashiercupola/Gemini-Config-Checker-": "Chain区域扫描器：找到可让你进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，Windows/macOS/Linux/Android）",
   "https://github.com/WindGatorRise37/Gemini-Config-Checker-": "Chain区域扫描器：找到可让你进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，Windows/macOS/Linux/Android）",
   "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-": "Chain区域扫描器：找到可让你进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，Windows/macOS/Linux/Android）",
   "https://github.com/TurtleReside/Gemini-Config-Checker-": "Chain区域扫描器：找到可让你进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，Windows/macOS/Linux/Android）",
-  "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-": "Chain区域扫描器：找到可让你进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，Windows/macOS/Linux/Android）"
+  "https://github.com/faizwashere/ScanDot": "实验性安卓3D扫描和点云查看器"
 };
