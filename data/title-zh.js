@@ -2,7 +2,6 @@
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
   "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/": "气味初创称其 AI 鼻子已接近人类水平",
-  "https://openai.com/index/inside-the-codex-sandbox": "探索Codex沙箱内部",
   "https://openai.com/index/the-silent-consensus": "沉默的共识",
   "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/": "Gemini应用现已可在低内存Android设备上使用。",
   "https://deepmind.google/blog/genie-4-is-now-available/": "Genie 4现已发布",
@@ -14,10 +13,7 @@ window.AI_TITLE_ZH = {
   "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/": "AI炒作指数：AI无处不在",
   "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/": "Google Deepmind 项目 Genie 更新带来 Genie 4、可链接世界和可重新混音的社区画廊",
   "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/": "微软用更便宜的内部模型取代其产品中的外部 AI 模型",
-  "https://openai.com/index/research-acceleration-jagged-frontier": "研究加速：锯齿状的前沿",
-  "https://openai.com/business/customer-stories/sumitomo-life": "住友生命保险的领导者如何帮助团队采用ChatGPT企业版",
   "https://deepmind.google/blog/introducing-gemini-4-neon/": "推出Gemini 4 Neon",
-  "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wb1JNWEpudjJCR014ZnpEdkQ1MUFXOTZsRV9sU2wxclptYmRMVjY3d2R3bWJ2U2ZXdlktS1lNVE45b2NrVkY4aERJOXRJVkpRdy1kd2tRek52UG8wcXUwUEQwaUlEM0p1aE9YRlRvbnkyZVJUSmFLcWhFOA?oc=5": "Anthropic为首次公开募股定价",
   "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/": "微软CEO萨提亚·纳德拉解释为何要求6万名员工辞职",
   "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/": "在担忧AI网络攻击的背景下，萨提亚·纳德拉表示大量关键基础设施‘无法打补丁’",
   "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/": "Google发布Gemini 4 Neon，这是其本月发布的第四款新Gemini模型",
@@ -26,8 +22,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast": "如何通过OpenAI的性能工厂让ChatGPT保持快速响应",
   "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/": "在Gemini API中引入工具检索功能",
   "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/": "沃尔特·艾萨克森谈人工智能时代的好奇心与创造力",
-  "https://news.google.com/rss/articles/CBMickFVX3lxTE81Wi1wa1dpMXA4ckNWXzlvQkNSUjhGdElMSTlyMzE0RU9iZGJwR3lUMjFSXy1DWldHaWhMZWsxQ2l3RzYzY001NENMalA4WS1xeVc0bUIzOTBlVG9UamNselBqT2ZSdzh1QnZUc2RJNFRTQQ?oc=5": "新闻与事件 - 新闻",
-  "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82ckdWOFg4N2Fpa2dtdkZKUWZidHlHaXBubHNJRDhDT2NxMHZlTFVyZWw5WlpvTXdPc1JnRzJxaDZoSm9wQ3Z0MzlDeVVRd3RSQVdHdERsT1lBR2ZpNUZJdWcxdWVwdw?oc=5": "证券交易委员会文件",
   "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "进入元宇宙：开发者如何利用前沿AI代理将想法转化为模拟",
   "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price": "Meta的Muse Charm可能售价300美元",
   "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats": "谷歌正在主页上直接加入AI聊天",
@@ -61,12 +55,7 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/": "Anthropic的7位创始人在创纪录的IPO中套现近20亿美元",
   "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/": "Meta的新Muse Charm设备可能售价300美元",
   "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/": "这些技术故障让人联想到Y2K，AI代理风格",
-  "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/": "一个OpenAI代理被分配了一个简单的写作任务，决定自己构建一个秘密的电子邮件监控工具",
-  "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5tRXlFbU10LTN2LW5xV3dTVGxfcmVVMHNCUnB4VDJ2YmZOMVkxbXhrWEFfZEpTVnlKOENINXFrNGI4amI5UHc?oc=5": "投资者关系",
-  "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdkhhQkU3eDFIc1MyS3pzelh1cXp6MHVLLXBRY0F5M3g4Y1U1aFNIY0dMMllDWDIwdENyZkYtSDVONkRHeUFOU1R6ald5UF83MkdpNWctUmNMNE4xM1huNEt3N18wLThoZ3owa3RLbDRqR09KSHpkd0wwbThCejAtWi1qZGw1aUtSNHEzYXRWUFk?oc=5": "领导与治理 - 委员会组成",
-  "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Nako1UmFIeGd6SEMtRFA5ZXBLSUFteVFmeFhTc2F1OGV0dVFNa2NxdFFLUlRnQms1S1VrQTFmbGtiRGE1ektFclJ0bFFEQmRhbDJjS3RPc0JRcnRnY01NWjdSb1h6VUcwSXJBbXdUcFV0VUVlTkp3MDBGMA?oc=5": "资源 - 投资者联系方式",
-  "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVEVoaEMxdkZJZVJOTzUzcGpTaDVYQVhBMVJ6QWg3bS1yTy1PTWgyRndiNi1JY3hQTlVXTHlXdU1mOW1nLTNRWEFBMVFkV1RIVVNyR2xza1hGUm4wVmYzN0xNNzlRODFRMVFORmZweGlqdEdWM3U4bTU1V202WGpoYkhPRENkVnFkUW00Zk1XTQ?oc=5": "领导与治理 - 治理文件",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnVlJlZ0dQbUtKVU5qMDBpZGMtMHgyTUZZRzkxXzIycnNiSUVZSmJaRmJNczlLY1U0bnRSaTRoNUZUbjR6LUhDNHBRc3VxbllrdXR2MExiMGhCLWM4Q2hHbDFIWU94S2py?oc=5": "BEL 女性语音下载"
+  "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/": "一个OpenAI代理被分配了一个简单的写作任务，决定自己构建一个秘密的电子邮件监控工具"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
@@ -80,13 +69,13 @@ window.AI_DESC_ZH = {
   "https://github.com/boringmarketer/boring-marketing-skills": "32 个免费营销技能包：调研、定位、文案、落地页、SEO、AI 搜索、广告、邮件与内容，另含本地商家深包。MIT。",
   "https://github.com/siliconjungle/shapeshift-labs-ink-studio": "用于像素艺术高斯斑点的建模、动画和模拟工具包",
   "https://github.com/Bodila51/gtavi-claudecode": "Claude代码插件可将GTA 6直播转化为付费竖版视频：实时活动、热门视频、精彩时刻、9:16裁剪、钩子、字幕和字幕",
-  "https://github.com/sourmitocand1987/VividFrame-GPU": "任何来源。一个实时GPU增强管道。·视频增强器 ·gpu视频 ·实时视频增强 · hdr ·超分辨率 ·游戏直播 ·moonl",
-  "https://github.com/bothaggsigym1988/frameglide": "从30帧的主机流到PC上的60-120帧。·帧插值 ·帧生成 ·nvidia ·windows ·dlss ·超分辨率 ·vulkan ·dlss5 ·",
   "https://github.com/0marContreras/gta6recomp": "GTA VI PC版",
   "https://github.com/nilbuild/stick-scene": "绘制漫画风格动画视觉效果的技能",
   "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon": "Blender 的 AI 助手和 MCP 服务器：视觉聊天、场景工具、多代理工作流。支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode。Blender AI",
   "https://github.com/mankidev/antialgorithm": "Claude Code 技能：引导模型远离其在创意工作中的第一个、最平均的选择：名称、想法、海报、UI.",
   "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-": "链式区域扫描器：找到可以进入 Google AI Studio 和 Gemini 的代理配置（已登录浏览器检查、反 DPI，支持 Windows/macOS/Linux/Android）",
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
-  "https://github.com/Lemxy/WinRust": "用Rust重写Windows外壳：任务栏、文件管理器、NTFS搜索、任务管理器、磁盘清理。一个安装器exe."
+  "https://github.com/Lemxy/WinRust": "用Rust重写Windows外壳：任务栏、文件管理器、NTFS搜索、任务管理器、磁盘清理。一个安装器exe.",
+  "https://github.com/weightcashiercupola/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）",
+  "https://github.com/WindGatorRise37/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）"
 };
