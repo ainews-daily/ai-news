@@ -1,8 +1,6 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/": "气味初创称其 AI 鼻子已接近人类水平",
-  "https://openai.com/index/the-silent-consensus": "沉默的共识",
   "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/": "Gemini应用现已可在低内存Android设备上使用。",
   "https://deepmind.google/blog/genie-4-is-now-available/": "Genie 4现已发布",
   "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin": "DaisyRose-27B：推动训练后效率的前沿",
@@ -12,7 +10,6 @@ window.AI_TITLE_ZH = {
   "https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/": "威尔·莱特的下一款模拟游戏将使用AI从你的记忆中挖掘内容",
   "https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/": "AI炒作指数：AI无处不在",
   "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/": "Google Deepmind 项目 Genie 更新带来 Genie 4、可链接世界和可重新混音的社区画廊",
-  "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/": "微软用更便宜的内部模型取代其产品中的外部 AI 模型",
   "https://deepmind.google/blog/introducing-gemini-4-neon/": "推出Gemini 4 Neon",
   "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/": "微软CEO萨提亚·纳德拉解释为何要求6万名员工辞职",
   "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/": "在担忧AI网络攻击的背景下，萨提亚·纳德拉表示大量关键基础设施‘无法打补丁’",
@@ -59,9 +56,9 @@ window.AI_TITLE_ZH = {
   "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wb1JNWEpudjJCR014ZnpEdkQ1MUFXOTZsRV9sU2wxclptYmRMVjY3d2R3bWJ2U2ZXdlktS1lNVE45b2NrVkY4aERJOXRJVkpRdy1kd2tRek52UG8wcXUwUEQwaUlEM0p1aE9YRlRvbnkyZVJUSmFLcWhFOA?oc=5": "Anthropic 首次公开募股定价",
   "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nX2dDSHZEclpzRUpBSTU3ai1rQkhUQkF4R0RUaE9vdW5vamJaRmMwTEMyUFhwckhkN0dGbDhJSFl4UWhVUHNtV1VtdVFDd3hwbVZfbElaaVNpVTRxb1RFNVN3?oc=5": "投资者关系",
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnVlJlZ0dQbUtKVU5qMDBpZGMtMHgyTUZZRzkxXzIycnNiSUVZSmJaRmJNczlLY1U0bnRSaTRoNUZUbjR6LUhDNHBRc3VxbllrdXR2MExiMGhCLWM4Q2hHbDFIWU94S2py?oc=5": "BEL 女性语音下载",
-  "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdkhhQkU3eDFIc1MyS3pzelh1cXp6MHVLLXBRY0F5M3g4Y1U1aFNIY0dMMllDWDIwdENyZkYtSDVONkRHeUFOU1R6ald5UF83MkdpNWctUmNMNE4xM1huNEt3N18wLThoZ3owa3RLbDRqR09KSHpkd0wwbThCejAtWi1qZGw1aUtSNHEzYXRWUFk?oc=5": "领导与治理 - 委员会组成",
-  "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Nako1UmFIeGd6SEMtRFA5ZXBLSUFteVFmeFhTc2F1OGV0dVFNa2NxdFFLUlRnQms1S1VrQTFmbGtiRGE1ektFclJ0bFFEQmRhbDJjS3RPc0JRcnRnY01NWjdSb1h6VUcwSXJBbXdUcFV0VUVlTkp3MDBGMA?oc=5": "资源 - 投资者联系方式",
-  "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVEVoaEMxdkZJZVJOTzUzcGpTaDVYQVhBMVJ6QWg3bS1yTy1PTWgyRndiNi1JY3hQTlVXTHlXdU1mOW1nLTNRWEFBMVFkV1RIVVNyR2xza1hGUm4wVmYzN0xNNzlRODFRMVFORmZweGlqdEdWM3U4bTU1V202WGpoYkhPRENkVnFkUW00Zk1XTQ?oc=5": "领导与治理 - 治理文件"
+  "https://news.google.com/rss/articles/CBMickFVX3lxTE81Wi1wa1dpMXA4ckNWXzlvQkNSUjhGdElMSTlyMzE0RU9iZGJwR3lUMjFSXy1DWldHaWhMZWsxQ2l3RzYzY001NENMalA4WS1xeVc0bUIzOTBlVG9UamNselBqT2ZSdzh1QnZUc2RJNFRTQQ?oc=5": "新闻和活动 - 新闻",
+  "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82ckdWOFg4N2Fpa2dtdkZKUWZidHlHaXBubHNJRDhDT2NxMHZlTFVyZWw5WlpvTXdPc1JnRzJxaDZoSm9wQ3Z0MzlDeVVRd3RSQVdHdERsT1lBR2ZpNUZJdWcxdWVwdw?oc=5": "SEC 文件",
+  "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/": "Hermes Agent 的集体智慧功能将一名员工的 AI 技巧转变为整个团队的技能"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
@@ -83,5 +80,5 @@ window.AI_DESC_ZH = {
   "https://github.com/Lemxy/WinRust": "用Rust重写Windows外壳：任务栏、文件管理器、NTFS搜索、任务管理器、磁盘清理。一个安装器exe.",
   "https://github.com/weightcashiercupola/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）",
   "https://github.com/WindGatorRise37/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）",
-  "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-": "链区域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）"
+  "https://github.com/MSNightmare/FastUnlock": "FastUnlock : Windows 辅助功能锁屏绕过 0day 漏洞"
 };
