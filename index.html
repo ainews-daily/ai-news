@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI 新鲜事</title>
 <style>
   :root {
@@ -68,6 +68,7 @@
     -webkit-font-smoothing: antialiased;
   }
   a { color: inherit; }
+  #content { min-height: 70vh; }
 
   .layout {
     max-width: 1180px;
@@ -261,6 +262,15 @@
   .status { margin-top: 36px; color: var(--muted); font-size: 13px; }
   .status summary { cursor: pointer; }
   .status ul { margin: 8px 0 0; padding-left: 1.2em; }
+  .swipe-hint {
+    position: fixed; left: 50%; bottom: calc(28px + env(safe-area-inset-bottom)); z-index: 40;
+    max-width: calc(100% - 32px); padding: 10px 16px; border-radius: 999px;
+    background: var(--text); color: var(--bg); font-size: 14px; font-weight: 600; line-height: 1.4;
+    box-shadow: 0 8px 28px rgba(20, 24, 40, .22); pointer-events: none; text-align: center;
+    opacity: 0; transform: translateX(-50%) translateY(10px);
+    transition: opacity .18s ease, transform .18s ease;
+  }
+  .swipe-hint.show { opacity: 1; transform: translateX(-50%); }
   .lib-tools { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin-bottom: 18px; }
   .search {
     font: inherit; font-size: 14px; padding: 7px 14px; border-radius: 999px; width: 220px; max-width: 100%;
@@ -304,25 +314,22 @@
     .sheet-open .backdrop { opacity: 1; pointer-events: auto; }
     .sheet-open { overflow: hidden; }
 
-    /* 视图切换：固定在底部，四个入口一直可见 */
+    header.top { margin-bottom: 12px; }
+    .title { font-size: 30px; }
+    .subtitle { font-size: 13.5px; margin-top: 4px; }
+
+    /* 导航贴在屏幕顶部。放到底部会被手机浏览器自己的底栏在切页时盖住 */
     .tabs {
-      position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; gap: 0; margin: 0;
-      padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); border-radius: 0;
-      background: color-mix(in srgb, var(--surface) 86%, transparent);
-      -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5);
-      border-top: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 30; display: flex; gap: 0; width: auto;
+      margin: 0 -16px 14px; padding: 8px 8px; border-radius: 0;
+      background: var(--bg); border-bottom: 1px solid var(--border);
     }
     .tabs a {
       flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
       padding: 4px 0; font-size: 11px; -webkit-tap-highlight-color: transparent;
     }
-    .layout { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
     .tabs a[aria-current="true"] { background: none; box-shadow: none; color: var(--accent); }
     .tab-ico { display: block; width: 23px; height: 23px; }
-
-    header.top { margin-bottom: 18px; }
-    .title { font-size: 30px; }
-    .subtitle { font-size: 13.5px; margin-top: 4px; }
 
     /* 筛选条：单行横向滑动，左右贴边 */
     .filters, .jump, .lib-tools .chip-group {
@@ -350,9 +357,12 @@
     .card p { font-size: 13.5px; line-height: 1.65; }
     .count { margin-bottom: 10px; }
     .hot-row { padding: 12px 14px; }
-    .fab { right: 16px; bottom: calc(78px + env(safe-area-inset-bottom)); }
-    .nav-btn { display: none; }
+    .fab { right: 16px; bottom: calc(20px + env(safe-area-inset-bottom)); }
     .group-head { margin: 22px 0 10px; }
+  }
+
+  @media (max-width: 900px) {
+    .tabs { position: sticky; top: 0; z-index: 30; background: var(--bg); }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -366,10 +376,6 @@
 <div class="fab">
   <button class="fab-btn to-top" id="to-top" type="button" aria-label="回到顶部">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-  </button>
-  <button class="fab-btn nav-btn" id="nav-btn" type="button" aria-label="显示导航" aria-expanded="false" aria-controls="tabs">
-    <svg class="ico-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg>
-    <svg class="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
   </button>
 </div>
 <div class="layout solo">
@@ -387,16 +393,17 @@
         </button>
       </div>
       <p class="subtitle" id="subtitle">&nbsp;</p>
-      <nav class="tabs" id="tabs" aria-label="视图">
+    </header>
+    <nav class="tabs" id="tabs" aria-label="视图">
         <a href="#" id="tab-today"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/></svg><span>今日速览</span></a>
         <a href="#hot" id="tab-hot"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.5 3.5 5 5.5 5 10.5a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.3 1.6 1.2 2.6 2.2 3C10.6 9.5 11 6 12 3z"/></svg><span>实时热点</span></a>
         <a href="#design" id="tab-design"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.7 1.7-1.7H16a5 5 0 0 0 5-5c0-3.9-4-7.2-9-7.2z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="15" cy="8" r="1"/></svg><span>设计</span></a>
         <a href="#tools" id="tab-tools"><svg class="tab-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>工具库</span></a>
       </nav>
-    </header>
     <div id="content"></div>
   </main>
 </div>
+<div class="swipe-hint" id="swipe-hint" role="status" aria-live="polite"></div>
 
 <script>
 (function () {
@@ -418,7 +425,6 @@
 
   var state = { dates: [], date: null, category: "all", region: "all", libCat: "all", libQuery: "", designKind: "all", designQuery: "", hotTopic: "all", hotQuery: "", calMonth: null, listLimit: 20 };
   var $dateBtn = document.getElementById("date-btn");
-  var $navBtn = document.getElementById("nav-btn");
   var $subtitle = document.getElementById("subtitle");
   var $content = document.getElementById("content");
 
@@ -480,14 +486,6 @@
     $dateBtn.setAttribute("aria-expanded", String(open));
   }
 
-  // 手机底部导航：默认收起，记住上次的选择（存不了就每次收起）
-  function setNav(open) {
-    document.body.classList.toggle("nav-open", open);
-    $navBtn.setAttribute("aria-expanded", String(open));
-    $navBtn.setAttribute("aria-label", open ? "收起导航" : "显示导航");
-    try { localStorage.setItem("nav-open", open ? "1" : "0"); } catch (e) {}
-  }
-
   function initMobile() {
     $dateBtn.addEventListener("click", function () { setSheet(true); });
     document.getElementById("backdrop").addEventListener("click", function () { setSheet(false); });
@@ -497,11 +495,6 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     $top.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
-    $navBtn.addEventListener("click", function () { setNav(!document.body.classList.contains("nav-open")); });
-    var saved = null;
-    try { saved = localStorage.getItem("nav-open"); } catch (e) {}
-    setNav(saved === "1");
-    // 再点一下当前所在的导航，回到顶部（和手机 App 的习惯一致）
     Array.from(document.querySelectorAll(".tabs a")).forEach(function (a) {
       a.addEventListener("click", function (e) {
         if (a.getAttribute("href") !== (location.hash || "#")) return;
@@ -509,6 +502,85 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     });
+    initSwipe();
+  }
+
+  // 单手：第一下滑只出气泡，同一方向再滑一下才换页
+  function initSwipe() {
+    var views = [
+      { hash: "", name: "今日速览" },
+      { hash: "hot", name: "实时热点" },
+      { hash: "design", name: "设计" },
+      { hash: "tools", name: "工具库" }
+    ];
+    var hint = document.getElementById("swipe-hint");
+    var pending = 0;
+    var timer = 0;
+    var start = null;
+
+    function hideHint() {
+      hint.classList.remove("show");
+    }
+    function showHint(text) {
+      hint.textContent = text;
+      hint.classList.add("show");
+      clearTimeout(timer);
+      timer = setTimeout(function () { pending = 0; hideHint(); }, 2200);
+    }
+    function viewIndex() {
+      var h = decodeURIComponent(location.hash.slice(1));
+      var i = views.findIndex(function (v) { return v.hash === h; });
+      return i < 0 ? 0 : i;
+    }
+    function horizontalScroller(node) {
+      while (node && node !== document.body) {
+        var style = getComputedStyle(node);
+        if ((style.overflowX === "auto" || style.overflowX === "scroll") && node.scrollWidth > node.clientWidth + 8) return true;
+        node = node.parentElement;
+      }
+      return false;
+    }
+    function go(hash) {
+      pending = 0;
+      hideHint();
+      if (!hash) {
+        history.pushState(null, "", location.pathname + location.search);
+        show();
+      } else {
+        location.hash = hash;
+      }
+    }
+    function onSwipe(delta) {
+      var i = viewIndex();
+      var n = i + delta;
+      if (n < 0 || n >= views.length) {
+        pending = 0;
+        showHint(n < 0 ? "已经是第一项" : "已经是最后一项");
+        return;
+      }
+      if (pending === delta) { go(views[n].hash); return; }
+      pending = delta;
+      showHint((delta > 0 ? "再向左滑一下" : "再向右滑一下") + "，切换到" + views[n].name);
+    }
+
+    document.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) { start = null; return; }
+      var tag = e.target.closest && e.target.closest("input, textarea, select");
+      if (tag || horizontalScroller(e.target)) { start = null; return; }
+      var t = e.touches[0];
+      start = { x: t.clientX, y: t.clientY, at: Date.now() };
+    }, { passive: true });
+    document.addEventListener("touchcancel", function () { start = null; }, { passive: true });
+    document.addEventListener("touchend", function (e) {
+      if (!start || !e.changedTouches.length) return;
+      var t = e.changedTouches[0];
+      var dx = t.clientX - start.x;
+      var dy = t.clientY - start.y;
+      var dt = Date.now() - start.at;
+      start = null;
+      if (dt > 1000 || Math.abs(dx) < 64 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      onSwipe(dx < 0 ? 1 : -1);
+    }, { passive: true });
   }
 
   function renderCalendar() {
@@ -1136,6 +1208,7 @@
       history.replaceState(null, "", location.pathname + location.search);
       wanted = "";
     }
+    if (window.scrollY > 0) window.scrollTo(0, 0);
     if (wanted === "tools" || wanted === "hot" || wanted === "design") {
       setTabs(wanted);
       state.date = null;
