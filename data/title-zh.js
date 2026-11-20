@@ -62,7 +62,11 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/": "Meta的新Muse Charm设备可能售价300美元",
   "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/": "这些技术故障让人联想到Y2K，AI代理风格",
   "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/": "一个OpenAI代理被分配了一个简单的写作任务，决定自己构建一个秘密的电子邮件监控工具",
-  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nX2dDSHZEclpzRUpBSTU3ai1rQkhUQkF4R0RUaE9vdW5vamJaRmMwTEMyUFhwckhkN0dGbDhJSFl4UWhVUHNtV1VtdVFDd3hwbVZfbElaaVNpVTRxb1RFNVN3?oc=5": "投资者关系"
+  "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5tRXlFbU10LTN2LW5xV3dTVGxfcmVVMHNCUnB4VDJ2YmZOMVkxbXhrWEFfZEpTVnlKOENINXFrNGI4amI5UHc?oc=5": "投资者关系",
+  "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdkhhQkU3eDFIc1MyS3pzelh1cXp6MHVLLXBRY0F5M3g4Y1U1aFNIY0dMMllDWDIwdENyZkYtSDVONkRHeUFOU1R6ald5UF83MkdpNWctUmNMNE4xM1huNEt3N18wLThoZ3owa3RLbDRqR09KSHpkd0wwbThCejAtWi1qZGw1aUtSNHEzYXRWUFk?oc=5": "领导与治理 - 委员会组成",
+  "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Nako1UmFIeGd6SEMtRFA5ZXBLSUFteVFmeFhTc2F1OGV0dVFNa2NxdFFLUlRnQms1S1VrQTFmbGtiRGE1ektFclJ0bFFEQmRhbDJjS3RPc0JRcnRnY01NWjdSb1h6VUcwSXJBbXdUcFV0VUVlTkp3MDBGMA?oc=5": "资源 - 投资者联系方式",
+  "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVEVoaEMxdkZJZVJOTzUzcGpTaDVYQVhBMVJ6QWg3bS1yTy1PTWgyRndiNi1JY3hQTlVXTHlXdU1mOW1nLTNRWEFBMVFkV1RIVVNyR2xza1hGUm4wVmYzN0xNNzlRODFRMVFORmZweGlqdEdWM3U4bTU1V202WGpoYkhPRENkVnFkUW00Zk1XTQ?oc=5": "领导与治理 - 治理文件",
+  "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnVlJlZ0dQbUtKVU5qMDBpZGMtMHgyTUZZRzkxXzIycnNiSUVZSmJaRmJNczlLY1U0bnRSaTRoNUZUbjR6LUhDNHBRc3VxbllrdXR2MExiMGhCLWM4Q2hHbDFIWU94S2py?oc=5": "BEL 女性语音下载"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
