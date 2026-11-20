@@ -325,10 +325,10 @@
     .title { font-size: 30px; }
     .subtitle { font-size: 13.5px; margin-top: 4px; }
 
-    /* 导航贴在屏幕顶部。放到底部会被手机浏览器自己的底栏在切页时盖住 */
+    /* 固定在可视区域顶部。sticky 会钻进浏览器顶栏，图标被切掉一半 */
     .tabs {
-      position: sticky; top: 0; z-index: 30; display: flex; gap: 0; width: auto;
-      margin: 0 -16px 14px; padding: 8px 8px; border-radius: 0;
+      position: fixed; left: 0; right: 0; top: 0; z-index: 30; display: flex; gap: 0;
+      margin: 0; padding: 8px 8px; border-radius: 0;
       background: var(--bg); border-bottom: 1px solid var(--border);
     }
     .tabs a {
@@ -369,7 +369,7 @@
   }
 
   @media (max-width: 900px) {
-    .tabs { position: sticky; top: 0; z-index: 30; background: var(--bg); }
+    .tabs { position: fixed; left: 0; right: 0; top: 0; z-index: 30; margin: 0; background: var(--bg); }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -502,6 +502,13 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     $top.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+    pinTabs();
+    window.addEventListener("resize", schedulePin);
+    window.addEventListener("orientationchange", schedulePin);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", schedulePin);
+      window.visualViewport.addEventListener("scroll", schedulePin);
+    }
     Array.from(document.querySelectorAll(".tabs a")).forEach(function (a) {
       a.addEventListener("click", function (e) {
         e.preventDefault();
@@ -514,6 +521,25 @@
       });
     });
     initSwipe();
+  }
+
+  var pinScheduled = false;
+  function pinTabs() {
+    var bar = document.getElementById("tabs");
+    var layout = document.querySelector(".layout");
+    if (!window.matchMedia("(max-width: 900px)").matches) {
+      bar.style.top = "";
+      layout.style.paddingTop = "";
+      return;
+    }
+    var top = window.visualViewport ? window.visualViewport.offsetTop : 0;
+    bar.style.top = top + "px";
+    layout.style.paddingTop = (top + bar.offsetHeight) + "px";
+  }
+  function schedulePin() {
+    if (pinScheduled) return;
+    pinScheduled = true;
+    requestAnimationFrame(function () { pinScheduled = false; pinTabs(); });
   }
 
   // 单手：第一下滑只出气泡，同一方向再滑一下才换页
