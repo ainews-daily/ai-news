@@ -4,7 +4,7 @@
 // 部分源失败不影响整体；全部失败时不覆盖旧文件，并以退出码 1 结束。
 
 import { readFile, writeFile } from "node:fs/promises";
-import { parseFeed, compileTopics, matchTopics, isNoteworthy, selectFeedItems, safeLink, dedupe } from "./lib/crawl-lib.mjs";
+import { parseFeed, compileTopics, matchTopics, isNoteworthy, selectFeedItems, safeLink, dedupe, markFresh } from "./lib/crawl-lib.mjs";
 
 const ROOT = new URL("..", import.meta.url);
 const NEWSNOW = "https://newsnow.busiyi.world/api/s";
@@ -84,6 +84,20 @@ async function run(name, kind, id, fn) {
   }
 }
 
+async function previousUrls() {
+  try {
+    const text = await readFile(new URL("data/hot.js", ROOT), "utf8");
+    const start = text.indexOf("{");
+    const end = text.lastIndexOf("}");
+    if (start < 0 || end < start) return null;
+    const data = JSON.parse(text.slice(start, end + 1));
+    const urls = (data.items || []).map((it) => it.url).filter(Boolean);
+    return urls.length ? urls : null;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   const sources = await readJson("config/sources.json");
   const topicDefs = await readJson("config/topics.json");
@@ -102,7 +116,7 @@ async function main() {
     process.exit(1);
   }
 
-  const items = dedupe(results.flatMap((r) => r.items));
+  const items = markFresh(dedupe(results.flatMap((r) => r.items)), await previousUrls());
   const snapshot = {
     generatedAt: new Date(now).toISOString(),
     topics: topicDefs.map((t) => ({ id: t.id, name: t.name })),

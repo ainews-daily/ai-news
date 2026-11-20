@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseFeed, compileTopics, matchTopics, selectFeedItems, safeLink, dedupe, isNoteworthy } from "./crawl-lib.mjs";
+import { parseFeed, compileTopics, matchTopics, selectFeedItems, safeLink, dedupe, isNoteworthy, markFresh } from "./crawl-lib.mjs";
 
 const RSS = `<?xml version="1.0"?><rss><channel><title>站点</title>
 <item><title><![CDATA[OpenAI 发布 <b>新模型</b>]]></title><link>https://example.com/a</link>
@@ -84,6 +84,14 @@ test("isNoteworthy：只命中非独立分组的不算，同时命中其他组�
   assert.equal(isNoteworthy(matchTopics("小米道歉", t), t), true);
   assert.equal(isNoteworthy(matchTopics("小米发布会", t), t), true);
   assert.equal(isNoteworthy(matchTopics("天气晴", t), t), false);
+});
+
+test("markFresh：只给上一份里没有的链接打标，没有上一份时不打标", () => {
+  const items = [{ title: "旧", url: "https://e.com/old" }, { title: "新", url: "https://e.com/new", fresh: true }];
+  const marked = markFresh(items, ["https://e.com/old"]);
+  assert.equal(marked[0].fresh, undefined);
+  assert.equal(marked[1].fresh, true);
+  assert.equal(markFresh(items, null)[1].fresh, undefined);
 });
 
 test("exclude：标题里的排除词先去掉再匹配", () => {

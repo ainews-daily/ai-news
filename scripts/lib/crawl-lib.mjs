@@ -105,6 +105,16 @@ export function safeLink(url, domain) {
   return host === domain || host.endsWith("." + domain) ? url : null;
 }
 
+// 对照上一份快照的链接：没见过的标 fresh。没有上一份时全部不当成新的，避免第一次抓取整页都是「新」。
+export function markFresh(items, previousUrls) {
+  const seen = previousUrls ? new Set(previousUrls) : null;
+  return items.map((it) => {
+    const { fresh, ...rest } = it;
+    if (seen && it.url && !seen.has(it.url)) return { ...rest, fresh: true };
+    return rest;
+  });
+}
+
 export function dedupe(items) {
   const seen = new Set();
   return items.filter((it) => {

@@ -955,7 +955,9 @@
     var zh = zhTitle(it), desc = zhDesc(it) || it.desc;
     var link = extLink(it.url, zh || it.title);
     if (zh) link.title = "原文：" + it.title;
-    var sub = [el("span", { text: it.kind === "hot" ? srcName + " 第 " + it.rank + " 位" : srcName })];
+    var sub = [];
+    if (it.fresh) sub.push(el("span", { class: "group-new", text: "新" }));
+    sub.push(el("span", { text: it.kind === "hot" ? srcName + " 第 " + it.rank + " 位" : srcName }));
     if (it.kind === "news") sub.push(el("span", { text: (it.region === "cn" ? "国内 · " : "国外 · ") + timeAgo(it.time) }));
     if (it.kind === "repo") sub.push(el("span", { text: [formatStars(it.stars), it.lang].filter(Boolean).join(" · ") }));
     (it.topics || []).forEach(function (t) { sub.push(tag(topicNames[t] || t, TOPIC_COLORS[t])); });
@@ -991,7 +993,10 @@
     hot.sources.forEach(function (s) { names[s.id] = s.name; totals[s.id] = s.total; });
     hot.topics.forEach(function (t) { topicNames[t.id] = t.name; });
     var ok = hot.sources.filter(function (s) { return s.ok; }).length;
-    $subtitle.textContent = "实时热点 · " + timeAgo(hot.generatedAt) + "更新 · " + ok + "/" + hot.sources.length + " 个数据源正常";
+    var freshN = hot.items.filter(function (it) { return it.fresh; }).length;
+    $subtitle.textContent = "实时热点 · " + timeAgo(hot.generatedAt) + "更新" +
+      (freshN ? " · " + freshN + " 条新出现" : "") +
+      " · " + ok + "/" + hot.sources.length + " 个数据源正常";
 
     var $lists = el("div");
     function draw() {
@@ -1004,9 +1009,14 @@
             (!q || (it.title + " " + zhTitle(it) + " " + (it.desc || "") + " " + zhDesc(it)).toLowerCase().indexOf(q) >= 0);
         });
         // 各榜单长度不同，用“名次 ÷ 榜单总条数”比较热度，名次相对越靠前越热
-        if (sec.kind === "hot") items.sort(function (a, b) { return a.rank / (totals[a.source] || 50) - b.rank / (totals[b.source] || 50); });
-        if (sec.kind === "news") items.sort(function (a, b) { return a.time < b.time ? 1 : a.time > b.time ? -1 : 0; });
-        if (sec.kind === "repo") items.sort(function (a, b) { return b.stars - a.stars; });
+        function freshFirst(cmp) {
+          return function (a, b) {
+            return (b.fresh === true) - (a.fresh === true) || cmp(a, b);
+          };
+        }
+        if (sec.kind === "hot") items.sort(freshFirst(function (a, b) { return a.rank / (totals[a.source] || 50) - b.rank / (totals[b.source] || 50); }));
+        if (sec.kind === "news") items.sort(freshFirst(function (a, b) { return a.time < b.time ? 1 : a.time > b.time ? -1 : 0; }));
+        if (sec.kind === "repo") items.sort(freshFirst(function (a, b) { return b.stars - a.stars; }));
         var body = items.length ? hotList(items, names, topicNames) : el("div", { class: "notice", text: "没有符合条件的条目。" });
         $lists.appendChild(section(sec.title, items.length + " 条", sec.desc, body));
       });
