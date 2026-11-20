@@ -1,19 +1,15 @@
 {
   "_说明": "hot = 国内热榜（经 newsnow 接口），只保留命中关注词的条目；feeds = RSS 资讯源，aiOnly 表示只保留 AI 相关条目。资讯源清单参考了 Jackychen-12/AI-Search（MIT 协议）。",
   "hot": [
-    { "id": "weibo", "name": "微博", "domain": "weibo.com" },
     { "id": "baidu", "name": "百度热搜", "domain": "baidu.com" },
     { "id": "toutiao", "name": "今日头条", "domain": "toutiao.com" },
     { "id": "zhihu", "name": "知乎", "domain": "zhihu.com" },
-    { "id": "douyin", "name": "抖音", "domain": "douyin.com" },
     { "id": "bilibili-hot-search", "name": "B 站", "domain": "bilibili.com" },
     { "id": "thepaper", "name": "澎湃新闻", "domain": "thepaper.cn" },
     { "id": "cls-hot", "name": "财联社", "domain": "cls.cn" },
     { "id": "wallstreetcn-hot", "name": "华尔街见闻", "domain": "wallstreetcn.com" },
     { "id": "ifeng", "name": "凤凰网", "domain": "ifeng.com" },
-    { "id": "tieba", "name": "贴吧", "domain": "baidu.com" },
-    { "id": "ithome", "name": "IT之家", "domain": "ithome.com" },
-    { "id": "coolapk", "name": "酷安", "domain": "coolapk.com" }
+    { "id": "ithome", "name": "IT之家", "domain": "ithome.com" }
   ],
   "feeds": [
     { "id": "openai", "name": "OpenAI", "url": "https://openai.com/news/rss.xml", "region": "intl" },
