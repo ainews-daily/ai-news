@@ -73,7 +73,6 @@ window.AI_DESC_ZH = {
   "https://github.com/yetanotherbrowser/yab": "Yab：又一个浏览器——快速的原生 macOS 浏览器，带 iPhone 与 Android 伴侣应用",
   "https://github.com/boringmarketer/boring-marketing-skills": "32 个免费营销技能包：调研、定位、文案、落地页、SEO、AI 搜索、广告、邮件与内容，另含本地商家深包。MIT。",
   "https://github.com/siliconjungle/shapeshift-labs-ink-studio": "用于像素艺术高斯斑点的建模、动画和模拟工具包",
-  "https://github.com/Bodila51/gtavi-claudecode": "Claude代码插件可将GTA 6直播转化为付费竖版视频：实时活动、热门视频、精彩时刻、9:16裁剪、钩子、字幕和字幕",
   "https://github.com/0marContreras/gta6recomp": "GTA VI PC版",
   "https://github.com/nilbuild/stick-scene": "绘制漫画风格动画视觉效果的技能",
   "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon": "Blender 的 AI 助手和 MCP 服务器：视觉聊天、场景工具、多代理工作流。支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode。Blender AI",
@@ -82,5 +81,6 @@ window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
   "https://github.com/Lemxy/WinRust": "用Rust重写Windows外壳：任务栏、文件管理器、NTFS搜索、任务管理器、磁盘清理。一个安装器exe.",
   "https://github.com/weightcashiercupola/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）",
-  "https://github.com/WindGatorRise37/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）"
+  "https://github.com/WindGatorRise37/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）",
+  "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-": "链区域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）"
 };
