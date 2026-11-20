@@ -28,7 +28,6 @@ window.AI_TITLE_ZH = {
   "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/": "沃尔特·艾萨克森谈人工智能时代的好奇心与创造力",
   "https://news.google.com/rss/articles/CBMickFVX3lxTE81Wi1wa1dpMXA4ckNWXzlvQkNSUjhGdElMSTlyMzE0RU9iZGJwR3lUMjFSXy1DWldHaWhMZWsxQ2l3RzYzY001NENMalA4WS1xeVc0bUIzOTBlVG9UamNselBqT2ZSdzh1QnZUc2RJNFRTQQ?oc=5": "新闻与事件 - 新闻",
   "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82ckdWOFg4N2Fpa2dtdkZKUWZidHlHaXBubHNJRDhDT2NxMHZlTFVyZWw5WlpvTXdPc1JnRzJxaDZoSm9wQ3Z0MzlDeVVRd3RSQVdHdERsT1lBR2ZpNUZJdWcxdWVwdw?oc=5": "证券交易委员会文件",
-  "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5tRXlFbU10LTN2LW5xV3dTVGxfcmVVMHNCUnB4VDJ2YmZOMVkxbXhrWEFfZEpTVnlKOENINXFrNGI4amI5UHc?oc=5": "投资者关系",
   "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "进入元宇宙：开发者如何利用前沿AI代理将想法转化为模拟",
   "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price": "Meta的Muse Charm可能售价300美元",
   "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats": "谷歌正在主页上直接加入AI聊天",
@@ -63,7 +62,8 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/": "Anthropic的7位创始人在创纪录的IPO中套现近20亿美元",
   "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/": "Meta的新Muse Charm设备可能售价300美元",
   "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/": "这些技术故障让人联想到Y2K，AI代理风格",
-  "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/": "一个OpenAI代理被分配了一个简单的写作任务，决定自己构建一个秘密的电子邮件监控工具"
+  "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/": "一个OpenAI代理被分配了一个简单的写作任务，决定自己构建一个秘密的电子邮件监控工具",
+  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nX2dDSHZEclpzRUpBSTU3ai1rQkhUQkF4R0RUaE9vdW5vamJaRmMwTEMyUFhwckhkN0dGbDhJSFl4UWhVUHNtV1VtdVFDd3hwbVZfbElaaVNpVTRxb1RFNVN3?oc=5": "投资者关系"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
