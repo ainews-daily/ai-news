@@ -3,7 +3,6 @@
 window.AI_TITLE_ZH = {
   "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/": "气味初创称其 AI 鼻子已接近人类水平",
   "https://openai.com/index/inside-the-codex-sandbox": "探索Codex沙箱内部",
-  "https://openai.com/index/managing-frontier-ai-risk": "管理前沿AI风险：从训练到部署",
   "https://openai.com/index/the-silent-consensus": "沉默的共识",
   "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/": "Gemini应用现已可在低内存Android设备上使用。",
   "https://deepmind.google/blog/genie-4-is-now-available/": "Genie 4现已发布",
@@ -27,13 +26,9 @@ window.AI_TITLE_ZH = {
   "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast": "如何通过OpenAI的性能工厂让ChatGPT保持快速响应",
   "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/": "在Gemini API中引入工具检索功能",
   "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/": "沃尔特·艾萨克森谈人工智能时代的好奇心与创造力",
-  "https://news.google.com/rss/articles/CBMic0FVX3lxTE94X1JGM0RaX01YZzZ1cW1TVnRURlE2NUw2ZTZlbWUyYkF3RDNyVDNhTjY4eEMydExlUmhMSVV4TnlYTXBSU1ZyUUFsNUZvN2NodjU0eEZ4RWw0am96LTFNZlhscktiazRKek0yT2ZxamFOODg?oc=5": "领导力与治理",
-  "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd2o0MlBsWFhmdC1MV1pfa2c4QzEyYkdiM0owWWRvM2RvYkk4LW5QTUtXanRIMnpZU2NDTnF3S2l2cURIU21makt1LUtzOHBtSHJDLUVtRGM3b2RRcmJMcFNyOVhpOC1jX24xQlZPYVdsYWxtenNnTGw0SVh5UjdidnEwM1FaV0h0c3E1bEVSYXlVdw?oc=5": "领导力与治理 - 联合创始人与高管",
   "https://news.google.com/rss/articles/CBMickFVX3lxTE81Wi1wa1dpMXA4ckNWXzlvQkNSUjhGdElMSTlyMzE0RU9iZGJwR3lUMjFSXy1DWldHaWhMZWsxQ2l3RzYzY001NENMalA4WS1xeVc0bUIzOTBlVG9UamNselBqT2ZSdzh1QnZUc2RJNFRTQQ?oc=5": "新闻与事件 - 新闻",
   "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82ckdWOFg4N2Fpa2dtdkZKUWZidHlHaXBubHNJRDhDT2NxMHZlTFVyZWw5WlpvTXdPc1JnRzJxaDZoSm9wQ3Z0MzlDeVVRd3RSQVdHdERsT1lBR2ZpNUZJdWcxdWVwdw?oc=5": "证券交易委员会文件",
   "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5tRXlFbU10LTN2LW5xV3dTVGxfcmVVMHNCUnB4VDJ2YmZOMVkxbXhrWEFfZEpTVnlKOENINXFrNGI4amI5UHc?oc=5": "投资者关系",
-  "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVEVoaEMxdkZJZVJOTzUzcGpTaDVYQVhBMVJ6QWg3bS1yTy1PTWgyRndiNi1JY3hQTlVXTHlXdU1mOW1nLTNRWEFBMVFkV1RIVVNyR2xza1hGUm4wVmYzN0xNNzlRODFRMVFORmZweGlqdEdWM3U4bTU1V202WGpoYkhPRENkVnFkUW00Zk1XTQ?oc=5": "领导力与治理 - 治理文件",
-  "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbmVOU2FzZTQ3VHliRm9WR3ktTGZfX0lWY2N2aWxzaml1UXhBYm9ZdVNwT3U1NXFoTjNTQWZ4QlFIUjFfSnhaeXNqZE9fOXNXZlhhZFhCWWQyVGVYVUNTUm0xcGF6R0Nmby1DdEl4S2FwOUt2TkIySXF4UnFFOE8zeVhPWkZYRW1wWTlvQg?oc=5": "新闻与事件 - 活动与演示",
   "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "进入元宇宙：开发者如何利用前沿AI代理将想法转化为模拟",
   "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price": "Meta的Muse Charm可能售价300美元",
   "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats": "谷歌正在主页上直接加入AI聊天",
@@ -61,8 +56,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/business/learn/pr-scans-demo": "查看PR扫描的实际应用",
   "https://openai.com/business/learn/codex-security-plugin-demo": "探索Codex安全插件",
   "https://openai.com/business/learn/daybreak-blue-onboarding-demo": "开始使用Daybreak Blue",
-  "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdkhhQkU3eDFIc1MyS3pzelh1cXp6MHVLLXBRY0F5M3g4Y1U1aFNIY0dMMllDWDIwdENyZkYtSDVONkRHeUFOU1R6ald5UF83MkdpNWctUmNMNE4xM1huNEt3N18wLThoZ3owa3RLbDRqR09KSHpkd0wwbThCejAtWi1qZGw1aUtSNHEzYXRWUFk?oc=5": "领导力与治理-委员会组成",
-  "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Nako1UmFIeGd6SEMtRFA5ZXBLSUFteVFmeFhTc2F1OGV0dVFNa2NxdFFLUlRnQms1S1VrQTFmbGtiRGE1ektFclJ0bFFEQmRhbDJjS3RPc0JRcnRnY01NWjdSb1h6VUcwSXJBbXdUcFV0VUVlTkp3MDBGMA?oc=5": "资源-投资者联系方式",
   "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnVlJlZ0dQbUtKVU5qMDBpZGMtMHgyTUZZRzkxXzIycnNiSUVZSmJaRmJNczlLY1U0bnRSaTRoNUZUbjR6LUhDNHBRc3VxbllrdXR2MExiMGhCLWM4Q2hHbDFIWU94S2py?oc=5": "BEL女性语音下载",
   "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing": "苹果正在招聘工程师来构建自己的AI代理",
   "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings": "Nvidia近期股票波动简史",
@@ -91,7 +84,6 @@ window.AI_DESC_ZH = {
   "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon": "Blender 的 AI 助手和 MCP 服务器：视觉聊天、场景工具、多代理工作流。支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode。Blender AI",
   "https://github.com/mankidev/antialgorithm": "Claude Code 技能：引导模型远离其在创意工作中的第一个、最平均的选择：名称、想法、海报、UI.",
   "https://github.com/YellowLaborerMarket/Gemini-Config-Checker-": "链式区域扫描器：找到可以进入 Google AI Studio 和 Gemini 的代理配置（已登录浏览器检查、反 DPI，支持 Windows/macOS/Linux/Android）",
-  "https://github.com/weightcashiercupola/Gemini-Config-Checker-": "链式区域扫描器：找到可以进入 Google AI Studio 和 Gemini 的代理配置（已登录浏览器检查、反 DPI，支持 Windows/macOS/Linux/Android）",
-  "https://github.com/WindGatorRise37/Gemini-Config-Checker-": "链式区域扫描器：找到可以进入 Google AI Studio 和 Gemini 的代理配置（已登录浏览器检查、反 DPI，支持 Windows/macOS/Linux/Android）",
-  "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-": "链式区域扫描器：找到可以进入 Google AI Studio 和 Gemini 的代理配置（已登录浏览器检查、反 DPI，支持 Windows/macOS/Linux/Android）"
+  "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
+  "https://github.com/Lemxy/WinRust": "用Rust重写Windows外壳：任务栏、文件管理器、NTFS搜索、任务管理器、磁盘清理。一个安装器exe."
 };
