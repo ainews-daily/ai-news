@@ -602,10 +602,7 @@
       if (seen() || !window.matchMedia("(max-width: 900px)").matches) return;
       if (!("ontouchstart" in window) && navigator.maxTouchPoints < 1) return;
       arrow.textContent = "↔";
-      text.textContent = "";
-      text.appendChild(document.createTextNode("左右滑动，切换"));
-      views.forEach(function (v) { text.appendChild(chip(v.name)); });
-      text.appendChild(document.createTextNode("。滑一次先看提示，同一方向再滑一次才换过去。"));
+      text.textContent = "左右滑动可以换栏目。滑一次先看提示，同一方向再滑一次才换过去。";
       ok.hidden = false;
       hint.classList.remove("live", "dir-next", "dir-prev");
       placeHint();
