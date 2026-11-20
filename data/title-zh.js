@@ -55,7 +55,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/business/learn/pr-scans-demo": "查看PR扫描的实际应用",
   "https://openai.com/business/learn/codex-security-plugin-demo": "探索Codex安全插件",
   "https://openai.com/business/learn/daybreak-blue-onboarding-demo": "开始使用Daybreak Blue",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnVlJlZ0dQbUtKVU5qMDBpZGMtMHgyTUZZRzkxXzIycnNiSUVZSmJaRmJNczlLY1U0bnRSaTRoNUZUbjR6LUhDNHBRc3VxbllrdXR2MExiMGhCLWM4Q2hHbDFIWU94S2py?oc=5": "BEL女性语音下载",
   "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing": "苹果正在招聘工程师来构建自己的AI代理",
   "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings": "Nvidia近期股票波动简史",
   "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/": "苹果可能正在开发自己的AI代理来运行Mac",
