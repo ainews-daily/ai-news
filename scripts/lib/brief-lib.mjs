@@ -162,6 +162,12 @@ export function clusterItems(items) {
   });
 }
 
+function thinTitle(title) {
+  const text = String(title || "").replace(/\s+/g, " ").trim();
+  if (text.length < 4) return true;
+  return /investor relations|投资者关系|官方博客|新闻中心|^首页$|^博客$|^关于我们$/i.test(text);
+}
+
 function inNewsPool(it) {
   if (it.kind === "repo" || it.kind === "news") return true;
   const topics = it.topics || [];
@@ -229,7 +235,7 @@ export function selectBrief(items, opts = {}) {
   const translate = opts.translate ?? (() => "");
 
   const fresh = items.filter((it) => {
-    if (it.source === "zhihu") return false;
+    if (it.source === "zhihu" || thinTitle(it.title)) return false;
     const seen = Date.parse(it.firstSeen || "");
     return Number.isFinite(seen) && now - seen <= windowMs && now - seen >= -3600e3 && !coveredHit(it, covered);
   });

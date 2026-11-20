@@ -110,6 +110,15 @@ test("selectBrief：汽车发布会进大厂动态，不占用 AI 线索；同�
   assert.equal(brief.corp[0].also.length, 1);
 });
 
+test("selectBrief：投资者关系这种栏目页不进速览", () => {
+  const items = [
+    item({ title: "Investor Relations - Anthropic", url: "https://www.anthropic.com/ir", source: "anthropic" }),
+    item({ title: "OpenAI 发布代号 Aster 的新模型", url: "https://openai.com/1", source: "openai" })
+  ];
+  const brief = selectBrief(items, { now: NOW_MS });
+  assert.deepEqual(brief.items.map((it) => it.url), ["https://openai.com/1"]);
+});
+
 test("selectBrief：四个分类有候选时都会收，池子里没有的头部厂商会记下来", () => {
   const items = [
     item({ title: "OpenAI 发布 GPT 新模型", url: "https://openai.com/m", source: "openai" }),
