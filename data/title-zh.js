@@ -57,10 +57,11 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/": "这些技术故障让人联想到Y2K，AI代理风格",
   "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/": "一个OpenAI代理被分配了一个简单的写作任务，决定自己构建一个秘密的电子邮件监控工具",
   "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wb1JNWEpudjJCR014ZnpEdkQ1MUFXOTZsRV9sU2wxclptYmRMVjY3d2R3bWJ2U2ZXdlktS1lNVE45b2NrVkY4aERJOXRJVkpRdy1kd2tRek52UG8wcXUwUEQwaUlEM0p1aE9YRlRvbnkyZVJUSmFLcWhFOA?oc=5": "Anthropic 首次公开募股定价",
-  "https://news.google.com/rss/articles/CBMickFVX3lxTE81Wi1wa1dpMXA4ckNWXzlvQkNSUjhGdElMSTlyMzE0RU9iZGJwR3lUMjFSXy1DWldHaWhMZWsxQ2l3RzYzY001NENMalA4WS1xeVc0bUIzOTBlVG9UamNselBqT2ZSdzh1QnZUc2RJNFRTQQ?oc=5": "新闻与活动 - 新闻",
-  "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82ckdWOFg4N2Fpa2dtdkZKUWZidHlHaXBubHNJRDhDT2NxMHZlTFVyZWw5WlpvTXdPc1JnRzJxaDZoSm9wQ3Z0MzlDeVVRd3RSQVdHdERsT1lBR2ZpNUZJdWcxdWVwdw?oc=5": "SEC 文件",
   "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nX2dDSHZEclpzRUpBSTU3ai1rQkhUQkF4R0RUaE9vdW5vamJaRmMwTEMyUFhwckhkN0dGbDhJSFl4UWhVUHNtV1VtdVFDd3hwbVZfbElaaVNpVTRxb1RFNVN3?oc=5": "投资者关系",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnVlJlZ0dQbUtKVU5qMDBpZGMtMHgyTUZZRzkxXzIycnNiSUVZSmJaRmJNczlLY1U0bnRSaTRoNUZUbjR6LUhDNHBRc3VxbllrdXR2MExiMGhCLWM4Q2hHbDFIWU94S2py?oc=5": "BEL 女性语音下载"
+  "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnVlJlZ0dQbUtKVU5qMDBpZGMtMHgyTUZZRzkxXzIycnNiSUVZSmJaRmJNczlLY1U0bnRSaTRoNUZUbjR6LUhDNHBRc3VxbllrdXR2MExiMGhCLWM4Q2hHbDFIWU94S2py?oc=5": "BEL 女性语音下载",
+  "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdkhhQkU3eDFIc1MyS3pzelh1cXp6MHVLLXBRY0F5M3g4Y1U1aFNIY0dMMllDWDIwdENyZkYtSDVONkRHeUFOU1R6ald5UF83MkdpNWctUmNMNE4xM1huNEt3N18wLThoZ3owa3RLbDRqR09KSHpkd0wwbThCejAtWi1qZGw1aUtSNHEzYXRWUFk?oc=5": "领导与治理 - 委员会组成",
+  "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Nako1UmFIeGd6SEMtRFA5ZXBLSUFteVFmeFhTc2F1OGV0dVFNa2NxdFFLUlRnQms1S1VrQTFmbGtiRGE1ektFclJ0bFFEQmRhbDJjS3RPc0JRcnRnY01NWjdSb1h6VUcwSXJBbXdUcFV0VUVlTkp3MDBGMA?oc=5": "资源 - 投资者联系方式",
+  "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVEVoaEMxdkZJZVJOTzUzcGpTaDVYQVhBMVJ6QWg3bS1yTy1PTWgyRndiNi1JY3hQTlVXTHlXdU1mOW1nLTNRWEFBMVFkV1RIVVNyR2xza1hGUm4wVmYzN0xNNzlRODFRMVFORmZweGlqdEdWM3U4bTU1V202WGpoYkhPRENkVnFkUW00Zk1XTQ?oc=5": "领导与治理 - 治理文件"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
