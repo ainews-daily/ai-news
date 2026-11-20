@@ -5,6 +5,7 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 import { parseFeed, compileTopics, matchTopics, isNoteworthy, selectFeedItems, safeLink, dedupe, markFresh } from "./lib/crawl-lib.mjs";
+import { updateSeen, applySeen } from "./lib/brief-lib.mjs";
 
 const ROOT = new URL("..", import.meta.url);
 const NEWSNOW = "https://newsnow.busiyi.world/api/s";
@@ -84,15 +85,38 @@ async function run(name, kind, id, fn) {
   }
 }
 
+async function readDataFile(path) {
+  try {
+    return await readFile(new URL(path, ROOT), "utf8");
+  } catch (e) {
+    if (e.code === "ENOENT") return "";
+    throw e;
+  }
+}
+
+function parseAssign(text) {
+  const start = text.indexOf("{");
+  const arr = text.indexOf("[");
+  const from = start >= 0 && (arr < 0 || start < arr) ? start : arr;
+  const end = Math.max(text.lastIndexOf("}"), text.lastIndexOf("]"));
+  if (from < 0 || end < from) return null;
+  return JSON.parse(text.slice(from, end + 1));
+}
+
 async function previousUrls() {
   try {
-    const text = await readFile(new URL("data/hot.js", ROOT), "utf8");
-    const start = text.indexOf("{");
-    const end = text.lastIndexOf("}");
-    if (start < 0 || end < start) return null;
-    const data = JSON.parse(text.slice(start, end + 1));
-    const urls = (data.items || []).map((it) => it.url).filter(Boolean);
+    const data = parseAssign(await readDataFile("data/hot.js"));
+    const urls = (data?.items || []).map((it) => it.url).filter(Boolean);
     return urls.length ? urls : null;
+  } catch {
+    return null;
+  }
+}
+
+async function previousSeen() {
+  try {
+    const data = parseAssign(await readDataFile("data/seen.js"));
+    return Array.isArray(data) && data.length ? data : null;
   } catch {
     return null;
   }
@@ -116,9 +140,16 @@ async function main() {
     process.exit(1);
   }
 
-  const items = markFresh(dedupe(results.flatMap((r) => r.items)), await previousUrls());
+  const nowIso = new Date(now).toISOString();
+  const prevSeen = await previousSeen();
+  let items = dedupe(results.flatMap((r) => r.items));
+  if (!prevSeen) items = markFresh(items, await previousUrls());
+  const seen = updateSeen(items, prevSeen, nowIso);
+  items = applySeen(items, seen, nowIso);
+  await writeFile(new URL("data/seen.js", ROOT), "// 由 scripts/crawl.mjs 自动生成，请勿手改\nwindow.AI_SEEN = " + JSON.stringify(seen) + ";\n");
+
   const snapshot = {
-    generatedAt: new Date(now).toISOString(),
+    generatedAt: nowIso,
     topics: topicDefs.map((t) => ({ id: t.id, name: t.name })),
     sources: results.map((r) => r.status),
     items
