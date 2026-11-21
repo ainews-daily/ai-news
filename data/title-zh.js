@@ -1,19 +1,9 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/": "在Gemini API中引入工具检索功能",
-  "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/": "沃尔特·艾萨克森谈人工智能时代的好奇心与创造力",
-  "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "进入元宇宙：开发者如何利用前沿AI代理将想法转化为模拟",
   "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price": "Meta的Muse Charm可能售价300美元",
   "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats": "谷歌正在主页上直接加入AI聊天",
-  "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use": "Gemini现已支持在Mac上使用你的电脑",
-  "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq": "Anthropic 登陆华尔街",
   "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/": "詹森·黄丑闻事件时间线",
-  "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/": "Anthropic 的 IPO 可能会为慈善事业带来 1560 亿美元",
-  "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/": "Google 为 Gemini 提供了使用 Mac 的能力",
-  "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/": "Meta 的 AI 代理 Muse 混淆了对话，可能会泄露私人数据，报告称",
-  "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/": "前阿里巴巴高管的 Everful 获得 4850 万美元融资，连接零售商与中国工厂",
-  "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/": "Anthropic 以 111 美元的价格登陆纳斯达克，高于 IPO 价格 33%",
   "https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/": "创伤后心理压力大的青少年起诉学校和警察，因为 Doritos 袋子触发了 AI 枪支警报",
   "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing": "苹果正在招聘工程师来构建自己的AI代理",
   "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings": "Nvidia近期股票波动简史",
@@ -21,7 +11,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/": "Anthropic的7位创始人在创纪录的IPO中套现近20亿美元",
   "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/": "Meta的新Muse Charm设备可能售价300美元",
   "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/": "这些技术故障让人联想到Y2K，AI代理风格",
-  "https://news.google.com/rss/articles/CBMiZkFVX3lxTE82ckdWOFg4N2Fpa2dtdkZKUWZidHlHaXBubHNJRDhDT2NxMHZlTFVyZWw5WlpvTXdPc1JnRzJxaDZoSm9wQ3Z0MzlDeVVRd3RSQVdHdERsT1lBR2ZpNUZJdWcxdWVwdw?oc=5": "SEC 文件",
   "https://openai.com/index/combatting-adversarial-distillation": "对抗对抗蒸馏",
   "https://openai.com/index/introducing-medchembench": "AI能否帮助科学家识别出有前途的药物候选物？",
   "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1pMHRici1uRTBSYVNzNnJ5UVFiS1gtRjdJNWJZNUpDV0JxdzJVWHVUVEh5dXhVcVBYWXpSQWs2N1dnclY1aXJFaDhzM21OamVwQ1E?oc=5": "Anthropic宣布首次公开募股完成，包括承销商额外购买股份的全部行权，以及同时进行的私募完成",
@@ -44,15 +33,17 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/": "OpenAI 使攻击者更难提取其最新 AI 模型的思考方式",
   "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/": "Signal 在 iOS 27 和 Android 上屏蔽截图，以防止 AI 代理读取私人聊天",
   "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/": "Google 的 Gemini 可以运行 Mac 应用，并在后台完成桌面任务，同时继续工作",
-  "https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others/": "Bloomberg 分析 1000 万个职位发布显示，中国 AI 暴露角色比其他角色减少 10 个百分点",
-  "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors/": "Apple 加入控制设备的 AI 代理竞争，同时为竞争对手设立新的障碍",
-  "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/": "Nvidia至少投资 5 亿美元用于 Inception 的扩散模型，以加强其开源 Nemotron 产品线",
-  "https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine/": "Google 的最新首页更新将其搜索引擎进一步推向 AI 答题引擎",
-  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nX2dDSHZEclpzRUpBSTU3ai1rQkhUQkF4R0RUaE9vdW5vamJaRmMwTEMyUFhwckhkN0dGbDhJSFl4UWhVUHNtV1VtdVFDd3hwbVZfbElaaVNpVTRxb1RFNVN3?oc=5": "投资者关系",
-  "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Nako1UmFIeGd6SEMtRFA5ZXBLSUFteVFmeFhTc2F1OGV0dVFNa2NxdFFLUlRnQms1S1VrQTFmbGtiRGE1ektFclJ0bFFEQmRhbDJjS3RPc0JRcnRnY01NWjdSb1h6VUcwSXJBbXdUcFV0VUVlTkp3MDBGMA?oc=5": "资源 - 投资者联系",
   "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/": "新型开源模型 Inkling 2 Mini 采用循环思维解决问题，使用更少的词汇仍可在笔记本电脑上运行",
   "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/": "美国科技股遭遇疫情以来最差周度表现，AI 疑虑不断累积",
-  "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/": "Bytedance 认为大多数 AI 训练阶段都是不必要的，并通过竞争性开源模型予以证明"
+  "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/": "Bytedance 认为大多数 AI 训练阶段都是不必要的，并通过竞争性开源模型予以证明",
+  "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure": "Anthropic 是否能负担得起将安全放在首位？",
+  "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai": "Chess.com 的下一步是为经典游戏打造一个新中心，从麻将到数独",
+  "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/": "以下是可以在您的短信中生活的顶级 AI 代理",
+  "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/": "将您的人脸 AI 版本卖给这个微剧创业公司是否是好莱坞的未来？",
+  "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/": "Nvidia 研究人员认为，巨大的 AI 上下文窗口已经走到了死胡同",
+  "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/": "硅谷对 AI 审判日的痴迷正在将科技行业的某些部分转向类似邪教的奉献",
+  "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/": "OpenAI 分享了针对 GPT-6.2 Astra 和 Sol 的新提示技巧，以解决简短答案和不必要问题的问题",
+  "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/": "在 Anthropic 声称发现 Claude 证明黎曼假设仅几个小时后，斯坦福大学发布了一个全人类竞争草案"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
@@ -68,12 +59,12 @@ window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
   "https://github.com/Lemxy/WinRust": "用Rust重写Windows外壳：任务栏、文件管理器、NTFS搜索、任务管理器、磁盘清理。一个安装器exe.",
   "https://github.com/weightcashiercupola/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）",
-  "https://github.com/WindGatorRise37/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，支持Windows/macOS/Linux/Android）",
   "https://github.com/MSNightmare/FastUnlock": "FastUnlock : Windows 辅助功能锁屏绕过 0day 漏洞",
-  "https://github.com/WyrmClimberManacle/Gemini-Config-Checker-": "链区域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（已登录浏览器检查，反DPI，适用于Windows/macOS/Linux/Android）",
   "https://github.com/nataphong-lab/Open-Source-Face-Recognition-Ultimate": "面部识别、面部活体检测、面部反欺骗、面部检测、面部特征点、面部比较、面部匹配、面部姿势、面部表情、面部姿态",
   "https://github.com/TurtleReside/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）",
   "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）",
-  "https://github.com/WerewolfEmuHub/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）",
-  "https://github.com/replit/datacat": "自托管可观测性：指标、日志、跟踪、仪表盘和警报。将数据存储在 PostgreSQL 或 ClickHouse 中。接受 OpenTelemetry 数据."
+  "https://github.com/replit/datacat": "自托管可观测性：指标、日志、跟踪、仪表盘和警报。将数据存储在 PostgreSQL 或 ClickHouse 中。接受 OpenTelemetry 数据.",
+  "https://github.com/ItsNotRexed/Leonida": "Leonida 是 Xbox 版 Grand Theft Auto 6 在 PC 上的本地重编译版本",
+  "https://github.com/R0Y00/Xbox2Windows": "针对 x64 Windows 的 Xbox Series X|S（Scarlett）静态重编译研究，包括着色器翻译、BC7 纹理、脚本状态重放和 D3D12/PE 检查",
+  "https://github.com/omonkeyz/xbox-emulator": "在 PC 上运行 Xbox Series X|S 构建的进展笔记（TomBox + rage9）"
 };
