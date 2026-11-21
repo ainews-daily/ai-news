@@ -1,7 +1,6 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast": "如何通过OpenAI的性能工厂让ChatGPT保持快速响应",
   "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/": "在Gemini API中引入工具检索功能",
   "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/": "沃尔特·艾萨克森谈人工智能时代的好奇心与创造力",
   "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/": "进入元宇宙：开发者如何利用前沿AI代理将想法转化为模拟",
@@ -49,9 +48,11 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/apple-joins-the-race-for-ai-agents-that-control-your-device-while-raising-new-barriers-for-competitors/": "Apple 加入控制设备的 AI 代理竞争，同时为竞争对手设立新的障碍",
   "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/": "Nvidia至少投资 5 亿美元用于 Inception 的扩散模型，以加强其开源 Nemotron 产品线",
   "https://the-decoder.com/googles-latest-homepage-update-pushes-its-search-engine-further-toward-an-ai-answer-engine/": "Google 的最新首页更新将其搜索引擎进一步推向 AI 答题引擎",
-  "https://the-decoder.com/hermes-agents-collective-wisdom-feature-turns-one-employees-ai-trick-into-the-whole-teams-skill/": "Hermes Agent 的集体智慧功能将一名员工的 AI 技巧转变为整个团队的技能",
-  "https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool/": "一名 OpenAI 代理被分配了一个简单的写作任务，决定自己建立一个秘密的电子邮件监控工具",
-  "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/": "AI 行业增长仍然强劲，但速度正在放缓"
+  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nX2dDSHZEclpzRUpBSTU3ai1rQkhUQkF4R0RUaE9vdW5vamJaRmMwTEMyUFhwckhkN0dGbDhJSFl4UWhVUHNtV1VtdVFDd3hwbVZfbElaaVNpVTRxb1RFNVN3?oc=5": "投资者关系",
+  "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Nako1UmFIeGd6SEMtRFA5ZXBLSUFteVFmeFhTc2F1OGV0dVFNa2NxdFFLUlRnQms1S1VrQTFmbGtiRGE1ektFclJ0bFFEQmRhbDJjS3RPc0JRcnRnY01NWjdSb1h6VUcwSXJBbXdUcFV0VUVlTkp3MDBGMA?oc=5": "资源 - 投资者联系",
+  "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/": "新型开源模型 Inkling 2 Mini 采用循环思维解决问题，使用更少的词汇仍可在笔记本电脑上运行",
+  "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/": "美国科技股遭遇疫情以来最差周度表现，AI 疑虑不断累积",
+  "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/": "Bytedance 认为大多数 AI 训练阶段都是不必要的，并通过竞争性开源模型予以证明"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
@@ -74,6 +75,5 @@ window.AI_DESC_ZH = {
   "https://github.com/TurtleReside/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）",
   "https://github.com/weldbladesmithwharf/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）",
   "https://github.com/WerewolfEmuHub/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）",
-  "https://github.com/WindowStaffGate11/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）",
-  "https://github.com/Violetnyudress/Gemini-Config-Checker-": "链域扫描器：找到可以进入Google AI Studio和Gemini的代理配置（支持已登录浏览器检查、反DPI，适用于Windows/macOS/Linux/Android）"
+  "https://github.com/replit/datacat": "自托管可观测性：指标、日志、跟踪、仪表盘和警报。将数据存储在 PostgreSQL 或 ClickHouse 中。接受 OpenTelemetry 数据."
 };
