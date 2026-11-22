@@ -1,24 +1,10 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1pMHRici1uRTBSYVNzNnJ5UVFiS1gtRjdJNWJZNUpDV0JxdzJVWHVUVEh5dXhVcVBYWXpSQWs2N1dnclY1aXJFaDhzM21OamVwQ1E?oc=5": "Anthropic宣布首次公开募股完成，包括承销商额外购买股份的全部行权，以及同时进行的私募完成",
-  "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax": "特朗普威胁将对将AI数据中心移出美国的公司征收“巨额税”",
-  "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem": "Anthropic数学家声称使用Claude解决了著名的千禧年大奖问题",
-  "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast": "一切崩溃的那一周",
-  "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app": "Signal阻止Gemini和Siri AI读取您的屏幕",
   "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/": "Daniel Ek支持AI研究人员的聚变能创业公司。这是他们正在构建的东西",
-  "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/": "AI声称解决了167年前的黎曼假设——人类也做到了",
-  "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/": "芯片可以在太空环境中生存——它们的融资呢？",
-  "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/": "Nvidia Jensen Huang丑闻的后果继续",
-  "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/": "六款可以让您的家庭办公室更智能的AI驱动小工具",
-  "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/": "人工智能中最容易被误解的图表刚刚获得了重大更新",
   "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/": "Google 推出新搜索首页，加入 AI 聊天记录，去掉搜索按钮",
   "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/": "Meta 重新考虑 2030 年碳中和目标，因 AI 数据中心排放量创纪录",
   "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/": "研究人员在 AI 供应链中植入 200 万只「金丝雀」。一场隐私灾难浮现",
-  "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/": "OpenAI 使攻击者更难提取其最新 AI 模型的思考方式",
-  "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/": "新型开源模型 Inkling 2 Mini 采用循环思维解决问题，使用更少的词汇仍可在笔记本电脑上运行",
-  "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/": "美国科技股遭遇疫情以来最差周度表现，AI 疑虑不断累积",
-  "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/": "Bytedance 认为大多数 AI 训练阶段都是不必要的，并通过竞争性开源模型予以证明",
   "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure": "Anthropic 是否能负担得起将安全放在首位？",
   "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai": "Chess.com 的下一步是为经典游戏打造一个新中心，从麻将到数独",
   "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/": "以下是可以在您的短信中生活的顶级 AI 代理",
@@ -31,10 +17,17 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/": "Signal 限制移动设备截屏以应对 AI 监控的‘生存威胁’",
   "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/": "两个 Nvidias 的故事",
   "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/": "Lean 和 Mathlib 社区正式确认 Levent Alpöge 的黎曼假设证明是正确的",
-  "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/": "GPT-6.2 Astra 和 Sol 更快地切入正题，但在透明度方面的得分低于 Claude"
+  "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/": "GPT-6.2 Astra 和 Sol 更快地切入正题，但在透明度方面的得分低于 Claude",
+  "https://openai.com/index/perplexity-and-intelligence": "混乱度与智能",
+  "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music": "Isaac 之绑作者从 Repentance Plus 中移除 AI 音乐",
+  "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera": "Vibe 编码革命即将登陆所有设备",
+  "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/": "为什么数据中心成为大科技反弹的中心",
+  "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/": "AI 编码代理在隔离测试中表现出色，但在模拟工作场景中完成的任务不到十分之一",
+  "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/": "Perplexity 的新 Monitor API 将网页搜索从一次性查询转变为不间断的监视器",
+  "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/": "AI 的进步速度超过了专家可靠测试新系统安全性的速度，METR 警告",
+  "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/": "安全研究人员展示了廉价 AI 推理提供商如何窃取密钥并监视用户"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
   "https://github.com/erkamyaman/rust-anything": "把整个应用一段段改写成 Rust，每一步都对照原程序录制行为做校验。支持 CLI、HTTP 服务和 TypeScript 库等。",
   "https://github.com/sybil-solutions/inference-optimisation-skill": "面向本地大模型推理加速的智能体技能：解码、投机解码、prefill、KV、启动与 TTFT，适配多种硬件与量化。",
   "https://github.com/chuanqisun/spaceship": "实时驾驭你的想法",
@@ -53,6 +46,7 @@ window.AI_DESC_ZH = {
   "https://github.com/CocoSgt/riemann-hypothesis-lean": "Levent Alpöge 的 Riemann 猜想 Lean 证明的镜像（与 Claude 合作）。所有功劳归 Levent Alpöge 。来源：alpo.ge",
   "https://github.com/EL4CTEO/fast-anything": "不要用 Rust 重写它，而是重写 5% 的慢速代码：分析 Python、Node 或 Ruby 应用的性能，使用编码代理移植热函数，并证明它们的行为是一样的",
   "https://github.com/leanprover-community/riemann-hypothesis": "Riemann 假设的 Lean 形式化的独立比较器设置（Alpöge，2026-11-20）",
-  "https://github.com/opokukopoku/gta-6-pc-release": "GTA 6 PC 版本发布：全方位访问，无麻烦",
-  "https://github.com/sybil-solutions/skill-distill": "提炼一个良好的 Claude Code / Codex 会话，使其成为一个开放权重模型可以遵循以重现任务的技能"
+  "https://github.com/sybil-solutions/skill-distill": "提炼一个良好的 Claude Code / Codex 会话，使其成为一个开放权重模型可以遵循以重现任务的技能",
+  "https://github.com/INK-Q/agy-fast": "非侵入式 MCP 加速器插件适用于 Google Antigravity (CLI/Desktop/IDE)：减少 LLM 转换（-34%），令牌配额（-31%）和上传流量（-40%），而不会影响",
+  "https://github.com/danielwh2/sprite-stacking": "代理技能：将四个像素艺术视图转换为可旋转的伪 3D 精灵。支持 Claude Code、Codex、Cursor、OpenCode、Gemini CLI 和 Pi"
 };
