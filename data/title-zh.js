@@ -1,7 +1,6 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://openai.com/index/combatting-adversarial-distillation": "对抗对抗蒸馏",
   "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1pMHRici1uRTBSYVNzNnJ5UVFiS1gtRjdJNWJZNUpDV0JxdzJVWHVUVEh5dXhVcVBYWXpSQWs2N1dnclY1aXJFaDhzM21OamVwQ1E?oc=5": "Anthropic宣布首次公开募股完成，包括承销商额外购买股份的全部行权，以及同时进行的私募完成",
   "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax": "特朗普威胁将对将AI数据中心移出美国的公司征收“巨额税”",
   "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem": "Anthropic数学家声称使用Claude解决了著名的千禧年大奖问题",
@@ -17,8 +16,6 @@ window.AI_TITLE_ZH = {
   "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/": "Meta 重新考虑 2030 年碳中和目标，因 AI 数据中心排放量创纪录",
   "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/": "研究人员在 AI 供应链中植入 200 万只「金丝雀」。一场隐私灾难浮现",
   "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/": "OpenAI 使攻击者更难提取其最新 AI 模型的思考方式",
-  "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/": "Signal 在 iOS 27 和 Android 上屏蔽截图，以防止 AI 代理读取私人聊天",
-  "https://the-decoder.com/googles-gemini-can-now-run-mac-apps-and-finish-desktop-chores-in-the-background-while-you-keep-working/": "Google 的 Gemini 可以运行 Mac 应用，并在后台完成桌面任务，同时继续工作",
   "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/": "新型开源模型 Inkling 2 Mini 采用循环思维解决问题，使用更少的词汇仍可在笔记本电脑上运行",
   "https://the-decoder.com/us-technology-stocks-suffer-their-worst-weekly-loss-since-the-pandemic-as-ai-doubts-pile-up/": "美国科技股遭遇疫情以来最差周度表现，AI 疑虑不断累积",
   "https://the-decoder.com/bytedance-argues-most-ai-training-phases-are-unnecessary-and-backs-it-up-with-a-competitive-open-model/": "Bytedance 认为大多数 AI 训练阶段都是不必要的，并通过竞争性开源模型予以证明",
@@ -32,7 +29,9 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/": "在 Anthropic 声称发现 Claude 证明黎曼假设仅几个小时后，斯坦福大学发布了一个全人类竞争草案",
   "https://www.theverge.com/tech/1039554/un-regulations-killer-robots": "联合国未能就监管‘杀人机器人’的规则达成一致",
   "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/": "Signal 限制移动设备截屏以应对 AI 监控的‘生存威胁’",
-  "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/": "两个 Nvidias 的故事"
+  "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/": "两个 Nvidias 的故事",
+  "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/": "Lean 和 Mathlib 社区正式确认 Levent Alpöge 的黎曼假设证明是正确的",
+  "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/": "GPT-6.2 Astra 和 Sol 更快地切入正题，但在透明度方面的得分低于 Claude"
 };
 window.AI_DESC_ZH = {
   "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor": "在 Windows 10/11 任务栏显示无线鼠标、耳机、键盘和手柄电量。轻量托盘应用，不需要厂商软件。",
@@ -52,9 +51,8 @@ window.AI_DESC_ZH = {
   "https://github.com/omonkeyz/xbox-emulator": "在 PC 上运行 Xbox Series X|S 构建的进展笔记（TomBox + rage9）",
   "https://github.com/Illson/RustText": "一款具有 Sublime Text 风格多光标编辑、正则表达式查找和替换、分屏和大型日志文件实时查看器的便携式 Windows 文本编辑器",
   "https://github.com/CocoSgt/riemann-hypothesis-lean": "Levent Alpöge 的 Riemann 猜想 Lean 证明的镜像（与 Claude 合作）。所有功劳归 Levent Alpöge 。来源：alpo.ge",
-  "https://github.com/kyle-millerx2098t3/daw-synth-fl-studio-2026-producer-portable-x64": "DAW & Synth Studio 套件 FL Studio 2026.1 Producer All-Plugins Edition 运行时：原生 64 位 Windows 10/11 可移植 x64 版本，支持热重载 JSON 配置",
-  "https://github.com/danx1905k8/war-thunder-realistic-tank-outline-thermal-portable-x64": "War Thunder 现实坦克轮廓和热成像瞄准镜模组：原生 64 位 Windows 10/11 可移植 x64 版本，支持热重载 JSON 配置，低开销运行时",
-  "https://github.com/benhhq1993s5/dune-awakening-external-player-ornithopter-radar-portable": "Dune Awakening 外部玩家/翼龙雷达和后坐力助手：原生 64 位 Windows 10/11 可移植 x64 版本，支持热重载 JSON 配置，低开销运行时",
-  "https://github.com/david-ivanovio2004x4/schedule-i-melonloader-mod-menu-cash-portable-x64": "Schedule I MelonLoader 模组菜单、现金和配方扩展：原生 64 位 Windows 10/11 可移植 x64 版本，支持热重载 JSON 配置，低开销运行时",
-  "https://github.com/eric-lopezdev1992b4/polar-client-skyblock-mining-2026": "预激活的 Polar Client —— Hypixel Skyblock 铜、宝石、粉末和佣金宏（2026 版）：原生 64 位 Windows 10/11 可移植 x64 版本，支持热重载 JSON 配置"
+  "https://github.com/EL4CTEO/fast-anything": "不要用 Rust 重写它，而是重写 5% 的慢速代码：分析 Python、Node 或 Ruby 应用的性能，使用编码代理移植热函数，并证明它们的行为是一样的",
+  "https://github.com/leanprover-community/riemann-hypothesis": "Riemann 假设的 Lean 形式化的独立比较器设置（Alpöge，2026-11-20）",
+  "https://github.com/opokukopoku/gta-6-pc-release": "GTA 6 PC 版本发布：全方位访问，无麻烦",
+  "https://github.com/sybil-solutions/skill-distill": "提炼一个良好的 Claude Code / Codex 会话，使其成为一个开放权重模型可以遵循以重现任务的技能"
 };
