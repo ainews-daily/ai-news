@@ -1,10 +1,6 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/": "Daniel Ek支持AI研究人员的聚变能创业公司。这是他们正在构建的东西",
-  "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/": "Google 推出新搜索首页，加入 AI 聊天记录，去掉搜索按钮",
-  "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/": "Meta 重新考虑 2030 年碳中和目标，因 AI 数据中心排放量创纪录",
-  "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/": "研究人员在 AI 供应链中植入 200 万只「金丝雀」。一场隐私灾难浮现",
   "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure": "Anthropic 是否能负担得起将安全放在首位？",
   "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai": "Chess.com 的下一步是为经典游戏打造一个新中心，从麻将到数独",
   "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/": "以下是可以在您的短信中生活的顶级 AI 代理",
@@ -25,14 +21,12 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/": "AI 编码代理在隔离测试中表现出色，但在模拟工作场景中完成的任务不到十分之一",
   "https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/": "Perplexity 的新 Monitor API 将网页搜索从一次性查询转变为不间断的监视器",
   "https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/": "AI 的进步速度超过了专家可靠测试新系统安全性的速度，METR 警告",
-  "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/": "安全研究人员展示了廉价 AI 推理提供商如何窃取密钥并监视用户"
+  "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/": "安全研究人员展示了廉价 AI 推理提供商如何窃取密钥并监视用户",
+  "https://www.theverge.com/tech/1039851/major-tech-outages": "我们尚未见到重大科技中断的最后一幕",
+  "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/": "Notable Capital、GIC 和 Baillie Gifford 如何在 Anthropic 上市前大举押注",
+  "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/": "OpenAI 首席科学家对如何限制 AI 开发有自己的看法"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/erkamyaman/rust-anything": "把整个应用一段段改写成 Rust，每一步都对照原程序录制行为做校验。支持 CLI、HTTP 服务和 TypeScript 库等。",
-  "https://github.com/sybil-solutions/inference-optimisation-skill": "面向本地大模型推理加速的智能体技能：解码、投机解码、prefill、KV、启动与 TTFT，适配多种硬件与量化。",
-  "https://github.com/chuanqisun/spaceship": "实时驾驭你的想法",
-  "https://github.com/boringmarketer/boring-marketing-skills": "32 个免费营销技能包：调研、定位、文案、落地页、SEO、AI 搜索、广告、邮件与内容，另含本地商家深包。MIT。",
-  "https://github.com/siliconjungle/shapeshift-labs-ink-studio": "用于像素艺术高斯斑点的建模、动画和模拟工具包",
   "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon": "Blender 的 AI 助手和 MCP 服务器：视觉聊天、场景工具、多代理工作流。支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode。Blender AI",
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
   "https://github.com/Lemxy/WinRust": "用Rust重写Windows外壳：任务栏、文件管理器、NTFS搜索、任务管理器、磁盘清理。一个安装器exe.",
@@ -42,11 +36,16 @@ window.AI_DESC_ZH = {
   "https://github.com/ItsNotRexed/Leonida": "Leonida 是 Xbox 版 Grand Theft Auto 6 在 PC 上的本地重编译版本",
   "https://github.com/R0Y00/Xbox2Windows": "针对 x64 Windows 的 Xbox Series X|S（Scarlett）静态重编译研究，包括着色器翻译、BC7 纹理、脚本状态重放和 D3D12/PE 检查",
   "https://github.com/omonkeyz/xbox-emulator": "在 PC 上运行 Xbox Series X|S 构建的进展笔记（TomBox + rage9）",
-  "https://github.com/Illson/RustText": "一款具有 Sublime Text 风格多光标编辑、正则表达式查找和替换、分屏和大型日志文件实时查看器的便携式 Windows 文本编辑器",
   "https://github.com/CocoSgt/riemann-hypothesis-lean": "Levent Alpöge 的 Riemann 猜想 Lean 证明的镜像（与 Claude 合作）。所有功劳归 Levent Alpöge 。来源：alpo.ge",
   "https://github.com/EL4CTEO/fast-anything": "不要用 Rust 重写它，而是重写 5% 的慢速代码：分析 Python、Node 或 Ruby 应用的性能，使用编码代理移植热函数，并证明它们的行为是一样的",
   "https://github.com/leanprover-community/riemann-hypothesis": "Riemann 假设的 Lean 形式化的独立比较器设置（Alpöge，2026-11-20）",
   "https://github.com/sybil-solutions/skill-distill": "提炼一个良好的 Claude Code / Codex 会话，使其成为一个开放权重模型可以遵循以重现任务的技能",
   "https://github.com/INK-Q/agy-fast": "非侵入式 MCP 加速器插件适用于 Google Antigravity (CLI/Desktop/IDE)：减少 LLM 转换（-34%），令牌配额（-31%）和上传流量（-40%），而不会影响",
-  "https://github.com/danielwh2/sprite-stacking": "代理技能：将四个像素艺术视图转换为可旋转的伪 3D 精灵。支持 Claude Code、Codex、Cursor、OpenCode、Gemini CLI 和 Pi"
+  "https://github.com/danielwh2/sprite-stacking": "代理技能：将四个像素艺术视图转换为可旋转的伪 3D 精灵。支持 Claude Code、Codex、Cursor、OpenCode、Gemini CLI 和 Pi",
+  "https://github.com/os6/nospeaker": "使用其触觉马达使您的 MacBook 的触摸板说话",
+  "https://github.com/ItsNotRexed/Hookshot": "Hookshot 是 Switch 2 时代的塞尔达传说：时之笛重制版的原生 PC 重编版",
+  "https://github.com/ThreatDefence/agentic-attack-detections": "ARTEX、Cairn、PentAGI、HexStrike、CyberStrikeAI、Strix、Hermes Agent 和 Agent Zero 等 AI 代理攻击框架的检测规则和 IOCs：KQL 追踪 Microsoft",
+  "https://github.com/w01fb0ss/PiBot": "开源、局部优先的 AI 代理团队用于您的桌面：多代理群聊、计算机使用、浏览器、MCP、例行程序和批准。macOS、Windows、Linux + An",
+  "https://github.com/sshkeda/minecraft-server-on-orange-cloud": "完全在 Cloudflare 上运行 Minecraft Java 服务器。当无人玩游戏时休眠",
+  "https://github.com/deep-patch-true/synchro-arts-revoice-pro-5-win": "Synchro Arts Revoice Pro 5 - 适用于 Windows 10 的自动时间对齐、音调转换和双轨生成的声乐编辑和音调修正软件"
 };
