@@ -8,7 +8,6 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/": "Nvidia 研究人员认为，巨大的 AI 上下文窗口已经走到了死胡同",
   "https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/": "硅谷对 AI 审判日的痴迷正在将科技行业的某些部分转向类似邪教的奉献",
   "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/": "OpenAI 分享了针对 GPT-6.2 Astra 和 Sol 的新提示技巧，以解决简短答案和不必要问题的问题",
-  "https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/": "在 Anthropic 声称发现 Claude 证明黎曼假设仅几个小时后，斯坦福大学发布了一个全人类竞争草案",
   "https://www.theverge.com/tech/1039554/un-regulations-killer-robots": "联合国未能就监管‘杀人机器人’的规则达成一致",
   "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/": "Signal 限制移动设备截屏以应对 AI 监控的‘生存威胁’",
   "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/": "两个 Nvidias 的故事",
@@ -24,7 +23,10 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/": "安全研究人员展示了廉价 AI 推理提供商如何窃取密钥并监视用户",
   "https://www.theverge.com/tech/1039851/major-tech-outages": "我们尚未见到重大科技中断的最后一幕",
   "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/": "Notable Capital、GIC 和 Baillie Gifford 如何在 Anthropic 上市前大举押注",
-  "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/": "OpenAI 首席科学家对如何限制 AI 开发有自己的看法"
+  "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/": "OpenAI 首席科学家对如何限制 AI 开发有自己的看法",
+  "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday": "Meta Muse 现在可以帮助您在沃尔玛进行黑色星期五购物",
+  "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/": "评测：华硕 ProArt P16 展现了由本地 AI 驱动的未来的一瞥",
+  "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/": "GPT-6.2 Astra 解决了其他 AI 无法解决的数学定理，并创造了自己的证明策略"
 };
 window.AI_DESC_ZH = {
   "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon": "Blender 的 AI 助手和 MCP 服务器：视觉聊天、场景工具、多代理工作流。支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode。Blender AI",
@@ -46,6 +48,6 @@ window.AI_DESC_ZH = {
   "https://github.com/ItsNotRexed/Hookshot": "Hookshot 是 Switch 2 时代的塞尔达传说：时之笛重制版的原生 PC 重编版",
   "https://github.com/ThreatDefence/agentic-attack-detections": "ARTEX、Cairn、PentAGI、HexStrike、CyberStrikeAI、Strix、Hermes Agent 和 Agent Zero 等 AI 代理攻击框架的检测规则和 IOCs：KQL 追踪 Microsoft",
   "https://github.com/w01fb0ss/PiBot": "开源、局部优先的 AI 代理团队用于您的桌面：多代理群聊、计算机使用、浏览器、MCP、例行程序和批准。macOS、Windows、Linux + An",
-  "https://github.com/sshkeda/minecraft-server-on-orange-cloud": "完全在 Cloudflare 上运行 Minecraft Java 服务器。当无人玩游戏时休眠",
-  "https://github.com/deep-patch-true/synchro-arts-revoice-pro-5-win": "Synchro Arts Revoice Pro 5 - 适用于 Windows 10 的自动时间对齐、音调转换和双轨生成的声乐编辑和音调修正软件"
+  "https://github.com/AFK-surf/xnulinux": "XNU 作为 Linux 中的可加载内核模块（arm64 Linux 的 macOS 个性）",
+  "https://github.com/JimLiu/open-artifact": "开放、代理和模型无关的工件，都保存为本地的纯文件 —— 编辑、注释和导出幻灯片、UI 设计、设计系统、白板、表格"
 };
