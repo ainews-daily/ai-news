@@ -131,3 +131,26 @@ test("selectBrief：四个分类有候选时都会收，池子里没有的头部
   assert.ok(brief.majorsMissing.includes("Google"));
   assert.equal(brief.highlights.length, 3);
 });
+
+test("selectBrief：同一事件的不同标题只留一条，另一件事还留着", () => {
+  const items = [
+    item({ title: "黄仁勋王者归来！董事会一致同意复职，英伟达股价暴涨30%", url: "https://cls.cn/1", source: "cls-hot", kind: "hot", region: "cn", topics: ["chip", "money"], rank: 1 }),
+    item({ title: "美股收盘：英伟达暴涨超31% 单日市值大增逾9500亿美元创全球纪录", url: "https://cls.cn/2", source: "cls-hot", kind: "hot", region: "cn", topics: ["chip", "money"], rank: 2 }),
+    item({ title: "特朗普力促黄仁勋复职、万斯介入给出保证", url: "https://wallstreetcn.com/1", source: "wallstreetcn-hot", kind: "hot", region: "cn", topics: ["bigtech"], rank: 1 }),
+    item({ title: "【早报】黄仁勋复职，英伟达暴涨超31%；深夜，美股全线狂欢", url: "https://cls.cn/3", source: "cls-hot", kind: "hot", region: "cn", topics: ["bigtech"], rank: 4 }),
+    item({ title: "英伟达发布新一代训练芯片", url: "https://blogs.nvidia.com/chip", source: "nvidia" }),
+    item({ title: "OpenAI 发布代号 Aster 的新模型", url: "https://openai.com/1", source: "openai" })
+  ];
+  const brief = selectBrief(items, { now: NOW_MS });
+  const nvidia = [...brief.items, ...brief.corp].filter((it) => it.vendor === "英伟达");
+  assert.equal(nvidia.filter((it) => /复职|暴涨|归来/.test(it.title)).length, 1);
+  assert.ok(nvidia.some((it) => it.title.includes("训练芯片")));
+});
+
+test("clusterItems：复职和暴涨没有出现在同一条标题里时，分成两件事", () => {
+  const clusters = clusterItems([
+    item({ title: "英伟达股价暴涨超31%", url: "https://a.com/s", kind: "hot", region: "cn", topics: ["money"] }),
+    item({ title: "黄仁勋复职", url: "https://b.com/r", kind: "hot", region: "cn", topics: ["bigtech"] })
+  ]);
+  assert.equal(clusters.length, 2);
+});

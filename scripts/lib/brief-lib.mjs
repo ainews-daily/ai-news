@@ -115,7 +115,48 @@ function shareResidual(a, b) {
   return false;
 }
 
+// 同一家公司的标题如果带着同一类事件词，视为同一件事。一条标题同时写了两类（复职且暴涨）时，只写其中一类的稿子也并进来。
+const EVENT_GROUPS = [
+  ["return", /复职|回归|归来|复出|请回|重返|重掌/],
+  ["surge", /暴涨|大涨/],
+  ["plunge", /暴跌|大跌/]
+];
+
+function eventTags(title) {
+  return EVENT_GROUPS.filter(([, re]) => re.test(title || "")).map(([id]) => id);
+}
+
+function storyKeysFor(items) {
+  const tagged = [];
+  for (const it of items) {
+    const vendor = detectVendor(it.title);
+    const tags = eventTags(it.title);
+    if (vendor && tags.length && it.url) tagged.push({ it, vendor, tags });
+  }
+  const parent = tagged.map((_, i) => i);
+  function find(i) {
+    while (parent[i] !== i) {
+      parent[i] = parent[parent[i]];
+      i = parent[i];
+    }
+    return i;
+  }
+  for (let i = 0; i < tagged.length; i++) {
+    for (let j = i + 1; j < tagged.length; j++) {
+      if (tagged[i].vendor !== tagged[j].vendor) continue;
+      if (!tagged[i].tags.some((tag) => tagged[j].tags.includes(tag))) continue;
+      const a = find(i);
+      const b = find(j);
+      if (a !== b) parent[b] = a;
+    }
+  }
+  const keys = new Map();
+  for (let i = 0; i < tagged.length; i++) keys.set(tagged[i].it.url, tagged[i].vendor + "#" + find(i));
+  return keys;
+}
+
 function sameStory(a, b) {
+  if (a.story && a.story === b.story) return true;
   if (a.vendor && b.vendor && a.vendor !== b.vendor) return false;
   if (shareResidual(a, b)) return true;
   const jac = jaccard(a.grams, b.grams);
@@ -132,14 +173,17 @@ function pickRep(members) {
   })[0];
 }
 
-export function clusterItems(items) {
+export function clusterItems(items, storyKeys) {
+  const keys = storyKeys || storyKeysFor(items);
   const seeds = items.slice().sort((a, b) => itemScore(b) - itemScore(a));
   const clusters = [];
   for (const it of seeds) {
-    const entry = { ...it, vendor: detectVendor(it.title), grams: bigrams(it.title) };
+    const entry = { ...it, vendor: detectVendor(it.title), grams: bigrams(it.title), story: keys.get(it.url) || "" };
     const found = clusters.find((c) => sameStory(c, entry));
-    if (found) found.members.push(it);
-    else clusters.push({ vendor: entry.vendor, grams: entry.grams, title: it.title, members: [it] });
+    if (found) {
+      found.members.push(it);
+      if (!found.story && entry.story) found.story = entry.story;
+    } else clusters.push({ vendor: entry.vendor, grams: entry.grams, title: it.title, story: entry.story, members: [it] });
   }
   return clusters.map((c) => {
     const rep = pickRep(c.members);
@@ -157,6 +201,7 @@ export function clusterItems(items) {
       vendor: detectVendor(rep.title),
       firstSeen: rep.firstSeen,
       also,
+      story: c.story || "",
       score: itemScore(rep) + Math.min(3, c.members.length - 1) * 12
     };
   });
@@ -239,8 +284,9 @@ export function selectBrief(items, opts = {}) {
     const seen = Date.parse(it.firstSeen || "");
     return Number.isFinite(seen) && now - seen <= windowMs && now - seen >= -3600e3 && !coveredHit(it, covered);
   });
-  const newsClusters = clusterItems(fresh.filter(inNewsPool)).sort((a, b) => b.score - a.score);
-  const corpClusters = clusterItems(fresh.filter(inCorpPool)).sort((a, b) => b.score - a.score);
+  const storyKeys = storyKeysFor(fresh);
+  const newsClusters = clusterItems(fresh.filter(inNewsPool), storyKeys).sort((a, b) => b.score - a.score);
+  const corpClusters = clusterItems(fresh.filter(inCorpPool), storyKeys).sort((a, b) => b.score - a.score);
   const clusters = newsClusters;
   const picked = [];
 
@@ -277,6 +323,7 @@ export function selectBrief(items, opts = {}) {
   for (const c of corpClusters) {
     if (corpPicked.length >= 4) break;
     if (c.vendor && corpPicked.filter((p) => p.vendor === c.vendor).length >= 2) continue;
+    if (c.story && (picked.some((p) => p.story === c.story) || corpPicked.some((p) => p.story === c.story))) continue;
     corpPicked.push(c);
   }
   const toItem = (p, extra) => ({
