@@ -48,7 +48,10 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/metas-alexandr-wang-warns-the-ai-industry-isnt-ready-for-whats-coming-after-riemann-breakthrough/": "Meta的亚历山大·王警告AI行业还没有准备好应对里曼突破后的挑战",
   "https://the-decoder.com/us-spies-tracked-nvidia-scandal-figures-ties-to-chinese-intelligence-for-over-a-year/": "美国间谍追踪Nvidia丑闻人物与中国情报机构的联系超过一年",
   "https://simonwillison.net/2026/Nov/23/glm-54/": "GLM-5.4：通用编码的第一步，实现我们的第一个环形变换器",
-  "https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/": "Import AI 482：华为内核性能基准测试；空中无人机检测；国家实验室的AI科学基准测试"
+  "https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/": "Import AI 482：华为内核性能基准测试；空中无人机检测；国家实验室的AI科学基准测试",
+  "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QQWdUV21Fa2dHR25yU2RLd3Exd0ZQc3RERzMyZFBtWWhxS0NQZjlWR21rWXZqa3FYbmRlZEhPRGhXb19XR3UtTWd3YTdDR3JwM05VTzZoaW82UDdGQWNF?oc=5": "与AI合作",
+  "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd2o0MlBsWFhmdC1MV1pfa2c4QzEyYkdiM0owWWRvM2RvYkk4LW5QTUtXanRIMnpZU2NDTnF3S2l2cURIU21makt1LUtzOHBtSHJDLUVtRGM3b2RRcmJMcFNyOVhpOC1jX24xQlZPYVdsYWxtenNnTGw0SVh5UjdidnEwM1FaV0h0c3E1bEVSYXlVdw?oc=5": "联合创始人与高管",
+  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51RURTZW9Mc2ZrRWI5bDFKYnpkeThPVFFKQ3hVamlUWUZ2akJBOVNEaTA0WjFPR2pRUEtNdEllSFBJRjhNXzRVbUxYNndSQW9SVnNpN0xMNXVIRkVfNGRkZGs2OC1TRlI1?oc=5": "回归神经元基础以实现解释性（第一部分）：回答三个反对意见"
 };
 window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
@@ -73,6 +76,5 @@ window.AI_DESC_ZH = {
   "https://github.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering": "一个针对 GTA VI (GTA 6) 的开源逆向工程工具的精选列表，包括 RAGE 9 / RPF9 档案浏览器、TTPF 纹理和 ADAT/AWC 音频解码器、格式文档等",
   "https://github.com/erkamyaman/safe-anything": "在别人之前找到漏洞。一个快速的、100% Rust 的漏洞扫描器：XSS、SQL 注入、泄露的秘密、依赖项 CVE 和 AI 代理设置",
   "https://github.com/xikhar/papercraft": "一个用于构建游戏、交互式场景、网页和动画的特定技能，采用手工制作的弹出纸工艺风格",
-  "https://github.com/hoangsvit/google-ai": "一个用于 Windows 和 macOS 的终端工具包，用于通过 Android、ADB、Frida 和 Google Play 检查 Google AI Pro 优惠。共享的 Textual 仪表板使用 PowerS",
-  "https://github.com/sshkeda/minecraft-server-on-orange-cloud": "在 Cloudflare 上完全运行 Minecraft Java 服务器。当无人玩游戏时休眠"
+  "https://github.com/ubiquitarianism/leonida": "Leonida的续作：Xbox版GTA VI移植到PC"
 };
