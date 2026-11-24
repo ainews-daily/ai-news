@@ -1,11 +1,9 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/": "AI 编码代理在隔离测试中表现出色，但在模拟工作场景中完成的任务不到十分之一",
   "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/": "Notable Capital、GIC 和 Baillie Gifford 如何在 Anthropic 上市前大举押注",
   "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/": "OpenAI 首席科学家对如何限制 AI 开发有自己的看法",
   "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/": "评测：华硕 ProArt P16 展现了由本地 AI 驱动的未来的一瞥",
-  "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/": "GPT-6.2 Astra 解决了其他 AI 无法解决的数学定理，并创造了自己的证明策略",
   "https://openai.com/index/introducing-shirudo": "OpenAI 和 Cisco 推出 Shirudo",
   "https://openai.com/business/learn/connected-intelligence-for-in-house-legal": "内部法律智能连接",
   "https://openai.com/business/customer-stories/richpanel-ai-customer-support": "Richpanel 帮助公司在 30 天内自动化 50% 的支持",
@@ -50,8 +48,10 @@ window.AI_TITLE_ZH = {
   "https://simonwillison.net/2026/Nov/23/glm-54/": "GLM-5.4：通用编码的第一步，实现我们的第一个环形变换器",
   "https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/": "Import AI 482：华为内核性能基准测试；空中无人机检测；国家实验室的AI科学基准测试",
   "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QQWdUV21Fa2dHR25yU2RLd3Exd0ZQc3RERzMyZFBtWWhxS0NQZjlWR21rWXZqa3FYbmRlZEhPRGhXb19XR3UtTWd3YTdDR3JwM05VTzZoaW82UDdGQWNF?oc=5": "与AI合作",
-  "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd2o0MlBsWFhmdC1MV1pfa2c4QzEyYkdiM0owWWRvM2RvYkk4LW5QTUtXanRIMnpZU2NDTnF3S2l2cURIU21makt1LUtzOHBtSHJDLUVtRGM3b2RRcmJMcFNyOVhpOC1jX24xQlZPYVdsYWxtenNnTGw0SVh5UjdidnEwM1FaV0h0c3E1bEVSYXlVdw?oc=5": "联合创始人与高管",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51RURTZW9Mc2ZrRWI5bDFKYnpkeThPVFFKQ3hVamlUWUZ2akJBOVNEaTA0WjFPR2pRUEtNdEllSFBJRjhNXzRVbUxYNndSQW9SVnNpN0xMNXVIRkVfNGRkZGs2OC1TRlI1?oc=5": "回归神经元基础以实现解释性（第一部分）：回答三个反对意见"
+  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51RURTZW9Mc2ZrRWI5bDFKYnpkeThPVFFKQ3hVamlUWUZ2akJBOVNEaTA0WjFPR2pRUEtNdEllSFBJRjhNXzRVbUxYNndSQW9SVnNpN0xMNXVIRkVfNGRkZGs2OC1TRlI1?oc=5": "回归神经元基础以实现解释性（第一部分）：回答三个反对意见",
+  "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/": "亚马逊称黑客的AI代理发现并利用0day漏洞，几乎无需人工干预",
+  "https://the-decoder.com/german-researchers-call-for-computer-science-to-reinvent-itself-as-computer-and-ai-science/": "德国研究人员呼吁计算机科学重塑为\"计算机和AI科学\"",
+  "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/": "Anthropic的Claude Ship允许AI代理自行审查、修复和批准pull请求"
 };
 window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
@@ -76,5 +76,6 @@ window.AI_DESC_ZH = {
   "https://github.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering": "一个针对 GTA VI (GTA 6) 的开源逆向工程工具的精选列表，包括 RAGE 9 / RPF9 档案浏览器、TTPF 纹理和 ADAT/AWC 音频解码器、格式文档等",
   "https://github.com/erkamyaman/safe-anything": "在别人之前找到漏洞。一个快速的、100% Rust 的漏洞扫描器：XSS、SQL 注入、泄露的秘密、依赖项 CVE 和 AI 代理设置",
   "https://github.com/xikhar/papercraft": "一个用于构建游戏、交互式场景、网页和动画的特定技能，采用手工制作的弹出纸工艺风格",
-  "https://github.com/ubiquitarianism/leonida": "Leonida的续作：Xbox版GTA VI移植到PC"
+  "https://github.com/ubiquitarianism/leonida": "Leonida的续作：Xbox版GTA VI移植到PC",
+  "https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop": "使用Rust编写的Windows原生YouTube客户端，内置SponsorBlock、DeArrow和Return YouTube Dislike"
 };
