@@ -8,7 +8,6 @@ window.AI_TITLE_ZH = {
   "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/": "更个性化的 Google Search，专属于您",
   "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/": "使用代理和形式验证寻找更快的量子算法",
   "https://huggingface.co/blog/allenai/robotrack": "RoboTrack：用于真实世界机器人操作的点跟踪",
-  "https://huggingface.co/blog/agentic-evals": "如何构建和维护代理评估",
   "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated": "特朗普为 Jensen Huang 工程了一次风险回归",
   "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang": "Nvidia CEO Jensen Huang 回来了，接下来会发生什么？",
   "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang": "欢迎来到精英豁免，Jensen Huang",
@@ -16,7 +15,6 @@ window.AI_TITLE_ZH = {
   "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests": "Claude AI 现在可以自行审查拉取请求并发布修复",
   "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/": "Anthropic推出Claude Ship，允许AI代理审查、修复和批准代码更改",
   "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/": "Supertake获得2000万美元资金，让AI代理将您的市场预测转化为股票投资组合",
-  "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/": "埃隆·马斯克等人在詹森·黄恢复任职于Nvidia期间因丑闻而感到高兴",
   "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/": "美国各州起诉SpaceX，要求停止Grok生成儿童性感图片和报复色情内容",
   "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/": "詹森·黄恢复任Nvidia CEO和董事长",
   "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/": "一位传奇哲学家对Anthropic的意识论点持怀疑态度",
@@ -68,7 +66,8 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropic-researcher-stands-by-his-ai-assisted-riemann-proof-but-owns-up-to-stupid-things-in-the-rollout/": "Anthropic 研究人员坚持其 AI辅助的黎曼证明，但承认发布过程中存在「愚蠢的事情」",
   "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/": "数十名内部人士称 OpenAI 和 Anthropic 的未发布模型已经超出了安全措施",
   "https://simonwillison.net/2026/Nov/24/llm-inflection-points/": "十二个月内的三个 LLM 转折点",
-  "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/": "GPT 6.2 Astra 解决了一个历史之谜"
+  "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/": "GPT 6.2 Astra 解决了一个历史之谜",
+  "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/": "耶鲁的桑恩菲尔德：Nvidia 对美国工业实力来说是一个‘阻碍’——而不是冠军"
 };
 window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
@@ -83,17 +82,17 @@ window.AI_DESC_ZH = {
   "https://github.com/danielwh2/sprite-stacking": "代理技能：将四个像素艺术视图转换为可旋转的伪 3D 精灵。支持 Claude Code、Codex、Cursor、OpenCode、Gemini CLI 和 Pi",
   "https://github.com/os6/nospeaker": "使用其触觉马达使您的 MacBook 的触摸板说话",
   "https://github.com/ItsNotRexed/Hookshot": "Hookshot 是 Switch 2 时代的塞尔达传说：时之笛重制版的原生 PC 重编版",
-  "https://github.com/ThreatDefence/agentic-attack-detections": "ARTEX、Cairn、PentAGI、HexStrike、CyberStrikeAI、Strix、Hermes Agent 和 Agent Zero 等 AI 代理攻击框架的检测规则和 IOCs：KQL 追踪 Microsoft",
   "https://github.com/AFK-surf/xnulinux": "XNU 作为 Linux 中的可加载内核模块（arm64 Linux 的 macOS 个性）",
   "https://github.com/Marvisak/VIctory": "尝试在PC上运行GTA VI",
   "https://github.com/4lwayz/portwatch-vi": "GTA VI 能在 PC 上运行吗？一个每日更新的社区重新编译和模拟努力的实时跟踪器",
   "https://github.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering": "一个针对 GTA VI (GTA 6) 的开源逆向工程工具的精选列表，包括 RAGE 9 / RPF9 档案浏览器、TTPF 纹理和 ADAT/AWC 音频解码器、格式文档等",
-  "https://github.com/erkamyaman/safe-anything": "在别人之前找到漏洞。一个快速的、100% Rust 的漏洞扫描器：XSS、SQL 注入、泄露的秘密、依赖项 CVE 和 AI 代理设置",
-  "https://github.com/xikhar/papercraft": "一个用于构建游戏、交互式场景、网页和动画的特定技能，采用手工制作的弹出纸工艺风格",
   "https://github.com/ubiquitarianism/leonida": "Leonida的续作：Xbox版GTA VI移植到PC",
   "https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop": "使用Rust编写的Windows原生YouTube客户端，内置SponsorBlock、DeArrow和Return YouTube Dislike",
   "https://github.com/xcl-dev/xcl": "Xbox Series 兼容层适用于 Windows - 原生运行控制台游戏代码，重新实现控制台系统库，并将 RDNA2 着色器重新编译为 DXIL",
   "https://github.com/fxceless/victory-fork": "VIctory 的工作进展分支：在 Windows PC 上渲染和运行 Xbox Series 标题。无游戏文件。",
   "https://github.com/deterministic-machines/deslop-please": "让你的代码恢复理智",
-  "https://github.com/sous-labs/songe": "为您的本地模型提供的训练引擎，利用您的空闲计算资源"
+  "https://github.com/sous-labs/songe": "为您的本地模型提供的训练引擎，利用您的空闲计算资源",
+  "https://github.com/Indigo-0167/universal-game-mod-manager": "免费的 Windows 游戏模组管理器，用于发现、安装、更新和管理通用 Unity 和 Unreal Engine 模组.",
+  "https://github.com/zero5122/offline-file-converter-windows": "免费的离线文件转换器，用于在 Windows 上私密转换 PDF、文档、图像、音频和视频.",
+  "https://github.com/rowanbyte3329/stardew-valley-mod-manager": "免费的开源星露谷物语模组管理器，支持 SMAPI，模组更新和自定义模组配置，适用于 Windows."
 };
