@@ -3,8 +3,6 @@
 window.AI_TITLE_ZH = {
   "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/": "评测：华硕 ProArt P16 展现了由本地 AI 驱动的未来的一瞥",
   "https://openai.com/index/introducing-shirudo": "OpenAI 和 Cisco 推出 Shirudo",
-  "https://openai.com/business/learn/connected-intelligence-for-in-house-legal": "内部法律智能连接",
-  "https://openai.com/business/customer-stories/richpanel-ai-customer-support": "Richpanel 帮助公司在 30 天内自动化 50% 的支持",
   "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/": "更个性化的 Google Search，专属于您",
   "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/": "使用代理和形式验证寻找更快的量子算法",
   "https://huggingface.co/blog/allenai/robotrack": "RoboTrack：用于真实世界机器人操作的点跟踪",
@@ -53,7 +51,6 @@ window.AI_TITLE_ZH = {
   "https://arstechnica.com/gadgets/2026/11/faa-opens-probe-after-amazon-delivery-drone-clips-cable-crashes-into-garage/": "亚马逊无人机在送完洗发水后坠毁在车库，引发了FAA的调查",
   "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/": "Tidal 宣布禁止 AI 生成音乐，2700 万首曲目将被删除",
   "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/": "特朗普和硅谷如何迫使 Nvidia 接受 Jensen Huang 回归",
-  "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/": "通过 AI 现代化提高企业网络的赌注",
   "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/": "Anthropic 将 Claude Artifacts 转变为 macOS 和 Windows 的独立桌面应用",
   "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/": "Anthropic 的月度 MCP SDK 下载量超过 7 亿，并扩展协议以支持更多自主 AI 代理",
   "https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease/": "诺华 CEO 称 AI 将使药物开发时间缩短四年，而不是治愈所有疾病",
@@ -63,21 +60,21 @@ window.AI_TITLE_ZH = {
   "https://simonwillison.net/2026/Nov/24/llm-inflection-points/": "十二个月内的三个 LLM 转折点",
   "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/": "GPT 6.2 Astra 解决了一个历史之谜",
   "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/": "耶鲁的桑恩菲尔德：Nvidia 对美国工业实力来说是一个‘阻碍’——而不是冠军",
-  "https://simonwillison.net/2026/Nov/24/datasette-agent/": "datasette-agent 0.7a1 发布"
+  "https://simonwillison.net/2026/Nov/24/datasette-agent/": "datasette-agent 0.7a1 发布",
+  "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1fZjR4dUV6eU1kNy1Ub1BpVmxfRXA2c3A5cU5rX2RZZFY3aU1WRGloYkUxZ1pqQmltVjQtTXFDYjhPLXJDbVlBYWxuTC1qQ2JJQW9OeEoyUQ?oc=5": "使用 Siren 测量和缓解代理沙盒逃逸",
+  "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QQWdUV21Fa2dHR25yU2RLd3Exd0ZQc3RERzMyZFBtWWhxS0NQZjlWR21rWXZqa3FYbmRlZEhPRGhXb19XR3UtTWd3YTdDR3JwM05VTzZoaW82UDdGQWNF?oc=5": "与 AI 合作",
+  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51RURTZW9Mc2ZrRWI5bDFKYnpkeThPVFFKQ3hVamlUWUZ2akJBOVNEaTA0WjFPR2pRUEtNdEllSFBJRjhNXzRVbUxYNndSQW9SVnNpN0xMNXVIRkVfNGRkZGs2OC1TRlI1?oc=5": "回到神经基础以实现解释性（第一部分）：回答三个反对意见",
+  "https://news.google.com/rss/articles/CBMicEFVX3lxTE80SEl5Nm1XTnFSUk1iaEtQYkNkT3F5Ump1TkR1Y1lRQ1c5TllybllYUVhzQ2hOR3cxbzBSWUgwbC1BOFE1VjZiaDc0Rjd0S21NWFR0R3Y4MGg3UW14YzhHc1JrYUhRdm9kOUhnQVNnWDE?oc=5": "回到神经基础以实现解释性（第二部分）：使用神经元进行安全应用"
 };
 window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
-  "https://github.com/MSNightmare/FastUnlock": "FastUnlock : Windows 辅助功能锁屏绕过 0day 漏洞",
-  "https://github.com/nataphong-lab/Open-Source-Face-Recognition-Ultimate": "面部识别、面部活体检测、面部反欺骗、面部检测、面部特征点、面部比较、面部匹配、面部姿势、面部表情、面部姿态",
   "https://github.com/R0Y00/Xbox2Windows": "针对 x64 Windows 的 Xbox Series X|S（Scarlett）静态重编译研究，包括着色器翻译、BC7 纹理、脚本状态重放和 D3D12/PE 检查",
   "https://github.com/omonkeyz/xbox-emulator": "在 PC 上运行 Xbox Series X|S 构建的进展笔记（TomBox + rage9）",
   "https://github.com/EL4CTEO/fast-anything": "不要用 Rust 重写它，而是重写 5% 的慢速代码：分析 Python、Node 或 Ruby 应用的性能，使用编码代理移植热函数，并证明它们的行为是一样的",
   "https://github.com/leanprover-community/riemann-hypothesis": "Riemann 假设的 Lean 形式化的独立比较器设置（Alpöge，2026-11-20）",
-  "https://github.com/sybil-solutions/skill-distill": "提炼一个良好的 Claude Code / Codex 会话，使其成为一个开放权重模型可以遵循以重现任务的技能",
   "https://github.com/INK-Q/agy-fast": "非侵入式 MCP 加速器插件适用于 Google Antigravity (CLI/Desktop/IDE)：减少 LLM 转换（-34%），令牌配额（-31%）和上传流量（-40%），而不会影响",
   "https://github.com/danielwh2/sprite-stacking": "代理技能：将四个像素艺术视图转换为可旋转的伪 3D 精灵。支持 Claude Code、Codex、Cursor、OpenCode、Gemini CLI 和 Pi",
   "https://github.com/os6/nospeaker": "使用其触觉马达使您的 MacBook 的触摸板说话",
-  "https://github.com/ItsNotRexed/Hookshot": "Hookshot 是 Switch 2 时代的塞尔达传说：时之笛重制版的原生 PC 重编版",
   "https://github.com/AFK-surf/xnulinux": "XNU 作为 Linux 中的可加载内核模块（arm64 Linux 的 macOS 个性）",
   "https://github.com/Marvisak/VIctory": "尝试在PC上运行GTA VI",
   "https://github.com/4lwayz/portwatch-vi": "GTA VI 能在 PC 上运行吗？一个每日更新的社区重新编译和模拟努力的实时跟踪器",
@@ -86,9 +83,11 @@ window.AI_DESC_ZH = {
   "https://github.com/xcl-dev/xcl": "Xbox Series 兼容层适用于 Windows - 原生运行控制台游戏代码，重新实现控制台系统库，并将 RDNA2 着色器重新编译为 DXIL",
   "https://github.com/fxceless/victory-fork": "VIctory 的工作进展分支：在 Windows PC 上渲染和运行 Xbox Series 标题。无游戏文件。",
   "https://github.com/deterministic-machines/deslop-please": "让你的代码恢复理智",
-  "https://github.com/sous-labs/songe": "为您的本地模型提供的训练引擎，利用您的空闲计算资源",
   "https://github.com/Indigo-0167/universal-game-mod-manager": "免费的 Windows 游戏模组管理器，用于发现、安装、更新和管理通用 Unity 和 Unreal Engine 模组.",
   "https://github.com/zero5122/offline-file-converter-windows": "免费的离线文件转换器，用于在 Windows 上私密转换 PDF、文档、图像、音频和视频.",
   "https://github.com/rowanbyte3329/stardew-valley-mod-manager": "免费的开源星露谷物语模组管理器，支持 SMAPI，模组更新和自定义模组配置，适用于 Windows.",
-  "https://github.com/Umbra9179/clipboard-history-manager-windows": "免费开源的Windows剪贴板管理器，具有可搜索的历史记录、图像预览、标签、编辑和备份功能."
+  "https://github.com/Umbra9179/clipboard-history-manager-windows": "免费开源的Windows剪贴板管理器，具有可搜索的历史记录、图像预览、标签、编辑和备份功能.",
+  "https://github.com/Zettrox/ztrx": "在 Windows PC 上使用 NVIDIA GPU 原生运行 Xbox Series 版本的游戏",
+  "https://github.com/solv4626/steam-achievement-manager-windows": "免费开源的 Steam 成就管理器，用于管理游戏成就和编辑 Steam 游戏统计数据",
+  "https://github.com/kai415-debug/ffmpeg-video-audio-converter": "免费的 Windows FFmpeg GUI，用于视频和音频转换、批量转码和多媒体格式编码"
 };
