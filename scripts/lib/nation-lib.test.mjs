@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectNation, selectLocal } from "./nation-lib.mjs";
+import { selectNation, selectLocal, mergeKept, MONTH_MS, YEAR_MS } from "./nation-lib.mjs";
 
 test("selectNation：同一件调查并成一条，娱乐和公司新闻不收", () => {
   const picked = selectNation([
@@ -47,4 +47,33 @@ test("selectLocal：只留上海和无锡的政策，别的城市不收", () => 
     "上海出台住房公积金新政",
     "无锡市关于印发住房保障办法的通知"
   ]);
+});
+
+test("mergeKept：大事留 30 天，沪锡政策留一年，同一件事沿用第一次出现的时间", () => {
+  const now = Date.parse("2026-11-25T00:00:00.000Z");
+  const day = 24 * 3600e3;
+  const nation = mergeKept(
+    [{ title: "陈吉宁被查", url: "https://a.com/old", source: "澎湃新闻", firstSeen: new Date(now - 40 * day).toISOString() }],
+    [{ title: "央行宣布降准", url: "https://a.com/new", source: "财联社", firstSeen: new Date(now - 2 * day).toISOString() }],
+    { now, keepMs: MONTH_MS }
+  );
+  assert.deepEqual(nation.map((it) => it.title), ["央行宣布降准"]);
+
+  const kept = mergeKept(
+    [{ title: "上海公积金新政", url: "https://a.com/sh", source: "澎湃新闻", firstSeen: new Date(now - 10 * day).toISOString() }],
+    [{ title: "上海出台住房公积金新政", url: "https://a.com/sh2", source: "财联社", rank: 2 }],
+    { now, keepMs: MONTH_MS }
+  );
+  assert.equal(kept.length, 1);
+  assert.equal(kept[0].firstSeen, new Date(now - 10 * day).toISOString());
+
+  const local = mergeKept(
+    [
+      { title: "无锡住房保障办法", url: "https://a.com/wx", source: "澎湃新闻", firstSeen: new Date(now - 200 * day).toISOString() },
+      { title: "上海旧落户政策", url: "https://a.com/oldsh", source: "澎湃新闻", firstSeen: new Date(now - 400 * day).toISOString() }
+    ],
+    [],
+    { now, keepMs: YEAR_MS }
+  );
+  assert.deepEqual(local.map((it) => it.title), ["无锡住房保障办法"]);
 });

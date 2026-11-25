@@ -64,6 +64,51 @@ function clusterTitles(items, limit) {
   }).sort((a, b) => b.score - a.score).slice(0, limit);
 }
 
+export const MONTH_MS = 30 * 24 * 3600e3;
+export const YEAR_MS = 365 * 24 * 3600e3;
+
+// 把这次挑到的和以前留下的并在一起。同一件事沿用最早出现的时间，超过窗口的丢掉。
+export function mergeKept(previous, incoming, opts = {}) {
+  const now = opts.now ?? Date.now();
+  const keepMs = opts.keepMs ?? MONTH_MS;
+  const limit = opts.limit ?? 80;
+  const pool = [];
+  for (const it of [...(incoming || []), ...(previous || [])]) {
+    if (!it || !it.url || !it.title) continue;
+    const seen = Date.parse(it.firstSeen || "");
+    const firstSeen = Number.isFinite(seen) ? seen : now;
+    if (now - firstSeen > keepMs || now - firstSeen < -3600e3) continue;
+    pool.push({ ...it, firstSeenMs: firstSeen });
+  }
+  const clusters = [];
+  for (const it of pool) {
+    const found = clusters.find((c) => c.members.some((m) => m.url === it.url || sameStory(m.title, it.title)));
+    if (found) {
+      found.members.push(it);
+      if (it.firstSeenMs < found.firstSeenMs) found.firstSeenMs = it.firstSeenMs;
+    } else clusters.push({ firstSeenMs: it.firstSeenMs, members: [it] });
+  }
+  return clusters.map((c) => {
+    const fresh = c.members.filter((m) => now - m.firstSeenMs <= 6 * 3600e3);
+    const pool = fresh.length ? fresh : c.members;
+    const rep = pool.slice().sort((a, b) => (a.rank || 99) - (b.rank || 99))[0];
+    const names = [];
+    for (const m of c.members) {
+      if (m.source && !names.includes(m.source)) names.push(m.source);
+      for (const extra of m.also || []) if (extra && !names.includes(extra)) names.push(extra);
+    }
+    const source = rep.source || names[0] || "";
+    return {
+      title: rep.title,
+      url: rep.url,
+      source,
+      rank: fresh.length ? (rep.rank || 0) : 0,
+      also: names.filter((name) => name !== source),
+      firstSeen: new Date(c.firstSeenMs).toISOString()
+    };
+  }).sort((a, b) => Date.parse(b.firstSeen) - Date.parse(a.firstSeen)).slice(0, limit);
+}
+
 export function selectNation(items, opts = {}) {
   const ready = (items || []).filter((it) => {
     const title = String(it.title || "");
