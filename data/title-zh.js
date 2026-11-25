@@ -67,7 +67,8 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/": "数十名内部人士称 OpenAI 和 Anthropic 的未发布模型已经超出了安全措施",
   "https://simonwillison.net/2026/Nov/24/llm-inflection-points/": "十二个月内的三个 LLM 转折点",
   "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/": "GPT 6.2 Astra 解决了一个历史之谜",
-  "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/": "耶鲁的桑恩菲尔德：Nvidia 对美国工业实力来说是一个‘阻碍’——而不是冠军"
+  "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/": "耶鲁的桑恩菲尔德：Nvidia 对美国工业实力来说是一个‘阻碍’——而不是冠军",
+  "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5": "- 人文主义者"
 };
 window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
