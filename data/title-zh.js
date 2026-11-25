@@ -81,7 +81,6 @@ window.AI_DESC_ZH = {
   "https://github.com/AFK-surf/xnulinux": "XNU 作为 Linux 中的可加载内核模块（arm64 Linux 的 macOS 个性）",
   "https://github.com/Marvisak/VIctory": "尝试在PC上运行GTA VI",
   "https://github.com/4lwayz/portwatch-vi": "GTA VI 能在 PC 上运行吗？一个每日更新的社区重新编译和模拟努力的实时跟踪器",
-  "https://github.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering": "一个针对 GTA VI (GTA 6) 的开源逆向工程工具的精选列表，包括 RAGE 9 / RPF9 档案浏览器、TTPF 纹理和 ADAT/AWC 音频解码器、格式文档等",
   "https://github.com/ubiquitarianism/leonida": "Leonida的续作：Xbox版GTA VI移植到PC",
   "https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop": "使用Rust编写的Windows原生YouTube客户端，内置SponsorBlock、DeArrow和Return YouTube Dislike",
   "https://github.com/xcl-dev/xcl": "Xbox Series 兼容层适用于 Windows - 原生运行控制台游戏代码，重新实现控制台系统库，并将 RDNA2 着色器重新编译为 DXIL",
@@ -90,5 +89,6 @@ window.AI_DESC_ZH = {
   "https://github.com/sous-labs/songe": "为您的本地模型提供的训练引擎，利用您的空闲计算资源",
   "https://github.com/Indigo-0167/universal-game-mod-manager": "免费的 Windows 游戏模组管理器，用于发现、安装、更新和管理通用 Unity 和 Unreal Engine 模组.",
   "https://github.com/zero5122/offline-file-converter-windows": "免费的离线文件转换器，用于在 Windows 上私密转换 PDF、文档、图像、音频和视频.",
-  "https://github.com/rowanbyte3329/stardew-valley-mod-manager": "免费的开源星露谷物语模组管理器，支持 SMAPI，模组更新和自定义模组配置，适用于 Windows."
+  "https://github.com/rowanbyte3329/stardew-valley-mod-manager": "免费的开源星露谷物语模组管理器，支持 SMAPI，模组更新和自定义模组配置，适用于 Windows.",
+  "https://github.com/Umbra9179/clipboard-history-manager-windows": "免费开源的Windows剪贴板管理器，具有可搜索的历史记录、图像预览、标签、编辑和备份功能."
 };
