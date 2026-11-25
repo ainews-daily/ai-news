@@ -6,6 +6,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { parseFeed, compileTopics, matchTopics, isNoteworthy, selectFeedItems, safeLink, dedupe, markFresh } from "./lib/crawl-lib.mjs";
 import { updateSeen, applySeen } from "./lib/brief-lib.mjs";
+import { selectNation } from "./lib/nation-lib.mjs";
 
 const ROOT = new URL("..", import.meta.url);
 const NEWSNOW = "https://newsnow.busiyi.world/api/s";
@@ -29,15 +30,17 @@ async function crawlHot(src, topics) {
   const data = await (await get(`${NEWSNOW}?id=${encodeURIComponent(src.id)}&latest`, { Accept: "application/json" })).json();
   if (!["success", "cache"].includes(data.status) || !Array.isArray(data.items)) throw new Error("接口返回异常");
   const out = [];
+  const nation = [];
   data.items.slice(0, HOT_LIMIT).forEach((it, i) => {
     const title = String(it.title || "").trim();
     const url = safeLink(String(it.url || it.mobileUrl || ""), src.domain);
     if (!title || !url) return;
+    nation.push({ source: src.id, title, url, rank: i + 1 });
     const hit = matchTopics(title, topics);
     if (!isNoteworthy(hit, topics)) return;
     out.push({ kind: "hot", source: src.id, title, url, rank: i + 1, topics: hit });
   });
-  return { total: data.items.length, items: out };
+  return { total: data.items.length, items: out, nation };
 }
 
 async function crawlFeed(src, topics, now) {
@@ -75,13 +78,13 @@ async function crawlRepos(topics, now) {
 async function run(name, kind, id, fn) {
   const started = Date.now();
   try {
-    const { total, items } = await fn();
+    const { total, items, nation } = await fn();
     console.log(`✓ ${name}：${items.length}/${total}（${Date.now() - started}ms）`);
-    return { status: { id, name, kind, ok: true, total, count: items.length }, items };
+    return { status: { id, name, kind, ok: true, total, count: items.length }, items, nation: nation || [] };
   } catch (e) {
     const error = e.name === "TimeoutError" ? "超时" : String(e.message || e);
     console.log(`✗ ${name}：${error}`);
-    return { status: { id, name, kind, ok: false, error }, items: [] };
+    return { status: { id, name, kind, ok: false, error }, items: [], nation: [] };
   }
 }
 
@@ -156,7 +159,21 @@ async function main() {
   };
   const body = "// 由 scripts/crawl.mjs 自动生成，请勿手改\nwindow.AI_HOT = " + JSON.stringify(snapshot) + ";\n";
   await writeFile(new URL("data/hot.js", ROOT), body, "utf8");
-  console.log(`\n完成：${okCount}/${results.length} 个源成功，共 ${items.length} 条，已写入 data/hot.js`);
+
+  const names = Object.fromEntries(sources.hot.map((s) => [s.id, s.name]));
+  const nationPicked = selectNation(results.flatMap((r) => r.nation || []));
+  const nation = {
+    generatedAt: nowIso,
+    items: nationPicked.map((p) => ({
+      title: p.title,
+      url: p.url,
+      source: names[p.source] || p.source,
+      rank: p.rank,
+      also: p.sources.filter((id) => id !== p.source).map((id) => names[id] || id)
+    }))
+  };
+  await writeFile(new URL("data/nation.js", ROOT), "// 由 scripts/crawl.mjs 自动生成，请勿手改\nwindow.AI_NATION = " + JSON.stringify(nation) + ";\n", "utf8");
+  console.log(`\n完成：${okCount}/${results.length} 个源成功，共 ${items.length} 条，国内大事 ${nation.items.length} 条`);
 }
 
 main().catch((e) => {
