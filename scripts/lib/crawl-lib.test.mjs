@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseFeed, compileTopics, matchTopics, selectFeedItems, safeLink, dedupe, isNoteworthy, markFresh } from "./crawl-lib.mjs";
+import { parseFeed, compileTopics, matchTopics, selectFeedItems, selectRepos, safeLink, dedupe, isNoteworthy, markFresh } from "./crawl-lib.mjs";
 
 const RSS = `<?xml version="1.0"?><rss><channel><title>站点</title>
 <item><title><![CDATA[OpenAI 发布 <b>新模型</b>]]></title><link>https://example.com/a</link>
@@ -35,6 +35,22 @@ const TOPICS = compileTopics([
   { id: "ai", name: "AI", keywords: ["AI", "大模型", "GPT"] },
   { id: "risk", name: "风险", keywords: ["裁员", "召回"] }
 ]);
+
+test("selectRepos：按完整简介和 topics 筛 AI，再限量，拒绝无关项目和非法链接", () => {
+  const repo = (name, extra = {}) => ({ full_name: `owner/${name}`, html_url: `https://github.com/owner/${name}`, ...extra });
+  const repos = [
+    repo("game", { description: "Xbox compatibility layer for GTA" }),
+    repo("said", { description: "He said hello" }),
+    repo("invalid", { description: "AI agent", html_url: "https://github.com.evil.test/owner/invalid" }),
+    repo("clipping", { description: "x".repeat(180) + " LLM captioning" }),
+    repo("tagged", { topics: ["artificial-intelligence"] }),
+    repo("model", { description: "大模型工具" })
+  ];
+  const picked = selectRepos(repos, compileTopics([{ id: "ai", keywords: ["AI", "LLM", "大模型", "artificial intelligence"] }]), 2);
+  assert.deepEqual(picked.map((r) => r.title), ["owner/clipping", "owner/tagged"]);
+  assert.equal(picked[0].desc.length, 160);
+  assert.ok(picked.every((r) => r.topics.includes("ai")));
+});
 
 test("matchTopics：英文关键词按整词匹配，中文按子串", () => {
   assert.deepEqual(matchTopics("AI眼镜开售", TOPICS), ["ai"]);

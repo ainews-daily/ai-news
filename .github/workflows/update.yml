@@ -69,6 +69,7 @@ jobs:
           mkdir -p _site
           cp index.html _site/
           cp -r data _site/
+          node scripts/build-feed.mjs _site
           # 数据文件有语法错误（比如残留的冲突标记）就不发布，线上保留上一版
           for f in _site/data/*.js; do node --check "$f" || exit 1; done
 

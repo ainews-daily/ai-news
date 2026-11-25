@@ -9,6 +9,16 @@ function item(partial) {
   return { kind: "news", region: "intl", source: "openai", topics: ["ai"], firstSeen: NOW, ...partial };
 }
 
+test("selectBrief：历史 seen 中的无关仓库不进入新闻和大厂动态", () => {
+  const result = selectBrief([
+    item({ title: "Xbox compatibility layer", kind: "repo", source: "github", topics: [], url: "https://github.com/o/game" }),
+    item({ title: "Google console game tool", kind: "repo", source: "github", topics: ["bigtech"], url: "https://github.com/o/console" }),
+    item({ title: "AI coding assistant", kind: "repo", source: "github", topics: ["ai"], url: "https://github.com/o/assistant" })
+  ], { now: NOW_MS });
+  assert.deepEqual(result.items.map((it) => it.url), ["https://github.com/o/assistant"]);
+  assert.equal(result.corp.length, 0);
+});
+
 test("detectVendor / detectCategory：厂商和分类", () => {
   assert.equal(detectVendor("OpenAI 发布 GPT 新模型"), "openai");
   assert.equal(detectVendor("苹果树结果了"), "");

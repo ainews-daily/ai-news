@@ -2,7 +2,7 @@
   {
     "id": "ai",
     "name": "AI",
-    "keywords": ["AI", "AGI", "人工智能", "大模型", "LLM", "GPT", "ChatGPT", "OpenAI", "Claude", "Anthropic", "Gemini", "DeepSeek", "Kimi", "月之暗面", "通义", "千问", "Qwen", "豆包", "文心", "混元", "智谱", "GLM", "MiniMax", "阶跃", "Llama", "Mistral", "Grok", "xAI", "Copilot", "智能体", "Agent", "具身智能", "人形机器人", "机器人", "算力", "Sora", "Midjourney", "生成式", "多模态", "AIGC", "machine learning", "neural network", "LLMs", "agents", "agentic", "chatbot"]
+    "keywords": ["AI", "AGI", "人工智能", "大模型", "LLM", "GPT", "ChatGPT", "OpenAI", "Claude", "Anthropic", "Gemini", "DeepSeek", "Kimi", "月之暗面", "通义", "千问", "Qwen", "豆包", "文心", "混元", "智谱", "GLM", "MiniMax", "阶跃", "Llama", "Mistral", "Grok", "xAI", "Copilot", "智能体", "Agent", "具身智能", "人形机器人", "机器人", "算力", "Sora", "Midjourney", "生成式", "多模态", "AIGC", "artificial intelligence", "machine learning", "deep learning", "neural network", "LLMs", "agents", "agentic", "chatbot"]
   },
   {
     "id": "bigtech",

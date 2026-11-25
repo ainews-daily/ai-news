@@ -214,7 +214,8 @@ function thinTitle(title) {
 }
 
 function inNewsPool(it) {
-  if (it.kind === "repo" || it.kind === "news") return true;
+  if (it.kind === "repo") return (it.topics || []).includes("ai");
+  if (it.kind === "news") return true;
   const topics = it.topics || [];
   if (topics.includes("ai") || topics.includes("chip")) return true;
   const vendor = VENDORS.find((v) => v.id === detectVendor(it.title));

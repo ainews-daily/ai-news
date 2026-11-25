@@ -18,6 +18,12 @@
 | 增删数据源 | 编辑 `config/sources.json` |
 | 跑测试 | `node --test "scripts/**/*.test.mjs"` |
 | 校验某期日报 | `node scripts/validate.mjs data/2026-10-14.js` |
+| 生成 RSS 和 JSON Feed | `node scripts/build-feed.mjs _site`（发布流程会自动执行） |
+| 检查自动日报登录状态 | `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/daily.ps1 -CheckOnly` |
+
+订阅地址为 [RSS](https://aifresh.pages.dev/feed.xml) 和 [JSON Feed](https://aifresh.pages.dev/feed.json)，包含最近 10 期日报。历史日报菜单仅展示北京时间当月的日报，旧文件仍保留供工具库等功能使用。
+
+自动日报在本机通过 Windows 任务计划运行，依赖 Claude Code 登录。日志提示认证失败时，先运行 `claude auth login` 完成登录，再执行上面的登录检查。脚本会从本机 CLI 和 VS Code 扩展中选择较新的版本；检查失败会给出该版本的登录命令。确认登录检查通过后，在任务计划程序中检查“AI新鲜事-每日日报”是否启用。
 
 ## 目录
 
@@ -29,6 +35,7 @@ data/hot.js                实时热点（自动生成）
 config/                    数据源和关注词
 scripts/crawl.mjs          热点爬虫（Node 22，零依赖）
 scripts/validate.mjs       日报数据校验
+scripts/build-feed.mjs     RSS / JSON Feed 生成
 .claude/skills/ai日报/     生成日报的步骤说明
 .github/workflows/         定时抓取和发布
 ```

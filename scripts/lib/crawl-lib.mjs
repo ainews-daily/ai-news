@@ -105,6 +105,21 @@ export function safeLink(url, domain) {
   return host === domain || host.endsWith("." + domain) ? url : null;
 }
 
+// 先筛选再限量，避免无关热门仓库占满名额；用完整简介和 GitHub topics 判断。
+export function selectRepos(repos, topics, limit = 25) {
+  return repos.map((r) => ({
+    kind: "repo",
+    source: "github",
+    title: r.full_name,
+    url: safeLink(r.html_url, "github.com"),
+    desc: String(r.description || "").slice(0, 160),
+    stars: r.stargazers_count,
+    lang: r.language || "",
+    time: r.created_at,
+    topics: matchTopics(`${r.full_name} ${r.description || ""} ${(r.topics || []).join(" ").replace(/[-_]/g, " ")}`, topics)
+  })).filter((r) => r.url && r.topics.includes("ai")).slice(0, limit);
+}
+
 // 对照上一份快照的链接：没见过的标 fresh。没有上一份时全部不当成新的，避免第一次抓取整页都是「新」。
 export function markFresh(items, previousUrls) {
   const seen = previousUrls ? new Set(previousUrls) : null;

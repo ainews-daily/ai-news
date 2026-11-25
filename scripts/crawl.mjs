@@ -4,7 +4,7 @@
 // 部分源失败不影响整体；全部失败时不覆盖旧文件，并以退出码 1 结束。
 
 import { readFile, writeFile } from "node:fs/promises";
-import { parseFeed, compileTopics, matchTopics, isNoteworthy, selectFeedItems, safeLink, dedupe, markFresh } from "./lib/crawl-lib.mjs";
+import { parseFeed, compileTopics, matchTopics, isNoteworthy, selectFeedItems, selectRepos, safeLink, dedupe, markFresh } from "./lib/crawl-lib.mjs";
 import { updateSeen, applySeen } from "./lib/brief-lib.mjs";
 import { selectNation, selectLocal, mergeKept, MONTH_MS, YEAR_MS } from "./lib/nation-lib.mjs";
 
@@ -60,19 +60,9 @@ async function crawlRepos(topics, now) {
   const q = `created:>${since} stars:>30`;
   const headers = { Accept: "application/vnd.github+json" };
   if (process.env.GITHUB_TOKEN) headers.Authorization = "Bearer " + process.env.GITHUB_TOKEN;
-  const data = await (await get(`https://api.github.com/search/repositories?q=${encodeURIComponent(q)}&sort=stars&order=desc&per_page=40`, headers)).json();
-  const items = (data.items || []).map((r) => ({
-    kind: "repo",
-    source: "github",
-    title: r.full_name,
-    url: safeLink(r.html_url, "github.com"),
-    desc: String(r.description || "").slice(0, 160),
-    stars: r.stargazers_count,
-    lang: r.language || "",
-    time: r.created_at,
-    topics: matchTopics(`${r.full_name} ${r.description || ""} ${(r.topics || []).join(" ")}`, topics)
-  })).filter((r) => r.url);
-  return { total: items.length, items: items.slice(0, 25) };
+  const data = await (await get(`https://api.github.com/search/repositories?q=${encodeURIComponent(q)}&sort=stars&order=desc&per_page=100`, headers)).json();
+  const repos = data.items || [];
+  return { total: repos.length, items: selectRepos(repos, topics) };
 }
 
 async function run(name, kind, id, fn) {

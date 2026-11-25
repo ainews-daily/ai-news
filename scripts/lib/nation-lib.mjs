@@ -8,34 +8,24 @@ function norm(title) {
   return String(title || "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 }
 
-function bigrams(title) {
-  const s = norm(title);
-  const g = new Set();
-  for (let i = 0; i < s.length - 1; i++) g.add(s.slice(i, i + 2));
-  return g;
-}
-
-function jaccard(a, b) {
-  if (!a.size || !b.size) return 0;
-  let inter = 0;
-  for (const x of a) if (b.has(x)) inter++;
-  return inter / (a.size + b.size - inter);
-}
-
 function residual(title) {
   let s = norm(title);
   for (const word of STOP) s = s.split(norm(word)).join("");
-  return s;
+  return s.replace(/发布|出台|宣布/g, "").replace(/住房(?=公积金)/g, "");
 }
 
 function sameStory(a, b) {
-  if (jaccard(bigrams(a), bigrams(b)) >= 0.45) return true;
+  if (norm(a) === norm(b)) return true;
+  // 数值变化可能代表另一场灾害或另一项政策，不能因措辞接近而合并。
+  const numbers = (s) => [...new Set(String(s).match(/\d+(?:\.\d+)?/g) || [])].sort().join(",");
+  const an = numbers(a), bn = numbers(b);
+  if (an && bn && an !== bn) return false;
   const left = residual(a);
   const right = residual(b);
-  for (let i = 0; i < left.length - 2; i++) {
-    if (right.includes(left.slice(i, i + 3))) return true;
-  }
-  return false;
+  // 去掉通用表述后，主体必须完整相同或完整包含；局部三字重叠不足以认定同一事件。
+  const shorter = left.length <= right.length ? left : right;
+  const longer = left.length <= right.length ? right : left;
+  return shorter.length >= 3 && longer.includes(shorter) && shorter.length / longer.length >= 0.6;
 }
 
 const PLACE = /上海|浦东|无锡|梁溪|滨湖|惠山|新吴|锡山|宜兴|江阴/;
@@ -46,7 +36,7 @@ function clusterTitles(items, limit) {
   for (const it of items) {
     const title = String(it.title || "").trim();
     if (!title || !it.url) continue;
-    const found = clusters.find((c) => sameStory(c.title, title));
+    const found = clusters.find((c) => c.members.some((m) => m.url === it.url) || c.members.every((m) => sameStory(m.title, title)));
     if (found) found.members.push(it);
     else clusters.push({ title, members: [it] });
   }
@@ -82,7 +72,7 @@ export function mergeKept(previous, incoming, opts = {}) {
   }
   const clusters = [];
   for (const it of pool) {
-    const found = clusters.find((c) => c.members.some((m) => m.url === it.url || sameStory(m.title, it.title)));
+    const found = clusters.find((c) => c.members.some((m) => m.url === it.url) || c.members.every((m) => sameStory(m.title, it.title)));
     if (found) {
       found.members.push(it);
       if (it.firstSeenMs < found.firstSeenMs) found.firstSeenMs = it.firstSeenMs;

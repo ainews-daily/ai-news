@@ -2,6 +2,30 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { selectNation, selectLocal, mergeKept, MONTH_MS, YEAR_MS } from "./nation-lib.mjs";
 
+test("不同城市的同类政策、不同人物的调查和不同震级的地震分别保留", () => {
+  const groups = [
+    [selectLocal, ["上海发布住房补贴政策", "无锡发布住房补贴政策"]],
+    [selectNation, ["张三涉嫌严重违纪违法接受审查调查", "李四涉嫌严重违纪违法接受审查调查"]],
+    [selectNation, ["日本发生6.0级地震", "日本发生7.0级地震"]]
+  ];
+  for (const [select, titles] of groups) {
+    const items = titles.map((title, i) => ({ title, url: `https://example.com/${i}`, source: "test", rank: i + 1 }));
+    assert.equal(select(items).length, 2, titles.join(" / "));
+    assert.equal(mergeKept([], items).length, 2, "归档合并也必须保留两个事件");
+  }
+});
+
+test("同一链接换标题仍合并，通用措辞相同但主体不同不合并", () => {
+  assert.equal(selectNation([
+    { title: "央行宣布降准", url: "https://example.com/a", source: "a" },
+    { title: "央行发布降准消息", url: "https://example.com/a", source: "b" }
+  ]).length, 1);
+  assert.equal(selectLocal([
+    { title: "上海发布人才补贴政策", url: "https://example.com/a", source: "a" },
+    { title: "上海发布住房补贴政策", url: "https://example.com/b", source: "b" }
+  ]).length, 2);
+});
+
 test("selectNation：同一件调查并成一条，娱乐和公司新闻不收", () => {
   const picked = selectNation([
     { title: "上海市委书记陈吉宁被查", url: "https://news.southcn.com/a", source: "thepaper", rank: 1 },
