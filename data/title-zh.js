@@ -22,8 +22,6 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/": "Anthropic对计算资源的需求推动xAI采用租赁而非自建策略",
   "https://simonwillison.net/2026/Nov/23/glm-54/": "GLM-5.4：通用编码的第一步，实现我们的第一个环形变换器",
   "https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/": "Import AI 482：华为内核性能基准测试；空中无人机检测；国家实验室的AI科学基准测试",
-  "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QQWdUV21Fa2dHR25yU2RLd3Exd0ZQc3RERzMyZFBtWWhxS0NQZjlWR21rWXZqa3FYbmRlZEhPRGhXb19XR3UtTWd3YTdDR3JwM05VTzZoaW82UDdGQWNF?oc=5": "与AI合作",
-  "https://news.google.com/rss/articles/CBMiaEFVX3lxTE51RURTZW9Mc2ZrRWI5bDFKYnpkeThPVFFKQ3hVamlUWUZ2akJBOVNEaTA0WjFPR2pRUEtNdEllSFBJRjhNXzRVbUxYNndSQW9SVnNpN0xMNXVIRkVfNGRkZGs2OC1TRlI1?oc=5": "回归神经元基础以实现解释性（第一部分）：回答三个反对意见",
   "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/": "亚马逊称黑客的AI代理发现并利用0day漏洞，几乎无需人工干预",
   "https://the-decoder.com/german-researchers-call-for-computer-science-to-reinvent-itself-as-computer-and-ai-science/": "德国研究人员呼吁计算机科学重塑为\"计算机和AI科学\"",
   "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/": "Anthropic的Claude Ship允许AI代理自行审查、修复和批准pull请求",
@@ -33,9 +31,6 @@ window.AI_TITLE_ZH = {
   "https://openai.com/business/customer-stories/ifood": "iFood 如何在 15,000 个仓库中扩展编码代理",
   "https://openai.com/business/customer-stories/clay-plugins-openai": "Clay 帮助销售团队通过 Codex 和 ChatGPT 取胜",
   "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/": "Gemini 如何改变金州队的组织和球迷的游戏规则",
-  "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1fZjR4dUV6eU1kNy1Ub1BpVmxfRXA2c3A5cU5rX2RZZFY3aU1WRGloYkUxZ1pqQmltVjQtTXFDYjhPLXJDbVlBYWxuTC1qQ2JJQW9OeEoyUQ?oc=5": "使用 Siren 测量和减轻代理沙箱逃逸",
-  "https://news.google.com/rss/articles/CBMicEFVX3lxTE80SEl5Nm1XTnFSUk1iaEtQYkNkT3F5Ump1TkR1Y1lRQ1c5TllybllYUVhzQ2hOR3cxbzBSWUgwbC1BOFE1VjZiaDc0Rjd0S21NWFR0R3Y4MGg3UW14YzhHc1JrYUhRdm9kOUhnQVNnWDE?oc=5": "返回神经基础以实现解释性（第 2 部分）：使用神经元进行安全应用",
-  "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd2o0MlBsWFhmdC1MV1pfa2c4QzEyYkdiM0owWWRvM2RvYkk4LW5QTUtXanRIMnpZU2NDTnF3S2l2cURIU21makt1LUtzOHBtSHJDLUVtRGM3b2RRcmJMcFNyOVhpOC1jX24xQlZPYVdsYWxtenNnTGw0SVh5UjdidnEwM1FaV0h0c3E1bEVSYXlVdw?oc=5": "联合创始人和高管",
   "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance": "Microduck 避障：使用 Isaac Lab 和 Newton 的 Sim2Real 工作流",
   "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology": "据报道 Jensen Huang 告诉 Nvidia 员工特朗普没有让他重新就业是‘不真实的’",
   "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive": "David Fincher 因其最新电影疑似使用 AI 而受到批评",
@@ -68,7 +63,7 @@ window.AI_TITLE_ZH = {
   "https://simonwillison.net/2026/Nov/24/llm-inflection-points/": "十二个月内的三个 LLM 转折点",
   "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/": "GPT 6.2 Astra 解决了一个历史之谜",
   "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/": "耶鲁的桑恩菲尔德：Nvidia 对美国工业实力来说是一个‘阻碍’——而不是冠军",
-  "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5": "- 人文主义者"
+  "https://simonwillison.net/2026/Nov/24/datasette-agent/": "datasette-agent 0.7a1 发布"
 };
 window.AI_DESC_ZH = {
   "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
