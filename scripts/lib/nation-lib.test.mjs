@@ -19,3 +19,19 @@ test("selectNation：同一件调查并成一条，娱乐和公司新闻不收",
 test("selectNation：没有对上的标题就空着", () => {
   assert.deepEqual(selectNation([{ title: "新手机发布", url: "https://a.com", source: "ithome", rank: 1 }]), []);
 });
+
+test("selectNation：竞选、福利、出入境和红头文件都收，公司福利不收", () => {
+  const picked = selectNation([
+    { title: "美国总统竞选进入最后阶段", url: "https://a.com/e", source: "ifeng", rank: 4 },
+    { title: "加州上调州福利和社保标准", url: "https://a.com/w", source: "cls-hot", rank: 6 },
+    { title: "多国出台新的出入境和免签政策", url: "https://a.com/v", source: "thepaper", rank: 5 },
+    { title: "国务院关于印发社会保险经办条例的通知", url: "https://a.com/d", source: "thepaper", rank: 2 },
+    { title: "某公司给员工发放节日福利", url: "https://a.com/c", source: "baidu", rank: 1 }
+  ]);
+  const titles = picked.map((it) => it.title);
+  assert.equal(titles.length, 4);
+  assert.ok(titles.some((t) => t.includes("竞选")));
+  assert.ok(titles.some((t) => t.includes("州福利")));
+  assert.ok(titles.some((t) => t.includes("出入境")));
+  assert.ok(titles.some((t) => t.includes("关于印发")));
+});
