@@ -6,7 +6,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { parseFeed, compileTopics, matchTopics, isNoteworthy, selectFeedItems, safeLink, dedupe, markFresh } from "./lib/crawl-lib.mjs";
 import { updateSeen, applySeen } from "./lib/brief-lib.mjs";
-import { selectNation } from "./lib/nation-lib.mjs";
+import { selectNation, selectLocal } from "./lib/nation-lib.mjs";
 
 const ROOT = new URL("..", import.meta.url);
 const NEWSNOW = "https://newsnow.busiyi.world/api/s";
@@ -173,7 +173,21 @@ async function main() {
     }))
   };
   await writeFile(new URL("data/nation.js", ROOT), "// 由 scripts/crawl.mjs 自动生成，请勿手改\nwindow.AI_NATION = " + JSON.stringify(nation) + ";\n", "utf8");
-  console.log(`\n完成：${okCount}/${results.length} 个源成功，共 ${items.length} 条，国内大事 ${nation.items.length} 条`);
+
+  const rawHot = results.flatMap((r) => r.nation || []);
+  const localPicked = selectLocal(rawHot);
+  const local = {
+    generatedAt: nowIso,
+    items: localPicked.map((p) => ({
+      title: p.title,
+      url: p.url,
+      source: names[p.source] || p.source,
+      rank: p.rank,
+      also: p.sources.filter((id) => id !== p.source).map((id) => names[id] || id)
+    }))
+  };
+  await writeFile(new URL("data/local.js", ROOT), "// 由 scripts/crawl.mjs 自动生成，请勿手改\nwindow.AI_LOCAL = " + JSON.stringify(local) + ";\n", "utf8");
+  console.log(`\n完成：${okCount}/${results.length} 个源成功，共 ${items.length} 条，国内外大事 ${nation.items.length} 条，沪锡政策 ${local.items.length} 条`);
 }
 
 main().catch((e) => {

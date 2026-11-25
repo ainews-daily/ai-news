@@ -38,12 +38,14 @@ function sameStory(a, b) {
   return false;
 }
 
-export function selectNation(items, opts = {}) {
-  const limit = opts.limit ?? 16;
+const PLACE = /上海|浦东|无锡|梁溪|滨湖|惠山|新吴|锡山|宜兴|江阴/;
+const LOCAL_POLICY = /政策|新政|通知|办法|条例|规定|意见|公告|通告|公积金|社保|医保|落户|限购|入学|补贴|印发|征求意见|住房|人才|积分|车牌|拍牌|保障房|养老|救助|规划/;
+
+function clusterTitles(items, limit) {
   const clusters = [];
   for (const it of items) {
     const title = String(it.title || "").trim();
-    if (!title || !it.url || NOISE.test(title) || !MAJOR.test(title)) continue;
+    if (!title || !it.url) continue;
     const found = clusters.find((c) => sameStory(c.title, title));
     if (found) found.members.push(it);
     else clusters.push({ title, members: [it] });
@@ -60,4 +62,20 @@ export function selectNation(items, opts = {}) {
       score: sources.length * 20 + Math.max(0, 40 - (rep.rank || 40))
     };
   }).sort((a, b) => b.score - a.score).slice(0, limit);
+}
+
+export function selectNation(items, opts = {}) {
+  const ready = (items || []).filter((it) => {
+    const title = String(it.title || "");
+    return it.url && !NOISE.test(title) && MAJOR.test(title);
+  });
+  return clusterTitles(ready, opts.limit ?? 16);
+}
+
+export function selectLocal(items, opts = {}) {
+  const ready = (items || []).filter((it) => {
+    const title = String(it.title || "");
+    return it.url && !NOISE.test(title) && PLACE.test(title) && LOCAL_POLICY.test(title);
+  });
+  return clusterTitles(ready, opts.limit ?? 16);
 }

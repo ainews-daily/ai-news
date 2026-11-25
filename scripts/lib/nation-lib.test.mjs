@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectNation } from "./nation-lib.mjs";
+import { selectNation, selectLocal } from "./nation-lib.mjs";
 
 test("selectNation：同一件调查并成一条，娱乐和公司新闻不收", () => {
   const picked = selectNation([
@@ -34,4 +34,17 @@ test("selectNation：竞选、福利、出入境和红头文件都收，公司�
   assert.ok(titles.some((t) => t.includes("州福利")));
   assert.ok(titles.some((t) => t.includes("出入境")));
   assert.ok(titles.some((t) => t.includes("关于印发")));
+});
+
+test("selectLocal：只留上海和无锡的政策，别的城市不收", () => {
+  const picked = selectLocal([
+    { title: "上海出台住房公积金新政", url: "https://a.com/sh", source: "thepaper", rank: 3 },
+    { title: "无锡市关于印发住房保障办法的通知", url: "https://a.com/wx", source: "baidu", rank: 8 },
+    { title: "上海迪士尼门票涨价", url: "https://a.com/disney", source: "toutiao", rank: 1 },
+    { title: "北京出台公积金新政策", url: "https://a.com/bj", source: "cls-hot", rank: 2 }
+  ]);
+  assert.deepEqual(picked.map((it) => it.title), [
+    "上海出台住房公积金新政",
+    "无锡市关于印发住房保障办法的通知"
+  ]);
 });
