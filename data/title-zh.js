@@ -1,16 +1,9 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://openai.com/index/introducing-shirudo": "OpenAI 和 Cisco 推出 Shirudo",
-  "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated": "特朗普为 Jensen Huang 工程了一次风险回归",
-  "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/": "美国各州起诉SpaceX，要求停止Grok生成儿童性感图片和报复色情内容",
-  "https://simonwillison.net/2026/Nov/23/glm-54/": "GLM-5.4：通用编码的第一步，实现我们的第一个环形变换器",
   "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/": "亚马逊称黑客的AI代理发现并利用0day漏洞，几乎无需人工干预",
   "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities": "GPT-6 模型展示了内在的蛋白质设计能力",
   "https://openai.com/index/searching-for-distant-planets-with-astra": "使用 Astra 搜索遥远的行星",
-  "https://openai.com/business/customer-stories/intentful-dots": "Intentful 如何利用点来为增长腾出更多时间",
-  "https://openai.com/business/customer-stories/ifood": "iFood 如何在 15,000 个仓库中扩展编码代理",
-  "https://openai.com/business/customer-stories/clay-plugins-openai": "Clay 帮助销售团队通过 Codex 和 ChatGPT 取胜",
   "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/": "Gemini 如何改变金州队的组织和球迷的游戏规则",
   "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance": "Microduck 避障：使用 Isaac Lab 和 Newton 的 Sim2Real 工作流",
   "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology": "据报道 Jensen Huang 告诉 Nvidia 员工特朗普没有让他重新就业是‘不真实的’",
@@ -23,23 +16,16 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/": "即使是最好的AI代理也难以应对日常生活",
   "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/": "沃尔玛与Meta合作将黑色星期五优惠带到AI代理Muse",
   "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/": "Maple筹集530万美元用于构建保护您的数据（甚至免受其自身侵害）的AI产品",
-  "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/": "Anthropic的股价跌破IPO价格，这是AI初创公司的令人担忧的信号",
-  "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/": "英国警告说AI驱动的网络攻击暴露了多年的安全漏洞",
-  "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/": "Meta将其Muse AI助手直接集成到Instagram的DM中",
-  "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/": "Tidal将禁止和删除数百万个AI生成的音轨，因为AI垃圾音乐淹没了音乐流媒体",
   "https://arstechnica.com/ai/2026/11/whats-going-on-with-the-riemann-hypothesis/": "里曼假设发生了什么？",
   "https://arstechnica.com/gadgets/2026/11/faa-opens-probe-after-amazon-delivery-drone-clips-cable-crashes-into-garage/": "亚马逊无人机在送完洗发水后坠毁在车库，引发了FAA的调查",
   "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/": "Tidal 宣布禁止 AI 生成音乐，2700 万首曲目将被删除",
   "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/": "特朗普和硅谷如何迫使 Nvidia 接受 Jensen Huang 回归",
   "https://the-decoder.com/anthropic-turns-claude-artifacts-into-standalone-desktop-apps-for-macos-and-windows/": "Anthropic 将 Claude Artifacts 转变为 macOS 和 Windows 的独立桌面应用",
-  "https://the-decoder.com/anthropic-tops-700-million-monthly-mcp-sdk-downloads-and-expands-the-protocol-for-more-autonomous-ai-agents/": "Anthropic 的月度 MCP SDK 下载量超过 7 亿，并扩展协议以支持更多自主 AI 代理",
-  "https://the-decoder.com/novartis-ceo-says-ai-will-shave-four-years-off-drug-development-not-cure-all-disease/": "诺华 CEO 称 AI 将使药物开发时间缩短四年，而不是治愈所有疾病",
   "https://simonwillison.net/2026/Nov/24/llm-inflection-points/": "十二个月内的三个 LLM 转折点",
   "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/": "GPT 6.2 Astra 解决了一个历史之谜",
   "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/": "耶鲁的桑恩菲尔德：Nvidia 对美国工业实力来说是一个‘阻碍’——而不是冠军",
   "https://simonwillison.net/2026/Nov/24/datasette-agent/": "datasette-agent 0.7a1 发布",
   "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1fZjR4dUV6eU1kNy1Ub1BpVmxfRXA2c3A5cU5rX2RZZFY3aU1WRGloYkUxZ1pqQmltVjQtTXFDYjhPLXJDbVlBYWxuTC1qQ2JJQW9OeEoyUQ?oc=5": "使用 Siren 测量和缓解代理沙盒逃逸",
-  "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5QQWdUV21Fa2dHR25yU2RLd3Exd0ZQc3RERzMyZFBtWWhxS0NQZjlWR21rWXZqa3FYbmRlZEhPRGhXb19XR3UtTWd3YTdDR3JwM05VTzZoaW82UDdGQWNF?oc=5": "与 AI 合作",
   "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga": "印地语语音代理，采用 CUGA",
   "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/": "人工智能使美国的公开记录系统不堪重负",
   "https://the-decoder.com/mit-team-discovers-that-unrealistic-training-data-makes-ai-climate-predictions-more-reliable/": "MIT 团队发现，不切实际的训练数据使人工智能气候预测更可靠",
@@ -63,12 +49,19 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/": "AI 代理现在控制了 Deepmind 的 Gemini 实验计算的一部分，但递归自我改进仍然遥远",
   "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/": "Anthropic 研究表明，在工作中采用 AI 最困难的部分与学习工具关系不大",
   "https://the-decoder.com/back-to-back-cyber-incidents-at-us-financial-investigators-and-spy-agencies-follow-a-string-of-federal-hacks-and-outages/": "美国金融调查机构和间谍机构发生的连续网络安全事件跟随了一系列联邦黑客攻击和宕机",
-  "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/": "PrismML 通过将每个权重减少到仅三个可能的值，将 54 GB 语言模型缩小到 5.9 GB"
+  "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/": "PrismML 通过将每个权重减少到仅三个可能的值，将 54 GB 语言模型缩小到 5.9 GB",
+  "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd2o0MlBsWFhmdC1MV1pfa2c4QzEyYkdiM0owWWRvM2RvYkk4LW5QTUtXanRIMnpZU2NDTnF3S2l2cURIU21makt1LUtzOHBtSHJDLUVtRGM3b2RRcmJMcFNyOVhpOC1jX24xQlZPYVdsYWxtenNnTGw0SVh5UjdidnEwM1FaV0h0c3E1bEVSYXlVdw?oc=5": "联合创始人与高管",
+  "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5": "- 人文主义AI",
+  "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent": "谷歌的定制AI视频源专利描绘了娱乐业未来黯淡的一幕",
+  "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/": "标准普尔考虑因治理和'关键人物'风险而降低英伟达的信用评级",
+  "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/": "OpenAI表示，重度使用ChatGPT的用户可能会更快地达到限制，因为它合并了Chat和Work",
+  "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/": "詹森·黄（Jensen Huang）违反了英伟达的行为准则，他的员工可能不会忘记这一点",
+  "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/": "人文主义AI的Dario Amodei认为，指控人文主义AI放弃对AI的控制是'荒谬的'",
+  "https://the-decoder.com/us-chip-access-curbs-and-anti-distillation-measures-are-reportedly-already-slowing-chinese-ai-labs/": "据报道，美国对芯片的访问限制和反蒸馏措施已经开始减缓中国AI实验室的发展",
+  "https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea/": "人文主义AI CEO Dario Amodei表示，让AI管理社会将是一个'坏主意'"
 };
 window.AI_DESC_ZH = {
-  "https://github.com/iamajmeena/neonclipping": "粘贴链接，2分钟内获取带字幕的9:16视频片段。免费、局部、开源的剪辑引擎（以音频为主，YouTube字幕，局部LLM）。",
   "https://github.com/EL4CTEO/fast-anything": "不要用 Rust 重写它，而是重写 5% 的慢速代码：分析 Python、Node 或 Ruby 应用的性能，使用编码代理移植热函数，并证明它们的行为是一样的",
-  "https://github.com/INK-Q/agy-fast": "非侵入式 MCP 加速器插件适用于 Google Antigravity (CLI/Desktop/IDE)：减少 LLM 转换（-34%），令牌配额（-31%）和上传流量（-40%），而不会影响",
   "https://github.com/danielwh2/sprite-stacking": "代理技能：将四个像素艺术视图转换为可旋转的伪 3D 精灵。支持 Claude Code、Codex、Cursor、OpenCode、Gemini CLI 和 Pi",
   "https://github.com/sous-labs/songe": "一个使用空闲计算资源为本地模型提供训练引擎",
   "https://github.com/sybil-solutions/skill-distill": "提取一段好的 Claude Code / Codex 会话，并将其转化为开放权重模型可以遵循的技能，以重现任务",
@@ -80,5 +73,8 @@ window.AI_DESC_ZH = {
   "https://github.com/CocoSgt/riemann-hypothesis-lean": "Levent Alpöge 的 Riemann 猜想 Lean 证明的镜像（使用 Claude）。所有荣誉归 Levent Alpöge。来源：alpo.ge",
   "https://github.com/praseesh369/youtube-ai-video-editing-system": "故事板、捕获和动画：YouTube 的 AI 编辑工作流程",
   "https://github.com/VenkateshGorityala/voicemod-audio-modifier": "Voicemod 音频修饰器：实时语音转换和音频处理桌面应用程序",
-  "https://github.com/lebrowndnasty-hash/ai-app-builder": "AI 应用程序构建器：从提示到完整的 Next.js 应用程序，包括托管、数据库、身份验证和多租户"
+  "https://github.com/lebrowndnasty-hash/ai-app-builder": "AI 应用程序构建器：从提示到完整的 Next.js 应用程序，包括托管、数据库、身份验证和多租户",
+  "https://github.com/qianyiai/kurocat": "KuroCat — 一款免费的开源3D/2D桌面打字猫和AI编码伴侣（Bongo Cat的替代品 · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/L",
+  "https://github.com/alesha-pro/llm.asm": "Qwen3-0.6B推理（12 KB），裸机启动的操作系统（22 KB），以及从头开始的Mini-GPT训练器，带有实时盲文TUI（32 KB），全部使用100%纯x86-64 NASM汇编语言编写",
+  "https://github.com/MBPERFORMANCE/adobe-lightroom-full": "Adobe Lightroom完整桌面版（Windows）：完整功能集，流畅工作流程"
 };
