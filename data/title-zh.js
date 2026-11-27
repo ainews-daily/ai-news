@@ -1,9 +1,6 @@
 // 实时热点里英文内容的中文翻译，键是原文链接；由 /ai日报 和 scripts/translate.mjs 生成
 // AI_TITLE_ZH：AI 资讯的标题；AI_DESC_ZH：GitHub 新项目的简介
 window.AI_TITLE_ZH = {
-  "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga": "印地语语音代理，采用 CUGA",
-  "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/": "人工智能使美国的公开记录系统不堪重负",
-  "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91blh2eENvd0hsR25fTlhrSkktUlc3djUxb3NYdGo2dm1maGJfZlhvU3NhSS1rWk45WDczZnpiUzVrOEFWVVA1aDRfSXo3YkpfY0RuSzdESDVlU1FqN1VBV1N3Mm5ZdTQ?oc=5": "将我们的Messages API迁移到Rust",
   "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents": "科学家在AI代理方面划出界限",
   "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers": "FCC批准SpaceX将高达100万个数据中心卫星发射到太空",
   "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal": "Nothing全面展示其AI耳机和充电盒",
@@ -15,7 +12,6 @@ window.AI_TITLE_ZH = {
   "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/": "亚马逊和Meta据报正在商讨解除对AI代理Muse的封锁",
   "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/": "黄仁勋和Nvidia仍需回答关于Megaspeed的问题",
   "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/": "Ars Live回顾：不要指望对数据中心的军事攻击会停止",
-  "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/": "AI可能很快会改变理论物理学家的含义",
   "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/": "OpenAI 希望公司相信其处理敏感工作的能力，并承诺不查看他们的数据",
   "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/": "亚马逊和 Meta 正在谈判解除对 Meta AI 购物代理 Muse 在亚马逊在线商店的封锁",
   "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent": "谷歌的定制AI视频源专利描绘了娱乐业未来黯淡的一幕",
@@ -35,11 +31,10 @@ window.AI_TITLE_ZH = {
   "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/": "Microsoft 详细介绍了国家支持的黑客如何使用 ARTEX AI 框架自动化网络攻击",
   "https://the-decoder.com/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-after-tighter-us-export-controls/": "Nvidia 在美国出口管制加紧后停止向马来西亚、Singapore、新加坡、泰国和印度尼西亚发货服务器",
   "https://simonwillison.net/2026/Nov/26/hn-50651685/": "《纽约时报》警告摄影师不要更新 Photoshop，因为它具有 AI 功能",
-  "https://news.google.com/rss/articles/CBMikgFBVV95cUxQd2o0MlBsWFhmdC1MV1pfa2c4QzEyYkdiM0owWWRvM2RvYkk4LW5QTUtXanRIMnpZU2NDTnF3S2l2cURIU21makt1LUtzOHBtSHJDLUVtRGM3b2RRcmJMcFNyOVhpOC1jX24xQlZPYVdsYWxtenNnTGw0SVh5UjdidnEwM1FaV0h0c3E1bEVSYXlVdw?oc=5": "联合创始人与高管",
-  "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB6WXJxdnhvVmlyaG1KLXBVU3lHWmcxMkNXSWh2dDljckRfcmFlSm4xZnhSTVl1WjRJVDBRd1hTVkE2WG9uNnFLV0h3?oc=5": "- 人文主义AI",
   "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/": "Nvidia 暂停向东南亚地区发货芯片",
   "https://the-decoder.com/former-openai-researcher-says-the-riemann-proof-matters-less-than-the-fact-that-an-ai-system-can-produce-it/": "前 OpenAI 研究员称，黎曼证明的重要性不如 AI 系统能够生成它这一事实",
-  "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/": "GPT-6.2 Astra 用户现在在 OpenAI 修复了定价错误后，40% 更快地遇到了限制"
+  "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/": "GPT-6.2 Astra 用户现在在 OpenAI 修复了定价错误后，40% 更快地遇到了限制",
+  "https://huggingface.co/blog/video-trainium3": "使用Trainium3生成视频：LTX-2.5的应用"
 };
 window.AI_DESC_ZH = {
   "https://github.com/EL4CTEO/fast-anything": "不要用 Rust 重写它，而是重写 5% 的慢速代码：分析 Python、Node 或 Ruby 应用的性能，使用编码代理移植热函数，并证明它们的行为是一样的",
@@ -48,15 +43,17 @@ window.AI_DESC_ZH = {
   "https://github.com/erkamyaman/safe-anything": "在别人之前找到漏洞。一个快速的、100% Rust 的漏洞扫描器：XSS、SQL 注入、泄露的密钥、依赖项 CVE 和人工智能代理设置。",
   "https://github.com/Developing-Gamer/agent-sim": "Linux 上的 AI 代理 iOS 模拟器。x86Sim 的代理层。",
   "https://github.com/w01fb0ss/PiBot": "开源、以本地为先的 AI 代理团队，用于桌面：多代理群聊、计算机使用、浏览器、MCP、例行程序和批准。macOS、Windows、Linux + An",
-  "https://github.com/praseesh369/youtube-ai-video-editing-system": "故事板、捕获和动画：YouTube 的 AI 编辑工作流程",
-  "https://github.com/VenkateshGorityala/voicemod-audio-modifier": "Voicemod 音频修饰器：实时语音转换和音频处理桌面应用程序",
-  "https://github.com/lebrowndnasty-hash/ai-app-builder": "AI 应用程序构建器：从提示到完整的 Next.js 应用程序，包括托管、数据库、身份验证和多租户",
   "https://github.com/alesha-pro/llm.asm": "Qwen3-0.6B推理（12 KB），裸机启动的操作系统（22 KB），以及从头开始的Mini-GPT训练器，带有实时盲文TUI（32 KB），全部使用100%纯x86-64 NASM汇编语言编写",
   "https://github.com/nexu-io/opengame": "超级游戏代理 —— Unity 和 Unreal 的 AI 代理，拥有 100 多个可以重新混合的热门游戏。将 20 多个编码代理（Claude Code、Codex、DeepSeek 等）转化为完整的代理",
   "https://github.com/Moh4696/inkworks-skill": "Inkworks：一个用于交互式 3D 教程页面的代理技能，绘制如工程图表",
   "https://github.com/qianyiai/KuroCat": "KuroCat —— 免费开源的 3D/2D 桌面打字猫和 AI 编码伴侣 (Bongo Cat 替代品 · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/L",
   "https://github.com/vuyp/gta6-pc-race": "自动维护的 GTA VI Xbox 版 PC 端口跟踪网站，该仓库由 Claude Fable 5.2 自主管理",
   "https://github.com/EL4CTEO/shrink-anything": "减少代码，测试仍通过：删除代码库中的死代码、文件、依赖项和资产，只保留测试仍通过的部分",
-  "https://github.com/MBPERFORMANCE/adobe-lightroom-full": "Adobe Lightroom 完整桌面版（Windows）：完整功能集和流畅工作流",
-  "https://github.com/rosario28enmanuel-cpu/anydesk-remote-desktop": "AnyDesk 远程桌面：高性能远程访问软件"
+  "https://github.com/erkamyaman/rea-games": "反向工程任何游戏，在任何引擎（web、Rust、Godot）中重建，并证明重建后的游戏每一帧都相同。行为规范在GAME.md中",
+  "https://github.com/hannahgoel/playground-ai": "Playground Ai for Windows 10/11：从文本提示生成图像，使用inpainting和outpainting编辑照片，并使用滤镜和上采样来优化结果",
+  "https://github.com/murphycarolyn75/riverside-fm-desktop": "Riverside Fm Desktop for Windows 10/11：录制远程播客和视频采访，捕获每位嘉宾的独立音频轨道",
+  "https://github.com/jagdishbhatia/leonardo-ai": "Leonardo Ai for Windows 10/11：使用AI模型从文本提示生成图像和艺术作品，然后使用inpainting、上采样和画布编辑来优化结果",
+  "https://github.com/Kamin5kipaul08/movavi-video-suite": "Movavi Video Suite for Windows 10/11：编辑视频片段、音频和照片，转换文件格式，并捕获屏幕录像用于创建教程",
+  "https://github.com/Locorreia1992/native-instruments-reaktor-6": "Native Instruments Reaktor 6 for Windows 10/11：通过可视化模块化环境中的模块patching来构建自定义合成器、采样器和效果器，或播放和调整",
+  "https://github.com/Lukcla3889/postman-agent": "Postman Agent for Windows 10/11：在本地机器上运行API请求和集合，允许您向localhost发送调用、检查响应和调试端点"
 };
