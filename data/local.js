@@ -1,2 +1,2 @@
 // 由 scripts/crawl.mjs 自动生成，请勿手改
-window.AI_LOCAL = {"generatedAt":"2026-11-28T07:56:58.832Z","windowDays":365,"items":[{"title":"上海百亿养老集资骗局股东潜逃海外","url":"https://www.baidu.com/s?wd=%E4%B8%8A%E6%B5%B7%E7%99%BE%E4%BA%BF%E5%85%BB%E8%80%81%E9%9B%86%E8%B5%84%E9%AA%97%E5%B1%80%E8%82%A1%E4%B8%9C%E6%BD%9C%E9%80%83%E6%B5%B7%E5%A4%96","source":"百度热搜","rank":0,"also":[],"firstSeen":"2026-11-27T01:45:58.942Z"}]};
+window.AI_LOCAL = {"generatedAt":"2026-11-28T17:37:14.479Z","windowDays":365,"items":[{"title":"上海百亿养老集资骗局股东潜逃海外","url":"https://www.baidu.com/s?wd=%E4%B8%8A%E6%B5%B7%E7%99%BE%E4%BA%BF%E5%85%BB%E8%80%81%E9%9B%86%E8%B5%84%E9%AA%97%E5%B1%80%E8%82%A1%E4%B8%9C%E6%BD%9C%E9%80%83%E6%B5%B7%E5%A4%96","source":"百度热搜","rank":0,"also":[],"firstSeen":"2026-11-27T01:45:58.942Z"}]};
